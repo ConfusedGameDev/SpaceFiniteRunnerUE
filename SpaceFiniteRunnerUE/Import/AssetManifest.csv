@@ -32,66 +32,66 @@ f84db5a0c19f0449a805f579b1d2adf2,Assets/00.Plugins/EVP5/World/Pixelactive City/t
 75cbfd4a2d28d42e69df07b2f056d531,Assets/00.Plugins/EVP5/World/Pixelactive City/tex/ter_dirt_001.tif,Texture2D,.tif,786636,Not ported,,
 1063153784ec0431b9dedbdc4a307ebe,Assets/00.Plugins/EVP5/World/Pixelactive City/tex/ter_grass002.tif,Texture2D,.tif,786636,Not ported,,
 0c6a23fe2b56a4e3b854b156bac8e8f0,Assets/00.Plugins/EVP5/World/Pixelactive City/tex/traffic_light_diffuse.tif,Texture2D,.tif,1079264,Not ported,,
-6e08928e60ba1724984b9cc882ea6a3e,Assets/02.Art/01.Models/FiniteRunner/LaserA.fbx,GameObject,.fbx,91312,Port,,
-20939c8c1391f934d85224b44ffd9078,Assets/02.Art/01.Models/FiniteRunner/LaserB.fbx,GameObject,.fbx,41664,Port,,
-68f89a2476c7bf14685dc29ad588b12b,Assets/02.Art/01.Models/FiniteRunner/OriginalModels/Boost_v2.fbx,GameObject,.fbx,34656,Port,,
-293ffa51b0701a34ea072b637eb8e69b,Assets/02.Art/01.Models/FiniteRunner/OriginalModels/MedPack.fbx,GameObject,.fbx,26560,Port,,
-7a095432ffac14b44bb523610bb9abaf,Assets/02.Art/01.Models/FiniteRunner/OriginalModels/Ultraboost.fbx,GameObject,.fbx,43728,Port,,
-51bb6ed50f874244ba999f8f1ea5e713,Assets/02.Art/01.Models/FiniteRunner/OriginalModels/laserTypeA.fbx,GameObject,.fbx,48032,Port,,
-32d3c348e8c0c734484219d02322260a,Assets/02.Art/01.Models/FiniteRunner/OriginalModels/road-straight_v1.fbx,GameObject,.fbx,28256,Port,,
+6e08928e60ba1724984b9cc882ea6a3e,Assets/02.Art/01.Models/FiniteRunner/LaserA.fbx,GameObject,.fbx,91312,Port,/Game/Runner/Meshes/Laser/SM_LaserA,
+20939c8c1391f934d85224b44ffd9078,Assets/02.Art/01.Models/FiniteRunner/LaserB.fbx,GameObject,.fbx,41664,Port,/Game/Runner/Meshes/Laser/SM_LaserB,
+68f89a2476c7bf14685dc29ad588b12b,Assets/02.Art/01.Models/FiniteRunner/OriginalModels/Boost_v2.fbx,GameObject,.fbx,34656,Port,/Game/Runner/Meshes/Orbs/SM_Boost_v2,
+293ffa51b0701a34ea072b637eb8e69b,Assets/02.Art/01.Models/FiniteRunner/OriginalModels/MedPack.fbx,GameObject,.fbx,26560,Port,/Game/Runner/Meshes/Orbs/SM_MedPack,
+7a095432ffac14b44bb523610bb9abaf,Assets/02.Art/01.Models/FiniteRunner/OriginalModels/Ultraboost.fbx,GameObject,.fbx,43728,Port,/Game/Runner/Meshes/Orbs/SM_Ultraboost,
+51bb6ed50f874244ba999f8f1ea5e713,Assets/02.Art/01.Models/FiniteRunner/OriginalModels/laserTypeA.fbx,GameObject,.fbx,48032,Port,/Game/Runner/Meshes/Laser/SM_LaserTypeA,
+32d3c348e8c0c734484219d02322260a,Assets/02.Art/01.Models/FiniteRunner/OriginalModels/road-straight_v1.fbx,GameObject,.fbx,28256,Port,/Game/Runner/Meshes/Track/SM_RoadStraight_v1,
 6aede605e1e49cc47a04ee7ce9e0a538,Assets/02.Art/01.Models/FiniteRunner/RampBase_Wedge.asset,Mesh,.asset,4900,Rebuild,,
-2327f36b12a4d2e4b956376ad7670814,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/MASKandLaser.png,Texture2D,.png,63343,Port,,
-f0e03a16d71c5c747b605c2905ed6d1a,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/Materials/roadTexture_v2.mat,Material,.mat,4537,Rebuild,,
-ec98b673cc2790341b4c9f591d581fb3,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/ScanLines.png,Texture2D,.png,43343,Port,,
-a1be896e238808f41a929fd5f041d1bb,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/ScanLines2.png,Texture2D,.png,1344958,Port,,
-0dbcbc5eb702f8a49a429627e843021e,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/multicolor-industrial-glitcho.jpg,Texture2D,.jpg,140202,Port,,
-5f524ae63589c1b438d46b6a14484529,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/multicolor-industrial-glitcho.png,Texture2D,.png,1003259,Port,,
-ea68eb1084298a74cb6b5979d5999af8,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/noise.png,Texture2D,.png,363617,Port,,
-b1e114dfc3abc9a42943d7b7a0805b75,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/roadTexture_emission.png,Texture2D,.png,127900,Port,,
-6504ea23bb62b52438fc6629575d8243,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/roadTexture_normal.png,Texture2D,.png,1096837,Port,,
-1a60ce8f09782e442925773c0f234c4b,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/roadTexture_v2.png,Texture2D,.png,820584,Port,,
-e9cea43190307264d9b79359e800873a,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/roadTexture_v2_specular.png,Texture2D,.png,545470,Port,,
-7b19e6cc19aa64da29ba037d1a4abeb0,Assets/02.Art/01.Models/FiniteRunner/Textures/colormap.png,Texture2D,.png,8658,Port,,
-e3ba0439ebb6246a5b0b3d1682c8a554,Assets/02.Art/01.Models/FiniteRunner/road-straight-barrier.fbx,GameObject,.fbx,27040,Port,,
-58d1ae75fe75f4e40974a15be5b871d2,Assets/02.Art/01.Models/FiniteRunner/road-straight.fbx,GameObject,.fbx,25328,Port,,
-e967edf2e1b6a98448853000ff1fa99c,Assets/02.Art/01.Models/Pickups/Mat_GreenPowerUp.mat,Material,.mat,11156,Rebuild,,
-3e5b7d9f1a2c4e6b8d0f2a4c6e8b0d2f,Assets/02.Art/01.Models/Pickups/Mat_PowerUp_Blue.mat,Material,.mat,11176,Rebuild,,
-7c1a4f0b2e3d5a6c8b9d0e1f2a3b4c5d,Assets/02.Art/01.Models/Pickups/Mat_PowerUp_Green.mat,Material,.mat,11173,Rebuild,,
-9f2d4b6a8c0e1f3d5b7a9c1e3f5d7b9a,Assets/02.Art/01.Models/Pickups/Mat_PowerUp_Purple.mat,Material,.mat,11176,Rebuild,,
-15fe1b9428dfb024c9c0e22211715422,Assets/02.Art/01.Models/Pickups/Mat_Powerup.mat,Material,.mat,11158,Rebuild,,
-dfa4f254942057a468ec75a70673ab8a,Assets/02.Art/01.Models/Prototype/Textures/colormap.png,Texture2D,.png,8706,Port,,
-2f8f3b190f664e64fb0d45e004b78669,Assets/02.Art/01.Models/Prototype/indicator-round-d.fbx,GameObject,.fbx,34240,Port,,
-0b34c8a496010b246a771bdd6f526464,Assets/02.Art/01.Models/Prototype/indicator-special-area.fbx,GameObject,.fbx,26160,Port,,
-b0ef635b3814a194782f04a949ace8ce,Assets/02.Art/01.Models/Prototype/indicator-special-arrow.fbx,GameObject,.fbx,25424,Port,,
-7c2e4d0f3b8a5f9e0a1c6d5e4f3a2b18,Assets/02.Art/02.Materials/FiniteRunner/BarrelRollTrail_Mat.mat,Material,.mat,2812,Rebuild,,
-d5349876b0f5c4ac6be9d2b65eb8b939,Assets/02.Art/02.Materials/FiniteRunner/BoostPad_Mat.mat,Material,.mat,4087,Rebuild,,
-51e286fba8b842e294007c3d358cd916,Assets/02.Art/02.Materials/FiniteRunner/CrtScreen.mat,Material,.mat,1046,Rebuild,,
-a3d45f0c8b21463f9d6e7c5a1b2f8d43,Assets/02.Art/02.Materials/FiniteRunner/DashGhost_Mat.mat,Material,.mat,2031,Rebuild,,
-818364b793a257b4e97d59c89537325b,Assets/02.Art/02.Materials/FiniteRunner/LaserBeam_Mat.mat,Material,.mat,2694,Rebuild,,
-67bc6a0bac09a064d9352447d06d516e,Assets/02.Art/02.Materials/FiniteRunner/LaserEnemy.mat,Material,.mat,2188,Rebuild,,
-fde28178eb548bb44a5ad197c523deff,Assets/02.Art/02.Materials/FiniteRunner/LaserFloorSparks_Mat.mat,Material,.mat,2922,Rebuild,,
-8c105df17ef01754a8c959cb19486bbf,Assets/02.Art/02.Materials/FiniteRunner/NeonBarrier_Mat.mat,Material,.mat,2817,Rebuild,,
-127e19fb397b4c34382d47986e7f9922,Assets/02.Art/02.Materials/FiniteRunner/NeonEdge_Mat.mat,Material,.mat,1301,Rebuild,,
-091e24f2f1fe5af4e8f337fe7592e0c2,Assets/02.Art/02.Materials/FiniteRunner/NeonRoad_Mat.mat,Material,.mat,3260,Rebuild,,
-38ea9ed7e7d02c943b6036dbad36d556,Assets/02.Art/02.Materials/FiniteRunner/NeonTube_Mat.mat,Material,.mat,1299,Rebuild,,
-04ea326902e63c14fa72e5f5e1515522,Assets/02.Art/02.Materials/FiniteRunner/NeonWall_Mat.mat,Material,.mat,1395,Rebuild,,
-8497a54b49f9e4e72aebc7770bd31225,Assets/02.Art/02.Materials/FiniteRunner/PatrolBlueLight_Mat.mat,Material,.mat,4079,Rebuild,,
-ec734ad7799ad433bb142a489fcdc2e9,Assets/02.Art/02.Materials/FiniteRunner/PatrolBody_Mat.mat,Material,.mat,4071,Rebuild,,
-4c6c0a1cd126d4a838207811c68d376f,Assets/02.Art/02.Materials/FiniteRunner/PatrolRedLight_Mat.mat,Material,.mat,4076,Rebuild,,
-f182689e1b1a44eb8bacd3e77eae3d7b,Assets/02.Art/02.Materials/FiniteRunner/PatrolTrim_Mat.mat,Material,.mat,4034,Rebuild,,
-222d40646937da648b83c60d9bc08a7c,Assets/02.Art/02.Materials/FiniteRunner/PsxLook.mat,Material,.mat,958,Rebuild,,
-bc09eb8fe3deb8047b331d2ed8c1abfc,Assets/02.Art/02.Materials/FiniteRunner/RoadHologram.mat,Material,.mat,2854,Rebuild,,
-57a671484ca94a8488746ae7238d6d9c,Assets/02.Art/02.Materials/FiniteRunner/ShipBoostSparks_Mat.mat,Material,.mat,4386,Rebuild,,
-d4cad6a43b21075469a980b3d79c2d58,Assets/02.Art/02.Materials/FiniteRunner/SkyboxHyperspace.mat,Material,.mat,1592,Rebuild,,
-947115ad6b8341738625b354beb26538,Assets/02.Art/02.Materials/FiniteRunner/SpeedLines.mat,Material,.mat,1088,Rebuild,,
-2b07d7e49cbf10046aed5fbd7f83f2e5,Assets/02.Art/02.Materials/FiniteRunner/VhsTape.mat,Material,.mat,1129,Rebuild,,
-1f153c4f079e2ad4084052094ec96bda,Assets/02.Art/02.Materials/FiniteRunner/aerial-drone-panorama-chisinau-seamless.jpg,Texture2D,.jpg,4543779,Port,,
-ed2f95cfded5007469dd3e9faf512a01,Assets/02.Art/02.Materials/FiniteRunner/hologram.mat,Material,.mat,4912,Rebuild,,
-d0867e44826b5574389577373b749b69,Assets/02.Art/02.Materials/FiniteRunner/skyboxFinite.mat,Material,.mat,4682,Rebuild,,
-7d7f93dfc5635234fac4fff2db1dc663,Assets/02.Art/02.Materials/InfiniteCity/DistanceFog.mat,Material,.mat,1202,Rebuild,,
-30c149be5d65e4bb29be2c1f16e41ad6,Assets/02.Art/02.Materials/InfiniteCity/GlitchPost.mat,Material,.mat,924,Rebuild,,
-3b9d5e7fa2c14086b8d1c7e5f2a09374,Assets/02.Art/02.Materials/Mat_CharacterColor.mat,Material,.mat,9196,Rebuild,,
-604f012482e1a324e97e20cfe3799b36,Assets/02.Art/03.Textures/FiniteRunner/ShipBoostSparks_Sheet.png,Texture2D,.png,419648,Port,,
+2327f36b12a4d2e4b956376ad7670814,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/MASKandLaser.png,Texture2D,.png,63343,Port,/Game/Runner/Textures/Track/T_MASKandLaser,
+f0e03a16d71c5c747b605c2905ed6d1a,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/Materials/roadTexture_v2.mat,Material,.mat,4537,Port,/Game/Runner/Materials/Track/MI_RoadTexture_v2,Instance of M_Lit
+ec98b673cc2790341b4c9f591d581fb3,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/ScanLines.png,Texture2D,.png,43343,Port,/Game/Runner/Textures/Track/T_ScanLines,
+a1be896e238808f41a929fd5f041d1bb,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/ScanLines2.png,Texture2D,.png,1344958,Port,/Game/Runner/Textures/Track/T_ScanLines2,
+0dbcbc5eb702f8a49a429627e843021e,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/multicolor-industrial-glitcho.jpg,Texture2D,.jpg,140202,Port,/Game/Runner/Textures/Track/T_MulticolorIndustrialGlitcho_Jpg,
+5f524ae63589c1b438d46b6a14484529,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/multicolor-industrial-glitcho.png,Texture2D,.png,1003259,Port,/Game/Runner/Textures/Track/T_MulticolorIndustrialGlitcho,
+ea68eb1084298a74cb6b5979d5999af8,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/noise.png,Texture2D,.png,363617,Port,/Game/Runner/Textures/Track/T_Noise,
+b1e114dfc3abc9a42943d7b7a0805b75,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/roadTexture_emission.png,Texture2D,.png,127900,Port,/Game/Runner/Textures/Track/T_RoadTexture_emission,
+6504ea23bb62b52438fc6629575d8243,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/roadTexture_normal.png,Texture2D,.png,1096837,Port,/Game/Runner/Textures/Track/T_RoadTexture_normal,
+1a60ce8f09782e442925773c0f234c4b,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/roadTexture_v2.png,Texture2D,.png,820584,Port,/Game/Runner/Textures/Track/T_RoadTexture_v2,
+e9cea43190307264d9b79359e800873a,Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/roadTexture_v2_specular.png,Texture2D,.png,545470,Port,/Game/Runner/Textures/Track/T_RoadTexture_v2_specular,
+7b19e6cc19aa64da29ba037d1a4abeb0,Assets/02.Art/01.Models/FiniteRunner/Textures/colormap.png,Texture2D,.png,8658,Port,/Game/Runner/Textures/Track/T_Colormap_Roads,Kenney City Kit Roads (CC0)
+e3ba0439ebb6246a5b0b3d1682c8a554,Assets/02.Art/01.Models/FiniteRunner/road-straight-barrier.fbx,GameObject,.fbx,27040,Port,/Game/Runner/Meshes/Track/SM_RoadStraightBarrier,
+58d1ae75fe75f4e40974a15be5b871d2,Assets/02.Art/01.Models/FiniteRunner/road-straight.fbx,GameObject,.fbx,25328,Port,/Game/Runner/Meshes/Track/SM_RoadStraight,
+e967edf2e1b6a98448853000ff1fa99c,Assets/02.Art/01.Models/Pickups/Mat_GreenPowerUp.mat,Material,.mat,11156,Rebuild,/Game/Runner/Materials/Orbs/MI_Mat_GreenPowerUp,Instance of M_Toon (was RealToon)
+3e5b7d9f1a2c4e6b8d0f2a4c6e8b0d2f,Assets/02.Art/01.Models/Pickups/Mat_PowerUp_Blue.mat,Material,.mat,11176,Rebuild,/Game/Runner/Materials/Orbs/MI_Mat_PowerUp_Blue,Instance of M_Toon (was RealToon)
+7c1a4f0b2e3d5a6c8b9d0e1f2a3b4c5d,Assets/02.Art/01.Models/Pickups/Mat_PowerUp_Green.mat,Material,.mat,11173,Rebuild,/Game/Runner/Materials/Orbs/MI_Mat_PowerUp_Green,Instance of M_Toon (was RealToon)
+9f2d4b6a8c0e1f3d5b7a9c1e3f5d7b9a,Assets/02.Art/01.Models/Pickups/Mat_PowerUp_Purple.mat,Material,.mat,11176,Rebuild,/Game/Runner/Materials/Orbs/MI_Mat_PowerUp_Purple,Instance of M_Toon (was RealToon)
+15fe1b9428dfb024c9c0e22211715422,Assets/02.Art/01.Models/Pickups/Mat_Powerup.mat,Material,.mat,11158,Rebuild,/Game/Runner/Materials/Orbs/MI_Mat_Powerup,Instance of M_Toon (was RealToon)
+dfa4f254942057a468ec75a70673ab8a,Assets/02.Art/01.Models/Prototype/Textures/colormap.png,Texture2D,.png,8706,Port,/Game/Runner/Textures/Track/T_Colormap_Prototype,Kenney Prototype Kit (CC0)
+2f8f3b190f664e64fb0d45e004b78669,Assets/02.Art/01.Models/Prototype/indicator-round-d.fbx,GameObject,.fbx,34240,Port,/Game/Runner/Meshes/Orbs/SM_IndicatorRoundD,Kenney Prototype Kit (CC0)
+0b34c8a496010b246a771bdd6f526464,Assets/02.Art/01.Models/Prototype/indicator-special-area.fbx,GameObject,.fbx,26160,Port,/Game/Runner/Meshes/Orbs/SM_IndicatorSpecialArea,Kenney Prototype Kit (CC0)
+b0ef635b3814a194782f04a949ace8ce,Assets/02.Art/01.Models/Prototype/indicator-special-arrow.fbx,GameObject,.fbx,25424,Port,/Game/Runner/Meshes/Orbs/SM_IndicatorSpecialArrow,Kenney Prototype Kit (CC0)
+7c2e4d0f3b8a5f9e0a1c6d5e4f3a2b18,Assets/02.Art/02.Materials/FiniteRunner/BarrelRollTrail_Mat.mat,Material,.mat,2812,Rebuild,,"FX material, rebuilt with its effect (M3 / M5 / M13)"
+d5349876b0f5c4ac6be9d2b65eb8b939,Assets/02.Art/02.Materials/FiniteRunner/BoostPad_Mat.mat,Material,.mat,4087,Port,/Game/Runner/Materials/Track/MI_BoostPad_Mat,Instance of M_Lit
+51e286fba8b842e294007c3d358cd916,Assets/02.Art/02.Materials/FiniteRunner/CrtScreen.mat,Material,.mat,1046,Not ported,,D14 / unreferenced (A.3)
+a3d45f0c8b21463f9d6e7c5a1b2f8d43,Assets/02.Art/02.Materials/FiniteRunner/DashGhost_Mat.mat,Material,.mat,2031,Rebuild,,"FX material, rebuilt with its effect (M3 / M5 / M13)"
+818364b793a257b4e97d59c89537325b,Assets/02.Art/02.Materials/FiniteRunner/LaserBeam_Mat.mat,Material,.mat,2694,Rebuild,,"FX material, rebuilt with its effect (M3 / M5 / M13)"
+67bc6a0bac09a064d9352447d06d516e,Assets/02.Art/02.Materials/FiniteRunner/LaserEnemy.mat,Material,.mat,2188,Rebuild,/Game/Runner/Materials/Laser/MI_LaserEnemy,Instance of M_Laser
+fde28178eb548bb44a5ad197c523deff,Assets/02.Art/02.Materials/FiniteRunner/LaserFloorSparks_Mat.mat,Material,.mat,2922,Rebuild,,"FX material, rebuilt with its effect (M3 / M5 / M13)"
+8c105df17ef01754a8c959cb19486bbf,Assets/02.Art/02.Materials/FiniteRunner/NeonBarrier_Mat.mat,Material,.mat,2817,Rebuild,/Game/Runner/Materials/Laser/MI_NeonBarrier_Mat,Instance of M_Laser
+127e19fb397b4c34382d47986e7f9922,Assets/02.Art/02.Materials/FiniteRunner/NeonEdge_Mat.mat,Material,.mat,1301,Rebuild,/Game/Runner/Materials/Track/MI_NeonEdge_Mat,Instance of M_Neon
+091e24f2f1fe5af4e8f337fe7592e0c2,Assets/02.Art/02.Materials/FiniteRunner/NeonRoad_Mat.mat,Material,.mat,3260,Rebuild,/Game/Runner/Materials/Track/MI_NeonRoad_Mat,Instance of M_Road
+38ea9ed7e7d02c943b6036dbad36d556,Assets/02.Art/02.Materials/FiniteRunner/NeonTube_Mat.mat,Material,.mat,1299,Rebuild,/Game/Runner/Materials/Track/MI_NeonTube_Mat,Instance of M_Neon
+04ea326902e63c14fa72e5f5e1515522,Assets/02.Art/02.Materials/FiniteRunner/NeonWall_Mat.mat,Material,.mat,1395,Rebuild,/Game/Runner/Materials/Track/MI_NeonWall_Mat,Instance of M_Neon
+8497a54b49f9e4e72aebc7770bd31225,Assets/02.Art/02.Materials/FiniteRunner/PatrolBlueLight_Mat.mat,Material,.mat,4079,Port,/Game/Runner/Materials/Vehicles/MI_PatrolBlueLight_Mat,Instance of M_Lit
+ec734ad7799ad433bb142a489fcdc2e9,Assets/02.Art/02.Materials/FiniteRunner/PatrolBody_Mat.mat,Material,.mat,4071,Port,/Game/Runner/Materials/Vehicles/MI_PatrolBody_Mat,Instance of M_Lit
+4c6c0a1cd126d4a838207811c68d376f,Assets/02.Art/02.Materials/FiniteRunner/PatrolRedLight_Mat.mat,Material,.mat,4076,Port,/Game/Runner/Materials/Vehicles/MI_PatrolRedLight_Mat,Instance of M_Lit
+f182689e1b1a44eb8bacd3e77eae3d7b,Assets/02.Art/02.Materials/FiniteRunner/PatrolTrim_Mat.mat,Material,.mat,4034,Port,/Game/Runner/Materials/Vehicles/MI_PatrolTrim_Mat,Instance of M_Lit
+222d40646937da648b83c60d9bc08a7c,Assets/02.Art/02.Materials/FiniteRunner/PsxLook.mat,Material,.mat,958,Not ported,,D14 / unreferenced (A.3)
+bc09eb8fe3deb8047b331d2ed8c1abfc,Assets/02.Art/02.Materials/FiniteRunner/RoadHologram.mat,Material,.mat,2854,Rebuild,/Game/Runner/Materials/Track/MI_RoadHologram,Instance of M_Road
+57a671484ca94a8488746ae7238d6d9c,Assets/02.Art/02.Materials/FiniteRunner/ShipBoostSparks_Mat.mat,Material,.mat,4386,Rebuild,,"FX material, rebuilt with its effect (M3 / M5 / M13)"
+d4cad6a43b21075469a980b3d79c2d58,Assets/02.Art/02.Materials/FiniteRunner/SkyboxHyperspace.mat,Material,.mat,1592,Rebuild,,"Sky / post material, rebuilt in M13"
+947115ad6b8341738625b354beb26538,Assets/02.Art/02.Materials/FiniteRunner/SpeedLines.mat,Material,.mat,1088,Rebuild,,"Sky / post material, rebuilt in M13"
+2b07d7e49cbf10046aed5fbd7f83f2e5,Assets/02.Art/02.Materials/FiniteRunner/VhsTape.mat,Material,.mat,1129,Not ported,,D14 / unreferenced (A.3)
+1f153c4f079e2ad4084052094ec96bda,Assets/02.Art/02.Materials/FiniteRunner/aerial-drone-panorama-chisinau-seamless.jpg,Texture2D,.jpg,4543779,Port,/Game/Runner/Textures/Sky/T_AerialDronePanorama,Stock photo
+ed2f95cfded5007469dd3e9faf512a01,Assets/02.Art/02.Materials/FiniteRunner/hologram.mat,Material,.mat,4912,Rebuild,/Game/Runner/Materials/Orbs/MI_Hologram,Instance of M_Hologram
+d0867e44826b5574389577373b749b69,Assets/02.Art/02.Materials/FiniteRunner/skyboxFinite.mat,Material,.mat,4682,Rebuild,,"Sky / post material, rebuilt in M13"
+7d7f93dfc5635234fac4fff2db1dc663,Assets/02.Art/02.Materials/InfiniteCity/DistanceFog.mat,Material,.mat,1202,Rebuild,,"Runner post material in a city folder (A.13.3), rebuilt in M13"
+30c149be5d65e4bb29be2c1f16e41ad6,Assets/02.Art/02.Materials/InfiniteCity/GlitchPost.mat,Material,.mat,924,Rebuild,,"Runner post material in a city folder (A.13.3), rebuilt in M13"
+3b9d5e7fa2c14086b8d1c7e5f2a09374,Assets/02.Art/02.Materials/Mat_CharacterColor.mat,Material,.mat,9196,Rebuild,/Game/Runner/Materials/Laser/MI_Mat_CharacterColor,Instance of M_Toon; PF_LaserSystem uses it on LaserA / LaserB
+604f012482e1a324e97e20cfe3799b36,Assets/02.Art/03.Textures/FiniteRunner/ShipBoostSparks_Sheet.png,Texture2D,.png,419648,Port,/Game/Runner/Textures/FX/T_ShipBoostSparks_Sheet,SubUV
 a7f64289a33440c2a216b30f8f63c605,Assets/02.Art/04.Shaders/FiniteRunner/CrtScreen.shader,Shader,.shader,10088,Rebuild,,
 8fa3670529ea4bb4b89bd48911ac6af7,Assets/02.Art/04.Shaders/FiniteRunner/NeonRoad.shader,Shader,.shader,11198,Rebuild,,
 d3eecf68fe734cf294a54a6264bc6c86,Assets/02.Art/04.Shaders/FiniteRunner/PsxLook.shader,Shader,.shader,8554,Rebuild,,
@@ -104,29 +104,29 @@ f51ffd91fc5a45a199ebfb9de7afefb2,Assets/02.Art/04.Shaders/FiniteRunner/TrackReve
 4e8c28f3d7c235440aa4df920f9ae2eb,Assets/02.Art/04.Shaders/FiniteRunner/laser.shadergraph,Shader,.shadergraph,86321,Rebuild,,
 2d6eb851bd8939f498ea366d9f45dc63,Assets/02.Art/04.Shaders/InfiniteCity/DistanceFog.shader,Shader,.shader,7976,Rebuild,,
 8713c32e9dd2e4d92b90efec01b25b1c,Assets/02.Art/04.Shaders/InfiniteCity/GlitchPost.shader,Shader,.shader,4967,Rebuild,,
-d46e55f0fce1f45fdb51297ab8dc58eb,Assets/02.Art/05.Particles/GeneralParticles/Rotated/trace_01_rotated.png,Texture2D,.png,28417,Port,,
-4078da546dc414918af0425c7b3cfa20,Assets/02.Art/05.Particles/GeneralParticles/circle_05.png,Texture2D,.png,65336,Port,,
-a7bb9dc623cb5413e9609cf1257058a6,Assets/02.Art/05.Particles/GeneralParticles/fire_01.png,Texture2D,.png,99891,Port,,
-ba71cbb83e4c54ef78b015222befbab8,Assets/02.Art/05.Particles/GeneralParticles/flame_02.png,Texture2D,.png,68498,Port,,
-6bd2758ba88644526a47d4aaa041283c,Assets/02.Art/05.Particles/GeneralParticles/flame_03.png,Texture2D,.png,49857,Port,,
-d42277c429d12414b9a965d94cac21f4,Assets/02.Art/05.Particles/GeneralParticles/flare_01.png,Texture2D,.png,42886,Port,,
-6bd4792093f9c4229805e4ffc689be94,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke08.png,Texture2D,.png,60263,Port,,
-ced67ea39b03d441383bddeb8ebcaf1a,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke09.png,Texture2D,.png,54693,Port,,
-7b65ef923a3d44c4ca5c2845afb32fd3,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke10.png,Texture2D,.png,57511,Port,,
-9b94c7c434d8d40628cd9d666da90eff,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke11.png,Texture2D,.png,54495,Port,,
-78407c48e698f4e81bd14b2163ce158d,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke12.png,Texture2D,.png,62234,Port,,
-1e8c250e20eed437aa19e143338584d2,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke13.png,Texture2D,.png,57528,Port,,
-e7945eaf8466044849bafdaddea04182,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke14.png,Texture2D,.png,62405,Port,,
-a96c4488e59bb435d8aaa0cff43270fe,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion00.png,Texture2D,.png,111957,Port,,
-1c846224768ab4d11ae85c0dde9fc69a,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion01.png,Texture2D,.png,118819,Port,,
-d98f18ebb21b44d03a8f2847c5999b86,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion02.png,Texture2D,.png,107235,Port,,
-8c9f1958f431f48a491b1a254a7f1207,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion03.png,Texture2D,.png,114316,Port,,
-ef8c7540bd3234f33b8d5ab008294d24,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion04.png,Texture2D,.png,120219,Port,,
-8235e261889ee4b4c8e34e7c66246e56,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion05.png,Texture2D,.png,116874,Port,,
-6fddb8dfa38c94a4394e6b3bbbcbb133,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion06.png,Texture2D,.png,112512,Port,,
-8281bac6ed4ca42b3a7a3e7629485344,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion07.png,Texture2D,.png,107109,Port,,
-08c8fb6595d634540806f7e021e09e67,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion08.png,Texture2D,.png,122656,Port,,
-5cc8af7840f4d2349b50e771e6ef9ecc,Assets/02.Art/07.Videos/Cutscenes/mtch.mp4,VideoClip,.mp4,157744,Port,,
+d46e55f0fce1f45fdb51297ab8dc58eb,Assets/02.Art/05.Particles/GeneralParticles/Rotated/trace_01_rotated.png,Texture2D,.png,28417,Port,/Game/Runner/Textures/FX/T_Trace_01_rotated,Kenney Particle Pack (CC0)
+4078da546dc414918af0425c7b3cfa20,Assets/02.Art/05.Particles/GeneralParticles/circle_05.png,Texture2D,.png,65336,Port,/Game/Runner/Textures/FX/T_Circle_05,Kenney Particle Pack (CC0)
+a7bb9dc623cb5413e9609cf1257058a6,Assets/02.Art/05.Particles/GeneralParticles/fire_01.png,Texture2D,.png,99891,Port,/Game/Runner/Textures/FX/T_Fire_01,Kenney Particle Pack (CC0)
+ba71cbb83e4c54ef78b015222befbab8,Assets/02.Art/05.Particles/GeneralParticles/flame_02.png,Texture2D,.png,68498,Port,/Game/Runner/Textures/FX/T_Flame_02,Kenney Particle Pack (CC0)
+6bd2758ba88644526a47d4aaa041283c,Assets/02.Art/05.Particles/GeneralParticles/flame_03.png,Texture2D,.png,49857,Port,/Game/Runner/Textures/FX/T_Flame_03,Kenney Particle Pack (CC0)
+d42277c429d12414b9a965d94cac21f4,Assets/02.Art/05.Particles/GeneralParticles/flare_01.png,Texture2D,.png,42886,Port,/Game/Runner/Textures/FX/T_Flare_01,Kenney Particle Pack (CC0)
+6bd4792093f9c4229805e4ffc689be94,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke08.png,Texture2D,.png,60263,Port,/Game/Runner/Textures/FX/T_BlackSmoke_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+ced67ea39b03d441383bddeb8ebcaf1a,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke09.png,Texture2D,.png,54693,Port,/Game/Runner/Textures/FX/T_BlackSmoke_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+7b65ef923a3d44c4ca5c2845afb32fd3,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke10.png,Texture2D,.png,57511,Port,/Game/Runner/Textures/FX/T_BlackSmoke_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+9b94c7c434d8d40628cd9d666da90eff,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke11.png,Texture2D,.png,54495,Port,/Game/Runner/Textures/FX/T_BlackSmoke_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+78407c48e698f4e81bd14b2163ce158d,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke12.png,Texture2D,.png,62234,Port,/Game/Runner/Textures/FX/T_BlackSmoke_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+1e8c250e20eed437aa19e143338584d2,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke13.png,Texture2D,.png,57528,Port,/Game/Runner/Textures/FX/T_BlackSmoke_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+e7945eaf8466044849bafdaddea04182,Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke14.png,Texture2D,.png,62405,Port,/Game/Runner/Textures/FX/T_BlackSmoke_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+a96c4488e59bb435d8aaa0cff43270fe,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion00.png,Texture2D,.png,111957,Port,/Game/Runner/Textures/FX/T_Explosion_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+1c846224768ab4d11ae85c0dde9fc69a,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion01.png,Texture2D,.png,118819,Port,/Game/Runner/Textures/FX/T_Explosion_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+d98f18ebb21b44d03a8f2847c5999b86,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion02.png,Texture2D,.png,107235,Port,/Game/Runner/Textures/FX/T_Explosion_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+8c9f1958f431f48a491b1a254a7f1207,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion03.png,Texture2D,.png,114316,Port,/Game/Runner/Textures/FX/T_Explosion_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+ef8c7540bd3234f33b8d5ab008294d24,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion04.png,Texture2D,.png,120219,Port,/Game/Runner/Textures/FX/T_Explosion_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+8235e261889ee4b4c8e34e7c66246e56,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion05.png,Texture2D,.png,116874,Port,/Game/Runner/Textures/FX/T_Explosion_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+6fddb8dfa38c94a4394e6b3bbbcbb133,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion06.png,Texture2D,.png,112512,Port,/Game/Runner/Textures/FX/T_Explosion_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+8281bac6ed4ca42b3a7a3e7629485344,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion07.png,Texture2D,.png,107109,Port,/Game/Runner/Textures/FX/T_Explosion_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+08c8fb6595d634540806f7e021e09e67,Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion08.png,Texture2D,.png,122656,Port,/Game/Runner/Textures/FX/T_Explosion_SubUV,"Frame packed into the SubUV sheet (Kenney Smoke Particles, CC0)"
+5cc8af7840f4d2349b50e771e6ef9ecc,Assets/02.Art/07.Videos/Cutscenes/mtch.mp4,VideoClip,.mp4,157744,Port,/Game/Runner/Media/FMS_FailReaction,File copied to Content/Movies/mtch.mp4
 57902afb4792a4c36a93948798106c2b,Assets/03.Prefabs/FiniteRunner/PF_AdaptiveProbeVolume.prefab,GameObject,.prefab,1954,Rebuild,,
 97bff04b4628a43e3bbca8b8617a4ac9,Assets/03.Prefabs/FiniteRunner/PF_CameraController.prefab,GameObject,.prefab,6586,Rebuild,,
 fe833f505111e479bbd36158b7e1e591,Assets/03.Prefabs/FiniteRunner/PF_Cameras.prefab,GameObject,.prefab,11734,Rebuild,,
@@ -264,185 +264,185 @@ ad63e80d0cce81f409a2785d59f7bd00,Assets/04.Data/Resources/FiniteRunner_PostProce
 f5d7ef62ae9c2f742acdec5c53cb0524,Assets/04.Data/Ship/Acceptance_ShipSettings.asset,ShipSettings,.asset,1122,Data,,
 4500bdecaaeeae844954572a80740bf7,Assets/04.Data/Ship/HoverShip_Settings.asset,ShipSettings,.asset,2001,Data,,
 57d64fda05521a1479ede5f857430e55,Assets/04.Data/Ship/Runner_ShipSettings.asset,ShipSettings,.asset,2227,Data,,
-b4f920b23b6464f6097abdfc32367f33,Assets/05.Scenes/FiniteRunner_Test.unity,SceneAsset,.unity,202428,Rebuild,,
+b4f920b23b6464f6097abdfc32367f33,Assets/05.Scenes/FiniteRunner_Test.unity,SceneAsset,.unity,202428,Rebuild,,Map rebuilt in UE (A.1)
 7ef7f26f444d9a5489e83b00894186f5,Assets/05.Scenes/FiniteRunner_Test/Global Volume Profile.asset,VolumeProfile,.asset,7562,Rebuild,,
 83c0ae950d401894b9113060ed9bfd12,Assets/05.Scenes/FiniteRunner_Test/LightingData.asset,LightingDataAsset,.asset,19340,Rebuild,,
-0359bf36a138b834794a93cb58265abc,Assets/05.Scenes/FiniteRunner_Test/ReflectionProbe-0.exr,Cubemap,.exr,170709,Port,,
-3f7352895f9ea8b43b382a5dbcb4af7a,Assets/05.Scenes/FiniteRunner_Test/ReflectionProbe-1.exr,Cubemap,.exr,170650,Port,,
-b4c674f79dae4478d82fa63504b87d0d,Assets/05.Scenes/LevelSelect.unity,SceneAsset,.unity,19807,Rebuild,,
-8f3e6a1d5c2b4e7f9a0d1c3b5e7a9c60,Assets/05.Scenes/MainMenu.unity,SceneAsset,.unity,293471,Rebuild,,
-271d5caeeee0e44b39636eb6ad2f307a,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_0.png,Texture2D,.png,574,Port,,
-32cd9e4a51d4543ad96588c40fe7541b,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_1.png,Texture2D,.png,398,Port,,
-2e7dabe3bbdfd4fffbd3a51e4020ba90,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_2.png,Texture2D,.png,540,Port,,
-5f780f33398154d5fa8f465daf977551,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_3.png,Texture2D,.png,558,Port,,
-09eef859091e54275bc61a7871cafb39,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_4.png,Texture2D,.png,405,Port,,
-24fa640978614493c975f433e3b5bdff,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_5.png,Texture2D,.png,516,Port,,
-203b9802b91bd43638a3457769f293a7,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_6.png,Texture2D,.png,593,Port,,
-e5c9f10c473b145ed825583d3fcc025f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_7.png,Texture2D,.png,515,Port,,
-2a73470e7bbb44582a06374fadd36fb0,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_8.png,Texture2D,.png,583,Port,,
-69955a29c5e0a49ce98990b488f317f7,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_9.png,Texture2D,.png,583,Port,,
-bb21d373df76144d28e58b86c2fc26cb,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_a.png,Texture2D,.png,651,Port,,
-e488e49d35a3346f888981e7a3eee103,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_alt.png,Texture2D,.png,454,Port,,
-75cad664faf7443d0a36cd168f22dd71,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_apostrophe.png,Texture2D,.png,421,Port,,
-23bd145737e2b4aa4a7ec02935c05717,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_arrow_down.png,Texture2D,.png,470,Port,,
-d0da99a6094674e67bd707680ecdd902,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_arrow_left.png,Texture2D,.png,470,Port,,
-1b1f93dd5812b4a6f80b1d839182559d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_arrow_right.png,Texture2D,.png,468,Port,,
-c6edc1f4e05694bea96318d24200729c,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_arrow_up.png,Texture2D,.png,477,Port,,
-7c22edff5cf5044f48672b96220ce9e1,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_asterisk.png,Texture2D,.png,589,Port,,
-57985a98d7a904343b8286d6003099a5,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_b.png,Texture2D,.png,512,Port,,
-b2524a9c20fc94f0ca7c5271b71a26ed,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_backspace.png,Texture2D,.png,876,Port,,
-00062a1419f5b41f083dad377d9bd24b,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_bracket_close.png,Texture2D,.png,397,Port,,
-a2af75bc2821f4c12a4be76f28ae426c,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_bracket_open.png,Texture2D,.png,400,Port,,
-833e988d5d12b455bbb79f0e33cf092f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_c.png,Texture2D,.png,628,Port,,
-ba4543082fdee4168af1ac3f2ae52fed,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_capslock.png,Texture2D,.png,807,Port,,
-d19db2a092fcc4863b1ea8ac51c748a1,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_comma.png,Texture2D,.png,464,Port,,
-70fb2a12bb25f4ecb863b7a779c28473,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_ctrl.png,Texture2D,.png,602,Port,,
-fb1ce58e2b9a74f12b6fefa56ec97fc9,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_d.png,Texture2D,.png,566,Port,,
-dbe2008587da4487a934c5c2e8175e73,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_delete.png,Texture2D,.png,504,Port,,
-435c74698c91e48ddac3d9b148abb5e2,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_e.png,Texture2D,.png,391,Port,,
-d9a1cd322185e43a588d48691bced68d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_end.png,Texture2D,.png,591,Port,,
-dee302995b41b4ca09b2115e7f15ce12,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_enter.png,Texture2D,.png,685,Port,,
-8c433457a322f4af2854651447aef982,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_equals.png,Texture2D,.png,384,Port,,
-6d65ef840e3544898b8b3d8ecdd4d0a6,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_escape.png,Texture2D,.png,595,Port,,
-6216b0f72ed6646c89cd0ebf7ffd1298,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_exclamation.png,Texture2D,.png,419,Port,,
-e73787351ecbf416c997f37af683c14d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f.png,Texture2D,.png,390,Port,,
-941f6bfd97b954b13a75f13105767bc6,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f1.png,Texture2D,.png,413,Port,,
-22b9af5ac836c43aa9faf03b8962755d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f10.png,Texture2D,.png,613,Port,,
-78949b03fb41d4ecdb7e7132a6939fcd,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f11.png,Texture2D,.png,437,Port,,
-f85faf6859b7448f99d74ebc64b87e8f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f12.png,Texture2D,.png,567,Port,,
-ae2c0257c74a5471aae250ad6155b266,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f2.png,Texture2D,.png,542,Port,,
-6fae984d9d3854ddca88d23330c041ed,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f3.png,Texture2D,.png,576,Port,,
-35af7248a02244da9844263aa02e0e1a,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f4.png,Texture2D,.png,419,Port,,
-58f7c8ba080314cbcb75163ab716933d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f5.png,Texture2D,.png,528,Port,,
-6688fedd1a91e4c65a923a6d3c0b7596,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f6.png,Texture2D,.png,599,Port,,
-4f3ae0b32e4694deea819dff67aeb172,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f7.png,Texture2D,.png,514,Port,,
-4fb2aaa0481cd4701894416d81579d6e,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f8.png,Texture2D,.png,595,Port,,
-427304403737c4c3d9ae5c41f45526c2,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f9.png,Texture2D,.png,589,Port,,
-5c6465263af0a4b58880e1a925d1a8fa,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_g.png,Texture2D,.png,660,Port,,
-7fdf2c5fe166a4b4d989a4746fd1c585,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_h.png,Texture2D,.png,407,Port,,
-27700b423dbba4fc1b663293b1741e1f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_home.png,Texture2D,.png,594,Port,,
-492b59f099bb34b2981f45014a7b324d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_i.png,Texture2D,.png,382,Port,,
-9c1671f721f314b6ca498acd20af828c,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_insert.png,Texture2D,.png,604,Port,,
-7e935d7d4599b4cf18966d10ccc4b448,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_j.png,Texture2D,.png,461,Port,,
-da31bc1094df34545b2a16a80edd0345,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_k.png,Texture2D,.png,551,Port,,
-914519e15e9804ad09ffa661d3565d72,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_l.png,Texture2D,.png,385,Port,,
-c3f19acb5772c44e0afd4f585bfe0cf0,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_m.png,Texture2D,.png,592,Port,,
-49fd80c6d0a4f45169d51a55ec0da84e,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_minus.png,Texture2D,.png,381,Port,,
-2c6b8154be5314be989a2ab23b34237c,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_n.png,Texture2D,.png,537,Port,,
-8707b7be81c554bfd8c61ae334e5ffaa,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_numlock.png,Texture2D,.png,737,Port,,
-81c0fe756e6b94f08a263589df2c2629,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_numpad_enter.png,Texture2D,.png,629,Port,,
-332d85e9a76194c0bbc0c49ed8298425,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_numpad_plus.png,Texture2D,.png,386,Port,,
-5bf12abf1672e48c390b962360fafa0a,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_o.png,Texture2D,.png,655,Port,,
-fc58cfb0e35134b7a886eed3e8a35c1d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_p.png,Texture2D,.png,496,Port,,
-63f85963418ef46609178832ba80315f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_page_down.png,Texture2D,.png,887,Port,,
-650cdfebb4ba043e3b2b76e41be68eb6,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_page_up.png,Texture2D,.png,692,Port,,
-4144d88c1d4c749d897bdd0ff19fed3d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_pause_break.png,Texture2D,.png,911,Port,,
-09459149b9bf44f7db5659e1aa4275e8,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_period.png,Texture2D,.png,420,Port,,
-2e9093ce7e6a24c05b51c4329d8f29bb,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_printscreen.png,Texture2D,.png,818,Port,,
-a548b7dfe46444562ab20c468ed8242e,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_q.png,Texture2D,.png,623,Port,,
-f4374ad8a0a4e4767b70c73e8ee135ed,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_r.png,Texture2D,.png,531,Port,,
-35c3a9c1953614ec59947bd1137c9f1e,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_s.png,Texture2D,.png,636,Port,,
-2d84bb5eaa2c64a678a1468754213b46,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_scroll_lock.png,Texture2D,.png,861,Port,,
-20e639824b6df4f64b6050c58ee4bd8e,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_semicolon.png,Texture2D,.png,475,Port,,
-ff1aba59e3eca420e8d219b18a71e084,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_shift.png,Texture2D,.png,576,Port,,
-d37623154508b4694b98df7989b3f5a4,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_slash_back.png,Texture2D,.png,568,Port,,
-54cd0219acf43492b8949e6997908c13,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_slash_forward.png,Texture2D,.png,551,Port,,
-1b3c3eeb7543c47e6ad0c882c6f4aa1d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_space.png,Texture2D,.png,678,Port,,
-dbe4d8081f38e484bb2fe64d66860abe,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_t.png,Texture2D,.png,388,Port,,
-805d98f7cc7e041ac9741d5f5e7e00fd,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_tab.png,Texture2D,.png,523,Port,,
-112e5b0b51e3f42b794ef539a871841a,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_tilde.png,Texture2D,.png,532,Port,,
-f9020f8ed146849319608447db1c959f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_u.png,Texture2D,.png,533,Port,,
-2b14af1460e604cacb80e66841bdd51f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_v.png,Texture2D,.png,655,Port,,
-f7ab0afe4a0ec4405bb4ff2af7092334,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_w.png,Texture2D,.png,698,Port,,
-ee37d541d508d4e599ffc6c631679746,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_win.png,Texture2D,.png,453,Port,,
-7aaa07a46b7b04c5eb0b9a7176f06f75,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_x.png,Texture2D,.png,704,Port,,
-6fd6554f133ee4a43a2a6897fcea35b2,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_y.png,Texture2D,.png,583,Port,,
-5e159a5ba8dc546e2a4716d11b59bc72,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_z.png,Texture2D,.png,513,Port,,
-740dd8cd37cc2448a9950b5ee2cfd977,Assets/06.UI/01.Sprites/PNG/Blue/Default/bar_round_large.png,Texture2D,.png,508,Port,,
-3488a852bdde3474cb95ae3203f70ae2,Assets/06.UI/01.Sprites/PNG/Blue/Default/button_square_header_small_square.png,Texture2D,.png,391,Port,,
-166c4ec23c33f4cc298824f485a19c8d,Assets/06.UI/01.Sprites/PNG/Green/Default/button_square_header_large_rectangle.png,Texture2D,.png,428,Port,,
-fdee2c6b9c6414f26b1d33bab4f158be,Assets/06.UI/01.Sprites/PNG/Grey/Default/bar_round_gloss_large.png,Texture2D,.png,547,Port,,
-feeebd8dc503f4396b33e0bf1ce21a69,Assets/06.UI/01.Sprites/PNG/Grey/Default/bar_round_large_square.png,Texture2D,.png,475,Port,,
-ac47b1436bca74cb2b3b419c75bdb390,Assets/06.UI/01.Sprites/PNG/Grey/Double/bar_round_gloss_large.png,Texture2D,.png,917,Port,,
-3d658e5ed19844d5498518e497b0df0a,Assets/06.UI/01.Sprites/PNG/Red/Double/bar_round_gloss_large.png,Texture2D,.png,930,Port,,
-9383e918747f74236976cb9d5d414ed6,Assets/06.UI/01.Sprites/PNG/Red/Double/bar_round_large.png,Texture2D,.png,888,Port,,
-db5084dcddbce4189a4e257530c218f7,Assets/06.UI/01.Sprites/PNG/Red/Double/bar_square_small_square.png,Texture2D,.png,291,Port,,
-16642dcda0fca4066ac445f024193472,Assets/06.UI/01.Sprites/PNG/Red/Double/button_square_header_blade_rectangle_screws.png,Texture2D,.png,1305,Port,,
-854003face7944baca5b8545c23955ba,Assets/06.UI/01.Sprites/PNG/Red/Double/button_square_header_notch_rectangle.png,Texture2D,.png,1025,Port,,
-c7ff5f883de2044118f6b449f719b0f0,Assets/06.UI/01.Sprites/PNG/Red/Double/button_square_header_small_rectangle.png,Texture2D,.png,811,Port,,
-d63de7b3b21b242b796d9defd7a9b5c0,Assets/06.UI/01.Sprites/PNG/Red/Double/crosshair_color_a.png,Texture2D,.png,954,Port,,
-5a77a95c8e3d85c4d8a35ec7b273f96b,Assets/06.UI/01.Sprites/Xbox Series/Double/keyboard_exclamation_outline.png,Texture2D,.png,498,Port,,
-dfe23cc467b4d9044822194b3c6473df,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_a.png,Texture2D,.png,864,Port,,
-da634deeda298154083c7047443c947c,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_b.png,Texture2D,.png,799,Port,,
-8c8d11c317cdbd14aba974969e80b331,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_back.png,Texture2D,.png,777,Port,,
-531ec807fa529d9448fc149fbf98a6cc,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_color_a.png,Texture2D,.png,864,Port,,
-f9ee2e6b43a74c0439f41e699ca2bf0d,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_color_b.png,Texture2D,.png,799,Port,,
-7f2de31835a74104ea4a35db6e09b80d,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_color_x.png,Texture2D,.png,922,Port,,
-4399250cce227d845a6020203ab48349,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_color_y.png,Texture2D,.png,845,Port,,
-0fee7badf73365447874bfd88bda357e,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_start.png,Texture2D,.png,800,Port,,
-b3b18116a0b99394cb144f28f9db27e5,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_x.png,Texture2D,.png,922,Port,,
-71e7436a8b1d86e44b4fb62bf86f6e3f,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_y.png,Texture2D,.png,845,Port,,
-3d59c71c3325444478b593909b205c8d,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_down.png,Texture2D,.png,381,Port,,
-7d774c45743f92d4da07887e72b2cbfe,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_horizontal.png,Texture2D,.png,405,Port,,
-dd46d4f746983f943bbdfd6f05b6b35c,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_left.png,Texture2D,.png,397,Port,,
-c7dc8780f92b77647a4aaaafb86eb45b,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_right.png,Texture2D,.png,401,Port,,
-7e8406529c63419408c5d363055ea6a9,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_up.png,Texture2D,.png,394,Port,,
-723482a838f1a314899d27609d021519,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_vertical.png,Texture2D,.png,389,Port,,
-bb4fca19ea4a47641836e03a3420c480,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_lb.png,Texture2D,.png,542,Port,,
-e08baf56af40e5949b4a25604b2f9db4,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_lt.png,Texture2D,.png,495,Port,,
-3d3f11b6a53fc104a8630ea0237f2827,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_rb.png,Texture2D,.png,638,Port,,
-c36808beae0534a43a5e2bdac0451628,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_rt.png,Texture2D,.png,627,Port,,
-bec9b834a77ddda46a081eef58e81e7f,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_down.png,Texture2D,.png,1218,Port,,
-423de3a475c870944987b55f3cd79925,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_left.png,Texture2D,.png,1137,Port,,
-1cf7321863aa551449ee19d983d217a1,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_press.png,Texture2D,.png,1200,Port,,
-e1bc14c3b328b3a429762be0d6519a2e,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_right.png,Texture2D,.png,1131,Port,,
-f1369791903b8b0408eb6a50c88f7d94,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_up.png,Texture2D,.png,1195,Port,,
-e7a41810558384947bdb5604e37dfa02,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_down.png,Texture2D,.png,1285,Port,,
-3b0d515d1829e5b47a95cb01fe3da5fe,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_left.png,Texture2D,.png,1204,Port,,
-aa2e779190333324e92387091cd1831d,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_press.png,Texture2D,.png,1261,Port,,
-c3f7b8ae52d295b4fa7d34abe8de4001,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_right.png,Texture2D,.png,1209,Port,,
-0796773c0a6e56042bfceb815938eb1a,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_up.png,Texture2D,.png,1260,Port,,
-e2be03aa6816d4a44a5744417d34ce3e,Assets/06.UI/02.Fonts/Kenney Future Narrow.ttf,Font,.ttf,34180,Port,,
-fd796841f874d4c1cbdd0dab23c9360e,Assets/06.UI/02.Fonts/Kenney Future.ttf,Font,.ttf,34160,Port,,
-23bc164700668044b96c46d665debac8,Assets/07.Audio/01.SFX/FiniteRunner/Music Finite runner.mp3,AudioClip,.mp3,149010945,Port,,
-879337b09f6b3d1409d1e17eecdc2109,Assets/07.Audio/01.SFX/FiniteRunner/computerNoise_002.ogg,AudioClip,.ogg,130861,Port,,
-e106f847181bead47b2da90514220902,Assets/07.Audio/01.SFX/FiniteRunner/doorOpen_002.ogg,AudioClip,.ogg,19864,Port,,
-617e603137ae0154a8a4c461727d5b7f,Assets/07.Audio/01.SFX/FiniteRunner/explosionCrunch_003.ogg,AudioClip,.ogg,54824,Port,,
-d436ac17ba607df4c8ec6136afd46e45,Assets/07.Audio/01.SFX/FiniteRunner/laserLarge_000.ogg,AudioClip,.ogg,25566,Port,,
-40a80c9e2630aea40b8067667387fede,Assets/07.Audio/01.SFX/FiniteRunner/laserSmall_002.ogg,AudioClip,.ogg,8973,Port,,
-45898f8606c835349b9cd6abdf972810,Assets/07.Audio/01.SFX/FiniteRunner/slime_000.ogg,AudioClip,.ogg,20870,Port,,
-1ec3b2e5c117bf8439613d0e377b7e1d,Assets/07.Audio/01.SFX/FiniteRunner/spaceEngineLarge_002.ogg,AudioClip,.ogg,214424,Port,,
-f84f2815fd94ed54f9587c7b5fa66d84,Assets/07.Audio/01.SFX/FiniteRunner/thrusterFire_003.ogg,AudioClip,.ogg,196273,Port,,
-b8db834e45436404c825dd0d8154aaf3,Assets/07.Audio/02.UI/click1.ogg,AudioClip,.ogg,4983,Port,,
-41107b74b2c95894b80682f78014673a,Assets/07.Audio/02.UI/click3.ogg,AudioClip,.ogg,4880,Port,,
-7a125b87cd6282947bbbf8235f3b5ae7,Assets/07.Audio/02.UI/rollover2.ogg,AudioClip,.ogg,4701,Port,,
-2255e196007747a43ba95b9ce7cea3dd,Assets/07.Audio/02.UI/switch1.ogg,AudioClip,.ogg,6104,Port,,
-e951ddd6d4df403e968399541b05a91e,Assets/07.Audio/03.Music/LoadingScreen/M_Loading_Test.mp3,AudioClip,.mp3,3322082,Port,,
-27e7a82f1d204495921da4c97bdbc4b2,Assets/07.Audio/03.Music/MainMenu/MainMenu_Long.mp3,AudioClip,.mp3,58889739,Port,,
-6993319a50ce4bd46ad504fee8643ba6,Assets/99.Test/Diego/3DModels/ESCAPES.mat,Material,.mat,11211,Rebuild,,
-fff7b742a2fe75745a68f83f413603c5,Assets/99.Test/Diego/3DModels/PRINCIPALmat.mat,Material,.mat,11129,Rebuild,,
-0e67102124f67214f9017190e1ed5f83,Assets/99.Test/Diego/3DModels/PROPULSORmat.mat,Material,.mat,11210,Rebuild,,
-fa300260ed96f824db898165f7bf1746,Assets/99.Test/Diego/3DModels/PUNTAmat.mat,Material,.mat,11115,Rebuild,,
-fcb7b78b558cc6840a80a4c9db9c0af3,Assets/99.Test/Diego/3DModels/PiezasUNOmat.mat,Material,.mat,11119,Rebuild,,
-0a6cffa004dd71c43901f8f8d1aa4fe2,Assets/99.Test/Diego/3DModels/nabucodonosor.fbx,GameObject,.fbx,273936,Port,,
-215c680257911d54caba1b0a51eb40db,Assets/99.Test/Diego/3DModels/vidrio.mat,Material,.mat,11219,Rebuild,,
-69b9738c33f361644932af04c630c306,Assets/99.Test/Diego/Materials/FUSELAJE.mat,Material,.mat,4076,Rebuild,,
-4c58d5e7ac9cabd41aebf31118ae3a28,Assets/99.Test/Diego/Materials/FUSELAJE3.mat,Material,.mat,4083,Rebuild,,
-9ee46ee6d022df5499d6eaa27647c0da,Assets/99.Test/Diego/Materials/fuselaje2.mat,Material,.mat,4223,Rebuild,,
-f629030b4261dfe4c8732f7eae38cba2,Assets/Cyberpunk_Megapolis/Materials/Environment/CP_Air_Traffic.mat,Material,.mat,11587,Rebuild,,
-75fe407c2df052e43a78fd968dd4c9be,Assets/Cyberpunk_Megapolis/Materials/Environment/CP_Minivan.mat,Material,.mat,11508,Rebuild,,
-8eac3b1c1a5aaa341b39fd5434a3732f,Assets/Cyberpunk_Megapolis/Materials/Environment/CP_Quadron.mat,Material,.mat,11487,Rebuild,,
-f64f87150b42ca44ca9489d78bccfa07,Assets/Cyberpunk_Megapolis/Materials/Environment/CP_Taxi.mat,Material,.mat,11482,Rebuild,,
-f8d2eea6a2abec043baba5a64e5f6832,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Bus.fbx,GameObject,.fbx,21244,Port,,
-b0b91334a7806cc469f6d4a764ea76b9,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Car_01.fbx,GameObject,.fbx,24252,Port,,
-31b4d29187ddf014f920707fc30a077f,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Car_02.fbx,GameObject,.fbx,21836,Port,,
-f8f9b48fd387947459330a5c896cb5bc,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Garbage_Truck.fbx,GameObject,.fbx,25308,Port,,
-314ec9040af66fc4d85710206cf426dd,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Minibus.fbx,GameObject,.fbx,22508,Port,,
-8c759f19c1beccd458b37f895913757a,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Minivan.fbx,GameObject,.fbx,23916,Port,,
-f892e36226a0a06448dd52d6153bcfa9,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Truck.fbx,GameObject,.fbx,24476,Port,,
-86f401e4213c1984e97a24fe0ea15af0,Assets/Cyberpunk_Megapolis/Models/Car/CP_Minivan.fbx,GameObject,.fbx,342428,Port,,
-bf0fdb3730bee474aa7e802dd686df0c,Assets/Cyberpunk_Megapolis/Models/Car/CP_Quadron.fbx,GameObject,.fbx,330284,Port,,
-f6466ef5706eed946b5c7baac2a27750,Assets/Cyberpunk_Megapolis/Models/Car/CP_Taxi.fbx,GameObject,.fbx,275676,Port,,
+0359bf36a138b834794a93cb58265abc,Assets/05.Scenes/FiniteRunner_Test/ReflectionProbe-0.exr,Cubemap,.exr,170709,Not ported,,Reflection probe; rebaked with Lumen (A.1)
+3f7352895f9ea8b43b382a5dbcb4af7a,Assets/05.Scenes/FiniteRunner_Test/ReflectionProbe-1.exr,Cubemap,.exr,170650,Not ported,,Reflection probe; rebaked with Lumen (A.1)
+b4c674f79dae4478d82fa63504b87d0d,Assets/05.Scenes/LevelSelect.unity,SceneAsset,.unity,19807,Rebuild,,Map rebuilt in UE (A.1)
+8f3e6a1d5c2b4e7f9a0d1c3b5e7a9c60,Assets/05.Scenes/MainMenu.unity,SceneAsset,.unity,293471,Rebuild,,Map rebuilt in UE (A.1)
+271d5caeeee0e44b39636eb6ad2f307a,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_0.png,Texture2D,.png,574,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_0,Kenney Input Prompts (CC0)
+32cd9e4a51d4543ad96588c40fe7541b,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_1.png,Texture2D,.png,398,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_1,Kenney Input Prompts (CC0)
+2e7dabe3bbdfd4fffbd3a51e4020ba90,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_2.png,Texture2D,.png,540,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_2,Kenney Input Prompts (CC0)
+5f780f33398154d5fa8f465daf977551,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_3.png,Texture2D,.png,558,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_3,Kenney Input Prompts (CC0)
+09eef859091e54275bc61a7871cafb39,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_4.png,Texture2D,.png,405,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_4,Kenney Input Prompts (CC0)
+24fa640978614493c975f433e3b5bdff,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_5.png,Texture2D,.png,516,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_5,Kenney Input Prompts (CC0)
+203b9802b91bd43638a3457769f293a7,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_6.png,Texture2D,.png,593,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_6,Kenney Input Prompts (CC0)
+e5c9f10c473b145ed825583d3fcc025f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_7.png,Texture2D,.png,515,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_7,Kenney Input Prompts (CC0)
+2a73470e7bbb44582a06374fadd36fb0,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_8.png,Texture2D,.png,583,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_8,Kenney Input Prompts (CC0)
+69955a29c5e0a49ce98990b488f317f7,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_9.png,Texture2D,.png,583,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_9,Kenney Input Prompts (CC0)
+bb21d373df76144d28e58b86c2fc26cb,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_a.png,Texture2D,.png,651,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_a,Kenney Input Prompts (CC0)
+e488e49d35a3346f888981e7a3eee103,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_alt.png,Texture2D,.png,454,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_alt,Kenney Input Prompts (CC0)
+75cad664faf7443d0a36cd168f22dd71,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_apostrophe.png,Texture2D,.png,421,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_apostrophe,Kenney Input Prompts (CC0)
+23bd145737e2b4aa4a7ec02935c05717,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_arrow_down.png,Texture2D,.png,470,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_arrow_down,Kenney Input Prompts (CC0)
+d0da99a6094674e67bd707680ecdd902,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_arrow_left.png,Texture2D,.png,470,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_arrow_left,Kenney Input Prompts (CC0)
+1b1f93dd5812b4a6f80b1d839182559d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_arrow_right.png,Texture2D,.png,468,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_arrow_right,Kenney Input Prompts (CC0)
+c6edc1f4e05694bea96318d24200729c,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_arrow_up.png,Texture2D,.png,477,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_arrow_up,Kenney Input Prompts (CC0)
+7c22edff5cf5044f48672b96220ce9e1,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_asterisk.png,Texture2D,.png,589,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_asterisk,Kenney Input Prompts (CC0)
+57985a98d7a904343b8286d6003099a5,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_b.png,Texture2D,.png,512,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_b,Kenney Input Prompts (CC0)
+b2524a9c20fc94f0ca7c5271b71a26ed,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_backspace.png,Texture2D,.png,876,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_backspace,Kenney Input Prompts (CC0)
+00062a1419f5b41f083dad377d9bd24b,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_bracket_close.png,Texture2D,.png,397,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_bracket_close,Kenney Input Prompts (CC0)
+a2af75bc2821f4c12a4be76f28ae426c,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_bracket_open.png,Texture2D,.png,400,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_bracket_open,Kenney Input Prompts (CC0)
+833e988d5d12b455bbb79f0e33cf092f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_c.png,Texture2D,.png,628,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_c,Kenney Input Prompts (CC0)
+ba4543082fdee4168af1ac3f2ae52fed,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_capslock.png,Texture2D,.png,807,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_capslock,Kenney Input Prompts (CC0)
+d19db2a092fcc4863b1ea8ac51c748a1,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_comma.png,Texture2D,.png,464,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_comma,Kenney Input Prompts (CC0)
+70fb2a12bb25f4ecb863b7a779c28473,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_ctrl.png,Texture2D,.png,602,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_ctrl,Kenney Input Prompts (CC0)
+fb1ce58e2b9a74f12b6fefa56ec97fc9,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_d.png,Texture2D,.png,566,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_d,Kenney Input Prompts (CC0)
+dbe2008587da4487a934c5c2e8175e73,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_delete.png,Texture2D,.png,504,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_delete,Kenney Input Prompts (CC0)
+435c74698c91e48ddac3d9b148abb5e2,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_e.png,Texture2D,.png,391,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_e,Kenney Input Prompts (CC0)
+d9a1cd322185e43a588d48691bced68d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_end.png,Texture2D,.png,591,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_end,Kenney Input Prompts (CC0)
+dee302995b41b4ca09b2115e7f15ce12,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_enter.png,Texture2D,.png,685,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_enter,Kenney Input Prompts (CC0)
+8c433457a322f4af2854651447aef982,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_equals.png,Texture2D,.png,384,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_equals,Kenney Input Prompts (CC0)
+6d65ef840e3544898b8b3d8ecdd4d0a6,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_escape.png,Texture2D,.png,595,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_escape,Kenney Input Prompts (CC0)
+6216b0f72ed6646c89cd0ebf7ffd1298,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_exclamation.png,Texture2D,.png,419,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_exclamation,Kenney Input Prompts (CC0)
+e73787351ecbf416c997f37af683c14d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f.png,Texture2D,.png,390,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f,Kenney Input Prompts (CC0)
+941f6bfd97b954b13a75f13105767bc6,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f1.png,Texture2D,.png,413,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f1,Kenney Input Prompts (CC0)
+22b9af5ac836c43aa9faf03b8962755d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f10.png,Texture2D,.png,613,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f10,Kenney Input Prompts (CC0)
+78949b03fb41d4ecdb7e7132a6939fcd,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f11.png,Texture2D,.png,437,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f11,Kenney Input Prompts (CC0)
+f85faf6859b7448f99d74ebc64b87e8f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f12.png,Texture2D,.png,567,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f12,Kenney Input Prompts (CC0)
+ae2c0257c74a5471aae250ad6155b266,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f2.png,Texture2D,.png,542,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f2,Kenney Input Prompts (CC0)
+6fae984d9d3854ddca88d23330c041ed,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f3.png,Texture2D,.png,576,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f3,Kenney Input Prompts (CC0)
+35af7248a02244da9844263aa02e0e1a,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f4.png,Texture2D,.png,419,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f4,Kenney Input Prompts (CC0)
+58f7c8ba080314cbcb75163ab716933d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f5.png,Texture2D,.png,528,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f5,Kenney Input Prompts (CC0)
+6688fedd1a91e4c65a923a6d3c0b7596,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f6.png,Texture2D,.png,599,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f6,Kenney Input Prompts (CC0)
+4f3ae0b32e4694deea819dff67aeb172,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f7.png,Texture2D,.png,514,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f7,Kenney Input Prompts (CC0)
+4fb2aaa0481cd4701894416d81579d6e,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f8.png,Texture2D,.png,595,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f8,Kenney Input Prompts (CC0)
+427304403737c4c3d9ae5c41f45526c2,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f9.png,Texture2D,.png,589,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_f9,Kenney Input Prompts (CC0)
+5c6465263af0a4b58880e1a925d1a8fa,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_g.png,Texture2D,.png,660,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_g,Kenney Input Prompts (CC0)
+7fdf2c5fe166a4b4d989a4746fd1c585,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_h.png,Texture2D,.png,407,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_h,Kenney Input Prompts (CC0)
+27700b423dbba4fc1b663293b1741e1f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_home.png,Texture2D,.png,594,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_home,Kenney Input Prompts (CC0)
+492b59f099bb34b2981f45014a7b324d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_i.png,Texture2D,.png,382,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_i,Kenney Input Prompts (CC0)
+9c1671f721f314b6ca498acd20af828c,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_insert.png,Texture2D,.png,604,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_insert,Kenney Input Prompts (CC0)
+7e935d7d4599b4cf18966d10ccc4b448,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_j.png,Texture2D,.png,461,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_j,Kenney Input Prompts (CC0)
+da31bc1094df34545b2a16a80edd0345,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_k.png,Texture2D,.png,551,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_k,Kenney Input Prompts (CC0)
+914519e15e9804ad09ffa661d3565d72,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_l.png,Texture2D,.png,385,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_l,Kenney Input Prompts (CC0)
+c3f19acb5772c44e0afd4f585bfe0cf0,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_m.png,Texture2D,.png,592,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_m,Kenney Input Prompts (CC0)
+49fd80c6d0a4f45169d51a55ec0da84e,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_minus.png,Texture2D,.png,381,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_minus,Kenney Input Prompts (CC0)
+2c6b8154be5314be989a2ab23b34237c,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_n.png,Texture2D,.png,537,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_n,Kenney Input Prompts (CC0)
+8707b7be81c554bfd8c61ae334e5ffaa,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_numlock.png,Texture2D,.png,737,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_numlock,Kenney Input Prompts (CC0)
+81c0fe756e6b94f08a263589df2c2629,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_numpad_enter.png,Texture2D,.png,629,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_numpad_enter,Kenney Input Prompts (CC0)
+332d85e9a76194c0bbc0c49ed8298425,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_numpad_plus.png,Texture2D,.png,386,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_numpad_plus,Kenney Input Prompts (CC0)
+5bf12abf1672e48c390b962360fafa0a,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_o.png,Texture2D,.png,655,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_o,Kenney Input Prompts (CC0)
+fc58cfb0e35134b7a886eed3e8a35c1d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_p.png,Texture2D,.png,496,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_p,Kenney Input Prompts (CC0)
+63f85963418ef46609178832ba80315f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_page_down.png,Texture2D,.png,887,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_page_down,Kenney Input Prompts (CC0)
+650cdfebb4ba043e3b2b76e41be68eb6,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_page_up.png,Texture2D,.png,692,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_page_up,Kenney Input Prompts (CC0)
+4144d88c1d4c749d897bdd0ff19fed3d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_pause_break.png,Texture2D,.png,911,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_pause_break,Kenney Input Prompts (CC0)
+09459149b9bf44f7db5659e1aa4275e8,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_period.png,Texture2D,.png,420,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_period,Kenney Input Prompts (CC0)
+2e9093ce7e6a24c05b51c4329d8f29bb,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_printscreen.png,Texture2D,.png,818,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_printscreen,Kenney Input Prompts (CC0)
+a548b7dfe46444562ab20c468ed8242e,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_q.png,Texture2D,.png,623,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_q,Kenney Input Prompts (CC0)
+f4374ad8a0a4e4767b70c73e8ee135ed,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_r.png,Texture2D,.png,531,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_r,Kenney Input Prompts (CC0)
+35c3a9c1953614ec59947bd1137c9f1e,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_s.png,Texture2D,.png,636,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_s,Kenney Input Prompts (CC0)
+2d84bb5eaa2c64a678a1468754213b46,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_scroll_lock.png,Texture2D,.png,861,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_scroll_lock,Kenney Input Prompts (CC0)
+20e639824b6df4f64b6050c58ee4bd8e,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_semicolon.png,Texture2D,.png,475,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_semicolon,Kenney Input Prompts (CC0)
+ff1aba59e3eca420e8d219b18a71e084,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_shift.png,Texture2D,.png,576,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_shift,Kenney Input Prompts (CC0)
+d37623154508b4694b98df7989b3f5a4,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_slash_back.png,Texture2D,.png,568,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_slash_back,Kenney Input Prompts (CC0)
+54cd0219acf43492b8949e6997908c13,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_slash_forward.png,Texture2D,.png,551,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_slash_forward,Kenney Input Prompts (CC0)
+1b3c3eeb7543c47e6ad0c882c6f4aa1d,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_space.png,Texture2D,.png,678,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_space,Kenney Input Prompts (CC0)
+dbe4d8081f38e484bb2fe64d66860abe,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_t.png,Texture2D,.png,388,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_t,Kenney Input Prompts (CC0)
+805d98f7cc7e041ac9741d5f5e7e00fd,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_tab.png,Texture2D,.png,523,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_tab,Kenney Input Prompts (CC0)
+112e5b0b51e3f42b794ef539a871841a,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_tilde.png,Texture2D,.png,532,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_tilde,Kenney Input Prompts (CC0)
+f9020f8ed146849319608447db1c959f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_u.png,Texture2D,.png,533,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_u,Kenney Input Prompts (CC0)
+2b14af1460e604cacb80e66841bdd51f,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_v.png,Texture2D,.png,655,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_v,Kenney Input Prompts (CC0)
+f7ab0afe4a0ec4405bb4ff2af7092334,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_w.png,Texture2D,.png,698,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_w,Kenney Input Prompts (CC0)
+ee37d541d508d4e599ffc6c631679746,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_win.png,Texture2D,.png,453,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_win,Kenney Input Prompts (CC0)
+7aaa07a46b7b04c5eb0b9a7176f06f75,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_x.png,Texture2D,.png,704,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_x,Kenney Input Prompts (CC0)
+6fd6554f133ee4a43a2a6897fcea35b2,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_y.png,Texture2D,.png,583,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_y,Kenney Input Prompts (CC0)
+5e159a5ba8dc546e2a4716d11b59bc72,Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_z.png,Texture2D,.png,513,Port,/Game/Runner/UI/Glyphs/KBM/T_Keyboard_z,Kenney Input Prompts (CC0)
+740dd8cd37cc2448a9950b5ee2cfd977,Assets/06.UI/01.Sprites/PNG/Blue/Default/bar_round_large.png,Texture2D,.png,508,Port,/Game/Runner/UI/Panels/T_BlueDefault_Bar_round_large,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+3488a852bdde3474cb95ae3203f70ae2,Assets/06.UI/01.Sprites/PNG/Blue/Default/button_square_header_small_square.png,Texture2D,.png,391,Port,/Game/Runner/UI/Panels/T_BlueDefault_Button_square_header_small_square,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+166c4ec23c33f4cc298824f485a19c8d,Assets/06.UI/01.Sprites/PNG/Green/Default/button_square_header_large_rectangle.png,Texture2D,.png,428,Port,/Game/Runner/UI/Panels/T_GreenDefault_Button_square_header_large_rectangle,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+fdee2c6b9c6414f26b1d33bab4f158be,Assets/06.UI/01.Sprites/PNG/Grey/Default/bar_round_gloss_large.png,Texture2D,.png,547,Port,/Game/Runner/UI/Panels/T_GreyDefault_Bar_round_gloss_large,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+feeebd8dc503f4396b33e0bf1ce21a69,Assets/06.UI/01.Sprites/PNG/Grey/Default/bar_round_large_square.png,Texture2D,.png,475,Port,/Game/Runner/UI/Panels/T_GreyDefault_Bar_round_large_square,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+ac47b1436bca74cb2b3b419c75bdb390,Assets/06.UI/01.Sprites/PNG/Grey/Double/bar_round_gloss_large.png,Texture2D,.png,917,Port,/Game/Runner/UI/Panels/T_GreyDouble_Bar_round_gloss_large,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+3d658e5ed19844d5498518e497b0df0a,Assets/06.UI/01.Sprites/PNG/Red/Double/bar_round_gloss_large.png,Texture2D,.png,930,Port,/Game/Runner/UI/Panels/T_RedDouble_Bar_round_gloss_large,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+9383e918747f74236976cb9d5d414ed6,Assets/06.UI/01.Sprites/PNG/Red/Double/bar_round_large.png,Texture2D,.png,888,Port,/Game/Runner/UI/Panels/T_RedDouble_Bar_round_large,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+db5084dcddbce4189a4e257530c218f7,Assets/06.UI/01.Sprites/PNG/Red/Double/bar_square_small_square.png,Texture2D,.png,291,Port,/Game/Runner/UI/Panels/T_RedDouble_Bar_square_small_square,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+16642dcda0fca4066ac445f024193472,Assets/06.UI/01.Sprites/PNG/Red/Double/button_square_header_blade_rectangle_screws.png,Texture2D,.png,1305,Port,/Game/Runner/UI/Panels/T_RedDouble_Button_square_header_blade_rectangle_screws,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+854003face7944baca5b8545c23955ba,Assets/06.UI/01.Sprites/PNG/Red/Double/button_square_header_notch_rectangle.png,Texture2D,.png,1025,Port,/Game/Runner/UI/Panels/T_RedDouble_Button_square_header_notch_rectangle,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+c7ff5f883de2044118f6b449f719b0f0,Assets/06.UI/01.Sprites/PNG/Red/Double/button_square_header_small_rectangle.png,Texture2D,.png,811,Port,/Game/Runner/UI/Panels/T_RedDouble_Button_square_header_small_rectangle,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+d63de7b3b21b242b796d9defd7a9b5c0,Assets/06.UI/01.Sprites/PNG/Red/Double/crosshair_color_a.png,Texture2D,.png,954,Port,/Game/Runner/UI/Panels/T_RedDouble_Crosshair_color_a,Kenney UI Pack (CC0); brush BR_ beside it carries the Unity 9-slice border
+5a77a95c8e3d85c4d8a35ec7b273f96b,Assets/06.UI/01.Sprites/Xbox Series/Double/keyboard_exclamation_outline.png,Texture2D,.png,498,Port,/Game/Runner/UI/Glyphs/Xbox/T_Keyboard_exclamation_outline,Kenney Input Prompts (CC0)
+dfe23cc467b4d9044822194b3c6473df,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_a.png,Texture2D,.png,864,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_button_a,Kenney Input Prompts (CC0)
+da634deeda298154083c7047443c947c,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_b.png,Texture2D,.png,799,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_button_b,Kenney Input Prompts (CC0)
+8c8d11c317cdbd14aba974969e80b331,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_back.png,Texture2D,.png,777,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_button_back,Kenney Input Prompts (CC0)
+531ec807fa529d9448fc149fbf98a6cc,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_color_a.png,Texture2D,.png,864,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_button_color_a,Kenney Input Prompts (CC0)
+f9ee2e6b43a74c0439f41e699ca2bf0d,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_color_b.png,Texture2D,.png,799,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_button_color_b,Kenney Input Prompts (CC0)
+7f2de31835a74104ea4a35db6e09b80d,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_color_x.png,Texture2D,.png,922,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_button_color_x,Kenney Input Prompts (CC0)
+4399250cce227d845a6020203ab48349,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_color_y.png,Texture2D,.png,845,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_button_color_y,Kenney Input Prompts (CC0)
+0fee7badf73365447874bfd88bda357e,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_start.png,Texture2D,.png,800,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_button_start,Kenney Input Prompts (CC0)
+b3b18116a0b99394cb144f28f9db27e5,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_x.png,Texture2D,.png,922,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_button_x,Kenney Input Prompts (CC0)
+71e7436a8b1d86e44b4fb62bf86f6e3f,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_y.png,Texture2D,.png,845,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_button_y,Kenney Input Prompts (CC0)
+3d59c71c3325444478b593909b205c8d,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_down.png,Texture2D,.png,381,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_dpad_down,Kenney Input Prompts (CC0)
+7d774c45743f92d4da07887e72b2cbfe,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_horizontal.png,Texture2D,.png,405,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_dpad_horizontal,Kenney Input Prompts (CC0)
+dd46d4f746983f943bbdfd6f05b6b35c,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_left.png,Texture2D,.png,397,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_dpad_left,Kenney Input Prompts (CC0)
+c7dc8780f92b77647a4aaaafb86eb45b,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_right.png,Texture2D,.png,401,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_dpad_right,Kenney Input Prompts (CC0)
+7e8406529c63419408c5d363055ea6a9,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_up.png,Texture2D,.png,394,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_dpad_up,Kenney Input Prompts (CC0)
+723482a838f1a314899d27609d021519,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_vertical.png,Texture2D,.png,389,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_dpad_vertical,Kenney Input Prompts (CC0)
+bb4fca19ea4a47641836e03a3420c480,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_lb.png,Texture2D,.png,542,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_lb,Kenney Input Prompts (CC0)
+e08baf56af40e5949b4a25604b2f9db4,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_lt.png,Texture2D,.png,495,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_lt,Kenney Input Prompts (CC0)
+3d3f11b6a53fc104a8630ea0237f2827,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_rb.png,Texture2D,.png,638,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_rb,Kenney Input Prompts (CC0)
+c36808beae0534a43a5e2bdac0451628,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_rt.png,Texture2D,.png,627,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_rt,Kenney Input Prompts (CC0)
+bec9b834a77ddda46a081eef58e81e7f,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_down.png,Texture2D,.png,1218,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_stick_l_down,Kenney Input Prompts (CC0)
+423de3a475c870944987b55f3cd79925,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_left.png,Texture2D,.png,1137,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_stick_l_left,Kenney Input Prompts (CC0)
+1cf7321863aa551449ee19d983d217a1,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_press.png,Texture2D,.png,1200,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_stick_l_press,Kenney Input Prompts (CC0)
+e1bc14c3b328b3a429762be0d6519a2e,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_right.png,Texture2D,.png,1131,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_stick_l_right,Kenney Input Prompts (CC0)
+f1369791903b8b0408eb6a50c88f7d94,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_up.png,Texture2D,.png,1195,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_stick_l_up,Kenney Input Prompts (CC0)
+e7a41810558384947bdb5604e37dfa02,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_down.png,Texture2D,.png,1285,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_stick_r_down,Kenney Input Prompts (CC0)
+3b0d515d1829e5b47a95cb01fe3da5fe,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_left.png,Texture2D,.png,1204,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_stick_r_left,Kenney Input Prompts (CC0)
+aa2e779190333324e92387091cd1831d,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_press.png,Texture2D,.png,1261,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_stick_r_press,Kenney Input Prompts (CC0)
+c3f7b8ae52d295b4fa7d34abe8de4001,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_right.png,Texture2D,.png,1209,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_stick_r_right,Kenney Input Prompts (CC0)
+0796773c0a6e56042bfceb815938eb1a,Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_up.png,Texture2D,.png,1260,Port,/Game/Runner/UI/Glyphs/Xbox/T_Xbox_stick_r_up,Kenney Input Prompts (CC0)
+e2be03aa6816d4a44a5744417d34ce3e,Assets/06.UI/02.Fonts/Kenney Future Narrow.ttf,Font,.ttf,34180,Port,/Game/Runner/UI/Fonts/FF_KenneyFutureNarrow,"Font Face; Font F_KenneyFutureNarrow beside it, Japanese fallback = engine DroidSansFallback (A.13.6)"
+fd796841f874d4c1cbdd0dab23c9360e,Assets/06.UI/02.Fonts/Kenney Future.ttf,Font,.ttf,34160,Port,/Game/Runner/UI/Fonts/FF_KenneyFuture,"Font Face; Font F_KenneyFuture beside it, Japanese fallback = engine DroidSansFallback (A.13.6)"
+23bc164700668044b96c46d665debac8,Assets/07.Audio/01.SFX/FiniteRunner/Music Finite runner.mp3,AudioClip,.mp3,149010945,Port,/Game/Runner/Audio/Music/S_RunnerMusic,Streamed; decoded to PCM on import
+879337b09f6b3d1409d1e17eecdc2109,Assets/07.Audio/01.SFX/FiniteRunner/computerNoise_002.ogg,AudioClip,.ogg,130861,Port,/Game/Runner/Audio/UI/S_ComputerNoise_002,Kenney Sci-Fi Sounds (CC0)
+e106f847181bead47b2da90514220902,Assets/07.Audio/01.SFX/FiniteRunner/doorOpen_002.ogg,AudioClip,.ogg,19864,Port,/Game/Runner/Audio/SFX/S_DoorOpen_002,Kenney Sci-Fi Sounds (CC0)
+617e603137ae0154a8a4c461727d5b7f,Assets/07.Audio/01.SFX/FiniteRunner/explosionCrunch_003.ogg,AudioClip,.ogg,54824,Port,/Game/Runner/Audio/SFX/S_ExplosionCrunch_003,Kenney Sci-Fi Sounds (CC0)
+d436ac17ba607df4c8ec6136afd46e45,Assets/07.Audio/01.SFX/FiniteRunner/laserLarge_000.ogg,AudioClip,.ogg,25566,Port,/Game/Runner/Audio/SFX/S_LaserLarge_000,Kenney Sci-Fi Sounds (CC0)
+40a80c9e2630aea40b8067667387fede,Assets/07.Audio/01.SFX/FiniteRunner/laserSmall_002.ogg,AudioClip,.ogg,8973,Port,/Game/Runner/Audio/SFX/S_LaserSmall_002,Kenney Sci-Fi Sounds (CC0)
+45898f8606c835349b9cd6abdf972810,Assets/07.Audio/01.SFX/FiniteRunner/slime_000.ogg,AudioClip,.ogg,20870,Not ported,,Brake pad sound (A.7)
+1ec3b2e5c117bf8439613d0e377b7e1d,Assets/07.Audio/01.SFX/FiniteRunner/spaceEngineLarge_002.ogg,AudioClip,.ogg,214424,Port,/Game/Runner/Audio/SFX/S_SpaceEngineLarge_002,Kenney Sci-Fi Sounds (CC0)
+f84f2815fd94ed54f9587c7b5fa66d84,Assets/07.Audio/01.SFX/FiniteRunner/thrusterFire_003.ogg,AudioClip,.ogg,196273,Port,/Game/Runner/Audio/SFX/S_ThrusterFire_003,Kenney Sci-Fi Sounds (CC0)
+b8db834e45436404c825dd0d8154aaf3,Assets/07.Audio/02.UI/click1.ogg,AudioClip,.ogg,4983,Port,/Game/Runner/Audio/UI/S_Click1,Kenney UI Audio (CC0)
+41107b74b2c95894b80682f78014673a,Assets/07.Audio/02.UI/click3.ogg,AudioClip,.ogg,4880,Port,/Game/Runner/Audio/UI/S_Click3,Kenney UI Audio (CC0)
+7a125b87cd6282947bbbf8235f3b5ae7,Assets/07.Audio/02.UI/rollover2.ogg,AudioClip,.ogg,4701,Port,/Game/Runner/Audio/UI/S_Rollover2,Kenney UI Audio (CC0)
+2255e196007747a43ba95b9ce7cea3dd,Assets/07.Audio/02.UI/switch1.ogg,AudioClip,.ogg,6104,Port,/Game/Runner/Audio/UI/S_Switch1,Kenney UI Audio (CC0)
+e951ddd6d4df403e968399541b05a91e,Assets/07.Audio/03.Music/LoadingScreen/M_Loading_Test.mp3,AudioClip,.mp3,3322082,Port,/Game/Runner/Audio/Music/S_M_Loading_Test,Streamed; decoded to PCM on import
+27e7a82f1d204495921da4c97bdbc4b2,Assets/07.Audio/03.Music/MainMenu/MainMenu_Long.mp3,AudioClip,.mp3,58889739,Port,/Game/Runner/Audio/Music/S_MainMenu_Long,Streamed; decoded to PCM on import
+6993319a50ce4bd46ad504fee8643ba6,Assets/99.Test/Diego/3DModels/ESCAPES.mat,Material,.mat,11211,Rebuild,/Game/Runner/Materials/Ship/MI_ESCAPES,Instance of M_Toon (was RealToon)
+fff7b742a2fe75745a68f83f413603c5,Assets/99.Test/Diego/3DModels/PRINCIPALmat.mat,Material,.mat,11129,Rebuild,/Game/Runner/Materials/Ship/MI_PRINCIPALmat,Instance of M_Toon (was RealToon)
+0e67102124f67214f9017190e1ed5f83,Assets/99.Test/Diego/3DModels/PROPULSORmat.mat,Material,.mat,11210,Rebuild,/Game/Runner/Materials/Ship/MI_PROPULSORmat,Instance of M_Toon (was RealToon)
+fa300260ed96f824db898165f7bf1746,Assets/99.Test/Diego/3DModels/PUNTAmat.mat,Material,.mat,11115,Rebuild,/Game/Runner/Materials/Ship/MI_PUNTAmat,Instance of M_Toon (was RealToon)
+fcb7b78b558cc6840a80a4c9db9c0af3,Assets/99.Test/Diego/3DModels/PiezasUNOmat.mat,Material,.mat,11119,Rebuild,/Game/Runner/Materials/Ship/MI_PiezasUNOmat,Instance of M_Toon (was RealToon)
+0a6cffa004dd71c43901f8f8d1aa4fe2,Assets/99.Test/Diego/3DModels/nabucodonosor.fbx,GameObject,.fbx,273936,Port,/Game/Runner/Meshes/Ship/SM_Ship,"Imported from 99.Test/Diego (A.13.1: left in place in Unity, noted here)"
+215c680257911d54caba1b0a51eb40db,Assets/99.Test/Diego/3DModels/vidrio.mat,Material,.mat,11219,Rebuild,/Game/Runner/Materials/Ship/MI_Vidrio,Instance of M_Toon (was RealToon)
+69b9738c33f361644932af04c630c306,Assets/99.Test/Diego/Materials/FUSELAJE.mat,Material,.mat,4076,Port,/Game/Runner/Materials/Ship/MI_FUSELAJE,Instance of M_Lit
+4c58d5e7ac9cabd41aebf31118ae3a28,Assets/99.Test/Diego/Materials/FUSELAJE3.mat,Material,.mat,4083,Port,/Game/Runner/Materials/Ship/MI_FUSELAJE3,Instance of M_Lit
+9ee46ee6d022df5499d6eaa27647c0da,Assets/99.Test/Diego/Materials/fuselaje2.mat,Material,.mat,4223,Port,/Game/Runner/Materials/Ship/MI_Fuselaje2,Instance of M_Lit
+f629030b4261dfe4c8732f7eae38cba2,Assets/Cyberpunk_Megapolis/Materials/Environment/CP_Air_Traffic.mat,Material,.mat,11587,Rebuild,/Game/Runner/Materials/Vehicles/MI_CP_Air_Traffic,"Instance of M_Toon (was RealToon; _A main, _E self-lit mask)"
+75fe407c2df052e43a78fd968dd4c9be,Assets/Cyberpunk_Megapolis/Materials/Environment/CP_Minivan.mat,Material,.mat,11508,Rebuild,/Game/Runner/Materials/Vehicles/MI_CP_Minivan,"Instance of M_Toon (was RealToon; _A main, _E self-lit mask)"
+8eac3b1c1a5aaa341b39fd5434a3732f,Assets/Cyberpunk_Megapolis/Materials/Environment/CP_Quadron.mat,Material,.mat,11487,Rebuild,/Game/Runner/Materials/Vehicles/MI_CP_Quadron,"Instance of M_Toon (was RealToon; _A main, _E self-lit mask)"
+f64f87150b42ca44ca9489d78bccfa07,Assets/Cyberpunk_Megapolis/Materials/Environment/CP_Taxi.mat,Material,.mat,11482,Rebuild,/Game/Runner/Materials/Vehicles/MI_CP_Taxi,"Instance of M_Toon (was RealToon; _A main, _E self-lit mask)"
+f8d2eea6a2abec043baba5a64e5f6832,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Bus.fbx,GameObject,.fbx,21244,Port,/Game/Runner/Meshes/Vehicles/SM_CP_Air_Traffic_Bus,Cyberpunk Megapolis
+b0b91334a7806cc469f6d4a764ea76b9,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Car_01.fbx,GameObject,.fbx,24252,Port,/Game/Runner/Meshes/Vehicles/SM_CP_Air_Traffic_Car_01,Cyberpunk Megapolis
+31b4d29187ddf014f920707fc30a077f,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Car_02.fbx,GameObject,.fbx,21836,Port,/Game/Runner/Meshes/Vehicles/SM_CP_Air_Traffic_Car_02,Cyberpunk Megapolis
+f8f9b48fd387947459330a5c896cb5bc,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Garbage_Truck.fbx,GameObject,.fbx,25308,Port,/Game/Runner/Meshes/Vehicles/SM_CP_Air_Traffic_Garbage_Truck,Cyberpunk Megapolis
+314ec9040af66fc4d85710206cf426dd,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Minibus.fbx,GameObject,.fbx,22508,Port,/Game/Runner/Meshes/Vehicles/SM_CP_Air_Traffic_Minibus,Cyberpunk Megapolis
+8c759f19c1beccd458b37f895913757a,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Minivan.fbx,GameObject,.fbx,23916,Port,/Game/Runner/Meshes/Vehicles/SM_CP_Air_Traffic_Minivan,Cyberpunk Megapolis
+f892e36226a0a06448dd52d6153bcfa9,Assets/Cyberpunk_Megapolis/Models/Car/CP_Air_Traffic_Truck.fbx,GameObject,.fbx,24476,Port,/Game/Runner/Meshes/Vehicles/SM_CP_Air_Traffic_Truck,Cyberpunk Megapolis
+86f401e4213c1984e97a24fe0ea15af0,Assets/Cyberpunk_Megapolis/Models/Car/CP_Minivan.fbx,GameObject,.fbx,342428,Port,/Game/Runner/Meshes/Vehicles/SM_CP_Minivan,Cyberpunk Megapolis
+bf0fdb3730bee474aa7e802dd686df0c,Assets/Cyberpunk_Megapolis/Models/Car/CP_Quadron.fbx,GameObject,.fbx,330284,Port,/Game/Runner/Meshes/Vehicles/SM_CP_Quadron,Cyberpunk Megapolis
+f6466ef5706eed946b5c7baac2a27750,Assets/Cyberpunk_Megapolis/Models/Car/CP_Taxi.fbx,GameObject,.fbx,275676,Port,/Game/Runner/Meshes/Vehicles/SM_CP_Taxi,Cyberpunk Megapolis
 f8a73d8ad9651a24393cc0737ee0317f,Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Bus.prefab,GameObject,.prefab,3659,Rebuild,,
 3f0880bf858cf934bb829dde58bc3698,Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Car_02.prefab,GameObject,.prefab,3679,Rebuild,,
 c91e4281bd266b14d9e9f0e26d572107,Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Garbage_Truck.prefab,GameObject,.prefab,3662,Rebuild,,
@@ -452,24 +452,24 @@ d328a71420fedfd4792b69388c44cc95,Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_T
 ffa093b655d5fd14592f519601e259b8,Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Minivan.prefab,GameObject,.prefab,40313,Rebuild,,
 e4e6780fb9cfcfe47bca8f156bebc45e,Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Quadron.prefab,GameObject,.prefab,40219,Rebuild,,
 3277a38815cced548bca27a8246d48be,Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Taxi.prefab,GameObject,.prefab,40155,Rebuild,,
-f6ba75fe5e900d743af89d49bb4a6779,Assets/Cyberpunk_Megapolis/Textures/CP_Air_Traffic/CP_Air_Traffic_A.tga,Texture2D,.tga,12582956,Port,,
-6389989103504bf49a717d92c3d64b99,Assets/Cyberpunk_Megapolis/Textures/CP_Air_Traffic/CP_Air_Traffic_AO.tga,Texture2D,.tga,12582956,Port,,
-d73acc4d38f0ab44fa353c80a6e8ada8,Assets/Cyberpunk_Megapolis/Textures/CP_Air_Traffic/CP_Air_Traffic_E.tga,Texture2D,.tga,12582956,Port,,
-8a3e87d01bd17474e8b4cdc8c7fac037,Assets/Cyberpunk_Megapolis/Textures/CP_Air_Traffic/CP_Air_Traffic_MS.tga,Texture2D,.tga,16777260,Port,,
-acaf64b7cba9d2b4ba9d87bb6d05cf69,Assets/Cyberpunk_Megapolis/Textures/CP_Air_Traffic/CP_Air_Traffic_N.tga,Texture2D,.tga,12582956,Port,,
-d2767fd6b89f7c0478ab8c55b0487624,Assets/Cyberpunk_Megapolis/Textures/CP_Minivan/CP_Minivan_A.tga,Texture2D,.tga,12582956,Port,,
-a2c2df7b9ff7b8d47848a4b5d05a52c7,Assets/Cyberpunk_Megapolis/Textures/CP_Minivan/CP_Minivan_AO.tga,Texture2D,.tga,12582956,Port,,
-7542b2df2e507e5489e625b52a5e6a60,Assets/Cyberpunk_Megapolis/Textures/CP_Minivan/CP_Minivan_E.tga,Texture2D,.tga,12582956,Port,,
-eff3693fd0f464d4894f033afa6690f5,Assets/Cyberpunk_Megapolis/Textures/CP_Minivan/CP_Minivan_MS.tga,Texture2D,.tga,16777260,Port,,
-cb16798623a0c8540835e058a26dff2f,Assets/Cyberpunk_Megapolis/Textures/CP_Minivan/CP_Minivan_N.tga,Texture2D,.tga,12582956,Port,,
-8bbdc216fcb77f24296ad119d7c718ca,Assets/Cyberpunk_Megapolis/Textures/CP_Quadron/CP_Quadron_A.tga,Texture2D,.tga,12582956,Port,,
-fcae0a94780ed7641be34dc295e81373,Assets/Cyberpunk_Megapolis/Textures/CP_Quadron/CP_Quadron_AO.tga,Texture2D,.tga,12582956,Port,,
-3701d56346cb5404c8053112bfad9c07,Assets/Cyberpunk_Megapolis/Textures/CP_Quadron/CP_Quadron_E.tga,Texture2D,.tga,12582956,Port,,
-1bb4ada1e7462644d981f3b8230db7ae,Assets/Cyberpunk_Megapolis/Textures/CP_Quadron/CP_Quadron_MS.tga,Texture2D,.tga,16777260,Port,,
-8b59c6eb75dba7f4a84e44746f7a7611,Assets/Cyberpunk_Megapolis/Textures/CP_Quadron/CP_Quadron_N.tga,Texture2D,.tga,12582956,Port,,
-0b173327a9ec8b940810ca18778fdb09,Assets/Cyberpunk_Megapolis/Textures/CP_Taxi/CP_Taxi_A.tga,Texture2D,.tga,12582956,Port,,
-94ec9941ecc2d16449ebfd15e86c9503,Assets/Cyberpunk_Megapolis/Textures/CP_Taxi/CP_Taxi_AO.tga,Texture2D,.tga,12582956,Port,,
-e78c486ea67ed2944836725f09458db0,Assets/Cyberpunk_Megapolis/Textures/CP_Taxi/CP_Taxi_E.tga,Texture2D,.tga,12582956,Port,,
-9b4ae8443963e764bb81ea77a0f5f851,Assets/Cyberpunk_Megapolis/Textures/CP_Taxi/CP_Taxi_MS.tga,Texture2D,.tga,16777260,Port,,
-957a40ad36c1b9c48bae34db0d43f3c1,Assets/Cyberpunk_Megapolis/Textures/CP_Taxi/CP_Taxi_N.tga,Texture2D,.tga,12582956,Port,,
+f6ba75fe5e900d743af89d49bb4a6779,Assets/Cyberpunk_Megapolis/Textures/CP_Air_Traffic/CP_Air_Traffic_A.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Air_Traffic_A,Cyberpunk Megapolis
+6389989103504bf49a717d92c3d64b99,Assets/Cyberpunk_Megapolis/Textures/CP_Air_Traffic/CP_Air_Traffic_AO.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Air_Traffic_AO,Cyberpunk Megapolis
+d73acc4d38f0ab44fa353c80a6e8ada8,Assets/Cyberpunk_Megapolis/Textures/CP_Air_Traffic/CP_Air_Traffic_E.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Air_Traffic_E,Cyberpunk Megapolis
+8a3e87d01bd17474e8b4cdc8c7fac037,Assets/Cyberpunk_Megapolis/Textures/CP_Air_Traffic/CP_Air_Traffic_MS.tga,Texture2D,.tga,16777260,Port,/Game/Runner/Textures/Vehicles/T_CP_Air_Traffic_MS,Cyberpunk Megapolis
+acaf64b7cba9d2b4ba9d87bb6d05cf69,Assets/Cyberpunk_Megapolis/Textures/CP_Air_Traffic/CP_Air_Traffic_N.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Air_Traffic_N,Cyberpunk Megapolis
+d2767fd6b89f7c0478ab8c55b0487624,Assets/Cyberpunk_Megapolis/Textures/CP_Minivan/CP_Minivan_A.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Minivan_A,Cyberpunk Megapolis
+a2c2df7b9ff7b8d47848a4b5d05a52c7,Assets/Cyberpunk_Megapolis/Textures/CP_Minivan/CP_Minivan_AO.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Minivan_AO,Cyberpunk Megapolis
+7542b2df2e507e5489e625b52a5e6a60,Assets/Cyberpunk_Megapolis/Textures/CP_Minivan/CP_Minivan_E.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Minivan_E,Cyberpunk Megapolis
+eff3693fd0f464d4894f033afa6690f5,Assets/Cyberpunk_Megapolis/Textures/CP_Minivan/CP_Minivan_MS.tga,Texture2D,.tga,16777260,Port,/Game/Runner/Textures/Vehicles/T_CP_Minivan_MS,Cyberpunk Megapolis
+cb16798623a0c8540835e058a26dff2f,Assets/Cyberpunk_Megapolis/Textures/CP_Minivan/CP_Minivan_N.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Minivan_N,Cyberpunk Megapolis
+8bbdc216fcb77f24296ad119d7c718ca,Assets/Cyberpunk_Megapolis/Textures/CP_Quadron/CP_Quadron_A.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Quadron_A,Cyberpunk Megapolis
+fcae0a94780ed7641be34dc295e81373,Assets/Cyberpunk_Megapolis/Textures/CP_Quadron/CP_Quadron_AO.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Quadron_AO,Cyberpunk Megapolis
+3701d56346cb5404c8053112bfad9c07,Assets/Cyberpunk_Megapolis/Textures/CP_Quadron/CP_Quadron_E.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Quadron_E,Cyberpunk Megapolis
+1bb4ada1e7462644d981f3b8230db7ae,Assets/Cyberpunk_Megapolis/Textures/CP_Quadron/CP_Quadron_MS.tga,Texture2D,.tga,16777260,Port,/Game/Runner/Textures/Vehicles/T_CP_Quadron_MS,Cyberpunk Megapolis
+8b59c6eb75dba7f4a84e44746f7a7611,Assets/Cyberpunk_Megapolis/Textures/CP_Quadron/CP_Quadron_N.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Quadron_N,Cyberpunk Megapolis
+0b173327a9ec8b940810ca18778fdb09,Assets/Cyberpunk_Megapolis/Textures/CP_Taxi/CP_Taxi_A.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Taxi_A,Cyberpunk Megapolis
+94ec9941ecc2d16449ebfd15e86c9503,Assets/Cyberpunk_Megapolis/Textures/CP_Taxi/CP_Taxi_AO.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Taxi_AO,Cyberpunk Megapolis
+e78c486ea67ed2944836725f09458db0,Assets/Cyberpunk_Megapolis/Textures/CP_Taxi/CP_Taxi_E.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Taxi_E,Cyberpunk Megapolis
+9b4ae8443963e764bb81ea77a0f5f851,Assets/Cyberpunk_Megapolis/Textures/CP_Taxi/CP_Taxi_MS.tga,Texture2D,.tga,16777260,Port,/Game/Runner/Textures/Vehicles/T_CP_Taxi_MS,Cyberpunk Megapolis
+957a40ad36c1b9c48bae34db0d43f3c1,Assets/Cyberpunk_Megapolis/Textures/CP_Taxi/CP_Taxi_N.tga,Texture2D,.tga,12582956,Port,/Game/Runner/Textures/Vehicles/T_CP_Taxi_N,Cyberpunk Megapolis
 6459b2db96a08ca41b0f9b39dc7ad59e,Assets/RealToon/RealToon Shaders/Version 5/URP/Default/D_Default_URP.shader,Shader,.shader,128104,Rebuild,,
