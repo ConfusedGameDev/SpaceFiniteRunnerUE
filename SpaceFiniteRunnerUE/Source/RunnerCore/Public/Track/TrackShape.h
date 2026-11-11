@@ -4,9 +4,16 @@
 #include "Engine/DataAsset.h"
 #include "TrackShape.generated.h"
 
+class FTrackSection;
+class UTrackModel;
+struct FRunnerRandom;
+
 /**
- * Base of every track feature kind the generator can place (jumps, loops, tubes).
- * The concrete definitions land with the track core (M2).
+ * Base of every track feature kind the generator can place (jumps, loops, tubes). A feature
+ * occupies a footprint (FootprintLength, or the length of the section it builds) that pickups keep
+ * off when ClaimsFootprint, and an ExclusionAhead no other feature may start in. A feature that
+ * owns its pose over its footprint builds a section through CreateSection, at the knot the
+ * generator landed on its spot. The generator plays a runtime copy, never the asset.
  */
 UCLASS(Abstract, BlueprintType)
 class RUNNERCORE_API UTrackFeatureDefinition : public UPrimaryDataAsset
@@ -17,6 +24,18 @@ public:
 	/** Name used in spawned object names and HUD text. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Feature")
 	FString DisplayName = TEXT("Feature");
+
+	/** Metres of track this feature occupies from its start, when it builds no section (a section's length wins). */
+	virtual float GetFootprintLength() const { return 0.f; }
+
+	/** Metres past the footprint where no other feature may start. */
+	virtual float GetExclusionAhead() const { return 0.f; }
+
+	/** True when pickups must keep off the footprint (ramps, loops). A tube wants its orbs. */
+	virtual bool ClaimsFootprint() const { return true; }
+
+	/** The section the track is routed through over this feature, or null. Rolls are drawn off Rng in a fixed order. */
+	virtual TSharedPtr<FTrackSection> CreateSection(const UTrackModel& Track, float StartDistance, FRunnerRandom& Rng) const;
 };
 
 /** One row of the feature table: what may be placed, how often and how far apart. */

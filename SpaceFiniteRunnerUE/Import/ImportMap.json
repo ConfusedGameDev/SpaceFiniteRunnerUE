@@ -2,9 +2,49 @@
   "defaultFolder": "/Game/Runner/Data",
   "defaultPrefix": "DA_",
   "types": {
-    "TrackLayoutAsset": { "folder": "/Game/Runner/Data/Tracks", "prefix": "TL_" },
-    "TrackShapeSettings": { "folder": "/Game/Runner/Data/Track" },
-    "BoostMeterSettings": { "folder": "/Game/Runner/Data/Ship" }
+    "TrackLayoutAsset": {
+      "folder": "/Game/Runner/Data/Tracks",
+      "prefix": "TL_"
+    },
+    "TrackShapeSettings": {
+      "folder": "/Game/Runner/Data/Track"
+    },
+    "BoostMeterSettings": {
+      "folder": "/Game/Runner/Data/Ship"
+    },
+    "JumpDefinition": {
+      "folder": "/Game/Runner/Data/Track/Features"
+    },
+    "LoopDefinition": {
+      "folder": "/Game/Runner/Data/Track/Features"
+    },
+    "TubeDefinition": {
+      "folder": "/Game/Runner/Data/Track/Features"
+    },
+    "LaserGateDefinition": {
+      "folder": "/Game/Runner/Data/Track/Features"
+    },
+    "PadDefinition": {
+      "folder": "/Game/Runner/Data/Track/Spawning"
+    },
+    "SpeedOrbSpawner": {
+      "folder": "/Game/Runner/Data/Track/Spawning"
+    },
+    "RepairOrbSpawner": {
+      "folder": "/Game/Runner/Data/Track/Spawning"
+    },
+    "LaserGateSpawner": {
+      "folder": "/Game/Runner/Data/Track/Spawning"
+    },
+    "TrackSpawnSet": {
+      "folder": "/Game/Runner/Data/Track/Spawning"
+    },
+    "TrackRevealSettings": {
+      "folder": "/Game/Runner/Data/Track"
+    },
+    "TrackPlacementCatalog": {
+      "folder": "/Game/Runner/Data/Track"
+    }
   },
   "assets": {
     "FiniteRunner_TrackShape": "/Game/Runner/Data/Track/DA_TrackShape",
@@ -18,6 +58,18 @@
     "Track_FiniteRunner_LevelDefinition_3": "/Game/Runner/Data/Tracks/TL_Level_03",
     "Track_FiniteRunner_LevelDefinition_60878307": "/Game/Runner/Data/Tracks/TL_Level_60878307",
     "Track_FiniteRunner_LevelDefinition_newLasers": "/Game/Runner/Data/Tracks/TL_NewLasers",
-    "test4": "/Game/Runner/Data/Tracks/TL_Test4"
+    "test4": "/Game/Runner/Data/Tracks/TL_Test4",
+    "Jump_Definition": "/Game/Runner/Data/Track/Features/DA_Jump",
+    "FiniteRunner_EndRamp": "/Game/Runner/Data/Track/Features/DA_EndRamp",
+    "Loop_Definition": "/Game/Runner/Data/Track/Features/DA_Loop",
+    "FullTube_Definition": "/Game/Runner/Data/Track/Features/DA_Tube",
+    "LaserGate_Definition": "/Game/Runner/Data/Track/Features/DA_LaserGate",
+    "BoostPad_Definition": "/Game/Runner/Data/Track/Spawning/DA_BoostPad",
+    "Spawner_SpeedOrbs": "/Game/Runner/Data/Track/Spawning/DA_Spawner_SpeedOrbs",
+    "Spawner_RepairOrbs": "/Game/Runner/Data/Track/Spawning/DA_Spawner_RepairOrbs",
+    "Spawner_LaserGates": "/Game/Runner/Data/Track/Spawning/DA_Spawner_LaserGates",
+    "FiniteRunner_TrackSpawnSet": "/Game/Runner/Data/Track/Spawning/DA_TrackSpawnSet",
+    "TrackReveal_Settings": "/Game/Runner/Data/Track/DA_TrackReveal",
+    "FiniteRunner_PlacementCatalog": "/Game/Runner/Data/Track/DA_PlacementCatalog"
   }
 }
