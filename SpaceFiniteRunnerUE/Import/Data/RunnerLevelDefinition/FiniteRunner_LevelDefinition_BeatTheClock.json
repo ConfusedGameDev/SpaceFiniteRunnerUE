@@ -1,0 +1,89 @@
+{
+  "unityType": "RunnerLevelDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.RunnerLevelDefinition",
+  "name": "FiniteRunner_LevelDefinition_BeatTheClock",
+  "guid": "cba7ca68b1a1b824988b282428da48ba",
+  "path": "Assets/04.Data/FiniteRunner/Levels/FiniteRunner_LevelDefinition_BeatTheClock.asset",
+  "fields": {
+    "levelName": "Beat the Clock",
+    "nextSceneName": "CarTest",
+    "trackLengthMeters": 25000,
+    "track": {
+      "$ref": {
+        "guid": "ee13ca43e6d1437fbaf1b7e911c9b011",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/Tracks/Track_BeatTheClock.asset",
+        "name": "Track_BeatTheClock",
+        "type": "TrackLayoutAsset",
+        "main": true
+      }
+    },
+    "traffic": null,
+    "race": null,
+    "timeTrial": {
+      "$ref": {
+        "guid": "8e0fdc4a29f147c4b8cad523b8c41ab1",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/TimeTrial/TimeTrial_BeatTheClock.asset",
+        "name": "TimeTrial_BeatTheClock",
+        "type": "TimeTrialDefinition",
+        "main": true
+      }
+    },
+    "trackReveal": true,
+    "completeVideo": null,
+    "rankTable": {
+      "sThreshold": 10000,
+      "aThreshold": 5000,
+      "bThreshold": 2500,
+      "cThreshold": 1000
+    },
+    "optionalChallenges": [
+      {
+        "type": {
+          "$enum": "FinishWithTime",
+          "value": 3
+        },
+        "targetSpeedKmh": 6500,
+        "jumpCount": 3,
+        "raceMode": {
+          "$enum": "Win",
+          "value": 0
+        },
+        "racePosition": 3,
+        "minSecondsLeft": 20,
+        "reward": 0,
+        "accent": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "multiplier": 2
+      }
+    ],
+    "objectives": [
+      {
+        "type": {
+          "$enum": "FinishWithTime",
+          "value": 3
+        },
+        "targetSpeedKmh": 6500,
+        "jumpCount": 3,
+        "raceMode": {
+          "$enum": "Win",
+          "value": 0
+        },
+        "racePosition": 3,
+        "minSecondsLeft": 0,
+        "reward": 500,
+        "accent": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        }
+      }
+    ]
+  }
+}

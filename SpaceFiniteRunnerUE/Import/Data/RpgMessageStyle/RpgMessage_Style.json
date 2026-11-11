@@ -1,0 +1,41 @@
+{
+  "unityType": "RpgMessageStyle",
+  "fullType": "ConfusedGameDev.FiniteRunner.HUD.RpgMessageStyle",
+  "name": "RpgMessage_Style",
+  "guid": "fd1d92a31b54341d6ac57aa5680fddb5",
+  "path": "Assets/04.Data/FiniteRunner/UI/RpgMessage_Style.asset",
+  "fields": {
+    "borderColor": {
+      "r": 0.85,
+      "g": 0.9,
+      "b": 1,
+      "a": 0.55
+    },
+    "backgroundColor": {
+      "r": 0.05,
+      "g": 0.07,
+      "b": 0.18,
+      "a": 0.92
+    },
+    "panelHeight": 256,
+    "panelSideMargin": 92,
+    "panelBottomMargin": 20,
+    "portraitPosition": {
+      "x": 40,
+      "y": 28
+    },
+    "portraitSize": {
+      "x": 280,
+      "y": 300
+    },
+    "speakerFontSize": 34,
+    "bodyFontSize": 30,
+    "textLeftInset": 330,
+    "continueMarkerInset": {
+      "x": 24,
+      "y": 12
+    },
+    "continueMarkerFontSize": 26,
+    "continueMarkerBlinkSeconds": 0.8
+  }
+}

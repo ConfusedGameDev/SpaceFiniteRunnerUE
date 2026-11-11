@@ -1,0 +1,23 @@
+{
+  "unityType": "MusicSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Audio.MusicSettings",
+  "name": "FiniteRunner_Music",
+  "guid": "5318467413d04ad438519b67883a2db7",
+  "path": "Assets/04.Data/Resources/FiniteRunner_Music.asset",
+  "fields": {
+    "clip": {
+      "$ref": {
+        "guid": "23bc164700668044b96c46d665debac8",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/01.SFX/FiniteRunner/Music Finite runner.mp3",
+        "name": "Music Finite runner",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "volume": 0.8,
+    "randomStart": true,
+    "fadeInSeconds": 2,
+    "fadeOutSeconds": 1.5
+  }
+}

@@ -1,0 +1,509 @@
+{
+  "unityType": "OrbitCameraSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Cameras.OrbitCameraSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Cameras/OrbitCameraSettings.cs",
+  "fields": [
+    {
+      "name": "distance",
+      "type": "Single",
+      "group": "Framing",
+      "tooltip": "Orbit radius — distance from the car.",
+      "min": 3,
+      "max": 60,
+      "unit": "m"
+    },
+    {
+      "name": "lookHeight",
+      "type": "Single",
+      "group": "Framing",
+      "tooltip": "Point on the car the camera orbits and aims at, above its pivot.",
+      "min": 0,
+      "max": 12,
+      "unit": "m"
+    },
+    {
+      "name": "defaultPitch",
+      "type": "Single",
+      "group": "Framing",
+      "tooltip": "Default pitch of the orbit — where the camera rests and recenters to vertically.",
+      "min": 0,
+      "max": 60,
+      "unit": "°"
+    },
+    {
+      "name": "pitchRange",
+      "type": "Vector2",
+      "group": "Framing",
+      "tooltip": "How far the pitch may be panned: min looks up from near road level, max looks down from above.",
+      "band": true,
+      "min": -20,
+      "max": 80,
+      "unit": "°"
+    },
+    {
+      "name": "positionDamping",
+      "type": "Single",
+      "group": "Framing",
+      "tooltip": "Position damping of the follow — higher trails the car more loosely (more cinematic, less precise).",
+      "min": 0,
+      "max": 3
+    },
+    {
+      "name": "upBinding",
+      "type": "UpBinding",
+      "group": "Framing",
+      "tooltip": "Which up the orbit keeps. World Up holds the horizon level however the vehicle leans (the car). Target Up rolls the orbit with the vehicle, so behind stays behind through a loop or under a tube (the ship)."
+    },
+    {
+      "name": "rollLagSeconds",
+      "type": "Single",
+      "group": "Framing",
+      "tooltip": "Target Up only: seconds the camera's roll trails the vehicle's. 0 is bolted to the hull; a short lag lets the horizon swing a beat after the ship instead of snapping with it.",
+      "min": 0,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "deoccluder",
+      "type": "Boolean",
+      "group": "Framing",
+      "tooltip": "Pull the camera forward past anything solid between it and the vehicle (the city's ramps and decks). Off where there is nothing to look through."
+    },
+    {
+      "name": "defaultMode",
+      "type": "CameraMode",
+      "group": "Camera modes",
+      "tooltip": "The view a fresh car starts in. Tab / the gamepad's Back button cycle Far → Close → First person → Far."
+    },
+    {
+      "name": "modeBlendSeconds",
+      "type": "Single",
+      "group": "Camera modes",
+      "tooltip": "Seconds a mode switch takes: the orbit slides between its two framings, and the first-person cut is a Cinemachine blend of the same length.",
+      "min": 0,
+      "max": 1.5,
+      "unit": "s"
+    },
+    {
+      "name": "closeDistance",
+      "type": "Single",
+      "group": "Camera modes",
+      "tooltip": "Orbit radius of the CLOSE view. The Framing distance above is the FAR view.",
+      "min": 1.5,
+      "max": 30,
+      "unit": "m"
+    },
+    {
+      "name": "closeLookHeight",
+      "type": "Single",
+      "group": "Camera modes",
+      "tooltip": "Look height of the CLOSE view — lower than the far one keeps the roofline in frame.",
+      "min": 0,
+      "max": 12,
+      "unit": "m"
+    },
+    {
+      "name": "closePitch",
+      "type": "Single",
+      "group": "Camera modes",
+      "tooltip": "Resting pitch of the CLOSE view. Flatter than the far view reads as riding the bumper rather than a drone.",
+      "min": 0,
+      "max": 60,
+      "unit": "°"
+    },
+    {
+      "name": "eyeFromChassis",
+      "type": "Boolean",
+      "group": "Camera modes",
+      "tooltip": "Seat the first-person eye off the vehicle's chassis box (the two knobs below). Off, the eye sits at the authored offset instead — for a vehicle whose box is a trigger volume rather than a hull."
+    },
+    {
+      "name": "firstPersonEyeOffset",
+      "type": "Vector3",
+      "group": "Camera modes",
+      "tooltip": "First-person eye point in the vehicle's local space, used when the eye is not seated off the chassis box."
+    },
+    {
+      "name": "firstPersonForward",
+      "type": "Single",
+      "group": "Camera modes",
+      "tooltip": "First-person eye point, forward of the chassis centre. Negative sits the eye back over the cabin, positive pushes it toward the bonnet.",
+      "min": -2.5,
+      "max": 2.5,
+      "unit": "m"
+    },
+    {
+      "name": "firstPersonHeight",
+      "type": "Single",
+      "group": "Camera modes",
+      "tooltip": "First-person eye height above the top of the chassis box. Keep it above zero or the roof clips the view.",
+      "min": -0.5,
+      "max": 1.5,
+      "unit": "m"
+    },
+    {
+      "name": "firstPersonDamping",
+      "type": "Single",
+      "group": "Camera modes",
+      "tooltip": "Rotation damping of the first-person view: 0 is bolted to the car (every bump is in the picture), higher soaks up the jitter but lags the steering.",
+      "min": 0,
+      "max": 0.5,
+      "unit": "s"
+    },
+    {
+      "name": "firstPersonNearClip",
+      "type": "Single",
+      "group": "Camera modes",
+      "tooltip": "Near clip plane of the first-person lens. The eye sits inside the vehicle's silhouette, so it has to be small enough not to cut the dashboard — but too small and the depth buffer loses precision on the far city.",
+      "min": 0.0099999997764825821,
+      "max": 1,
+      "unit": "m"
+    },
+    {
+      "name": "mouseSensitivity",
+      "type": "Single",
+      "group": "Input",
+      "tooltip": "Degrees of orbit per pixel of mouse movement.",
+      "min": 0.0099999997764825821,
+      "max": 1,
+      "unit": "°/px"
+    },
+    {
+      "name": "stickSpeed",
+      "type": "Single",
+      "group": "Input",
+      "tooltip": "Orbit speed at full right-stick deflection.",
+      "min": 30,
+      "max": 360,
+      "unit": "°/s"
+    },
+    {
+      "name": "arrowKeysPan",
+      "type": "Boolean",
+      "group": "Input",
+      "tooltip": "Pan with the keyboard's camera keys (the arrows by default — rebindable on the CONTROLS screen). Off for a vehicle that wants those keys for itself (the ship)."
+    },
+    {
+      "name": "keySpeed",
+      "type": "Single",
+      "group": "Input",
+      "tooltip": "Orbit speed while holding the camera keys.",
+      "min": 30,
+      "max": 360,
+      "unit": "°/s"
+    },
+    {
+      "name": "verticalScale",
+      "type": "Single",
+      "group": "Input",
+      "tooltip": "Vertical panning speed as a fraction of the horizontal one.",
+      "min": 0.10000000149011612,
+      "max": 1
+    },
+    {
+      "name": "invertY",
+      "type": "Boolean",
+      "group": "Input",
+      "tooltip": "Invert vertical panning (push up = look down)."
+    },
+    {
+      "name": "autoRecenter",
+      "type": "Boolean",
+      "group": "Recenter",
+      "tooltip": "Swing back behind the car after the input has been idle for the delay below. Off = the orbit stays where you left it."
+    },
+    {
+      "name": "recenterDelay",
+      "type": "Single",
+      "group": "Recenter",
+      "tooltip": "Seconds of idle input before recentering starts.",
+      "min": 0.20000000298023224,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "recenterSpeed",
+      "type": "Single",
+      "group": "Recenter",
+      "tooltip": "How fast the camera swings back behind the car.",
+      "min": 30,
+      "max": 360,
+      "unit": "°/s"
+    },
+    {
+      "name": "lookBack",
+      "type": "Boolean",
+      "group": "lookBack",
+      "toggleGroup": true,
+      "tooltip": "Hold the right stick button (R3) or Right Shift to whip the camera round and watch the road behind; releasing swings it back to where it was."
+    },
+    {
+      "name": "lookBackAngle",
+      "type": "Single",
+      "group": "lookBack",
+      "toggleGroup": true,
+      "tooltip": "Orbit yaw of the rear view, measured from straight behind the car — an absolute pose, not an offset from the current pan. 180 aims the camera dead along the car's axis at the road behind; less keeps the car's flank in frame.",
+      "min": 90,
+      "max": 180,
+      "unit": "°"
+    },
+    {
+      "name": "lookBackInSeconds",
+      "type": "Single",
+      "group": "lookBack",
+      "toggleGroup": true,
+      "tooltip": "Seconds to swing round. Short is a snap over the shoulder, long is cinematic — and too slow to be useful at speed.",
+      "min": 0.019999999552965164,
+      "max": 1.5,
+      "unit": "s"
+    },
+    {
+      "name": "lookBackOutSeconds",
+      "type": "Single",
+      "group": "lookBack",
+      "toggleGroup": true,
+      "tooltip": "Seconds to swing back on release. Usually slower than the way in — the return should not yank the view off the road.",
+      "min": 0.019999999552965164,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "lookBackPitch",
+      "type": "Single",
+      "group": "lookBack",
+      "toggleGroup": true,
+      "tooltip": "Pitch held while looking back, clamped to the range above. Flatter than the default reads as a glance over the shoulder rather than a drone shot.",
+      "min": -20,
+      "max": 80,
+      "unit": "°"
+    },
+    {
+      "name": "lookBackDistance",
+      "type": "Single",
+      "group": "lookBack",
+      "toggleGroup": true,
+      "tooltip": "Orbit radius of the rear view, whatever view the player is in — the third fixed component of the pose beside its yaw and pitch.",
+      "min": 3,
+      "max": 60,
+      "unit": "m"
+    },
+    {
+      "name": "lookBackDamping",
+      "type": "Single",
+      "group": "lookBack",
+      "toggleGroup": true,
+      "tooltip": "Position damping while looking back. The follow's lag trails the car, and with the camera IN FRONT of it that trail pulls the camera into the bonnet by more the faster you go — 0 bolts the rear view to its authored distance at any speed.",
+      "min": 0,
+      "max": 3
+    },
+    {
+      "name": "cinematic",
+      "type": "Boolean",
+      "group": "cinematic",
+      "toggleGroup": true,
+      "tooltip": "A side-on showcase shot the game cuts to on its set pieces (the city's slow-mo jump, the runner's loop) — never a view the player can select. Off = those moments stay in whatever view the player had."
+    },
+    {
+      "name": "cinematicPlanted",
+      "type": "Boolean",
+      "group": "cinematic",
+      "toggleGroup": true,
+      "tooltip": "Plant the camera on a tripod where the cut happens and let it pan after the vehicle, instead of tracking alongside it. The way to see a whole loop or the arc of a jump: the set piece plays out in front of a still camera. Always level with the horizon. Off = the camera rides beside the vehicle at the same offsets."
+    },
+    {
+      "name": "cinematicYaw",
+      "type": "Single",
+      "group": "cinematic",
+      "toggleGroup": true,
+      "tooltip": "Where the shot sits around the vehicle, measured from straight behind it: 90 is its right flank, -90 the left, 180 dead ahead looking back at it.",
+      "min": -180,
+      "max": 180,
+      "unit": "°"
+    },
+    {
+      "name": "cinematicDistance",
+      "type": "Single",
+      "group": "cinematic",
+      "toggleGroup": true,
+      "tooltip": "Distance from the vehicle — or, planted, from where the cut happened. A loop of radius R needs roughly 3R to fit.",
+      "min": 2,
+      "max": 500,
+      "unit": "m"
+    },
+    {
+      "name": "cinematicHeight",
+      "type": "Single",
+      "group": "cinematic",
+      "toggleGroup": true,
+      "tooltip": "Camera height above the vehicle's pivot. Low reads as a trackside shot, high as a crane; planted beside a loop, its radius puts the tripod level with the loop's centre.",
+      "min": -10,
+      "max": 200,
+      "unit": "m"
+    },
+    {
+      "name": "cinematicLead",
+      "type": "Single",
+      "group": "cinematic",
+      "toggleGroup": true,
+      "tooltip": "Slide the camera along the heading: positive is ahead of the vehicle (it drives into frame), negative trails it. Planted beside a loop, its radius centres the tripod on the loop.",
+      "min": -200,
+      "max": 200,
+      "unit": "m"
+    },
+    {
+      "name": "cinematicLookHeight",
+      "type": "Single",
+      "group": "cinematic",
+      "toggleGroup": true,
+      "tooltip": "Point on the vehicle the shot aims at, above its pivot.",
+      "min": 0,
+      "max": 12,
+      "unit": "m"
+    },
+    {
+      "name": "cinematicDamping",
+      "type": "Single",
+      "group": "cinematic",
+      "toggleGroup": true,
+      "tooltip": "Position damping of the shot's follow — the drift that makes it read as an operator tracking the vehicle rather than a bolt-on. 0 is rigid. A planted camera does not move, so it ignores this.",
+      "min": 0,
+      "max": 3
+    },
+    {
+      "name": "cinematicAimDamping",
+      "type": "Single",
+      "group": "cinematic",
+      "toggleGroup": true,
+      "tooltip": "Aim damping: how lazily the shot re-frames the vehicle as it moves about the picture. High on a planted camera is the lazy pan of an operator following the action.",
+      "min": 0,
+      "max": 3
+    },
+    {
+      "name": "cinematicFov",
+      "type": "Single",
+      "group": "cinematic",
+      "toggleGroup": true,
+      "tooltip": "Fixed lens of the shot — a longer lens (smaller FOV) than the chase flattens the picture, the classic showcase look. The speed FOV kick does not apply here.",
+      "min": 15,
+      "max": 90,
+      "unit": "°"
+    },
+    {
+      "name": "cinematicBlendSeconds",
+      "type": "Single",
+      "group": "cinematic",
+      "toggleGroup": true,
+      "tooltip": "Seconds the brain blends the cut into the shot and back out of it. Keep it near 0: a set piece is cut to, not eased into — a long blend smears the picture while the moment is already happening.",
+      "min": 0,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "duelFraming",
+      "type": "Boolean",
+      "group": "duelFraming",
+      "toggleGroup": true,
+      "tooltip": "The orbit dollies in on the vehicle while a patrol attack run closes in and holds the exchange — a tighter, lower framing that puts the cruiser on the flank in the picture. Off, the chase framing never changes."
+    },
+    {
+      "name": "duelDistance",
+      "type": "Single",
+      "group": "duelFraming",
+      "toggleGroup": true,
+      "tooltip": "Orbit radius at the height of an exchange (the chase's Framing distance is where it starts from). Keep it well above the vehicle's own size — the runner's ship is big, and a radius under its hull puts the camera beneath it.",
+      "min": 1.5,
+      "max": 80,
+      "unit": "m"
+    },
+    {
+      "name": "duelLookHeight",
+      "type": "Single",
+      "group": "duelFraming",
+      "toggleGroup": true,
+      "tooltip": "Look height during an exchange — lower keeps both vehicles low in frame.",
+      "min": 0,
+      "max": 12,
+      "unit": "m"
+    },
+    {
+      "name": "duelPitch",
+      "type": "Single",
+      "group": "duelFraming",
+      "toggleGroup": true,
+      "tooltip": "Resting pitch during an exchange. Flatter than the chase reads as riding beside the fight.",
+      "min": 0,
+      "max": 60,
+      "unit": "°"
+    },
+    {
+      "name": "duelBlendSeconds",
+      "type": "Single",
+      "group": "duelFraming",
+      "toggleGroup": true,
+      "tooltip": "Seconds the dolly takes to reach the duel framing and to come back out of it.",
+      "min": 0.05000000074505806,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "baseFov",
+      "type": "Single",
+      "group": "Speed FOV",
+      "tooltip": "Field of view at standstill.",
+      "min": 40,
+      "max": 90,
+      "unit": "°"
+    },
+    {
+      "name": "fovPerKmh",
+      "type": "Single",
+      "group": "Speed FOV",
+      "tooltip": "Extra FOV per km/h — the cheap speed-sensation dial.",
+      "min": 0,
+      "max": 0.30000001192092896,
+      "unit": "° per km/h"
+    },
+    {
+      "name": "maxFovBoost",
+      "type": "Single",
+      "group": "Speed FOV",
+      "tooltip": "Cap on the speed FOV kick.",
+      "min": 0,
+      "max": 40,
+      "unit": "°"
+    }
+  ],
+  "types": {
+    "UpBinding": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Cameras.UpBinding",
+      "enum": [
+        {
+          "name": "WorldUp",
+          "value": 0
+        },
+        {
+          "name": "TargetUp",
+          "value": 1
+        }
+      ]
+    },
+    "CameraMode": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Cameras.CameraMode",
+      "enum": [
+        {
+          "name": "Far",
+          "value": 0
+        },
+        {
+          "name": "Close",
+          "value": 1
+        },
+        {
+          "name": "FirstPerson",
+          "value": 2
+        }
+      ]
+    }
+  }
+}

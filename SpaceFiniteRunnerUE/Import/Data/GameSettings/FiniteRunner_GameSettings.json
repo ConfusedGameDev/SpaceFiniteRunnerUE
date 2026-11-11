@@ -1,0 +1,648 @@
+{
+  "unityType": "GameSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.GameSettings",
+  "name": "FiniteRunner_GameSettings",
+  "guid": "a4573a719f8b47bcb82110db7c40439e",
+  "path": "Assets/04.Data/FiniteRunner/FiniteRunner_GameSettings.asset",
+  "fields": {
+    "useTuningScreen": false,
+    "simSubsteps": 2,
+    "edgeOverhang": 4.75,
+    "edgeGraceSeconds": 0.7500001,
+    "fallCameraFollowSeconds": 0.5,
+    "fallGlitchStrength": 0.8,
+    "respawnMinPatrolGap": 150,
+    "lightSpeedKmh": 6500,
+    "speedDisplayMultiplier": 3.6,
+    "timeLimitSeconds": 202,
+    "launchDistanceMeters": 100,
+    "trackLengthMeters": 33000,
+    "endRunUpMeters": 1200,
+    "endRampGapMeters": 10,
+    "endRampSideGapMeters": 0,
+    "winEscapeGravity": 0,
+    "patrolEnabled": true,
+    "minimapRangeMeters": 1012,
+    "showPatrolAlert": false,
+    "showPatrolWarnings": false,
+    "patrolProximityRumble": true,
+    "powerUpSpeedBoost": 52.5,
+    "boostRumble": {
+      "x": 0.15,
+      "y": 0.55,
+      "z": 0.15
+    },
+    "bustedRumble": {
+      "x": 1,
+      "y": 0.7,
+      "z": 1.5
+    },
+    "escapeRumble": {
+      "x": 0.7,
+      "y": 0.9,
+      "z": 0.6
+    },
+    "endFailRumble": {
+      "x": 1,
+      "y": 0.5,
+      "z": 0.8
+    },
+    "hullHitRumble": {
+      "x": 0.5,
+      "y": 0.3,
+      "z": 0.15
+    },
+    "explosionRumble": {
+      "x": 1,
+      "y": 1,
+      "z": 0.8
+    },
+    "repairRumble": {
+      "x": 0.3,
+      "y": 0.3,
+      "z": 0.2
+    },
+    "brakeRumble": {
+      "x": 0.65,
+      "y": 0.2,
+      "z": 0.25
+    },
+    "dashRumble": {
+      "x": 0.3,
+      "y": 0.6,
+      "z": 0.12
+    },
+    "loopFailRumble": {
+      "x": 0.9,
+      "y": 0.5,
+      "z": 0.5
+    },
+    "landingRumble": {
+      "x": 0.5,
+      "y": 0.3,
+      "z": 0.2
+    },
+    "fallRumble": {
+      "x": 1,
+      "y": 0.5,
+      "z": 0.8
+    },
+    "slideRumble": {
+      "x": 0.6,
+      "y": 0.2,
+      "z": 0.5
+    },
+    "wallHitRumble": {
+      "x": 0.8,
+      "y": 0.4,
+      "z": 0.2
+    },
+    "laserHitRumble": {
+      "x": 1,
+      "y": 0.7,
+      "z": 0.8
+    },
+    "winBannerRumble": {
+      "x": 0.7,
+      "y": 1,
+      "z": 0.25
+    },
+    "boostQte": true,
+    "boostQteShowSeconds": 1,
+    "boostQteWindowSeconds": 0.15,
+    "boostQtePerfectSeconds": 0.02,
+    "boostQteMultiplierBand": {
+      "x": 1.1,
+      "y": 1.5
+    },
+    "boostQteFalloff": {
+      "$curve": [
+        {
+          "time": 0,
+          "value": 0,
+          "inTangent": 0,
+          "outTangent": 1,
+          "inWeight": 0,
+          "outWeight": 0,
+          "weightedMode": 0
+        },
+        {
+          "time": 1,
+          "value": 1,
+          "inTangent": 1,
+          "outTangent": 0,
+          "inWeight": 0,
+          "outWeight": 0,
+          "weightedMode": 0
+        }
+      ],
+      "preWrapMode": "ClampForever",
+      "postWrapMode": "ClampForever"
+    },
+    "boostQteWarpAtPerfect": 1.8,
+    "boostQteRumbleAtPerfect": {
+      "x": 0.7,
+      "y": 1,
+      "z": 0.4
+    },
+    "boostQteGlyphSize": 0.45,
+    "boostQteGlyphLift": 0.5,
+    "boostQteMissColor": {
+      "r": 1,
+      "g": 0.15,
+      "b": 0.12,
+      "a": 1
+    },
+    "boostQteMidColor": {
+      "r": 1,
+      "g": 0.85,
+      "b": 0.1,
+      "a": 1
+    },
+    "boostQtePerfectColor": {
+      "r": 0.2,
+      "g": 1,
+      "b": 0.3,
+      "a": 1
+    },
+    "airLaneHeight": 30,
+    "landingShake": {
+      "$ref": {
+        "guid": "408b45efec3b4c198db77479e94c0f1e",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/CameraShake/LandingShake_Settings.asset",
+        "name": "LandingShake_Settings",
+        "type": "CameraShakeSettings",
+        "main": true
+      }
+    },
+    "wallHitShake": {
+      "$ref": {
+        "guid": "44c068e10d0145fca926982d0fab124b",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/CameraShake/WallHitShake_Settings.asset",
+        "name": "WallHitShake_Settings",
+        "type": "CameraShakeSettings",
+        "main": true
+      }
+    },
+    "laserSpeedLoss": 0.138,
+    "laserSmokeTextures": [
+      {
+        "$ref": {
+          "guid": "6bd4792093f9c4229805e4ffc689be94",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke08.png",
+          "name": "blackSmoke08",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "ced67ea39b03d441383bddeb8ebcaf1a",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke09.png",
+          "name": "blackSmoke09",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "7b65ef923a3d44c4ca5c2845afb32fd3",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke10.png",
+          "name": "blackSmoke10",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "9b94c7c434d8d40628cd9d666da90eff",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke11.png",
+          "name": "blackSmoke11",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "78407c48e698f4e81bd14b2163ce158d",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke12.png",
+          "name": "blackSmoke12",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "1e8c250e20eed437aa19e143338584d2",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke13.png",
+          "name": "blackSmoke13",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "e7945eaf8466044849bafdaddea04182",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Black smoke/blackSmoke14.png",
+          "name": "blackSmoke14",
+          "type": "Texture2D",
+          "main": true
+        }
+      }
+    ],
+    "laserSmokeScale": 5,
+    "laserSmokeSeconds": 2,
+    "laserSmokeRate": 22,
+    "laserSmokeBurst": 14,
+    "slideShake": null,
+    "landingSparkleCount": 45,
+    "landingSparkleScale": 3,
+    "landingSparkleColor": {
+      "r": 1,
+      "g": 0.85,
+      "b": 0.4,
+      "a": 1
+    },
+    "loopSpeedFloorKmh": 1200,
+    "loopSpeedRampKmhPer100m": 18,
+    "loopSpeedCapKmh": 2900,
+    "loopFallGlitchStrength": 0.8,
+    "loopCinematic": true,
+    "loopCinematicHoldSeconds": 0.25,
+    "loopSlowMo": true,
+    "loopApparentSpeedKmh": 650,
+    "loopMinTimeScale": 0.08,
+    "loopTimeScale": 0.5,
+    "loopSlowMoBlendIn": 0.2,
+    "loopSlowMoBlendOut": 0.35,
+    "winCameraHoldSeconds": 2,
+    "winGlitchRampSeconds": 0.8,
+    "winGlitchHoldSeconds": 0.4,
+    "winBannerDelaySeconds": 0.2,
+    "winBannerLetterStaggerSeconds": 0.045,
+    "winBannerLetterSlamSeconds": 0.32,
+    "winBannerGlitchPunch": 0.4,
+    "winBannerShake": {
+      "$ref": {
+        "guid": "a10c269e790746fc8b55a1da9c318571",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/CameraShake/WinBannerShake_Settings.asset",
+        "name": "WinBannerShake_Settings",
+        "type": "CameraShakeSettings",
+        "main": true
+      }
+    },
+    "failBannerHoldSeconds": 2,
+    "failBannerDismissSeconds": 0.5,
+    "failBannerColor": {
+      "r": 1,
+      "g": 0.22,
+      "b": 0.25,
+      "a": 1
+    },
+    "failVideo": {
+      "$ref": {
+        "guid": "5cc8af7840f4d2349b50e771e6ef9ecc",
+        "fileId": 32900000,
+        "path": "Assets/02.Art/07.Videos/Cutscenes/mtch.mp4",
+        "name": "mtch",
+        "type": "VideoClip",
+        "main": true
+      }
+    },
+    "failVideoSize": 420,
+    "failVideoOffsetY": -110,
+    "failVideoVolume": 1,
+    "hullEnabled": true,
+    "startingLives": 4,
+    "brakePadDamage": 20,
+    "wallSlamDamage": 25,
+    "wallScrapeDamage": 10,
+    "fallDamage": 30,
+    "laserDamage": 85,
+    "laserHitShake": {
+      "$ref": {
+        "guid": "39ad17b857a24976817bf109a3d733e0",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/CameraShake/LaserHitShake_Settings.asset",
+        "name": "LaserHitShake_Settings",
+        "type": "CameraShakeSettings",
+        "main": true
+      }
+    },
+    "hitInvulnerabilitySeconds": 1,
+    "repairOrbHealFraction": 0.15,
+    "scrapeShake": {
+      "$ref": {
+        "guid": "9c67e4d768c04e718db3a061535ad375",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/CameraShake/ScrapeShake_Settings.asset",
+        "name": "ScrapeShake_Settings",
+        "type": "CameraShakeSettings",
+        "main": true
+      }
+    },
+    "hullHitGlitchStrength": 0.35,
+    "explosionTextures": [
+      {
+        "$ref": {
+          "guid": "a96c4488e59bb435d8aaa0cff43270fe",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion00.png",
+          "name": "explosion00",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "1c846224768ab4d11ae85c0dde9fc69a",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion01.png",
+          "name": "explosion01",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "d98f18ebb21b44d03a8f2847c5999b86",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion02.png",
+          "name": "explosion02",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "8c9f1958f431f48a491b1a254a7f1207",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion03.png",
+          "name": "explosion03",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "ef8c7540bd3234f33b8d5ab008294d24",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion04.png",
+          "name": "explosion04",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "8235e261889ee4b4c8e34e7c66246e56",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion05.png",
+          "name": "explosion05",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "6fddb8dfa38c94a4394e6b3bbbcbb133",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion06.png",
+          "name": "explosion06",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "8281bac6ed4ca42b3a7a3e7629485344",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion07.png",
+          "name": "explosion07",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "08c8fb6595d634540806f7e021e09e67",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/SmokeAndExplosions/Explosion/explosion08.png",
+          "name": "explosion08",
+          "type": "Texture2D",
+          "main": true
+        }
+      }
+    ],
+    "explosionScale": 14,
+    "explosionLifetime": 1.4,
+    "explosionParticles": 24,
+    "explosionShake": {
+      "$ref": {
+        "guid": "376af27b460b4f3996d714ef0a0fed88",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/CameraShake/ExplosionShake_Settings.asset",
+        "name": "ExplosionShake_Settings",
+        "type": "CameraShakeSettings",
+        "main": true
+      }
+    },
+    "explosionGlitchStrength": 1,
+    "dashWallGlitchStrength": 0.7,
+    "dashMeterColor": {
+      "r": 0.35,
+      "g": 0.9,
+      "b": 1,
+      "a": 1
+    },
+    "dashEncourageAfterSeconds": 10,
+    "dashHintText": "DOUBLE-TAP TO DASH",
+    "dashHintTextSinglePress": "PRESS TO DASH",
+    "boostTextLeadMeters": 60,
+    "messageHoldSeconds": 2.5,
+    "messageOrbTierName": "Purple",
+    "purpleOrbMessage": "ayjoesu AGARRENSEN  DE LAS MANOS!",
+    "patrolInboundMessage": "Patrol {0} inbound. You can't outrun all of us, hotshot.",
+    "patrolWarningMessage": "Right on your tail, hotshot — {0} m and closing.",
+    "pilotMessageColor": {
+      "r": 0.35,
+      "g": 0.9,
+      "b": 1,
+      "a": 1
+    },
+    "patrolMessageColor": {
+      "r": 1,
+      "g": 0.4,
+      "b": 0.35,
+      "a": 1
+    },
+    "rainEnabled": true,
+    "speedLinesEnabled": true,
+    "boostPulseStrength": 0.4,
+    "boostPulseSeconds": 0.6,
+    "hyperspaceSkyEnabled": true,
+    "lightSpeedWarpEnabled": true,
+    "lightSpeedExitMargin": 0.03,
+    "lightSpeedWarpBlendSeconds": 0.6,
+    "lightSpeedLensIntensity": 0.5,
+    "speedMotionBlurEnabled": true,
+    "speedMotionBlurCurve": {
+      "$curve": [
+        {
+          "time": 0,
+          "value": 0,
+          "inTangent": 0,
+          "outTangent": 0,
+          "inWeight": 0,
+          "outWeight": 0,
+          "weightedMode": 0
+        },
+        {
+          "time": 1,
+          "value": 1,
+          "inTangent": 0,
+          "outTangent": 0,
+          "inWeight": 0,
+          "outWeight": 0,
+          "weightedMode": 0
+        }
+      ],
+      "preWrapMode": "ClampForever",
+      "postWrapMode": "ClampForever"
+    },
+    "lightSpeedMotionBlurIntensity": 1,
+    "lightSpeedMotionBlurClamp": 0.171,
+    "hyperspaceJumpEnabled": true,
+    "hyperspacePromptDelaySeconds": 5,
+    "hyperspaceRunUpMeters": 600,
+    "startCountdownEnabled": true,
+    "countdownReadySeconds": 1.2,
+    "countdownBeatSeconds": 1,
+    "countdownGoSeconds": 0.8,
+    "countdownNumberColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "countdownGoColor": {
+      "r": 0.3,
+      "g": 1,
+      "b": 0.4,
+      "a": 1
+    },
+    "debugBoostChord": true,
+    "debugBoostKmh": 5000,
+    "escapeVanishEnabled": true,
+    "escapeVanishDelaySeconds": 1,
+    "escapeTrailSeconds": 4,
+    "escapeTrailWidth": 8,
+    "escapeTrailIntensity": 2.5,
+    "escapeTrailGradient": {
+      "$gradient": [
+        {
+          "time": 0,
+          "r": 1,
+          "g": 0.55,
+          "b": 0.1
+        },
+        {
+          "time": 0.5000076,
+          "r": 1,
+          "g": 0.38,
+          "b": 0.05
+        },
+        {
+          "time": 1,
+          "r": 0.8,
+          "g": 0.18,
+          "b": 0.03
+        }
+      ],
+      "alpha": [
+        {
+          "time": 0,
+          "a": 1
+        },
+        {
+          "time": 0.7000076,
+          "a": 1
+        },
+        {
+          "time": 1,
+          "a": 0
+        }
+      ],
+      "mode": "Blend"
+    },
+    "escapeTrailTexture": null,
+    "escapeFlameTextures": [
+      {
+        "$ref": {
+          "guid": "ba71cbb83e4c54ef78b015222befbab8",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/GeneralParticles/flame_02.png",
+          "name": "flame_02",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "6bd2758ba88644526a47d4aaa041283c",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/GeneralParticles/flame_03.png",
+          "name": "flame_03",
+          "type": "Texture2D",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "a7bb9dc623cb5413e9609cf1257058a6",
+          "fileId": 2800000,
+          "path": "Assets/02.Art/05.Particles/GeneralParticles/fire_01.png",
+          "name": "fire_01",
+          "type": "Texture2D",
+          "main": true
+        }
+      }
+    ],
+    "escapeFlameSize": 5,
+    "escapeFlashColor": {
+      "r": 0.55,
+      "g": 0.8,
+      "b": 1,
+      "a": 1
+    },
+    "escapeFlashScale": 4,
+    "escapeFlashLight": 60,
+    "escapeFlashGlitch": 0.5,
+    "vhsEnabled": true,
+    "psxEnabled": true,
+    "crtEnabled": true,
+    "musicEnabled": true,
+    "musicSettings": null,
+    "sfxEnabled": true,
+    "sfxSettings": {
+      "$ref": {
+        "guid": "51a483726754a874489d5f34f40b4ace",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/Resources/FiniteRunner_Sfx.asset",
+        "name": "FiniteRunner_Sfx",
+        "type": "RunnerSfxSettings",
+        "main": true
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "unityType": "BoostMeterSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Ship.BoostMeterSettings",
+  "name": "BoostMeter_Settings",
+  "guid": "5fe7825f5d62c473aa74448fbf41f433",
+  "path": "Assets/04.Data/FiniteRunner/Ship/BoostMeter_Settings.asset",
+  "fields": {
+    "meterEnabled": true,
+    "potenceKmhPerSecond": 300,
+    "drainPerSecond": 0.25,
+    "cooldownSeconds": 5,
+    "refillPerSecond": 0.2,
+    "emptyPressRumble": {
+      "x": 0.5,
+      "y": 0.2,
+      "z": 0.15
+    }
+  }
+}

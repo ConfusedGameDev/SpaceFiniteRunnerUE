@@ -1,0 +1,18 @@
+{
+  "unityType": "TrackRevealSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackRevealSettings",
+  "name": "TrackReveal_Settings",
+  "guid": "4d0ffc86fac9047d3b6813f70bbbb01e",
+  "path": "Assets/04.Data/FiniteRunner/TrackSettings/TrackReveal_Settings.asset",
+  "fields": {
+    "revealEnabled": true,
+    "startAhead": 1226,
+    "band": 300,
+    "stagger": 60,
+    "creepSpeed": 150,
+    "drop": 40,
+    "tiltDegrees": 25,
+    "startScale": 0.3,
+    "overshoot": 1.2
+  }
+}

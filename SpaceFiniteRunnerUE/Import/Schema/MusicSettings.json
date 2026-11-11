@@ -1,0 +1,47 @@
+{
+  "unityType": "MusicSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Audio.MusicSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Audio/MusicSettings.cs",
+  "fields": [
+    {
+      "name": "clip",
+      "type": "AudioClip",
+      "group": "Track",
+      "tooltip": "The soundtrack. Authored as a seamless loop: the source loops it and every play may start anywhere in it."
+    },
+    {
+      "name": "volume",
+      "type": "Single",
+      "group": "Track",
+      "tooltip": "Source volume at full level. The player's MUSIC slider (the mixer's MusicVolume) sits on top of this and is never touched by the system.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "randomStart",
+      "type": "Boolean",
+      "group": "Track",
+      "tooltip": "Start every play (scene start, every RETRY) at a random point in the loop instead of its first beat. Off on the Store's asset: the shop always opens on the track's first beat."
+    },
+    {
+      "name": "fadeInSeconds",
+      "type": "Single",
+      "group": "Fades",
+      "tooltip": "Seconds the music takes to rise from silence when a play starts. Real time — unaffected by the loop slow-mo or a pause.",
+      "min": 0,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "fadeOutSeconds",
+      "type": "Single",
+      "group": "Fades",
+      "tooltip": "Seconds the music takes to fall to silence when the run is LOST (caught, timed out, destroyed). A WIN fades over the glitch ramp + hold on GameSettings instead, so it lands silent as the Mission Complete panel opens. The main menu never fades its loop itself — the loading curtain's duck takes it out.",
+      "min": 0,
+      "max": 10,
+      "unit": "s"
+    }
+  ],
+  "types": {}
+}

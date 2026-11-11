@@ -1,0 +1,274 @@
+{
+  "unityType": "ShipDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Ship.ShipDefinition",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Ship/ShipDefinition.cs",
+  "fields": [
+    {
+      "name": "displayName",
+      "type": "String",
+      "group": "Identity"
+    },
+    {
+      "name": "description",
+      "type": "String",
+      "group": "Identity"
+    },
+    {
+      "name": "initialImpulse",
+      "type": "Single",
+      "group": "Speed",
+      "tooltip": "Speed the ship launches with at the start of a run.",
+      "min": 0,
+      "max": 1000,
+      "unit": "m/s"
+    },
+    {
+      "name": "cruiseSpeed",
+      "type": "Single",
+      "group": "Speed",
+      "tooltip": "Top speed the throttle alone can reach. Only orbs and pads go past it.",
+      "min": 0,
+      "max": 3500,
+      "unit": "m/s"
+    },
+    {
+      "name": "thrust",
+      "type": "Single",
+      "group": "Speed",
+      "tooltip": "Acceleration at full throttle while below cruise.",
+      "min": 0,
+      "max": 300,
+      "unit": "m/s per s"
+    },
+    {
+      "name": "brakeDecel",
+      "type": "Single",
+      "group": "Speed",
+      "tooltip": "Deceleration at full brake, at any speed.",
+      "min": 0,
+      "max": 500,
+      "unit": "m/s per s"
+    },
+    {
+      "name": "coastDrag",
+      "type": "Single",
+      "group": "Speed",
+      "tooltip": "Speed lost per second below cruise with the throttle released.",
+      "min": 0,
+      "max": 100,
+      "unit": "m/s per s"
+    },
+    {
+      "name": "launchCoastGraceSeconds",
+      "type": "Single",
+      "group": "Speed",
+      "tooltip": "After a launch (the run's start or a retry), seconds a released throttle keeps the launch speed instead of coasting. Ends early the moment throttle or brake is touched. 0 = coast at once.",
+      "min": 0,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "passiveDeceleration",
+      "type": "Single",
+      "group": "Speed",
+      "tooltip": "Over-cruise bleed: speed lost per second ABOVE cruise, pulling a boosted ship back down to it. This is the core pressure of the game — boosts must be chained to climb.",
+      "min": 0,
+      "max": 50,
+      "unit": "m/s per s"
+    },
+    {
+      "name": "digitalThrottleRampSeconds",
+      "type": "Single",
+      "group": "Speed",
+      "tooltip": "Seconds a throttle or brake KEY takes to ease from nothing to full, so keys are not a harsh 0/1 next to the analog triggers. 0 = instant.",
+      "min": 0,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "acceleration",
+      "type": "Single",
+      "group": "Speed",
+      "tooltip": "How quickly external speed changes (pads, impulses) blend into the current speed, in speed units per second.",
+      "min": 0.0099999997764825821,
+      "max": 200,
+      "unit": "m/s per s"
+    },
+    {
+      "name": "lateralSpeed",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Lateral speed full steer settles at. Steering is a force against a lateral drag (Handling Response): the force is this × the response, so this stays the top speed across the track whatever the response.",
+      "min": 0,
+      "max": 100,
+      "unit": "m/s"
+    },
+    {
+      "name": "handlingResponse",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Lateral drag, 1/s: full lateral speed is reached in about 1 / this seconds, and a slide dies away at the same rate. Higher = snappier and harder to throw off line; low values feel heavy and drifty.",
+      "min": 0.0099999997764825821,
+      "max": 30
+    },
+    {
+      "name": "gripBase",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Grip at a standstill: the lateral acceleration a FLAT sweep may demand before the ship slides outward. Banked sweeps never test it.",
+      "min": 0,
+      "max": 500,
+      "unit": "m/s²"
+    },
+    {
+      "name": "gripPerSpeed",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Extra grip per m/s of speed. The curve's demand grows with speed SQUARED and the grip only with speed, so there is always a speed past which a flat sweep throws the ship — the defaults hold a 490 m sweep up to about 1.3 × cruise. Braking is the answer.",
+      "min": 0,
+      "max": 3,
+      "unit": "m/s² per m/s"
+    },
+    {
+      "name": "slideThreshold",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Outward lateral speed past which slipping counts as a SLIDE: shake, rumble, and the speed loss below.",
+      "min": 0,
+      "max": 30,
+      "unit": "m/s"
+    },
+    {
+      "name": "slideSpeedLoss",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Fraction of the ship's speed a slide scrubs off per second.",
+      "min": 0,
+      "max": 1,
+      "unit": "per s"
+    },
+    {
+      "name": "dashDistance",
+      "type": "Single",
+      "group": "Dash",
+      "tooltip": "Dash power: exactly how far one lateral dash carries the ship — at any speed, in slow motion, on the ground or in the air. It eases out under the lateral drag (Handling Response sets how snappy), steering against it is ignored until it is covered, and it can carry the ship over an open edge. Only a wall stops it short.",
+      "min": 2,
+      "max": 30,
+      "unit": "m"
+    },
+    {
+      "name": "dashDuration",
+      "type": "Single",
+      "group": "Dash",
+      "tooltip": "How long the ship counts as dashing after the shove: the ghost trail's window, and no new dash can start inside it. (How snappy the shove itself is comes from Handling Response — it is mostly over in 2 / response seconds.)",
+      "min": 0.05000000074505806,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "dashRechargeSeconds",
+      "type": "Single",
+      "group": "Dash",
+      "tooltip": "Fill rate: seconds for the dash meter to recharge from empty to full. The meter starts every run empty.",
+      "min": 1,
+      "max": 60,
+      "unit": "s"
+    },
+    {
+      "name": "dashGhostCount",
+      "type": "Int32",
+      "group": "Dash",
+      "tooltip": "Onion-skin ghosts left behind over one dash.",
+      "min": 1,
+      "max": 20
+    },
+    {
+      "name": "barrelRollSeconds",
+      "type": "Single",
+      "group": "Dash",
+      "tooltip": "Airborne dash: seconds one full barrel roll takes. In the air the dash IS a barrel roll — the sideways burst is spread over the roll so the two read as one move.",
+      "min": 0.20000000298023224,
+      "max": 1.5,
+      "unit": "s"
+    },
+    {
+      "name": "weight",
+      "type": "Single",
+      "group": "Weight",
+      "tooltip": "Scales how much pads affect this ship. 1 = full effect, 2 = pads (boost AND brake) only apply half their effect.",
+      "min": 0.10000000149011612,
+      "max": 5
+    },
+    {
+      "name": "maxHull",
+      "type": "Single",
+      "group": "Hull",
+      "tooltip": "Hull points: what the HUD's life bar is full at. Walls and brake pads take points off (the amounts are run rules on GameSettings' Hull and lives group); at 0 the ship explodes.",
+      "min": 10,
+      "max": 500
+    },
+    {
+      "name": "jumpStrength",
+      "type": "Single",
+      "group": "Jumps",
+      "tooltip": "Scales a ramp takeoff: the boost at the lip AND the arc's length and height. 1 = the JumpDefinition as authored; the Store's Jump Strength upgrade multiplies this on the run's clone.",
+      "min": 0.5,
+      "max": 3
+    },
+    {
+      "name": "hoverHeight",
+      "type": "Single",
+      "group": "Hover (visual only)",
+      "tooltip": "How high the ship model floats above the flight line (visual only — pad detection is unaffected).",
+      "min": 0,
+      "max": 10,
+      "unit": "m"
+    },
+    {
+      "name": "bobAmplitude",
+      "type": "Single",
+      "group": "Hover (visual only)",
+      "tooltip": "How far the ship bobs up and down around the hover height.",
+      "min": 0,
+      "max": 3,
+      "unit": "m"
+    },
+    {
+      "name": "bobFrequency",
+      "type": "Single",
+      "group": "Hover (visual only)",
+      "tooltip": "How fast the hover bobbing moves.",
+      "min": 0,
+      "max": 10,
+      "unit": "Hz"
+    },
+    {
+      "name": "hoverPitchDegrees",
+      "type": "Single",
+      "group": "Hover (visual only)",
+      "tooltip": "Maximum nose pitch wobble from the hover, in degrees.",
+      "min": 0,
+      "max": 10,
+      "unit": "deg"
+    },
+    {
+      "name": "maxBankAngle",
+      "type": "Single",
+      "group": "Feel",
+      "tooltip": "Maximum roll angle in degrees when steering at full input.",
+      "min": 0,
+      "max": 90,
+      "unit": "deg"
+    },
+    {
+      "name": "bankResponse",
+      "type": "Single",
+      "group": "Feel",
+      "tooltip": "How fast the ship rolls into / out of a bank.",
+      "min": 0.0099999997764825821,
+      "max": 20
+    }
+  ],
+  "types": {}
+}

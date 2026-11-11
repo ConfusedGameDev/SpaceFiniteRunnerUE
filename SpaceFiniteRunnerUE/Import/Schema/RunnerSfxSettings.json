@@ -1,0 +1,156 @@
+{
+  "unityType": "RunnerSfxSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Audio.RunnerSfxSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Audio/RunnerSfxSettings.cs",
+  "fields": [
+    {
+      "name": "powerUpClip",
+      "type": "AudioClip",
+      "group": "Power-up",
+      "tooltip": "One-shot on a boost orb pickup (FX bus). Empty = silent."
+    },
+    {
+      "name": "powerUpVolume",
+      "type": "Single",
+      "group": "Power-up",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "powerUpPitchBand",
+      "type": "Vector2",
+      "group": "Power-up",
+      "tooltip": "Pitch of the pickup at a green (1×) orb .. at a purple (10×) orb, on a log scale so blue (2.5×) lands at 0.4 of the band.",
+      "band": true,
+      "min": 0.5,
+      "max": 2
+    },
+    {
+      "name": "brakeClip",
+      "type": "AudioClip",
+      "group": "Power-up",
+      "tooltip": "One-shot on a brake pad hit (FX bus). Empty = silent — the default: brakes are not power-ups."
+    },
+    {
+      "name": "brakeVolume",
+      "type": "Single",
+      "group": "Power-up",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "engineClip",
+      "type": "AudioClip",
+      "group": "Engine",
+      "tooltip": "The engine loop (FX bus). Empty = silent."
+    },
+    {
+      "name": "engineVolumeBand",
+      "type": "Vector2",
+      "group": "Engine",
+      "tooltip": "Loop volume at a standstill .. at Light Speed — the engine gets stronger the faster the ship goes.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "enginePitchBand",
+      "type": "Vector2",
+      "group": "Engine",
+      "tooltip": "Loop pitch at a standstill .. at Light Speed.",
+      "band": true,
+      "min": 0.5,
+      "max": 3
+    },
+    {
+      "name": "engineResponse",
+      "type": "Single",
+      "group": "Engine",
+      "tooltip": "How sharply the loop follows the speed: the smoothing of the speed term (higher = snappier). Real time.",
+      "min": 1,
+      "max": 20
+    },
+    {
+      "name": "engineFadeSeconds",
+      "type": "Single",
+      "group": "Engine",
+      "tooltip": "How long the loop takes to drop out when the sim freezes (run over, tuning screen) and to come back on a relaunch. Real time.",
+      "min": 0.05000000074505806,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "engineFollowsClock",
+      "type": "Boolean",
+      "group": "Engine",
+      "tooltip": "Multiply the loop's pitch by the world clock, so the loop's slow motion drags the engine down with the picture. Unity never ties pitch to timeScale on its own."
+    },
+    {
+      "name": "jumpClip",
+      "type": "AudioClip",
+      "group": "Jump",
+      "tooltip": "One-shot the frame the ship leaves a ramp's lip (FX bus). Empty = silent."
+    },
+    {
+      "name": "jumpVolume",
+      "type": "Single",
+      "group": "Jump",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "dashClip",
+      "type": "AudioClip",
+      "group": "Dash",
+      "tooltip": "One-shot on a lateral dash on the track (FX bus). An airborne dash is a barrel roll and plays the roll clip instead. Empty = silent."
+    },
+    {
+      "name": "dashVolume",
+      "type": "Single",
+      "group": "Dash",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "barrelRollClip",
+      "type": "AudioClip",
+      "group": "Dash",
+      "tooltip": "One-shot the frame an airborne dash starts its barrel roll (FX bus). Empty = silent."
+    },
+    {
+      "name": "barrelRollVolume",
+      "type": "Single",
+      "group": "Dash",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "explosionClip",
+      "type": "AudioClip",
+      "group": "Hull",
+      "tooltip": "One-shot as the ship explodes at 0 hull (FX bus). Empty = silent."
+    },
+    {
+      "name": "explosionVolume",
+      "type": "Single",
+      "group": "Hull",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "laserHitClip",
+      "type": "AudioClip",
+      "group": "Hull",
+      "tooltip": "One-shot as the ship flies through a laser beam and the hit lands (FX bus). Empty = silent."
+    },
+    {
+      "name": "laserHitVolume",
+      "type": "Single",
+      "group": "Hull",
+      "min": 0,
+      "max": 1
+    }
+  ],
+  "types": {}
+}

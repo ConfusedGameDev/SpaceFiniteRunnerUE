@@ -1,0 +1,118 @@
+{
+  "unityType": "TrackShapeSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackShapeSettings",
+  "name": "FiniteRunner_TrackShape",
+  "guid": "ba50ea5278a64458aa28bc1c4e498c44",
+  "path": "Assets/04.Data/FiniteRunner/TrackSettings/FiniteRunner_TrackShape.asset",
+  "fields": {
+    "trackWidth": 120,
+    "straightness": 88.2,
+    "featureTable": [
+      {
+        "name": "Jump",
+        "prefab": {
+          "$ref": {
+            "guid": "07565272d009a8841b832365d7c537e1",
+            "fileId": 504743436962239729,
+            "path": "Assets/03.Prefabs/FiniteRunner/PF_RampBase.prefab",
+            "name": "PF_RampBase",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "definition": {
+          "$ref": {
+            "guid": "036070dea45c4920a5d5fd439400a3b5",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/TrackSettings/Features/Jump_Definition.asset",
+            "name": "Jump_Definition",
+            "type": "JumpDefinition",
+            "main": true
+          }
+        },
+        "probability": 100,
+        "minSpacing": 300,
+        "multiplier": 1,
+        "color": {
+          "r": 1,
+          "g": 0.8,
+          "b": 0.2,
+          "a": 1
+        }
+      },
+      {
+        "name": "Loop",
+        "prefab": null,
+        "definition": {
+          "$ref": {
+            "guid": "3f0b83579a6c4c04a2533aa02a053cb9",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/TrackSettings/Features/Loop_Definition.asset",
+            "name": "Loop_Definition",
+            "type": "LoopDefinition",
+            "main": true
+          }
+        },
+        "probability": 0,
+        "minSpacing": 600,
+        "multiplier": 0,
+        "color": {
+          "r": 0.35,
+          "g": 0.85,
+          "b": 1,
+          "a": 1
+        }
+      },
+      {
+        "name": "Full Tube",
+        "prefab": null,
+        "definition": {
+          "$ref": {
+            "guid": "796af27969ac451e838bde8366476334",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/TrackSettings/Features/FullTube_Definition.asset",
+            "name": "FullTube_Definition",
+            "type": "TubeDefinition",
+            "main": true
+          }
+        },
+        "probability": 0,
+        "minSpacing": 600,
+        "multiplier": 0,
+        "color": {
+          "r": 0.9,
+          "g": 0.5,
+          "b": 1,
+          "a": 1
+        }
+      }
+    ],
+    "featureSpacing": {
+      "x": 1500,
+      "y": 3241.02563
+    },
+    "elevationEnabled": true,
+    "elevationBand": 60,
+    "maxGrade": 1,
+    "maxGradeStepPerKnot": 3,
+    "baselinePull": 0.5,
+    "turnRateRange": {
+      "x": 2,
+      "y": 20.5897446
+    },
+    "turnArcRange": {
+      "x": 25,
+      "y": 120
+    },
+    "minStraightKnots": 4,
+    "alternateTurnChance": 0.7,
+    "maxHeadingDrift": 150,
+    "unbankedSweepChance": 0.45,
+    "openStraightChance": 0.9,
+    "bankEnabled": true,
+    "maxBankAngle": 88,
+    "bankPerDegreeOfTurn": 8,
+    "maxBankStepPerKnot": 45,
+    "levelLeadDistance": 500
+  }
+}

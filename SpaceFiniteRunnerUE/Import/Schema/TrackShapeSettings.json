@@ -1,0 +1,243 @@
+{
+  "unityType": "TrackShapeSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackShapeSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Track/TrackShapeSettings.cs",
+  "fields": [
+    {
+      "name": "trackWidth",
+      "type": "Single",
+      "group": "Layout",
+      "tooltip": "Full width of the track in meters. Drives the ship's steering clamp, the pad placement bounds and the road meshes (which are authored for 60 m and stretch proportionally). Regenerate to see it.",
+      "min": 10,
+      "max": 120,
+      "unit": "m"
+    },
+    {
+      "name": "straightness",
+      "type": "Single",
+      "group": "Layout",
+      "tooltip": "Chance that a straight knot starts a banked sweep: 100% = a dead straight line, 0% = a sweep at every chance the features leave room for. The sweeps' rate, arc and bank live below. Regenerate to see it.",
+      "min": 0,
+      "max": 100,
+      "unit": "%"
+    },
+    {
+      "name": "featureTable",
+      "type": "FeatureSpawnEntry[]",
+      "group": "Features",
+      "tooltip": "One entry per track feature kind (jump ramps, loops, tubes). Every feature step draws one entry by probability; the sliders auto-rebalance to always total 100%."
+    },
+    {
+      "name": "featureSpacing",
+      "type": "Vector2",
+      "group": "Features",
+      "tooltip": "Metres of track between feature steps (min, max), before each entry's own minimum spacing, footprint and exclusion are added.",
+      "band": true,
+      "min": 100,
+      "max": 5000,
+      "unit": "m"
+    },
+    {
+      "name": "elevationEnabled",
+      "type": "Boolean",
+      "group": "elevationEnabled",
+      "toggleGroup": true,
+      "tooltip": "Let the road rise and fall. Off = the flat track (and no random draws, so a seed reproduces the flat layout exactly)."
+    },
+    {
+      "name": "elevationBand",
+      "type": "Single",
+      "group": "elevationEnabled",
+      "toggleGroup": true,
+      "tooltip": "How far above or below the start height the road may wander, metres. Inside it the pull below leans the grade home; outside it the next knot always heads back.",
+      "min": 0,
+      "max": 300,
+      "unit": "m"
+    },
+    {
+      "name": "maxGrade",
+      "type": "Single",
+      "group": "elevationEnabled",
+      "toggleGroup": true,
+      "tooltip": "Steepest grade the road takes, degrees. Keep it well under vertical — the pose frame needs a tangent that is never straight up.",
+      "min": 0,
+      "max": 20,
+      "unit": "°"
+    },
+    {
+      "name": "maxGradeStepPerKnot",
+      "type": "Single",
+      "group": "elevationEnabled",
+      "toggleGroup": true,
+      "tooltip": "Most the grade may change from one knot to the next, degrees. Knots are 300–420 m apart, so 3° per knot is a swell kilometres long — raise it and the road starts to feel bumpy.",
+      "min": 0,
+      "max": 10,
+      "unit": "°"
+    },
+    {
+      "name": "baselinePull",
+      "type": "Single",
+      "group": "elevationEnabled",
+      "toggleGroup": true,
+      "tooltip": "How strongly the grade leans back toward the baseline as the road drifts off it: 0 = a free random walk inside the band, 1 = a full step's worth of pull at the band's edge.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "turnRateRange",
+      "type": "Vector2",
+      "group": "Turns",
+      "tooltip": "Heading change per knot during a sweep (min, max), degrees, rolled per sweep. Knots are 300–420 m apart: 30°/knot is a radius of roughly 700 m. The chance a straight knot STARTS a sweep is the generator's straightness knob (100% = never).",
+      "band": true,
+      "min": 2,
+      "max": 60,
+      "unit": "°/knot"
+    },
+    {
+      "name": "turnArcRange",
+      "type": "Vector2",
+      "group": "Turns",
+      "tooltip": "Total heading change of a sweep (min, max), degrees, rolled per sweep. A sweep lasts arc / rate knots.",
+      "band": true,
+      "min": 10,
+      "max": 180,
+      "unit": "°"
+    },
+    {
+      "name": "minStraightKnots",
+      "type": "Int32",
+      "group": "Turns",
+      "tooltip": "Straight knots kept after a sweep before the next may start.",
+      "min": 0,
+      "max": 6
+    },
+    {
+      "name": "alternateTurnChance",
+      "type": "Single",
+      "group": "Turns",
+      "tooltip": "Chance the next sweep goes the other way. Keeps the road from spiralling.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "maxHeadingDrift",
+      "type": "Single",
+      "group": "Turns",
+      "tooltip": "Once the heading has wandered this far from the start direction, the next sweep always heads back, so the road ahead never doubles over the road behind.",
+      "min": 0,
+      "max": 180,
+      "unit": "°"
+    },
+    {
+      "name": "unbankedSweepChance",
+      "type": "Single",
+      "group": "Turns",
+      "tooltip": "Chance a sweep is authored FLAT instead of banked: no bank, the ship's grip is tested against its speed (too fast and it slides outward), and the OUTER edge has no wall. Banked sweeps always hold. 0 = every sweep is banked and safe (and no random draw, so a seed reproduces the all-banked layout). Regenerate to see it.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "openStraightChance",
+      "type": "Single",
+      "group": "Turns",
+      "tooltip": "Chance a straight run of road has NO walls on either side: drift or dash too close to the edge and the ship drops off. Rolled once per straight run; only level road well clear of features, landing zones and banked sweeps can be open. 0 = every straight is walled (and no random draw). Regenerate to see it.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "bankEnabled",
+      "type": "Boolean",
+      "group": "bankEnabled",
+      "toggleGroup": true,
+      "tooltip": "Roll the road into its sweeps. Off = the road stays level through every turn."
+    },
+    {
+      "name": "maxBankAngle",
+      "type": "Single",
+      "group": "bankEnabled",
+      "toggleGroup": true,
+      "tooltip": "Steepest bank the road takes, degrees (outer edge up). 80 is a wall the ship rides like an oval's banking; keep it under 90.",
+      "min": 0,
+      "max": 89,
+      "unit": "°"
+    },
+    {
+      "name": "bankPerDegreeOfTurn",
+      "type": "Single",
+      "group": "bankEnabled",
+      "toggleGroup": true,
+      "tooltip": "Degrees of bank per degree of heading change at a knot. 4 with a 20°/knot sweep is the full 80° wall; a gentler sweep banks less.",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "maxBankStepPerKnot",
+      "type": "Single",
+      "group": "bankEnabled",
+      "toggleGroup": true,
+      "tooltip": "Most the bank may change from one knot to the next, degrees. 45 rolls a flat road up to the wall in two knots and back down in two; it also sets how many knots the road needs to unwind before a feature.",
+      "min": 0,
+      "max": 90,
+      "unit": "°"
+    },
+    {
+      "name": "levelLeadDistance",
+      "type": "Single",
+      "group": "bankEnabled",
+      "toggleGroup": true,
+      "tooltip": "Extra level road kept before every feature spot, metres, on top of the knots the current bank needs to unwind. Features (loops, tubes, ramps) always start on level road.",
+      "min": 0,
+      "max": 3000,
+      "unit": "m"
+    }
+  ],
+  "types": {
+    "FeatureSpawnEntry": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackGenerator+FeatureSpawnEntry",
+      "fields": [
+        {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "prefab",
+          "type": "GameObject",
+          "tooltip": "Optional model spawned instead of the code-built ramp. Authored as a UNIT ramp (1 m wide, 1 m tall lip, 1 m long, foot at its origin, rising toward +Z); it is scaled to the ramp's width, lip height and length. Colliders are stripped — detection is analytic."
+        },
+        {
+          "name": "definition",
+          "type": "TrackFeatureDefinition",
+          "tooltip": "What the feature is and how it behaves (a JumpDefinition for ramps). Cloned at play, so the debug menu never edits the asset."
+        },
+        {
+          "name": "probability",
+          "type": "Single",
+          "tooltip": "Share of every feature roll this entry wins. The table always sums to 100%.",
+          "min": 0,
+          "max": 100,
+          "unit": "%"
+        },
+        {
+          "name": "minSpacing",
+          "type": "Single",
+          "tooltip": "Least metres of track between this feature and the next one, on top of its footprint and exclusion.",
+          "min": 0,
+          "max": 3000,
+          "unit": "m"
+        },
+        {
+          "name": "multiplier",
+          "type": "Single",
+          "tooltip": "Takeoff boost as a multiple of GameSettings.powerUpSpeedBoost (1 = a green orb's worth).",
+          "min": 0
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "tooltip": "Tint of the code-built ramp (prefabs keep their own materials) and of its debug rows."
+        }
+      ]
+    }
+  }
+}

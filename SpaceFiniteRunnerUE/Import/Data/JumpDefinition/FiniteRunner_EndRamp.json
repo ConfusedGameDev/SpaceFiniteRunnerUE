@@ -1,0 +1,22 @@
+{
+  "unityType": "JumpDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.Features.JumpDefinition",
+  "name": "FiniteRunner_EndRamp",
+  "guid": "fd5827907bc44bd39c43ae568e1d4d40",
+  "path": "Assets/04.Data/Resources/FiniteRunner_EndRamp.asset",
+  "fields": {
+    "displayName": "End",
+    "widthFraction": 0.25,
+    "length": 120,
+    "rampAngle": 15,
+    "entryMargin": 0,
+    "airDistancePerSpeed": 0.6,
+    "airDistanceRange": {
+      "x": 80,
+      "y": 600
+    },
+    "landingClearance": 150,
+    "airControlFactor": 0.5,
+    "sideHitSpeedLoss": 0.05
+  }
+}

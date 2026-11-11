@@ -1,0 +1,39 @@
+{
+  "unityType": "DistanceFogSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.FX.DistanceFogSettings",
+  "name": "FiniteRunner_DistanceFog",
+  "guid": "605fd562a35742841bb724e3bceb0c01",
+  "path": "Assets/04.Data/Resources/FiniteRunner_DistanceFog.asset",
+  "fields": {
+    "intensity": 0.74999994,
+    "fogStart": 280,
+    "fogEnd": 480,
+    "fogDensity": 2.5,
+    "fogColorNear": {
+      "r": 0.07,
+      "g": 0.05,
+      "b": 0.14,
+      "a": 1
+    },
+    "fogColorFar": {
+      "r": 0.3,
+      "g": 0.09,
+      "b": 0.42,
+      "a": 1
+    },
+    "skyFogAmount": 0.85,
+    "heightFog": false,
+    "heightFalloff": 0.02,
+    "heightBase": 0,
+    "farGlitch": true,
+    "glitchStart": 300,
+    "glitchStrength": 0.6,
+    "glitchRate": 12,
+    "sliceStrength": 0.08,
+    "blockAmount": 0.5,
+    "colorSplit": 0.008,
+    "scanlineStrength": 0.3,
+    "clampFarClip": true,
+    "farClipMargin": 150
+  }
+}

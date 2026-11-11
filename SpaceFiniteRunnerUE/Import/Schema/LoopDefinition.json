@@ -1,0 +1,135 @@
+{
+  "unityType": "LoopDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.Features.LoopDefinition",
+  "baseType": "TrackFeatureDefinition",
+  "script": "Assets/01.Scripts/Runner/Track/Features/LoopDefinition.cs",
+  "fields": [
+    {
+      "name": "displayName",
+      "type": "String",
+      "declaredIn": "TrackFeatureDefinition",
+      "tooltip": "Name used in spawned object names and HUD text."
+    },
+    {
+      "name": "radius",
+      "type": "Single",
+      "group": "Loop",
+      "tooltip": "Radius of the loop in metres. At 100 m the loop is 628 m of track: 2.5 s at launch speed, 0.6 s at 1000 m/s.",
+      "min": 40,
+      "max": 250,
+      "unit": "m"
+    },
+    {
+      "name": "exitClearance",
+      "type": "Single",
+      "group": "Loop",
+      "tooltip": "Metres of plain track kept clear after the exit before the next feature may start.",
+      "min": 0,
+      "max": 1000,
+      "unit": "m"
+    },
+    {
+      "name": "lateralDriftRange",
+      "type": "Vector2",
+      "group": "Loop",
+      "tooltip": "How far sideways the exit lands from the entry (min, max), metres — a corkscrew. Side is random. 120 m is one track width.",
+      "band": true,
+      "min": 0,
+      "max": 600,
+      "unit": "m"
+    },
+    {
+      "name": "forwardCarryRange",
+      "type": "Vector2",
+      "group": "Loop",
+      "tooltip": "How far AHEAD of the entry the exit lands (min, max), metres — an elongated loop that carries the ship forward.",
+      "band": true,
+      "min": 0,
+      "max": 1000,
+      "unit": "m"
+    },
+    {
+      "name": "exitYawRange",
+      "type": "Vector2",
+      "group": "Loop",
+      "tooltip": "Heading change between entry and exit (min, max), degrees, about the entry's up. Side is random.",
+      "band": true,
+      "min": 0,
+      "max": 60,
+      "unit": "°"
+    },
+    {
+      "name": "turnsRange",
+      "type": "Vector2Int",
+      "group": "Loop",
+      "tooltip": "Full turns per loop (min, max). Every turn is another circumference of track; a failed loop still drops from the top of the first.",
+      "band": true,
+      "min": 1,
+      "max": 3
+    },
+    {
+      "name": "fallGravity",
+      "type": "Single",
+      "group": "Fall",
+      "tooltip": "Fake gravity of the drop from the top of a failed loop, m/s². Higher is a shorter fall (a 100 m loop is a 200 m drop).",
+      "min": 20,
+      "max": 400,
+      "unit": "m/s²"
+    },
+    {
+      "name": "fallSpeedLoss",
+      "type": "Single",
+      "group": "Fall",
+      "tooltip": "Fraction of the current speed lost on dropping off the top.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "passColor",
+      "type": "Color",
+      "group": "Gate",
+      "tooltip": "Gate colour while the ship is fast enough for the loop."
+    },
+    {
+      "name": "failColor",
+      "type": "Color",
+      "group": "Gate",
+      "tooltip": "Gate colour while the ship is too slow."
+    },
+    {
+      "name": "labelHeight",
+      "type": "Single",
+      "group": "Gate",
+      "tooltip": "Height of the required-speed number above the flight line at the mouth, metres. The code-built gate lifts it above its crossbar when that is taller.",
+      "min": 5,
+      "max": 150,
+      "unit": "m"
+    },
+    {
+      "name": "labelSize",
+      "type": "Single",
+      "group": "Gate",
+      "tooltip": "Character size of the required-speed number (a world-space text mesh, so this is roughly metres per character).",
+      "min": 0.5,
+      "max": 20
+    },
+    {
+      "name": "labelLeadMeters",
+      "type": "Single",
+      "group": "Gate",
+      "tooltip": "How far ahead of the loop its required-speed number is shown, metres. At 1000+ m/s the ship crosses 400 m in a third of a second, so this sits beyond the fog end (1500 m) — the number is up before the gate itself clears the haze.",
+      "min": 50,
+      "max": 4000,
+      "unit": "m"
+    },
+    {
+      "name": "gateHeadroom",
+      "type": "Single",
+      "group": "Gate",
+      "tooltip": "Placement rule: a loop is only placed when the ship's predicted speed at the gate (current speed minus the passive bleed over the gap) clears the required speed by this fraction. 0.1 = 10% above the demand. A refused spot draws another feature instead.",
+      "min": 0,
+      "max": 0.5
+    }
+  ],
+  "types": {}
+}

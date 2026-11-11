@@ -1,0 +1,78 @@
+{
+  "unityType": "TimeTrialDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.TimeTrial.TimeTrialDefinition",
+  "name": "TimeTrial_BeatTheClock",
+  "guid": "8e0fdc4a29f147c4b8cad523b8c41ab1",
+  "path": "Assets/04.Data/FiniteRunner/TimeTrial/TimeTrial_BeatTheClock.asset",
+  "fields": {
+    "mode": {
+      "$enum": "BeatTheClock",
+      "value": 0
+    },
+    "timeLimitSeconds": 90,
+    "startSeconds": 15,
+    "maxClockSeconds": 99.9,
+    "lowTimeWarningSeconds": 5,
+    "autoCount": 8,
+    "firstCheckpointMeters": 3000,
+    "featureClearance": 150,
+    "paceShare": 1,
+    "paceFloorKmh": 900,
+    "graceSeconds": 3,
+    "awardBand": {
+      "x": 4,
+      "y": 40
+    },
+    "awardScale": 1,
+    "cleanCheckpointBonus": 2,
+    "dirtyCheckpointPenalty": 0,
+    "patrolKillBonus": 3,
+    "lifePenaltySeconds": 5,
+    "trafficKillPays": false,
+    "scrapeBreaksClean": false,
+    "patrolEnabled": false,
+    "gatePrefab": null,
+    "gateHeight": 28,
+    "gateThickness": 2.5,
+    "gatePendingColor": {
+      "r": 0.2,
+      "g": 0.8,
+      "b": 2.5,
+      "a": 1
+    },
+    "gateCleanColor": {
+      "r": 0.3,
+      "g": 2.5,
+      "b": 0.5,
+      "a": 1
+    },
+    "gateDirtyColor": {
+      "r": 2.5,
+      "g": 1.4,
+      "b": 0.2,
+      "a": 1
+    },
+    "showGateLabels": true,
+    "labelGap": 4,
+    "labelSize": 4,
+    "labelAwardColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "labelCleanColor": {
+      "r": 0.35,
+      "g": 1,
+      "b": 0.5,
+      "a": 1
+    },
+    "labelDirtyColor": {
+      "r": 1,
+      "g": 0.55,
+      "b": 0.15,
+      "a": 1
+    },
+    "debugLog": false
+  }
+}

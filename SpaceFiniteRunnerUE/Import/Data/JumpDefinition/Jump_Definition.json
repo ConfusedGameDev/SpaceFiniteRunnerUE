@@ -1,0 +1,22 @@
+{
+  "unityType": "JumpDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.Features.JumpDefinition",
+  "name": "Jump_Definition",
+  "guid": "036070dea45c4920a5d5fd439400a3b5",
+  "path": "Assets/04.Data/FiniteRunner/TrackSettings/Features/Jump_Definition.asset",
+  "fields": {
+    "displayName": "Jump",
+    "widthFraction": 0.25,
+    "length": 60,
+    "rampAngle": 26,
+    "entryMargin": 2.5,
+    "airDistancePerSpeed": 0.6,
+    "airDistanceRange": {
+      "x": 80,
+      "y": 600
+    },
+    "landingClearance": 150,
+    "airControlFactor": 0.5,
+    "sideHitSpeedLoss": 0.15
+  }
+}

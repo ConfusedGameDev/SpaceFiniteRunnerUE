@@ -1,0 +1,46 @@
+{
+  "unityType": "LoopDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.Features.LoopDefinition",
+  "name": "Loop_Definition",
+  "guid": "3f0b83579a6c4c04a2533aa02a053cb9",
+  "path": "Assets/04.Data/FiniteRunner/TrackSettings/Features/Loop_Definition.asset",
+  "fields": {
+    "displayName": "Loop",
+    "radius": 100,
+    "exitClearance": 200,
+    "lateralDriftRange": {
+      "x": 0,
+      "y": 240
+    },
+    "forwardCarryRange": {
+      "x": 0,
+      "y": 300
+    },
+    "exitYawRange": {
+      "x": 0,
+      "y": 30
+    },
+    "turnsRange": {
+      "x": 1,
+      "y": 1
+    },
+    "fallGravity": 120,
+    "fallSpeedLoss": 0.4,
+    "passColor": {
+      "r": 0.2,
+      "g": 1,
+      "b": 0.45,
+      "a": 1
+    },
+    "failColor": {
+      "r": 1,
+      "g": 0.2,
+      "b": 0.15,
+      "a": 1
+    },
+    "labelHeight": 30,
+    "labelSize": 5,
+    "labelLeadMeters": 1800,
+    "gateHeadroom": 0.1
+  }
+}

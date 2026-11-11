@@ -1,0 +1,337 @@
+{
+  "unityType": "MenuTheme",
+  "fullType": "ConfusedGameDev.FiniteRunner.UI.MenuTheme",
+  "name": "FiniteRunner_MenuTheme",
+  "guid": "7a1c4f2e9b3d4a5c8e6f0d1b2c3a4d61",
+  "path": "Assets/04.Data/Resources/FiniteRunner_MenuTheme.asset",
+  "fields": {
+    "titleFont": {
+      "$ref": {
+        "guid": "fd796841f874d4c1cbdd0dab23c9360e",
+        "fileId": 12800000,
+        "path": "Assets/06.UI/02.Fonts/Kenney Future.ttf",
+        "name": "Kenney Future",
+        "type": "Font",
+        "main": true
+      }
+    },
+    "bodyFont": {
+      "$ref": {
+        "guid": "e2be03aa6816d4a44a5744417d34ce3e",
+        "fileId": 12800000,
+        "path": "Assets/06.UI/02.Fonts/Kenney Future Narrow.ttf",
+        "name": "Kenney Future Narrow",
+        "type": "Font",
+        "main": true
+      }
+    },
+    "rowPlate": {
+      "$ref": {
+        "guid": "c7ff5f883de2044118f6b449f719b0f0",
+        "fileId": 396613276074236960,
+        "path": "Assets/06.UI/01.Sprites/PNG/Red/Double/button_square_header_small_rectangle.png",
+        "name": "button_square_header_small_rectangle_0",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "titlePlate": {
+      "$ref": {
+        "guid": "16642dcda0fca4066ac445f024193472",
+        "fileId": 21300000,
+        "path": "Assets/06.UI/01.Sprites/PNG/Red/Double/button_square_header_blade_rectangle_screws.png",
+        "name": "button_square_header_blade_rectangle_screws",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "sliderTrack": {
+      "$ref": {
+        "guid": "9383e918747f74236976cb9d5d414ed6",
+        "fileId": 21300000,
+        "path": "Assets/06.UI/01.Sprites/PNG/Red/Double/bar_round_large.png",
+        "name": "bar_round_large",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "sliderFill": {
+      "$ref": {
+        "guid": "3d658e5ed19844d5498518e497b0df0a",
+        "fileId": 21300000,
+        "path": "Assets/06.UI/01.Sprites/PNG/Red/Double/bar_round_gloss_large.png",
+        "name": "bar_round_gloss_large",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "toggleBox": {
+      "$ref": {
+        "guid": "db5084dcddbce4189a4e257530c218f7",
+        "fileId": 21300000,
+        "path": "Assets/06.UI/01.Sprites/PNG/Red/Double/bar_square_small_square.png",
+        "name": "bar_square_small_square",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "selectionMarker": {
+      "$ref": {
+        "guid": "d63de7b3b21b242b796d9defd7a9b5c0",
+        "fileId": 21300000,
+        "path": "Assets/06.UI/01.Sprites/PNG/Red/Double/crosshair_color_a.png",
+        "name": "crosshair_color_a",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "glyphConfirm": {
+      "$ref": {
+        "guid": "dfe23cc467b4d9044822194b3c6473df",
+        "fileId": -7956427973557797689,
+        "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_a.png",
+        "name": "xbox_button_a_0",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "glyphBack": {
+      "$ref": {
+        "guid": "da634deeda298154083c7047443c947c",
+        "fileId": 643402748272714948,
+        "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_b.png",
+        "name": "xbox_button_b_0",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "glyphNavigate": {
+      "$ref": {
+        "guid": "723482a838f1a314899d27609d021519",
+        "fileId": 2359391360792562025,
+        "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_vertical.png",
+        "name": "xbox_dpad_vertical_0",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "glyphAdjust": {
+      "$ref": {
+        "guid": "7d774c45743f92d4da07887e72b2cbfe",
+        "fileId": -5985726356368612277,
+        "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_horizontal.png",
+        "name": "xbox_dpad_horizontal_0",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "glyphStart": {
+      "$ref": {
+        "guid": "0fee7badf73365447874bfd88bda357e",
+        "fileId": -8211830279039031973,
+        "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_start.png",
+        "name": "xbox_button_start_0",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "glyphBumperLeft": {
+      "$ref": {
+        "guid": "bb4fca19ea4a47641836e03a3420c480",
+        "fileId": 2267800731179639549,
+        "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_lb.png",
+        "name": "xbox_lb_0",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "glyphBumperRight": {
+      "$ref": {
+        "guid": "3d3f11b6a53fc104a8630ea0237f2827",
+        "fileId": 4249578791139060025,
+        "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_rb.png",
+        "name": "xbox_rb_0",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "backdrop": {
+      "r": 0.03,
+      "g": 0.04,
+      "b": 0.07,
+      "a": 0.97
+    },
+    "accent": {
+      "r": 1,
+      "g": 0.29,
+      "b": 0.16,
+      "a": 1
+    },
+    "textPrimary": {
+      "r": 0.490566015,
+      "g": 0.490566015,
+      "b": 0.490566015,
+      "a": 1
+    },
+    "textDim": {
+      "r": 0.62,
+      "g": 0.66,
+      "b": 0.74,
+      "a": 1
+    },
+    "plateIdle": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.35
+    },
+    "plateFocused": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "rowWidth": 620,
+    "rowHeight": 86,
+    "rowSpacing": 18,
+    "mainColumnX": -430,
+    "entranceDuration": 0.8,
+    "entranceSlide": 120,
+    "entranceStagger": 0.06,
+    "titleLead": 0.12,
+    "entranceCurve": {
+      "$curve": [
+        {
+          "time": 0,
+          "value": 0,
+          "inTangent": 0,
+          "outTangent": 2.2,
+          "inWeight": 0,
+          "outWeight": 0,
+          "weightedMode": 0
+        },
+        {
+          "time": 1,
+          "value": 1,
+          "inTangent": 0,
+          "outTangent": 0,
+          "inWeight": 0,
+          "outWeight": 0,
+          "weightedMode": 0
+        }
+      ],
+      "preWrapMode": "ClampForever",
+      "postWrapMode": "ClampForever"
+    },
+    "focusEaseSeconds": 0.15,
+    "focusScale": 1.06,
+    "unfocusedAlpha": 0.75,
+    "screenTransition": 0.35,
+    "screenSlide": 520,
+    "loadingFillSeconds": 1.5,
+    "loadingSpinner": null,
+    "loadingSpinnerSpin": 180,
+    "attractPulseSeconds": 1.6,
+    "attractPulseAlpha": {
+      "x": 0.35,
+      "y": 1
+    },
+    "stickDeadZone": 0.5,
+    "repeatDelay": 0.45,
+    "repeatInterval": 0.12,
+    "inputGrace": 0.3,
+    "mixer": {
+      "$ref": {
+        "guid": "5c8a24d1f0b74e2ab6d3915c47e0a8f3",
+        "fileId": 24100000,
+        "path": "Assets/04.Data/FiniteRunner/Audio/FiniteRunnerMixer.mixer",
+        "name": "FiniteRunnerMixer",
+        "type": "AudioMixerController",
+        "main": true
+      }
+    },
+    "uiOutput": {
+      "$ref": {
+        "guid": "5c8a24d1f0b74e2ab6d3915c47e0a8f3",
+        "fileId": 24300006,
+        "path": "Assets/04.Data/FiniteRunner/Audio/FiniteRunnerMixer.mixer",
+        "name": "UI",
+        "type": "AudioMixerGroupController",
+        "main": false
+      }
+    },
+    "moveClip": {
+      "$ref": {
+        "guid": "7a125b87cd6282947bbbf8235f3b5ae7",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/02.UI/rollover2.ogg",
+        "name": "rollover2",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "confirmClip": {
+      "$ref": {
+        "guid": "b8db834e45436404c825dd0d8154aaf3",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/02.UI/click1.ogg",
+        "name": "click1",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "backClip": {
+      "$ref": {
+        "guid": "41107b74b2c95894b80682f78014673a",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/02.UI/click3.ogg",
+        "name": "click3",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "adjustClip": {
+      "$ref": {
+        "guid": "2255e196007747a43ba95b9ce7cea3dd",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/02.UI/switch1.ogg",
+        "name": "switch1",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "debriefClip": {
+      "$ref": {
+        "guid": "879337b09f6b3d1409d1e17eecdc2109",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/01.SFX/FiniteRunner/computerNoise_002.ogg",
+        "name": "computerNoise_002",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "uiVolume": 0.8,
+    "pauseMusicClip": null,
+    "pauseAudioFade": 0.4,
+    "loadingMusicClip": {
+      "$ref": {
+        "guid": "e951ddd6d4df403e968399541b05a91e",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/03.Music/LoadingScreen/M_Loading_Test.mp3",
+        "name": "M_Loading_Test",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "loadingAudioFade": 0.4,
+    "cinemaAudioFade": 0.6,
+    "moveRumble": 0.12,
+    "confirmRumble": 0.4,
+    "moveRumbleSeconds": 0.05,
+    "rankSlamRumble": {
+      "x": 0.9,
+      "y": 0.6,
+      "z": 0.4
+    }
+  }
+}

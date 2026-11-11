@@ -1,0 +1,698 @@
+{
+  "unityType": "ControlGlyphSet",
+  "fullType": "ConfusedGameDev.FiniteRunner.UI.ControlGlyphSet",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/UI/ControlGlyphSet.cs",
+  "fields": [
+    {
+      "name": "keys",
+      "type": "KeyGlyph[]",
+      "group": "Keyboard (06.UI/01.Sprites/Keyboard & Mouse/Double)"
+    },
+    {
+      "name": "pads",
+      "type": "PadGlyph[]",
+      "group": "Gamepad (06.UI/01.Sprites/Xbox Series/Double)"
+    },
+    {
+      "name": "monoPads",
+      "type": "PadGlyph[]",
+      "group": "Gamepad (06.UI/01.Sprites/Xbox Series/Double)",
+      "tooltip": "White versions of the colour face buttons, for world prompts that tint the glyph (the boost QTE). Controls not listed fall back to the main set."
+    }
+  ],
+  "types": {
+    "KeyGlyph": {
+      "fullType": "ConfusedGameDev.FiniteRunner.UI.KeyGlyph",
+      "fields": [
+        {
+          "name": "key",
+          "type": "Key"
+        },
+        {
+          "name": "sprite",
+          "type": "Sprite"
+        }
+      ]
+    },
+    "PadGlyph": {
+      "fullType": "ConfusedGameDev.FiniteRunner.UI.PadGlyph",
+      "fields": [
+        {
+          "name": "control",
+          "type": "PadControl"
+        },
+        {
+          "name": "sprite",
+          "type": "Sprite"
+        }
+      ]
+    },
+    "Key": {
+      "fullType": "UnityEngine.InputSystem.Key",
+      "enum": [
+        {
+          "name": "None",
+          "value": 0
+        },
+        {
+          "name": "Space",
+          "value": 1
+        },
+        {
+          "name": "Enter",
+          "value": 2
+        },
+        {
+          "name": "Tab",
+          "value": 3
+        },
+        {
+          "name": "Backquote",
+          "value": 4
+        },
+        {
+          "name": "Quote",
+          "value": 5
+        },
+        {
+          "name": "Semicolon",
+          "value": 6
+        },
+        {
+          "name": "Comma",
+          "value": 7
+        },
+        {
+          "name": "Period",
+          "value": 8
+        },
+        {
+          "name": "Slash",
+          "value": 9
+        },
+        {
+          "name": "Backslash",
+          "value": 10
+        },
+        {
+          "name": "LeftBracket",
+          "value": 11
+        },
+        {
+          "name": "RightBracket",
+          "value": 12
+        },
+        {
+          "name": "Minus",
+          "value": 13
+        },
+        {
+          "name": "Equals",
+          "value": 14
+        },
+        {
+          "name": "A",
+          "value": 15
+        },
+        {
+          "name": "B",
+          "value": 16
+        },
+        {
+          "name": "C",
+          "value": 17
+        },
+        {
+          "name": "D",
+          "value": 18
+        },
+        {
+          "name": "E",
+          "value": 19
+        },
+        {
+          "name": "F",
+          "value": 20
+        },
+        {
+          "name": "G",
+          "value": 21
+        },
+        {
+          "name": "H",
+          "value": 22
+        },
+        {
+          "name": "I",
+          "value": 23
+        },
+        {
+          "name": "J",
+          "value": 24
+        },
+        {
+          "name": "K",
+          "value": 25
+        },
+        {
+          "name": "L",
+          "value": 26
+        },
+        {
+          "name": "M",
+          "value": 27
+        },
+        {
+          "name": "N",
+          "value": 28
+        },
+        {
+          "name": "O",
+          "value": 29
+        },
+        {
+          "name": "P",
+          "value": 30
+        },
+        {
+          "name": "Q",
+          "value": 31
+        },
+        {
+          "name": "R",
+          "value": 32
+        },
+        {
+          "name": "S",
+          "value": 33
+        },
+        {
+          "name": "T",
+          "value": 34
+        },
+        {
+          "name": "U",
+          "value": 35
+        },
+        {
+          "name": "V",
+          "value": 36
+        },
+        {
+          "name": "W",
+          "value": 37
+        },
+        {
+          "name": "X",
+          "value": 38
+        },
+        {
+          "name": "Y",
+          "value": 39
+        },
+        {
+          "name": "Z",
+          "value": 40
+        },
+        {
+          "name": "Digit1",
+          "value": 41
+        },
+        {
+          "name": "Digit2",
+          "value": 42
+        },
+        {
+          "name": "Digit3",
+          "value": 43
+        },
+        {
+          "name": "Digit4",
+          "value": 44
+        },
+        {
+          "name": "Digit5",
+          "value": 45
+        },
+        {
+          "name": "Digit6",
+          "value": 46
+        },
+        {
+          "name": "Digit7",
+          "value": 47
+        },
+        {
+          "name": "Digit8",
+          "value": 48
+        },
+        {
+          "name": "Digit9",
+          "value": 49
+        },
+        {
+          "name": "Digit0",
+          "value": 50
+        },
+        {
+          "name": "LeftShift",
+          "value": 51
+        },
+        {
+          "name": "RightShift",
+          "value": 52
+        },
+        {
+          "name": "LeftAlt",
+          "value": 53
+        },
+        {
+          "name": "AltGr",
+          "value": 54
+        },
+        {
+          "name": "AltGr",
+          "value": 54
+        },
+        {
+          "name": "LeftCtrl",
+          "value": 55
+        },
+        {
+          "name": "RightCtrl",
+          "value": 56
+        },
+        {
+          "name": "LeftCommand",
+          "value": 57
+        },
+        {
+          "name": "LeftCommand",
+          "value": 57
+        },
+        {
+          "name": "LeftCommand",
+          "value": 57
+        },
+        {
+          "name": "LeftCommand",
+          "value": 57
+        },
+        {
+          "name": "RightWindows",
+          "value": 58
+        },
+        {
+          "name": "RightWindows",
+          "value": 58
+        },
+        {
+          "name": "RightWindows",
+          "value": 58
+        },
+        {
+          "name": "RightWindows",
+          "value": 58
+        },
+        {
+          "name": "ContextMenu",
+          "value": 59
+        },
+        {
+          "name": "Escape",
+          "value": 60
+        },
+        {
+          "name": "LeftArrow",
+          "value": 61
+        },
+        {
+          "name": "RightArrow",
+          "value": 62
+        },
+        {
+          "name": "UpArrow",
+          "value": 63
+        },
+        {
+          "name": "DownArrow",
+          "value": 64
+        },
+        {
+          "name": "Backspace",
+          "value": 65
+        },
+        {
+          "name": "PageDown",
+          "value": 66
+        },
+        {
+          "name": "PageUp",
+          "value": 67
+        },
+        {
+          "name": "Home",
+          "value": 68
+        },
+        {
+          "name": "End",
+          "value": 69
+        },
+        {
+          "name": "Insert",
+          "value": 70
+        },
+        {
+          "name": "Delete",
+          "value": 71
+        },
+        {
+          "name": "CapsLock",
+          "value": 72
+        },
+        {
+          "name": "NumLock",
+          "value": 73
+        },
+        {
+          "name": "PrintScreen",
+          "value": 74
+        },
+        {
+          "name": "ScrollLock",
+          "value": 75
+        },
+        {
+          "name": "Pause",
+          "value": 76
+        },
+        {
+          "name": "NumpadEnter",
+          "value": 77
+        },
+        {
+          "name": "NumpadDivide",
+          "value": 78
+        },
+        {
+          "name": "NumpadMultiply",
+          "value": 79
+        },
+        {
+          "name": "NumpadPlus",
+          "value": 80
+        },
+        {
+          "name": "NumpadMinus",
+          "value": 81
+        },
+        {
+          "name": "NumpadPeriod",
+          "value": 82
+        },
+        {
+          "name": "NumpadEquals",
+          "value": 83
+        },
+        {
+          "name": "Numpad0",
+          "value": 84
+        },
+        {
+          "name": "Numpad1",
+          "value": 85
+        },
+        {
+          "name": "Numpad2",
+          "value": 86
+        },
+        {
+          "name": "Numpad3",
+          "value": 87
+        },
+        {
+          "name": "Numpad4",
+          "value": 88
+        },
+        {
+          "name": "Numpad5",
+          "value": 89
+        },
+        {
+          "name": "Numpad6",
+          "value": 90
+        },
+        {
+          "name": "Numpad7",
+          "value": 91
+        },
+        {
+          "name": "Numpad8",
+          "value": 92
+        },
+        {
+          "name": "Numpad9",
+          "value": 93
+        },
+        {
+          "name": "F1",
+          "value": 94
+        },
+        {
+          "name": "F2",
+          "value": 95
+        },
+        {
+          "name": "F3",
+          "value": 96
+        },
+        {
+          "name": "F4",
+          "value": 97
+        },
+        {
+          "name": "F5",
+          "value": 98
+        },
+        {
+          "name": "F6",
+          "value": 99
+        },
+        {
+          "name": "F7",
+          "value": 100
+        },
+        {
+          "name": "F8",
+          "value": 101
+        },
+        {
+          "name": "F9",
+          "value": 102
+        },
+        {
+          "name": "F10",
+          "value": 103
+        },
+        {
+          "name": "F11",
+          "value": 104
+        },
+        {
+          "name": "F12",
+          "value": 105
+        },
+        {
+          "name": "OEM1",
+          "value": 106
+        },
+        {
+          "name": "OEM2",
+          "value": 107
+        },
+        {
+          "name": "OEM3",
+          "value": 108
+        },
+        {
+          "name": "OEM4",
+          "value": 109
+        },
+        {
+          "name": "OEM5",
+          "value": 110
+        },
+        {
+          "name": "IMESelected",
+          "value": 111
+        },
+        {
+          "name": "F13",
+          "value": 112
+        },
+        {
+          "name": "F14",
+          "value": 113
+        },
+        {
+          "name": "F15",
+          "value": 114
+        },
+        {
+          "name": "F16",
+          "value": 115
+        },
+        {
+          "name": "F17",
+          "value": 116
+        },
+        {
+          "name": "F18",
+          "value": 117
+        },
+        {
+          "name": "F19",
+          "value": 118
+        },
+        {
+          "name": "F20",
+          "value": 119
+        },
+        {
+          "name": "F21",
+          "value": 120
+        },
+        {
+          "name": "F22",
+          "value": 121
+        },
+        {
+          "name": "F23",
+          "value": 122
+        },
+        {
+          "name": "F24",
+          "value": 123
+        },
+        {
+          "name": "MediaPlayPause",
+          "value": 124
+        },
+        {
+          "name": "MediaRewind",
+          "value": 125
+        },
+        {
+          "name": "MediaForward",
+          "value": 126
+        }
+      ]
+    },
+    "PadControl": {
+      "fullType": "ConfusedGameDev.FiniteRunner.UI.PadControl",
+      "enum": [
+        {
+          "name": "None",
+          "value": 0
+        },
+        {
+          "name": "ButtonSouth",
+          "value": 1
+        },
+        {
+          "name": "ButtonEast",
+          "value": 2
+        },
+        {
+          "name": "ButtonWest",
+          "value": 3
+        },
+        {
+          "name": "ButtonNorth",
+          "value": 4
+        },
+        {
+          "name": "LeftShoulder",
+          "value": 5
+        },
+        {
+          "name": "RightShoulder",
+          "value": 6
+        },
+        {
+          "name": "LeftTrigger",
+          "value": 7
+        },
+        {
+          "name": "RightTrigger",
+          "value": 8
+        },
+        {
+          "name": "LeftStickPress",
+          "value": 9
+        },
+        {
+          "name": "RightStickPress",
+          "value": 10
+        },
+        {
+          "name": "DpadUp",
+          "value": 11
+        },
+        {
+          "name": "DpadDown",
+          "value": 12
+        },
+        {
+          "name": "DpadLeft",
+          "value": 13
+        },
+        {
+          "name": "DpadRight",
+          "value": 14
+        },
+        {
+          "name": "Start",
+          "value": 15
+        },
+        {
+          "name": "Select",
+          "value": 16
+        },
+        {
+          "name": "LeftStickLeft",
+          "value": 17
+        },
+        {
+          "name": "LeftStickRight",
+          "value": 18
+        },
+        {
+          "name": "LeftStickUp",
+          "value": 19
+        },
+        {
+          "name": "LeftStickDown",
+          "value": 20
+        },
+        {
+          "name": "RightStickLeft",
+          "value": 21
+        },
+        {
+          "name": "RightStickRight",
+          "value": 22
+        },
+        {
+          "name": "RightStickUp",
+          "value": 23
+        },
+        {
+          "name": "RightStickDown",
+          "value": 24
+        }
+      ]
+    }
+  }
+}

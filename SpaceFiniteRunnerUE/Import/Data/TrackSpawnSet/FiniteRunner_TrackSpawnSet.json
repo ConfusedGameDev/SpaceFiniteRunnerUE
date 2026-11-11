@@ -1,0 +1,41 @@
+{
+  "unityType": "TrackSpawnSet",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackSpawnSet",
+  "name": "FiniteRunner_TrackSpawnSet",
+  "guid": "187ca9ce3d27497ea0408637f5a324a4",
+  "path": "Assets/04.Data/FiniteRunner/TrackSettings/FiniteRunner_TrackSpawnSet.asset",
+  "fields": {
+    "spawners": [
+      {
+        "$ref": {
+          "guid": "f4ba8d760ba048adabc58fb66291ea7b",
+          "fileId": 11400000,
+          "path": "Assets/04.Data/FiniteRunner/Spawnables/Spawner_LaserGates.asset",
+          "name": "Spawner_LaserGates",
+          "type": "LaserGateSpawner",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "ad19493ad18c4018974ad5e34e2daa52",
+          "fileId": 11400000,
+          "path": "Assets/04.Data/FiniteRunner/Spawnables/Spawner_SpeedOrbs.asset",
+          "name": "Spawner_SpeedOrbs",
+          "type": "SpeedOrbSpawner",
+          "main": true
+        }
+      },
+      {
+        "$ref": {
+          "guid": "5e20e5f1cfa54c4c909586110134597f",
+          "fileId": 11400000,
+          "path": "Assets/04.Data/FiniteRunner/Spawnables/Spawner_RepairOrbs.asset",
+          "name": "Spawner_RepairOrbs",
+          "type": "RepairOrbSpawner",
+          "main": true
+        }
+      }
+    ]
+  }
+}

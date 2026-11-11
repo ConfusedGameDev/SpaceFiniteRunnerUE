@@ -1,0 +1,21 @@
+{
+  "unityType": "DodgeSlowMoSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Ship.DodgeSlowMoSettings",
+  "name": "DodgeSlowMo_Settings",
+  "guid": "3f013355396a24f4d84f387a30395c09",
+  "path": "Assets/04.Data/FiniteRunner/Ship/DodgeSlowMo_Settings.asset",
+  "fields": {
+    "enabled": true,
+    "threatWindowSeconds": 1,
+    "dodgeTraffic": true,
+    "dodgeLasers": true,
+    "extraReach": 0.5,
+    "minSpeedKmh": 200,
+    "cooldownSeconds": 1,
+    "forecastStepSeconds": 0.05,
+    "timeScale": 0.3,
+    "holdUntilProgress": 0.9,
+    "blendInSeconds": 0.06,
+    "blendOutSeconds": 0.2
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "unityType": "HyperspaceSkySettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.FX.HyperspaceSkySettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/FX/Hyperspace/HyperspaceSkySettings.cs",
+  "fields": [
+    {
+      "name": "material",
+      "type": "Material",
+      "group": "Renderer",
+      "tooltip": "Skybox material on the Skybox/FiniteRunner/Hyperspace shader. The driver plays a runtime COPY of it, so the asset is never written by gameplay."
+    },
+    {
+      "name": "fadeInSeconds",
+      "type": "Single",
+      "group": "Transition",
+      "tooltip": "Seconds the sky takes to crossfade from the scene's skybox into hyperspace once engaged.",
+      "min": 0,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "fadeOutSeconds",
+      "type": "Single",
+      "group": "Transition",
+      "tooltip": "Seconds the sky takes to fade back to the scene's skybox once released (the ship dropped below Light Speed).",
+      "min": 0,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "flashStrength",
+      "type": "Single",
+      "group": "Transition",
+      "tooltip": "Burst of light the jump makes on engaging (0 = none). Fades out over Flash seconds.",
+      "min": 0,
+      "max": 4
+    },
+    {
+      "name": "flashSeconds",
+      "type": "Single",
+      "group": "Transition",
+      "tooltip": "How long the jump's flash takes to fade.",
+      "min": 0.05000000074505806,
+      "max": 3,
+      "unit": "s"
+    },
+    {
+      "name": "axisResponse",
+      "type": "Single",
+      "group": "Transition",
+      "tooltip": "How fast the tunnel's axis follows the ship's heading (exponential response, 1/s). Low = the vanishing point drifts lazily through curves.",
+      "min": 0.5,
+      "max": 20,
+      "unit": "1/s"
+    },
+    {
+      "name": "scrollSpeed",
+      "type": "Single",
+      "group": "Speed",
+      "tooltip": "Tunnel scroll (cells per second) at the reference speed — the runner hands Light Speed.",
+      "min": 0,
+      "max": 40
+    },
+    {
+      "name": "speedFactorBand",
+      "type": "Vector2",
+      "group": "Speed",
+      "tooltip": "Scroll speed as a multiple of Scroll Speed, clamped to this band of speed ÷ reference: braking hard never stops the tunnel, a purple orb never makes it strobe.",
+      "band": true,
+      "min": 0,
+      "max": 4
+    },
+    {
+      "name": "backgroundColor",
+      "type": "Color",
+      "group": "Look"
+    },
+    {
+      "name": "coreColor",
+      "type": "Color",
+      "group": "Look"
+    },
+    {
+      "name": "streakCyan",
+      "type": "Color",
+      "group": "Look"
+    },
+    {
+      "name": "streakAqua",
+      "type": "Color",
+      "group": "Look"
+    },
+    {
+      "name": "streakGreen",
+      "type": "Color",
+      "group": "Look"
+    },
+    {
+      "name": "greenShare",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Share of streaks painted green; the rest blend cyan → aqua.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "brightness",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Streak brightness (HDR — above ~1 the bloom picks them up).",
+      "min": 0,
+      "max": 8
+    },
+    {
+      "name": "columns",
+      "type": "Int32",
+      "group": "Look",
+      "tooltip": "Angular columns round the tunnel. More = thinner, busier streaks.",
+      "min": 8,
+      "max": 256
+    },
+    {
+      "name": "density",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Share of cells that hold a streak.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "cellLength",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Length of one cell along the tunnel. Shorter = more, closer streaks.",
+      "min": 0.10000000149011612,
+      "max": 8
+    },
+    {
+      "name": "streakLength",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "How much of its cell a streak fills along the tunnel.",
+      "min": 0.05000000074505806,
+      "max": 1
+    },
+    {
+      "name": "streakWidth",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "How much of its column a streak fills across.",
+      "min": 0.05000000074505806,
+      "max": 1
+    },
+    {
+      "name": "coreRadius",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Size of the dark vanishing point (sine of the angle off the tunnel axis).",
+      "min": 0,
+      "max": 0.5
+    }
+  ],
+  "types": {}
+}

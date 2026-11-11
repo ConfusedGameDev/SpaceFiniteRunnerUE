@@ -1,0 +1,100 @@
+{
+  "unityType": "ShipSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Ship.ShipSettings",
+  "name": "Runner_ShipSettings",
+  "guid": "57d64fda05521a1479ede5f857430e55",
+  "path": "Assets/04.Data/Ship/Runner_ShipSettings.asset",
+  "fields": {
+    "maxStepMeters": 4,
+    "maxSubsteps": 24,
+    "groundLayers": 128,
+    "pickupsEnabled": true,
+    "pickupLayers": 257,
+    "attachRange": 6,
+    "probeHalfExtents": {
+      "x": 2,
+      "y": 5
+    },
+    "coyoteMeters": 3.9,
+    "visualLift": 0,
+    "magnetic": true,
+    "magnetStrength": 0,
+    "maxGroundAngle": 50,
+    "hullRadius": 2,
+    "climbAngle": 45,
+    "wallHitCooldownSeconds": 0.5,
+    "airDistancePerSpeed": 1.08,
+    "airDistanceRange": {
+      "x": 80,
+      "y": 600
+    },
+    "airControlFactor": 0.5,
+    "minAirGravity": 30,
+    "maxLandAngle": 60,
+    "useGuide": true,
+    "guideAssist": 0.18,
+    "guideHeadingResponse": 6,
+    "guideRefreshMeters": 16,
+    "guideSearchSeconds": 0.5,
+    "dashEnabled": true,
+    "dashCost": 0.5,
+    "dashSinglePress": true,
+    "dashDoubleTapSeconds": 0.3,
+    "stallGraceSeconds": 2,
+    "recoveryEnabled": true,
+    "groundlessSeconds": 0.75,
+    "maxAirSeconds": 10,
+    "useKillHeight": false,
+    "killHeight": -200,
+    "fallGravity": 30,
+    "fallTumbleDegreesPerSecond": 120,
+    "fallDurationSeconds": 1.5,
+    "respawnWaitSeconds": 3,
+    "respawnRollingStart": true,
+    "respawnSpeedPenalty": 0.15,
+    "respawnClearance": 150,
+    "respawnBackMeters": 60,
+    "respawnLookAheadMeters": 400,
+    "respawnCentreSearchMeters": 150,
+    "crumbSpacingMeters": 15,
+    "maxCrumbTilt": 35,
+    "reverseSpeed": 25,
+    "reverseAcceleration": 40,
+    "ghostMaterial": {
+      "$ref": {
+        "guid": "a3d45f0c8b21463f9d6e7c5a1b2f8d43",
+        "fileId": 2100000,
+        "path": "Assets/02.Art/02.Materials/FiniteRunner/DashGhost_Mat.mat",
+        "name": "DashGhost_Mat",
+        "type": "Material",
+        "main": true
+      }
+    },
+    "dashGhostLifetime": 0.35,
+    "dashGhostStartAlpha": 0.45,
+    "dashGhostDriftMeters": 0,
+    "respawnBlinkRate": 8,
+    "barrelRollTrailSeconds": 0.6,
+    "barrelRollTrailWidth": 0.9,
+    "barrelRollTrailSpan": 1,
+    "barrelRollTrailColor": {
+      "r": 0.45,
+      "g": 0.9,
+      "b": 1,
+      "a": 0.9
+    },
+    "barrelRollTrailMaterial": {
+      "$ref": {
+        "guid": "7c2e4d0f3b8a5f9e0a1c6d5e4f3a2b18",
+        "fileId": 2100000,
+        "path": "Assets/02.Art/02.Materials/FiniteRunner/BarrelRollTrail_Mat.mat",
+        "name": "BarrelRollTrail_Mat",
+        "type": "Material",
+        "main": true
+      }
+    },
+    "maxYawRate": 90,
+    "turnAuthority": 1,
+    "freeStrafeShare": 0.35
+  }
+}

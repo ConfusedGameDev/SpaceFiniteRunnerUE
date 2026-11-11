@@ -1,0 +1,4712 @@
+{
+  "unityType": "TrackLayoutAsset",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackLayoutAsset",
+  "name": "Track_Standard",
+  "guid": "ec876427ee3040c7a26ee57ac2fe5a85",
+  "path": "Assets/04.Data/FiniteRunner/Tracks/Track_Standard.asset",
+  "fields": {
+    "timeLimitSeconds": 0,
+    "shape": {
+      "$ref": {
+        "guid": "ba50ea5278a64458aa28bc1c4e498c44",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/TrackSettings/FiniteRunner_TrackShape.asset",
+        "name": "FiniteRunner_TrackShape",
+        "type": "TrackShapeSettings",
+        "main": true
+      }
+    },
+    "spawnSet": {
+      "$ref": {
+        "guid": "187ca9ce3d27497ea0408637f5a324a4",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/TrackSettings/FiniteRunner_TrackSpawnSet.asset",
+        "name": "FiniteRunner_TrackSpawnSet",
+        "type": "TrackSpawnSet",
+        "main": true
+      }
+    },
+    "customPrefabs": [],
+    "layout": {
+      "formatVersion": 1,
+      "seed": 506988743,
+      "width": 120,
+      "length": 30000,
+      "endZoneStart": 28800.002,
+      "endDistance": 30000,
+      "endRunUp": 1200,
+      "knots": [
+        {
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -1.70244193,
+            "z": 315.994965
+          },
+          "rotation": {
+            "x": 0.00269375113,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999964
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -4.415805,
+            "z": 671.1195
+          },
+          "rotation": {
+            "x": 0.00382021442,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999927
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 1.65642548,
+            "z": 1018.99738
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 8.683657,
+            "z": 1421.58716
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 15.1278591,
+            "z": 1790.77527
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 9.49797,
+            "z": 2200.15845
+          },
+          "rotation": {
+            "x": 0.006875575,
+            "y": 0,
+            "z": 0,
+            "w": 0.999976456
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 2.4311595,
+            "z": 2605.01563
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 9.623014,
+            "z": 3017.03662
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 4.387293,
+            "z": 3316.991
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 1.473818E-07,
+            "z": -100
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": -1.473818E-07,
+            "z": 100
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -2.48239756,
+            "z": 3710.55518
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -8.768442,
+            "z": 4070.68237
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -14.31242,
+            "z": 4388.297
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -20.1460247,
+            "z": 4722.504
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -26.0773373,
+            "z": 5120.51172
+          },
+          "rotation": {
+            "x": 0.00745063554,
+            "y": 0,
+            "z": 0,
+            "w": 0.999972343
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -20.457634,
+            "z": 5442.46436
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -13.9996376,
+            "z": 5812.443
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -6.807837,
+            "z": 6224.461
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 0.262529373,
+            "z": 6629.522
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 5.498251,
+            "z": 6929.476
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": -1.473818E-07,
+            "z": -100
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 1.473818E-07,
+            "z": 100
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 12.0921631,
+            "z": 7307.241
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 17.9285431,
+            "z": 7641.60742
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 23.8677368,
+            "z": 7981.864
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 30.3738346,
+            "z": 8354.598
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 24.4793472,
+            "z": 8692.293
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 23.0207062,
+            "z": 9028.489
+          },
+          "rotation": {
+            "x": 0.002169315,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999977
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 16.4771271,
+            "z": 9403.371
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 9.459129,
+            "z": 9805.432
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 3.82598955E-07,
+            "z": -134.0407
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": -3.82598955E-07,
+            "z": 134.0407
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 2.906992,
+            "z": 10180.8037
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -4.18760633,
+            "z": 10587.2529
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -9.865029,
+            "z": 10912.5127
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -15.3253527,
+            "z": 11225.334
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -20.9342155,
+            "z": 11579.583
+          },
+          "rotation": {
+            "x": 0.0079158,
+            "y": 0,
+            "z": 0,
+            "w": 0.999968767
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -27.6217346,
+            "z": 11962.7109
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -22.3275814,
+            "z": 12266.0127
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -19.4320145,
+            "z": 12652.9141
+          },
+          "rotation": {
+            "x": -0.00374192116,
+            "y": 0,
+            "z": 0,
+            "w": 0.999993
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -14.1962929,
+            "z": 12952.8682
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": -1.473818E-07,
+            "z": -100
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 1.473818E-07,
+            "z": 100
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -7.184452,
+            "z": 13354.5762
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -1.76848745,
+            "z": 13664.8564
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 4.464368,
+            "z": 14021.9365
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 11.6875734,
+            "z": 14435.7539
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 6.02553129,
+            "z": 14796.915
+          },
+          "rotation": {
+            "x": 0.00783794,
+            "y": 0,
+            "z": 0,
+            "w": 0.999969363
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 0.0118565559,
+            "z": 15141.4385
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -5.67990828,
+            "z": 15467.52
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -11.138,
+            "z": 15780.2129
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -16.3737221,
+            "z": 16080.167
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 1.473818E-07,
+            "z": -100
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": -1.473818E-07,
+            "z": 100
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -21.86232,
+            "z": 16394.61
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -27.3305511,
+            "z": 16707.8848
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -34.3188744,
+            "z": 17108.2461
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -41.2296143,
+            "z": 17504.1621
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -37.45664,
+            "z": 17902.5957
+          },
+          "rotation": {
+            "x": -0.004734601,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999888
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -38.1748466,
+            "z": 18307.21
+          },
+          "rotation": {
+            "x": 0.0008875219,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999997
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -45.4554,
+            "z": 18724.3145
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -38.5898972,
+            "z": 19117.6387
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -33.1564178,
+            "z": 19428.9219
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -36.49166,
+            "z": 19728.9023
+          },
+          "rotation": {
+            "x": 0.005558822,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999846
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 1.95897883E-07,
+            "z": -100
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": -1.95897883E-07,
+            "z": 100
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -40.3434029,
+            "z": 20075.34
+          },
+          "rotation": {
+            "x": 0.005558822,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999846
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -44.5904236,
+            "z": 20457.33
+          },
+          "rotation": {
+            "x": 0.005558822,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999846
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -48.72327,
+            "z": 20829.05
+          },
+          "rotation": {
+            "x": 0.005558822,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999846
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -52.22305,
+            "z": 21143.832
+          },
+          "rotation": {
+            "x": 0.005558822,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999846
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -47.81436,
+            "z": 21524.71
+          },
+          "rotation": {
+            "x": -0.00578721939,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999833
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -40.6214066,
+            "z": 21936.7949
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -34.581955,
+            "z": 22282.7949
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -29.0751171,
+            "z": 22598.2813
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -22.3750782,
+            "z": 22982.127
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -16.4600544,
+            "z": 23320.998
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -10.61197,
+            "z": 23656.0352
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -5.37624836,
+            "z": 23955.99
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": -1.473818E-07,
+            "z": -100
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 1.473818E-07,
+            "z": 100
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 0.4748373,
+            "z": 24291.2
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 7.705884,
+            "z": 24705.4648
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 14.94729,
+            "z": 25120.3242
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 21.1312637,
+            "z": 25474.6035
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 27.40267,
+            "z": 25833.8926
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 32.61922,
+            "z": 26184.0547
+          },
+          "rotation": {
+            "x": -0.007448143,
+            "y": 0,
+            "z": 0,
+            "w": 0.999972343
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 26.81406,
+            "z": 26516.6328
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 21.2844257,
+            "z": 26833.4258
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 15.86904,
+            "z": 27143.6738
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 21.1079674,
+            "z": 27511.8574
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": -5.052134E-07,
+            "z": -122.740242
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 5.052134E-07,
+            "z": 122.740242
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 26.2979965,
+            "z": 27876.6035
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 31.9899349,
+            "z": 28276.623
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 35.6856041,
+            "z": 28536.35
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 39.38127,
+            "z": 28796.0762
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": -4.7958747E-07,
+            "z": -86.58398
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 4.7958747E-07,
+            "z": 86.58398
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 43.9827881,
+            "z": 29119.4629
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 49.40741,
+            "z": 29500.6973
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 52.9309425,
+            "z": 29748.3262
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 56.454464,
+            "z": 29995.9531
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": -3.27374437E-07,
+            "z": -82.55078
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 3.27374437E-07,
+            "z": 82.55078
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        }
+      ],
+      "knotDistances": [
+        0,
+        315.999573,
+        671.138062,
+        1019.07257,
+        1421.72363,
+        1790.97424,
+        2200.403,
+        2605.32983,
+        3017.42529,
+        3317.43213,
+        3711.0564,
+        4071.23853,
+        4388.90137,
+        4723.159,
+        5121.218,
+        5443.22559,
+        5813.26025,
+        6225.341,
+        6630.46338,
+        6930.46338,
+        7308.286,
+        7642.703,
+        7983.011,
+        8355.81,
+        8693.563,
+        9029.765,
+        9404.705,
+        9806.827,
+        10182.2568,
+        10588.7676,
+        10914.0771,
+        11226.9463,
+        11581.24,
+        11964.4336,
+        12267.7881,
+        12654.7012,
+        12954.7012,
+        13356.4707,
+        13666.7979,
+        14023.9326,
+        14437.82,
+        14799.0332,
+        15143.6094,
+        15469.74,
+        15782.4814,
+        16082.4814,
+        16396.9727,
+        16710.2949,
+        17110.7168,
+        17506.6973,
+        17905.1543,
+        18309.7734,
+        18726.95,
+        19120.3418,
+        19431.6758,
+        19731.68,
+        20078.1387,
+        20460.1523,
+        20831.8965,
+        21146.7,
+        21527.6074,
+        21939.7539,
+        22285.8066,
+        22601.3418,
+        22985.2461,
+        23324.168,
+        23659.2559,
+        23959.2559,
+        24294.5156,
+        24708.8438,
+        25123.7656,
+        25478.1,
+        25837.4434,
+        26187.65,
+        26520.2852,
+        26837.127,
+        27147.4277,
+        27515.6543,
+        27880.4375,
+        28280.498,
+        28540.25,
+        28800.002,
+        29123.4219,
+        29504.6953,
+        29752.35,
+        30000.002
+      ],
+      "sections": [],
+      "flatSweeps": [],
+      "openStretches": [
+        {
+          "start": 0,
+          "end": 2605.32178,
+          "outerSide": 0
+        },
+        {
+          "start": 4723.159,
+          "end": 6225.34131,
+          "outerSide": 0
+        },
+        {
+          "start": 8355.803,
+          "end": 9029.764,
+          "outerSide": 0
+        },
+        {
+          "start": 11226.9463,
+          "end": 12267.7871,
+          "outerSide": 0
+        },
+        {
+          "start": 14437.8125,
+          "end": 15143.6084,
+          "outerSide": 0
+        },
+        {
+          "start": 17506.6914,
+          "end": 18726.94,
+          "outerSide": 0
+        },
+        {
+          "start": 21146.6953,
+          "end": 23324.166,
+          "outerSide": 0
+        },
+        {
+          "start": 25123.7637,
+          "end": 26837.125,
+          "outerSide": 0
+        }
+      ],
+      "keepOuts": [
+        {
+          "x": 3317.432,
+          "y": 4427.43164
+        },
+        {
+          "x": 6930.46338,
+          "y": 8040.46338
+        },
+        {
+          "x": 9806.827,
+          "y": 10916.8271
+        },
+        {
+          "x": 12954.7,
+          "y": 14064.7
+        },
+        {
+          "x": 16082.48,
+          "y": 17192.48
+        },
+        {
+          "x": 19731.6777,
+          "y": 20841.6777
+        },
+        {
+          "x": 23959.2539,
+          "y": 25069.2539
+        },
+        {
+          "x": 27515.6523,
+          "y": 28625.6523
+        },
+        {
+          "x": 28800.002,
+          "y": 0
+        }
+      ],
+      "placements": [
+        {
+          "kind": {
+            "$enum": "EndRamp",
+            "value": 7
+          },
+          "distance": 29880,
+          "lateral": -43.5833321,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "EndRamp",
+            "value": 7
+          },
+          "distance": 29880,
+          "lateral": 0,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "EndRamp",
+            "value": 7
+          },
+          "distance": 29880,
+          "lateral": 43.5833321,
+          "height": 0,
+          "variant": 2,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 3317.432,
+          "lateral": 38.33849,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 6930.46338,
+          "lateral": 8.125499,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 9806.827,
+          "lateral": 7.0743,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 12954.7,
+          "lateral": -30.22156,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 16082.48,
+          "lateral": 24.318716,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 19731.6777,
+          "lateral": -21.07609,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 23959.2539,
+          "lateral": -32.23003,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 27515.6523,
+          "lateral": -31.1904869,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 1642.61377,
+          "lateral": 6.41382647,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 24.5054359,
+            "y": -88.72734,
+            "z": 270.3077,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 2013.66968,
+          "lateral": 14.8273182,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 42.0268555,
+            "y": 79.1277,
+            "z": 221.010544,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 2237.688,
+          "lateral": 11.0516491,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 45.35068,
+            "y": -47.8829536,
+            "z": 348.4129,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 2507.491,
+          "lateral": -18.2287331,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 53.4077072,
+            "y": -79.4644852,
+            "z": 67.25384,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 2829.27979,
+          "lateral": -12.6786919,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 47.37674,
+            "y": 69.7166748,
+            "z": 323.601044,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 4829.70166,
+          "lateral": -15.145031,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 26.99949,
+            "y": 49.4580879,
+            "z": 241.532669,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 5105.24072,
+          "lateral": 15.7811718,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 25.61703,
+            "y": -79.5168457,
+            "z": 232.132919,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 5458.129,
+          "lateral": -5.328685,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 38.60975,
+            "y": 51.0003281,
+            "z": 307.8543,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 5722.72266,
+          "lateral": 3.11797476,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 43.88335,
+            "y": -78.6167145,
+            "z": 34.0831947,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 5963.97168,
+          "lateral": 1.20030522,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 45.7674026,
+            "y": -73.6784439,
+            "z": 251.302048,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 6160.448,
+          "lateral": -7.72510862,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 26.85,
+            "y": 46.7794151,
+            "z": 199.473572,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 6383.054,
+          "lateral": -19.23107,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 52.38662,
+            "y": -63.87068,
+            "z": 349.657837,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 8442.733,
+          "lateral": -2.78989434,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 26.1291027,
+            "y": -86.14571,
+            "z": 26.868309,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 8838.625,
+          "lateral": 15.5888252,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 41.1204147,
+            "y": 41.8732147,
+            "z": 221.84726,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 9169.975,
+          "lateral": 1.49106407,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 32.3226967,
+            "y": 71.53847,
+            "z": 128.6381,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 11319.0967,
+          "lateral": -12.7893438,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 37.4105225,
+            "y": -73.02208,
+            "z": 352.777863,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 11628.89,
+          "lateral": -2.19729877,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 29.4803257,
+            "y": -48.6546135,
+            "z": 144.430511,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 11868.1924,
+          "lateral": -9.218421,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 27.9841,
+            "y": -68.93322,
+            "z": 73.50725,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 12076.14,
+          "lateral": -6.48445225,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 50.7785721,
+            "y": 80.7946,
+            "z": 187.387878,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 12232.3428,
+          "lateral": 15.4134417,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 40.22412,
+            "y": 72.24352,
+            "z": 359.454285,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 12521.5225,
+          "lateral": -7.57836246,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 51.5719833,
+            "y": 85.77009,
+            "z": 295.666138,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 14466.97,
+          "lateral": 0.43002072,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 51.64425,
+            "y": -57.5583763,
+            "z": 127.266785,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 14630.6572,
+          "lateral": 8.754334,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 30.79545,
+            "y": -52.540947,
+            "z": 104.359688,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 14836.6973,
+          "lateral": -7.952702,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 24.7847023,
+            "y": 79.71594,
+            "z": 111.016548,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 15177.5654,
+          "lateral": -19.2307644,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 33.5174675,
+            "y": -56.6758652,
+            "z": 115.476776,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 15523.3438,
+          "lateral": 2.44191623,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 29.0528,
+            "y": 83.24516,
+            "z": 306.145,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 17594.75,
+          "lateral": -10.06951,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 26.7168446,
+            "y": 41.2793,
+            "z": 281.925842,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 17767.7383,
+          "lateral": -7.331111,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 43.48553,
+            "y": -43.0257645,
+            "z": 293.2817,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 18004.584,
+          "lateral": -12.65519,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 45.3957443,
+            "y": 82.13751,
+            "z": 306.522339,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 18345.42,
+          "lateral": 12.8627777,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 34.0189056,
+            "y": 89.02672,
+            "z": 204.526291,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 18642.7441,
+          "lateral": 11.7924633,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 49.8643074,
+            "y": -79.45068,
+            "z": 155.994873,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 19022.2441,
+          "lateral": -1.39109933,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 41.2683067,
+            "y": 43.9993477,
+            "z": 104.147041,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 19173.0586,
+          "lateral": 15.5547543,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 29.4654713,
+            "y": -84.42388,
+            "z": 65.82145,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 21243.9473,
+          "lateral": 15.0401268,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 31.9580727,
+            "y": -55.890873,
+            "z": 1.36320591,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 21423.2773,
+          "lateral": 18.6720047,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 36.69534,
+            "y": 87.32352,
+            "z": 294.88443,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 21786.4727,
+          "lateral": 15.2759342,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 46.4446068,
+            "y": 74.86675,
+            "z": 214.174469,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 22038.0781,
+          "lateral": -11.37368,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 42.91905,
+            "y": -57.0663528,
+            "z": 137.494019,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 22276.61,
+          "lateral": -12.1887093,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 48.4029427,
+            "y": 54.4803925,
+            "z": 253.105682,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 22466.73,
+          "lateral": 0.369677842,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 26.7999954,
+            "y": 68.15771,
+            "z": 327.639465,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 22850.21,
+          "lateral": 6.479913,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 39.3331528,
+            "y": -52.2669678,
+            "z": 229.368057,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 23056.8184,
+          "lateral": -1.58346939,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 30.882143,
+            "y": 44.06826,
+            "z": 92.77439,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 23292.6758,
+          "lateral": -1.10255611,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 35.06922,
+            "y": -44.236866,
+            "z": 192.360352,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 25471.5234,
+          "lateral": -18.0323086,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 47.25021,
+            "y": -57.2007256,
+            "z": 128.030243,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 25701.6641,
+          "lateral": -8.530339,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 52.23958,
+            "y": -78.34623,
+            "z": 316.693878,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 25929.8164,
+          "lateral": 12.3638906,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 34.6654778,
+            "y": 80.44888,
+            "z": 57.35833,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 26297.7285,
+          "lateral": 4.59551,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 46.36936,
+            "y": 60.2172775,
+            "z": 2.58599281,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 26607.5723,
+          "lateral": 7.09632969,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 37.65373,
+            "y": 72.9023743,
+            "z": 285.384949,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 26791.4238,
+          "lateral": 16.559391,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 26.3757458,
+            "y": -65.26645,
+            "z": 135.758652,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 273.5971,
+          "lateral": 53.16011,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 674.3258,
+          "lateral": 43.1871376,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 1132.22144,
+          "lateral": -22.0240974,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 1598.64893,
+          "lateral": -43.906826,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 2033.9397,
+          "lateral": -10.8825579,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 2424.241,
+          "lateral": -11.6825905,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 2849.5498,
+          "lateral": -43.7204552,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 3253.58228,
+          "lateral": 0.06571871,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 3717.08447,
+          "lateral": -42.0646324,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 4129.644,
+          "lateral": -1.1880846,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 4522.887,
+          "lateral": -35.8310661,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 4954.18,
+          "lateral": -47.05466,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 5360.461,
+          "lateral": -50.87433,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 5824.236,
+          "lateral": 28.99605,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 6271.353,
+          "lateral": 50.1058,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 6709.025,
+          "lateral": -7.54387665,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 7167.95166,
+          "lateral": 9.927328,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 7642.29443,
+          "lateral": -17.2872276,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 8104.77246,
+          "lateral": 14.2916145,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 8494.062,
+          "lateral": 3.08760238,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 8941.089,
+          "lateral": 4.49271,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 9361.413,
+          "lateral": 12.869873,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 9886.827,
+          "lateral": 11.0805035,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 10282.4316,
+          "lateral": -34.5854759,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 10735.5977,
+          "lateral": 36.81579,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 11126.0391,
+          "lateral": 8.320538,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 11597.915,
+          "lateral": 14.3335724,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 12019.6738,
+          "lateral": 19.4633827,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 12450.7959,
+          "lateral": 39.08296,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 12922.4639,
+          "lateral": -18.0108719,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 13377.3135,
+          "lateral": -53.74818,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 13834.6572,
+          "lateral": 20.0418911,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 14298.7832,
+          "lateral": -41.953228,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 14708.9932,
+          "lateral": -30.0826645,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 15197.835,
+          "lateral": -19.01326,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 15670.0576,
+          "lateral": -37.51837,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 16162.48,
+          "lateral": -47.1206,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 16592.8164,
+          "lateral": 30.9698868,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 16997.8,
+          "lateral": -11.9656038,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 17455.334,
+          "lateral": 1.829492,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 17854.8867,
+          "lateral": 31.6659927,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 18255.2266,
+          "lateral": 38.0260162,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 18671.25,
+          "lateral": -23.68533,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 19109.0137,
+          "lateral": 20.8383675,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 19573.3184,
+          "lateral": 0.9699104,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 20017.832,
+          "lateral": 1.77153373,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 20498.6211,
+          "lateral": -9.248799,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 20950.65,
+          "lateral": 45.3112869,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 21443.5469,
+          "lateral": 35.0647545,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 21928.7266,
+          "lateral": -43.2393532,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 22414.9414,
+          "lateral": 25.3135128,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 22870.48,
+          "lateral": -13.6511765,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 23312.9453,
+          "lateral": -13.4388361,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 23798.5664,
+          "lateral": -41.79207,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 24224.416,
+          "lateral": 26.5706,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 24688.1367,
+          "lateral": -23.472393,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 25115.7578,
+          "lateral": 6.64921761,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 25548.75,
+          "lateral": 18.073473,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 26008.8652,
+          "lateral": -1.01868534,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 26402.32,
+          "lateral": -37.3708839,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 26840.6016,
+          "lateral": 45.38193,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 27318.7734,
+          "lateral": 5.624376,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 27749.67,
+          "lateral": 19.9998417,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 28174.25,
+          "lateral": -53.7102547,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 28662.9531,
+          "lateral": 45.2965546,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 231.565521,
+          "lateral": 14.2197676,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 2326.916,
+          "lateral": -30.78745,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 4355.8623,
+          "lateral": 27.4375916,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 8587.508,
+          "lateral": -17.4680214,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 10469.1035,
+          "lateral": -40.19963,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 14379.418,
+          "lateral": -31.5448551,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 16386.1055,
+          "lateral": 5.09547,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 18145.6426,
+          "lateral": -41.9500542,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 20426.8145,
+          "lateral": 52.2535248,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 22200.3027,
+          "lateral": -5.87181664,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 24145.9375,
+          "lateral": 16.2553253,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 28344.2051,
+          "lateral": 43.8969574,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        }
+      ]
+    }
+  }
+}

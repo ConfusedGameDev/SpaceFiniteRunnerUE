@@ -1,0 +1,197 @@
+{
+  "unityType": "TrafficDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Traffic.TrafficDefinition",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Traffic/TrafficDefinition.cs",
+  "fields": [
+    {
+      "name": "vehicles",
+      "type": "TrafficVehicle[]",
+      "group": "Vehicles",
+      "tooltip": "The cars traffic picks from, by weight. Every entry is prewarmed maxActive times when a level binds, so a long list costs memory, not hitches."
+    },
+    {
+      "name": "maxActive",
+      "type": "Int32",
+      "group": "Fleet",
+      "tooltip": "Cars on the road at once.",
+      "min": 0,
+      "max": 24
+    },
+    {
+      "name": "spawnSpacing",
+      "type": "Vector2",
+      "group": "Fleet",
+      "tooltip": "Least gap between a new car and the nearest one already on the road, metres — rolled per spawn inside this band.",
+      "band": true,
+      "min": 20,
+      "max": 600
+    },
+    {
+      "name": "spawnAheadSeconds",
+      "type": "Single",
+      "group": "Fleet",
+      "tooltip": "A new car appears this many seconds of the ship's travel ahead of it, so it is past the fog at any speed. Clamped to the built road.",
+      "min": 1,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "minSpawnAhead",
+      "type": "Single",
+      "group": "Fleet",
+      "tooltip": "Never spawn closer than this ahead of the ship. When the built road does not reach this far, the spawn waits.",
+      "min": 200,
+      "max": 2000,
+      "unit": "m"
+    },
+    {
+      "name": "despawnBehind",
+      "type": "Single",
+      "group": "Fleet",
+      "tooltip": "A car goes back to the pool once it is this far behind the ship.",
+      "min": 5,
+      "max": 200,
+      "unit": "m"
+    },
+    {
+      "name": "noSpawnNearEnd",
+      "type": "Single",
+      "group": "Fleet",
+      "tooltip": "No new car once the ship has this much track or less left. Cars already on the road drive on; none ever spawns on the final run-up.",
+      "min": 0,
+      "max": 5000,
+      "unit": "m"
+    },
+    {
+      "name": "visibleRange",
+      "type": "Single",
+      "group": "Fleet",
+      "tooltip": "When HIT HYPERSPACE clears the road, cars this close ahead of the ship explode (harmlessly); the ones further off just vanish.",
+      "min": 100,
+      "max": 2000,
+      "unit": "m"
+    },
+    {
+      "name": "speedBand",
+      "type": "Vector2",
+      "group": "Driving",
+      "tooltip": "Cruise speed of a car toward the ship, rolled once per spawn inside this band.",
+      "band": true,
+      "min": 10,
+      "max": 200,
+      "unit": "m/s"
+    },
+    {
+      "name": "lateralSpeed",
+      "type": "Single",
+      "group": "Driving",
+      "tooltip": "How fast a car changes lane, metres per second across the road.",
+      "min": 1,
+      "max": 30,
+      "unit": "m/s"
+    },
+    {
+      "name": "avoidLookahead",
+      "type": "Single",
+      "group": "Driving",
+      "tooltip": "How far down the road a car plans round ramps and laser gates, metres. Long enough for the lane change to finish: at the slowest car speed it must cover the widest move at the lateral speed above.",
+      "min": 20,
+      "max": 400,
+      "unit": "m"
+    },
+    {
+      "name": "avoidMargin",
+      "type": "Single",
+      "group": "Driving",
+      "tooltip": "Clearance a car keeps from a ramp's side or a laser's beam and emitters, metres, on top of its own half width.",
+      "min": 0,
+      "max": 6,
+      "unit": "m"
+    },
+    {
+      "name": "edgeMargin",
+      "type": "Single",
+      "group": "Driving",
+      "tooltip": "Clearance a car keeps from an edge with no wall, metres, on top of its own half width. Cars never fall.",
+      "min": 0,
+      "max": 10,
+      "unit": "m"
+    },
+    {
+      "name": "explosionScale",
+      "type": "Single",
+      "group": "Impact",
+      "tooltip": "Size of a car's explosion, as a multiple of the ship's own (GameSettings explosion). The textures, lifetime and particle count are the ship's.",
+      "min": 0.20000000298023224,
+      "max": 3,
+      "unit": "x ship explosion"
+    }
+  ],
+  "types": {
+    "TrafficVehicle": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Traffic.TrafficVehicle",
+      "fields": [
+        {
+          "name": "prefab",
+          "type": "GameObject",
+          "tooltip": "The car's model. Instantiated under the pooled car with its transform reset and every collider stripped."
+        },
+        {
+          "name": "weight",
+          "type": "Single",
+          "tooltip": "Share of the picks, relative to the other entries (they need not sum to anything).",
+          "min": 0,
+          "max": 10
+        },
+        {
+          "name": "scale",
+          "type": "Single",
+          "tooltip": "Size of the model. The Cyberpunk air-traffic cars are about 5 m long at 1; ~3.5 makes them as long as the ship.",
+          "min": 0.10000000149011612,
+          "max": 10
+        },
+        {
+          "name": "yawOffset",
+          "type": "Single",
+          "tooltip": "Yaw that turns the model's nose down its own +Z. The Cyberpunk models are built along X and want -90.",
+          "min": -180,
+          "max": 180,
+          "unit": "°"
+        },
+        {
+          "name": "hoverHeight",
+          "type": "Single",
+          "tooltip": "Height of the car above the road, along the track's up.",
+          "min": 0,
+          "max": 10,
+          "unit": "m"
+        },
+        {
+          "name": "halfLength",
+          "type": "Single",
+          "tooltip": "Half the car's length along the track, for contact.",
+          "min": 0.5,
+          "max": 20,
+          "unit": "m"
+        },
+        {
+          "name": "halfWidth",
+          "type": "Single",
+          "tooltip": "Half the car's width across the track, for contact and for the gap it needs past an obstacle.",
+          "min": 0.5,
+          "max": 10,
+          "unit": "m"
+        },
+        {
+          "name": "height",
+          "type": "Single",
+          "tooltip": "The car's height above its hover line, for contact: a ship flying higher than hover + this clears it.",
+          "min": 0.5,
+          "max": 15,
+          "unit": "m"
+        }
+      ]
+    }
+  }
+}

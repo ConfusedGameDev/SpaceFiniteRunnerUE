@@ -1,0 +1,2127 @@
+{
+  "unityType": "ControlGlyphSet",
+  "fullType": "ConfusedGameDev.FiniteRunner.UI.ControlGlyphSet",
+  "name": "FiniteRunner_ControlGlyphs",
+  "guid": "532c1229b1796de4abeb31b6aa3e92e6",
+  "path": "Assets/04.Data/Resources/FiniteRunner_ControlGlyphs.asset",
+  "fields": {
+    "keys": [
+      {
+        "key": {
+          "$enum": "A",
+          "value": 15
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "bb21d373df76144d28e58b86c2fc26cb",
+            "fileId": 1145220741083561907,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_a.png",
+            "name": "keyboard_a_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "B",
+          "value": 16
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "57985a98d7a904343b8286d6003099a5",
+            "fileId": 4387665465535511833,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_b.png",
+            "name": "keyboard_b_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "C",
+          "value": 17
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "833e988d5d12b455bbb79f0e33cf092f",
+            "fileId": 7489297749385158885,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_c.png",
+            "name": "keyboard_c_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "D",
+          "value": 18
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "fb1ce58e2b9a74f12b6fefa56ec97fc9",
+            "fileId": -8387302115945079765,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_d.png",
+            "name": "keyboard_d_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "E",
+          "value": 19
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "435c74698c91e48ddac3d9b148abb5e2",
+            "fileId": 1622727937493990531,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_e.png",
+            "name": "keyboard_e_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F",
+          "value": 20
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "e73787351ecbf416c997f37af683c14d",
+            "fileId": -9125861541802950594,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f.png",
+            "name": "keyboard_f_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "G",
+          "value": 21
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "5c6465263af0a4b58880e1a925d1a8fa",
+            "fileId": -6228684978618632526,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_g.png",
+            "name": "keyboard_g_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "H",
+          "value": 22
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "7fdf2c5fe166a4b4d989a4746fd1c585",
+            "fileId": -9011578454848037910,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_h.png",
+            "name": "keyboard_h_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "I",
+          "value": 23
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "492b59f099bb34b2981f45014a7b324d",
+            "fileId": 6624163752006436703,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_i.png",
+            "name": "keyboard_i_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "J",
+          "value": 24
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "7e935d7d4599b4cf18966d10ccc4b448",
+            "fileId": -2577820472799158749,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_j.png",
+            "name": "keyboard_j_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "K",
+          "value": 25
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "da31bc1094df34545b2a16a80edd0345",
+            "fileId": 3290407570213495539,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_k.png",
+            "name": "keyboard_k_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "L",
+          "value": 26
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "914519e15e9804ad09ffa661d3565d72",
+            "fileId": 2711562684772605928,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_l.png",
+            "name": "keyboard_l_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "M",
+          "value": 27
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "c3f19acb5772c44e0afd4f585bfe0cf0",
+            "fileId": 8162251711410599823,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_m.png",
+            "name": "keyboard_m_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "N",
+          "value": 28
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "2c6b8154be5314be989a2ab23b34237c",
+            "fileId": 1613905444216025894,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_n.png",
+            "name": "keyboard_n_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "O",
+          "value": 29
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "5bf12abf1672e48c390b962360fafa0a",
+            "fileId": 5237277465588018485,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_o.png",
+            "name": "keyboard_o_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "P",
+          "value": 30
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "fc58cfb0e35134b7a886eed3e8a35c1d",
+            "fileId": 7358378815127608425,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_p.png",
+            "name": "keyboard_p_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Q",
+          "value": 31
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "a548b7dfe46444562ab20c468ed8242e",
+            "fileId": 1179216485070693450,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_q.png",
+            "name": "keyboard_q_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "R",
+          "value": 32
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "f4374ad8a0a4e4767b70c73e8ee135ed",
+            "fileId": -6780523318993171746,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_r.png",
+            "name": "keyboard_r_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "S",
+          "value": 33
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "35c3a9c1953614ec59947bd1137c9f1e",
+            "fileId": -3937758826142331281,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_s.png",
+            "name": "keyboard_s_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "T",
+          "value": 34
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "dbe4d8081f38e484bb2fe64d66860abe",
+            "fileId": 3804896374830911662,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_t.png",
+            "name": "keyboard_t_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "U",
+          "value": 35
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "f9020f8ed146849319608447db1c959f",
+            "fileId": 1897869547920896223,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_u.png",
+            "name": "keyboard_u_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "V",
+          "value": 36
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "2b14af1460e604cacb80e66841bdd51f",
+            "fileId": -8655167945723465343,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_v.png",
+            "name": "keyboard_v_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "W",
+          "value": 37
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "f7ab0afe4a0ec4405bb4ff2af7092334",
+            "fileId": 6539619573780045288,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_w.png",
+            "name": "keyboard_w_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "X",
+          "value": 38
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "7aaa07a46b7b04c5eb0b9a7176f06f75",
+            "fileId": -1679339380555045785,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_x.png",
+            "name": "keyboard_x_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Y",
+          "value": 39
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "6fd6554f133ee4a43a2a6897fcea35b2",
+            "fileId": -2318533488985238692,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_y.png",
+            "name": "keyboard_y_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Z",
+          "value": 40
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "5e159a5ba8dc546e2a4716d11b59bc72",
+            "fileId": 8988070500663906562,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_z.png",
+            "name": "keyboard_z_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Digit1",
+          "value": 41
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "32cd9e4a51d4543ad96588c40fe7541b",
+            "fileId": 2285120093584573513,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_1.png",
+            "name": "keyboard_1_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Digit2",
+          "value": 42
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "2e7dabe3bbdfd4fffbd3a51e4020ba90",
+            "fileId": -4842122482347598607,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_2.png",
+            "name": "keyboard_2_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Digit3",
+          "value": 43
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "5f780f33398154d5fa8f465daf977551",
+            "fileId": -7699723923551181482,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_3.png",
+            "name": "keyboard_3_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Digit4",
+          "value": 44
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "09eef859091e54275bc61a7871cafb39",
+            "fileId": 4871772481475680366,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_4.png",
+            "name": "keyboard_4_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Digit5",
+          "value": 45
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "24fa640978614493c975f433e3b5bdff",
+            "fileId": 3284144849386901357,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_5.png",
+            "name": "keyboard_5_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Digit6",
+          "value": 46
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "203b9802b91bd43638a3457769f293a7",
+            "fileId": -1550802614037358739,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_6.png",
+            "name": "keyboard_6_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Digit7",
+          "value": 47
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "e5c9f10c473b145ed825583d3fcc025f",
+            "fileId": 3132562753328626587,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_7.png",
+            "name": "keyboard_7_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Digit8",
+          "value": 48
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "2a73470e7bbb44582a06374fadd36fb0",
+            "fileId": 890350665705472834,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_8.png",
+            "name": "keyboard_8_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Digit9",
+          "value": 49
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "69955a29c5e0a49ce98990b488f317f7",
+            "fileId": 4052524382370747962,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_9.png",
+            "name": "keyboard_9_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Digit0",
+          "value": 50
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "271d5caeeee0e44b39636eb6ad2f307a",
+            "fileId": -298569682275349766,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_0.png",
+            "name": "keyboard_0_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Numpad0",
+          "value": 84
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "271d5caeeee0e44b39636eb6ad2f307a",
+            "fileId": -298569682275349766,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_0.png",
+            "name": "keyboard_0_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Numpad1",
+          "value": 85
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "32cd9e4a51d4543ad96588c40fe7541b",
+            "fileId": 2285120093584573513,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_1.png",
+            "name": "keyboard_1_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Numpad2",
+          "value": 86
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "2e7dabe3bbdfd4fffbd3a51e4020ba90",
+            "fileId": -4842122482347598607,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_2.png",
+            "name": "keyboard_2_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Numpad3",
+          "value": 87
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "5f780f33398154d5fa8f465daf977551",
+            "fileId": -7699723923551181482,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_3.png",
+            "name": "keyboard_3_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Numpad4",
+          "value": 88
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "09eef859091e54275bc61a7871cafb39",
+            "fileId": 4871772481475680366,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_4.png",
+            "name": "keyboard_4_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Numpad5",
+          "value": 89
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "24fa640978614493c975f433e3b5bdff",
+            "fileId": 3284144849386901357,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_5.png",
+            "name": "keyboard_5_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Numpad6",
+          "value": 90
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "203b9802b91bd43638a3457769f293a7",
+            "fileId": -1550802614037358739,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_6.png",
+            "name": "keyboard_6_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Numpad7",
+          "value": 91
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "e5c9f10c473b145ed825583d3fcc025f",
+            "fileId": 3132562753328626587,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_7.png",
+            "name": "keyboard_7_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Numpad8",
+          "value": 92
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "2a73470e7bbb44582a06374fadd36fb0",
+            "fileId": 890350665705472834,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_8.png",
+            "name": "keyboard_8_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Numpad9",
+          "value": 93
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "69955a29c5e0a49ce98990b488f317f7",
+            "fileId": 4052524382370747962,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_9.png",
+            "name": "keyboard_9_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F1",
+          "value": 94
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "941f6bfd97b954b13a75f13105767bc6",
+            "fileId": -5276268084499866289,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f1.png",
+            "name": "keyboard_f1_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F2",
+          "value": 95
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "ae2c0257c74a5471aae250ad6155b266",
+            "fileId": -8406788298635153352,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f2.png",
+            "name": "keyboard_f2_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F3",
+          "value": 96
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "6fae984d9d3854ddca88d23330c041ed",
+            "fileId": 8009288347919174658,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f3.png",
+            "name": "keyboard_f3_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F4",
+          "value": 97
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "35af7248a02244da9844263aa02e0e1a",
+            "fileId": -1380453812768227926,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f4.png",
+            "name": "keyboard_f4_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F5",
+          "value": 98
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "58f7c8ba080314cbcb75163ab716933d",
+            "fileId": -5414126393478914263,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f5.png",
+            "name": "keyboard_f5_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F6",
+          "value": 99
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "6688fedd1a91e4c65a923a6d3c0b7596",
+            "fileId": -2478374994428999686,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f6.png",
+            "name": "keyboard_f6_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F7",
+          "value": 100
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "4f3ae0b32e4694deea819dff67aeb172",
+            "fileId": -8021247133056268021,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f7.png",
+            "name": "keyboard_f7_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F8",
+          "value": 101
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "4fb2aaa0481cd4701894416d81579d6e",
+            "fileId": 5797952619067910518,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f8.png",
+            "name": "keyboard_f8_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F9",
+          "value": 102
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "427304403737c4c3d9ae5c41f45526c2",
+            "fileId": 6301311132233469706,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f9.png",
+            "name": "keyboard_f9_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F10",
+          "value": 103
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "22b9af5ac836c43aa9faf03b8962755d",
+            "fileId": 3344012895008649251,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f10.png",
+            "name": "keyboard_f10_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F11",
+          "value": 104
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "78949b03fb41d4ecdb7e7132a6939fcd",
+            "fileId": 5868078030359579539,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f11.png",
+            "name": "keyboard_f11_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "F12",
+          "value": 105
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "f85faf6859b7448f99d74ebc64b87e8f",
+            "fileId": -3131574434052127199,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_f12.png",
+            "name": "keyboard_f12_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Space",
+          "value": 1
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "1b3c3eeb7543c47e6ad0c882c6f4aa1d",
+            "fileId": -557078281788634498,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_space.png",
+            "name": "keyboard_space_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Tab",
+          "value": 3
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "805d98f7cc7e041ac9741d5f5e7e00fd",
+            "fileId": 2363609691092413705,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_tab.png",
+            "name": "keyboard_tab_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Enter",
+          "value": 2
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "dee302995b41b4ca09b2115e7f15ce12",
+            "fileId": -4761915745340555039,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_enter.png",
+            "name": "keyboard_enter_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "NumpadEnter",
+          "value": 77
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "81c0fe756e6b94f08a263589df2c2629",
+            "fileId": -5228559535882919277,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_numpad_enter.png",
+            "name": "keyboard_numpad_enter_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Backspace",
+          "value": 65
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "b2524a9c20fc94f0ca7c5271b71a26ed",
+            "fileId": 8086792615903017955,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_backspace.png",
+            "name": "keyboard_backspace_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Escape",
+          "value": 60
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "6d65ef840e3544898b8b3d8ecdd4d0a6",
+            "fileId": 5161238624427270819,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_escape.png",
+            "name": "keyboard_escape_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "LeftShift",
+          "value": 51
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "ff1aba59e3eca420e8d219b18a71e084",
+            "fileId": -465843913026089529,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_shift.png",
+            "name": "keyboard_shift_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "RightShift",
+          "value": 52
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "ff1aba59e3eca420e8d219b18a71e084",
+            "fileId": -465843913026089529,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_shift.png",
+            "name": "keyboard_shift_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "LeftCtrl",
+          "value": 55
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "70fb2a12bb25f4ecb863b7a779c28473",
+            "fileId": 3795127328408915156,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_ctrl.png",
+            "name": "keyboard_ctrl_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "RightCtrl",
+          "value": 56
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "70fb2a12bb25f4ecb863b7a779c28473",
+            "fileId": 3795127328408915156,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_ctrl.png",
+            "name": "keyboard_ctrl_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "LeftAlt",
+          "value": 53
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "e488e49d35a3346f888981e7a3eee103",
+            "fileId": -8537438008601397705,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_alt.png",
+            "name": "keyboard_alt_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "AltGr",
+          "value": 54
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "e488e49d35a3346f888981e7a3eee103",
+            "fileId": -8537438008601397705,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_alt.png",
+            "name": "keyboard_alt_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "LeftApple",
+          "value": 57
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "ee37d541d508d4e599ffc6c631679746",
+            "fileId": -6181505624115334152,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_win.png",
+            "name": "keyboard_win_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "RightCommand",
+          "value": 58
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "ee37d541d508d4e599ffc6c631679746",
+            "fileId": -6181505624115334152,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_win.png",
+            "name": "keyboard_win_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "LeftArrow",
+          "value": 61
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "d0da99a6094674e67bd707680ecdd902",
+            "fileId": -3607151359317351652,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_arrow_left.png",
+            "name": "keyboard_arrow_left_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "RightArrow",
+          "value": 62
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "1b1f93dd5812b4a6f80b1d839182559d",
+            "fileId": -4797783203767385232,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_arrow_right.png",
+            "name": "keyboard_arrow_right_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "UpArrow",
+          "value": 63
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "c6edc1f4e05694bea96318d24200729c",
+            "fileId": 2349417091975035521,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_arrow_up.png",
+            "name": "keyboard_arrow_up_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "DownArrow",
+          "value": 64
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "23bd145737e2b4aa4a7ec02935c05717",
+            "fileId": 5154032583816780984,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_arrow_down.png",
+            "name": "keyboard_arrow_down_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "CapsLock",
+          "value": 72
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "ba4543082fdee4168af1ac3f2ae52fed",
+            "fileId": -8070800040580810078,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_capslock.png",
+            "name": "keyboard_capslock_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "NumLock",
+          "value": 73
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "8707b7be81c554bfd8c61ae334e5ffaa",
+            "fileId": -2151229654994512011,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_numlock.png",
+            "name": "keyboard_numlock_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "ScrollLock",
+          "value": 75
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "2d84bb5eaa2c64a678a1468754213b46",
+            "fileId": -5106382841924089004,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_scroll_lock.png",
+            "name": "keyboard_scroll_lock_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "PrintScreen",
+          "value": 74
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "2e9093ce7e6a24c05b51c4329d8f29bb",
+            "fileId": 3144470462153080845,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_printscreen.png",
+            "name": "keyboard_printscreen_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Pause",
+          "value": 76
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "4144d88c1d4c749d897bdd0ff19fed3d",
+            "fileId": -9045629497822139599,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_pause_break.png",
+            "name": "keyboard_pause_break_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Home",
+          "value": 68
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "27700b423dbba4fc1b663293b1741e1f",
+            "fileId": -6980483413758840211,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_home.png",
+            "name": "keyboard_home_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "End",
+          "value": 69
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "d9a1cd322185e43a588d48691bced68d",
+            "fileId": -8269448446418963542,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_end.png",
+            "name": "keyboard_end_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Insert",
+          "value": 70
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "9c1671f721f314b6ca498acd20af828c",
+            "fileId": 436866400090294973,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_insert.png",
+            "name": "keyboard_insert_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Delete",
+          "value": 71
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "dbe2008587da4487a934c5c2e8175e73",
+            "fileId": 4774142277166468255,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_delete.png",
+            "name": "keyboard_delete_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "PageUp",
+          "value": 67
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "650cdfebb4ba043e3b2b76e41be68eb6",
+            "fileId": -1033187720645169652,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_page_up.png",
+            "name": "keyboard_page_up_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "PageDown",
+          "value": 66
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "63f85963418ef46609178832ba80315f",
+            "fileId": 3705201507620354667,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_page_down.png",
+            "name": "keyboard_page_down_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Minus",
+          "value": 13
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "49fd80c6d0a4f45169d51a55ec0da84e",
+            "fileId": -2999733867205281054,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_minus.png",
+            "name": "keyboard_minus_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "NumpadMinus",
+          "value": 81
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "49fd80c6d0a4f45169d51a55ec0da84e",
+            "fileId": -2999733867205281054,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_minus.png",
+            "name": "keyboard_minus_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Equals",
+          "value": 14
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "8c433457a322f4af2854651447aef982",
+            "fileId": -5703737665441673626,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_equals.png",
+            "name": "keyboard_equals_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "NumpadEquals",
+          "value": 83
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "8c433457a322f4af2854651447aef982",
+            "fileId": -5703737665441673626,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_equals.png",
+            "name": "keyboard_equals_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "NumpadPlus",
+          "value": 80
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "332d85e9a76194c0bbc0c49ed8298425",
+            "fileId": 3056828074748105826,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_numpad_plus.png",
+            "name": "keyboard_numpad_plus_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "NumpadMultiply",
+          "value": 79
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "7c22edff5cf5044f48672b96220ce9e1",
+            "fileId": -8581236328691645878,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_asterisk.png",
+            "name": "keyboard_asterisk_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Slash",
+          "value": 9
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "54cd0219acf43492b8949e6997908c13",
+            "fileId": 8558015319005732945,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_slash_forward.png",
+            "name": "keyboard_slash_forward_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "NumpadDivide",
+          "value": 78
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "54cd0219acf43492b8949e6997908c13",
+            "fileId": 8558015319005732945,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_slash_forward.png",
+            "name": "keyboard_slash_forward_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Backslash",
+          "value": 10
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "d37623154508b4694b98df7989b3f5a4",
+            "fileId": 2269918448686567404,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_slash_back.png",
+            "name": "keyboard_slash_back_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "LeftBracket",
+          "value": 11
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "a2af75bc2821f4c12a4be76f28ae426c",
+            "fileId": 6859698589740800194,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_bracket_open.png",
+            "name": "keyboard_bracket_open_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "RightBracket",
+          "value": 12
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "00062a1419f5b41f083dad377d9bd24b",
+            "fileId": 3681141240734532656,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_bracket_close.png",
+            "name": "keyboard_bracket_close_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Semicolon",
+          "value": 6
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "20e639824b6df4f64b6050c58ee4bd8e",
+            "fileId": 2062452209080724124,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_semicolon.png",
+            "name": "keyboard_semicolon_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Quote",
+          "value": 5
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "75cad664faf7443d0a36cd168f22dd71",
+            "fileId": 2280661853197477181,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_apostrophe.png",
+            "name": "keyboard_apostrophe_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Comma",
+          "value": 7
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "d19db2a092fcc4863b1ea8ac51c748a1",
+            "fileId": -6681133147278788448,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_comma.png",
+            "name": "keyboard_comma_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Period",
+          "value": 8
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "09459149b9bf44f7db5659e1aa4275e8",
+            "fileId": -7957453670165720738,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_period.png",
+            "name": "keyboard_period_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "NumpadPeriod",
+          "value": 82
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "09459149b9bf44f7db5659e1aa4275e8",
+            "fileId": -7957453670165720738,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_period.png",
+            "name": "keyboard_period_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "key": {
+          "$enum": "Backquote",
+          "value": 4
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "112e5b0b51e3f42b794ef539a871841a",
+            "fileId": -927971289186269160,
+            "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_tilde.png",
+            "name": "keyboard_tilde_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      }
+    ],
+    "pads": [
+      {
+        "control": {
+          "$enum": "ButtonSouth",
+          "value": 1
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "531ec807fa529d9448fc149fbf98a6cc",
+            "fileId": 1536610985664812233,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_color_a.png",
+            "name": "xbox_button_color_a_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "ButtonEast",
+          "value": 2
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "f9ee2e6b43a74c0439f41e699ca2bf0d",
+            "fileId": -5139752235935985354,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_color_b.png",
+            "name": "xbox_button_color_b_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "ButtonWest",
+          "value": 3
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "7f2de31835a74104ea4a35db6e09b80d",
+            "fileId": -9085605288992608834,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_color_x.png",
+            "name": "xbox_button_color_x_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "ButtonNorth",
+          "value": 4
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "4399250cce227d845a6020203ab48349",
+            "fileId": -1852535901072925621,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_color_y.png",
+            "name": "xbox_button_color_y_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "LeftShoulder",
+          "value": 5
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "bb4fca19ea4a47641836e03a3420c480",
+            "fileId": 2267800731179639549,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_lb.png",
+            "name": "xbox_lb_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "RightShoulder",
+          "value": 6
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "3d3f11b6a53fc104a8630ea0237f2827",
+            "fileId": 4249578791139060025,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_rb.png",
+            "name": "xbox_rb_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "LeftTrigger",
+          "value": 7
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "e08baf56af40e5949b4a25604b2f9db4",
+            "fileId": -3997850089383228863,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_lt.png",
+            "name": "xbox_lt_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "RightTrigger",
+          "value": 8
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "c36808beae0534a43a5e2bdac0451628",
+            "fileId": 3336128370510153928,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_rt.png",
+            "name": "xbox_rt_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "LeftStickPress",
+          "value": 9
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "1cf7321863aa551449ee19d983d217a1",
+            "fileId": 5517859457217657291,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_press.png",
+            "name": "xbox_stick_l_press_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "RightStickPress",
+          "value": 10
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "aa2e779190333324e92387091cd1831d",
+            "fileId": 9023095465647593558,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_press.png",
+            "name": "xbox_stick_r_press_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "DpadUp",
+          "value": 11
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "7e8406529c63419408c5d363055ea6a9",
+            "fileId": -8469937635646949677,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_up.png",
+            "name": "xbox_dpad_up_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "DpadDown",
+          "value": 12
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "3d59c71c3325444478b593909b205c8d",
+            "fileId": 4692930742817869381,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_down.png",
+            "name": "xbox_dpad_down_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "DpadLeft",
+          "value": 13
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "dd46d4f746983f943bbdfd6f05b6b35c",
+            "fileId": -6164935804030125252,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_left.png",
+            "name": "xbox_dpad_left_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "DpadRight",
+          "value": 14
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "c7dc8780f92b77647a4aaaafb86eb45b",
+            "fileId": -8794133603664248715,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_dpad_right.png",
+            "name": "xbox_dpad_right_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "Start",
+          "value": 15
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "0fee7badf73365447874bfd88bda357e",
+            "fileId": -8211830279039031973,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_start.png",
+            "name": "xbox_button_start_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "Select",
+          "value": 16
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "8c8d11c317cdbd14aba974969e80b331",
+            "fileId": -650627051125600553,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_back.png",
+            "name": "xbox_button_back_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "LeftStickLeft",
+          "value": 17
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "423de3a475c870944987b55f3cd79925",
+            "fileId": -2926610403125193776,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_left.png",
+            "name": "xbox_stick_l_left_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "LeftStickRight",
+          "value": 18
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "e1bc14c3b328b3a429762be0d6519a2e",
+            "fileId": -7852748577579673936,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_right.png",
+            "name": "xbox_stick_l_right_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "LeftStickUp",
+          "value": 19
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "f1369791903b8b0408eb6a50c88f7d94",
+            "fileId": 7877496642147825795,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_up.png",
+            "name": "xbox_stick_l_up_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "LeftStickDown",
+          "value": 20
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "bec9b834a77ddda46a081eef58e81e7f",
+            "fileId": -6157015308907440503,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_l_down.png",
+            "name": "xbox_stick_l_down_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "RightStickLeft",
+          "value": 21
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "3b0d515d1829e5b47a95cb01fe3da5fe",
+            "fileId": -8890445823937379216,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_left.png",
+            "name": "xbox_stick_r_left_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "RightStickRight",
+          "value": 22
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "c3f7b8ae52d295b4fa7d34abe8de4001",
+            "fileId": 5676446216778957172,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_right.png",
+            "name": "xbox_stick_r_right_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "RightStickUp",
+          "value": 23
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "0796773c0a6e56042bfceb815938eb1a",
+            "fileId": 2194442242755624189,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_up.png",
+            "name": "xbox_stick_r_up_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "RightStickDown",
+          "value": 24
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "e7a41810558384947bdb5604e37dfa02",
+            "fileId": 246453436953034071,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_stick_r_down.png",
+            "name": "xbox_stick_r_down_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      }
+    ],
+    "monoPads": [
+      {
+        "control": {
+          "$enum": "ButtonSouth",
+          "value": 1
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "dfe23cc467b4d9044822194b3c6473df",
+            "fileId": -7956427973557797689,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_a.png",
+            "name": "xbox_button_a_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "ButtonEast",
+          "value": 2
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "da634deeda298154083c7047443c947c",
+            "fileId": 643402748272714948,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_b.png",
+            "name": "xbox_button_b_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "ButtonWest",
+          "value": 3
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "b3b18116a0b99394cb144f28f9db27e5",
+            "fileId": 7183707057315010591,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_x.png",
+            "name": "xbox_button_x_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      },
+      {
+        "control": {
+          "$enum": "ButtonNorth",
+          "value": 4
+        },
+        "sprite": {
+          "$ref": {
+            "guid": "71e7436a8b1d86e44b4fb62bf86f6e3f",
+            "fileId": -1236389414660901761,
+            "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/xbox_button_y.png",
+            "name": "xbox_button_y_0",
+            "type": "Sprite",
+            "main": false
+          }
+        }
+      }
+    ]
+  }
+}

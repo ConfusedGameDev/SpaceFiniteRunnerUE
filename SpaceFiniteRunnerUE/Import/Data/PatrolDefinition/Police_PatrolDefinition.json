@@ -1,0 +1,146 @@
+{
+  "unityType": "PatrolDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.PatrolDefinition",
+  "name": "Police_PatrolDefinition",
+  "guid": "5c2a8e6d0f4b4a9cb3e7d1f9a8c6e4b2",
+  "path": "Assets/04.Data/FiniteRunner/Patrol/Police_PatrolDefinition.asset",
+  "fields": {
+    "baseSpeed": 33.06,
+    "ramp": 0.083,
+    "rubberBand": 0.95,
+    "catchUpAccel": 3.33,
+    "boostShare": 0.156,
+    "lateralSpeed": 22,
+    "handlingResponse": 6,
+    "gripBase": 130,
+    "gripPerSpeed": 0.5,
+    "brakeDecel": 140,
+    "slideThreshold": 4,
+    "slideSpeedLoss": 0.1,
+    "wallHitCooldownSeconds": 0.5,
+    "curveLookaheadSeconds": 4,
+    "orbLookaheadSeconds": 2.5,
+    "orbSeekWeight": 0.6,
+    "orbBoostShare": 0.5,
+    "rampLookaheadSeconds": 2.5,
+    "startGap": 548,
+    "redeploys": true,
+    "redeployBand": {
+      "x": 691.746155,
+      "y": 1372.03394
+    },
+    "redeploySpeedFactor": 1.15,
+    "catchDistance": 10,
+    "alongsideLateral": 18,
+    "sustainedCatchSeconds": 1.5,
+    "warnDistance": 130,
+    "duelEnabled": true,
+    "duelTimeScale": 0.3,
+    "duelTimeBlendSeconds": 0.15,
+    "duelAssistStrength": 0.5,
+    "finisherWindowSeconds": 1.5,
+    "duelHitStopSeconds": 0.12,
+    "armedWindowSeconds": 3,
+    "armingOrbTiers": [
+      "Blue",
+      "Purple"
+    ],
+    "armedTellColor": {
+      "r": 0.75,
+      "g": 0.45,
+      "b": 1,
+      "a": 1
+    },
+    "ramSpeedCost": 0.08,
+    "killExplosionScale": 0.8,
+    "duelDebugReadout": false,
+    "duelBarColor": {
+      "r": 1,
+      "g": 0.32,
+      "b": 0.28,
+      "a": 1
+    },
+    "duelSparkColor": {
+      "r": 1,
+      "g": 0.5,
+      "b": 0.8,
+      "a": 1
+    },
+    "duelSparkScale": 1,
+    "killRumble": {
+      "x": 1,
+      "y": 1,
+      "z": 0.5
+    },
+    "ramRumble": {
+      "x": 0.9,
+      "y": 0.6,
+      "z": 0.25
+    },
+    "shoveRumble": {
+      "x": 1,
+      "y": 0.8,
+      "z": 0.5
+    },
+    "redeployRumble": {
+      "x": 0.6,
+      "y": 0.4,
+      "z": 0.4
+    },
+    "tugSlamRumble": {
+      "x": 0.4,
+      "y": 0.5,
+      "z": 0.12
+    },
+    "tugSlamRumbleMax": 0.9,
+    "duelBarRumbleEven": {
+      "x": 0.15,
+      "y": 0.1,
+      "z": 0.14
+    },
+    "duelBarRumbleLosing": {
+      "x": 0.65,
+      "y": 0.45,
+      "z": 0.14
+    },
+    "attackRunOverdrive": 1.15,
+    "minClosingSpeed": 12,
+    "commitFromDistance": 70,
+    "commitIntervalSeconds": 12,
+    "commitTimeoutSeconds": 15,
+    "alongsideDistance": 12,
+    "flankOffsetMeters": 9.5,
+    "alongsideHoldSeconds": 1.2,
+    "abortGraceSeconds": 0.4,
+    "breakOffSpeedFactor": 0.85,
+    "breakOffSeconds": 1,
+    "attackRunCooldownSeconds": 8,
+    "encounterLookaheadMeters": 220,
+    "encounterAbortMeters": 70,
+    "killTeleportGap": 0,
+    "standoffDistance": 45,
+    "tugPatrolForce": 0.15,
+    "tugPressValue": 0.08,
+    "shoveMeters": 10,
+    "stationAccel": 60,
+    "tierScalePerKill": 0.15,
+    "tierScaleMax": 2,
+    "tugForceMaxScale": 1.8,
+    "damagePoolMax": 3,
+    "ramContactDistance": 8,
+    "ramContactLateral": 6,
+    "ramClosingSpeedThreshold": 15,
+    "overshootHoldSeconds": 2.5,
+    "overshootBrakeThreshold": 0.5,
+    "overshootDecelThreshold": 25,
+    "overshootTriggerMargin": 20,
+    "tugPushFraction": 0.6,
+    "tugPushGain": 2.5,
+    "tugSlamIntervalSeconds": 0.7,
+    "tugSlamYawDegrees": 18,
+    "tugSlamKickMeters": 0.9,
+    "finisherSeparationMeters": 4,
+    "finisherMissBrakeSeconds": 1.5,
+    "finisherMissBrakeSpeedFactor": 0.65
+  }
+}

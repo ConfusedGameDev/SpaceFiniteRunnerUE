@@ -1,0 +1,73 @@
+{
+  "unityType": "LaserGateDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.Features.LaserGateDefinition",
+  "name": "LaserGate_Definition",
+  "guid": "b8351fe618838d2428c9653029ff0110",
+  "path": "Assets/04.Data/FiniteRunner/TrackSettings/Features/LaserGate_Definition.asset",
+  "fields": {
+    "coverageBand": {
+      "x": 0.2,
+      "y": 0.44600004
+    },
+    "beamRadius": 0.27,
+    "beamHeight": -0.07,
+    "horizontalWeight": 4,
+    "verticalWeight": 0,
+    "tripleWeight": 2,
+    "rotorWeight": 2,
+    "tripleSpacing": 5,
+    "verticalHeight": 20,
+    "rotorSpeedBand": {
+      "x": 40,
+      "y": 90
+    },
+    "emitterScale": 0.5,
+    "emitterSpinDegPerSec": 0,
+    "emitterRoadClearance": 0,
+    "look": {
+      "$enum": "Prefab",
+      "value": 1
+    },
+    "prefabModelScale": 1,
+    "beamMaterial": {
+      "$ref": {
+        "guid": "818364b793a257b4e97d59c89537325b",
+        "fileId": 2100000,
+        "path": "Assets/02.Art/02.Materials/FiniteRunner/LaserBeam_Mat.mat",
+        "name": "LaserBeam_Mat",
+        "type": "Material",
+        "main": true
+      }
+    },
+    "beamColor": {
+      "r": 4,
+      "g": 0.12,
+      "b": 0,
+      "a": 0.85
+    },
+    "coreColor": {
+      "r": 4,
+      "g": 0.9,
+      "b": 0.7,
+      "a": 1
+    },
+    "glowWidthFactor": 3.84,
+    "flickerAmount": 0.25,
+    "flickerFrequency": 22,
+    "wavy": true,
+    "waveChance": 1,
+    "waveAmplitude": 1.5,
+    "waveLength": 6,
+    "waveSpeed": 2,
+    "waveTaper": 2,
+    "activation": true,
+    "growBand": {
+      "x": 450,
+      "y": 700
+    },
+    "passMargin": 17.9,
+    "retractSeconds": 0.36,
+    "floorContactThreshold": 0.578,
+    "underTrackOverflow": 8.1
+  }
+}

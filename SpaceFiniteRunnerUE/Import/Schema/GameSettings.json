@@ -1,0 +1,1330 @@
+{
+  "unityType": "GameSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.GameSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/GameFlow/GameSettings.cs",
+  "fields": [
+    {
+      "name": "useTuningScreen",
+      "type": "Boolean",
+      "group": "Flow",
+      "tooltip": "Open the pre-run point-allocation screen (TuningScreen) instead of flying straight on the Store's bought upgrades. Off in the shipping flow: the Store between missions owns the ship's stats, and the runner is entered mid-mission from the city with no pause for a setup panel. On, the screen applies the store levels on top of its points."
+    },
+    {
+      "name": "simSubsteps",
+      "type": "Int32",
+      "group": "Simulation",
+      "tooltip": "Substeps per physics tick (0.02 s) of the ship's track-space body. More = the same rules integrated in finer slices; 1 is enough for today's scripted rules, the grip and slide forces want 2+.",
+      "min": 1,
+      "max": 8
+    },
+    {
+      "name": "edgeOverhang",
+      "type": "Single",
+      "group": "Fall and respawn",
+      "tooltip": "An open edge (the outer side of a flat sweep): how far past it the ship may hang, and for how long, before it falls. Counter-steering back inside the time saves it — this is what keeps a dash or a slide over the edge from being an instant death.",
+      "min": 0,
+      "max": 10,
+      "unit": "m"
+    },
+    {
+      "name": "edgeGraceSeconds",
+      "type": "Single",
+      "group": "Fall and respawn",
+      "tooltip": "Seconds the ship must stay past the overhang before it falls.",
+      "min": 0,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "fallCameraFollowSeconds",
+      "type": "Single",
+      "group": "Fall and respawn",
+      "tooltip": "Seconds the chase camera keeps following the falling ship before it plants itself and just watches (the rig's cinematic shot).",
+      "min": 0,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "fallGlitchStrength",
+      "type": "Single",
+      "group": "Fall and respawn",
+      "tooltip": "Glitch-effect burst strength as the ship goes over the edge.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "respawnMinPatrolGap",
+      "type": "Single",
+      "group": "Fall and respawn",
+      "tooltip": "The least head start over the patrol the ship relaunches with: a patrol closer than this when the wait ends is dropped back to it.",
+      "min": 0,
+      "max": 1000,
+      "unit": "m"
+    },
+    {
+      "name": "lightSpeedKmh",
+      "type": "Single",
+      "group": "Win condition",
+      "tooltip": "Light Speed — the speed that wins the run, in km/h.",
+      "min": 100,
+      "max": 10000,
+      "unit": "km/h"
+    },
+    {
+      "name": "speedDisplayMultiplier",
+      "type": "Single",
+      "group": "Win condition",
+      "tooltip": "Turns the ship's real speed (m/s) into the km/h the runner shows and judges: the HUD, Light Speed, loop gates, the speed FX and the top-speed stat all read speed × this. 3.6 is true km/h; raise it and the same flight reads (and reaches Light Speed) faster.",
+      "min": 0.5,
+      "max": 20,
+      "unit": "×"
+    },
+    {
+      "name": "timeLimitSeconds",
+      "type": "Single",
+      "group": "Win condition",
+      "tooltip": "Seconds to reach Light Speed AND leave the track by one of its end ramps before the chase is lost.",
+      "min": 10,
+      "max": 300,
+      "unit": "s"
+    },
+    {
+      "name": "launchDistanceMeters",
+      "type": "Single",
+      "group": "Track end",
+      "tooltip": "Where on the track the ship launches, metres from its start. The road begins at 0, so a ship launched there has the chase camera hanging over the void behind it: this puts road under the camera too. The patrol's start gap is measured from here.",
+      "min": 0,
+      "max": 400,
+      "unit": "m"
+    },
+    {
+      "name": "trackLengthMeters",
+      "type": "Single",
+      "group": "Track end",
+      "tooltip": "Track length, metres, for a level that does not author its own (RunnerLevelDefinition.trackLengthMeters = 0). At the defaults a cruise-only run covers 15 km in the time limit and a run reaching Light Speed near the end of the clock about 40 km.",
+      "min": 5000,
+      "max": 100000,
+      "unit": "m"
+    },
+    {
+      "name": "endRunUpMeters",
+      "type": "Single",
+      "group": "Track end",
+      "tooltip": "Length of the final run-up to the end ramps, metres: dead straight, level, unbanked, walled, with no pads, coins or features on it. It is also where a late fall respawns, so keep it well above the respawn clearance.",
+      "min": 600,
+      "max": 3000,
+      "unit": "m"
+    },
+    {
+      "name": "endRampGapMeters",
+      "type": "Single",
+      "group": "Track end",
+      "tooltip": "Gap between two end ramps, metres: the drop a ship that misses the ramps goes through. Wider = easier to miss.",
+      "min": 4,
+      "max": 40,
+      "unit": "m"
+    },
+    {
+      "name": "endRampSideGapMeters",
+      "type": "Single",
+      "group": "Track end",
+      "tooltip": "Gap between an outer end ramp and the wall, metres. 0 = the outer ramps stand flush against the walls.",
+      "min": 0,
+      "max": 20,
+      "unit": "m"
+    },
+    {
+      "name": "winEscapeGravity",
+      "type": "Single",
+      "group": "Track end",
+      "tooltip": "Gravity on the winning ship once it has left an end ramp, m/s². 0 = it flies on dead straight along the ramp's line.",
+      "min": 0,
+      "max": 60,
+      "unit": "m/s²"
+    },
+    {
+      "name": "patrolEnabled",
+      "type": "Boolean",
+      "group": "patrolEnabled",
+      "toggleGroup": true,
+      "tooltip": "Enable the chasing patrol (the scene object the GameManager references; its chase tunables live on its PatrolDefinition asset)."
+    },
+    {
+      "name": "minimapRangeMeters",
+      "type": "Single",
+      "group": "patrolEnabled",
+      "toggleGroup": true,
+      "tooltip": "Gap beyond which the patrol is off the track map; at this gap its icon hangs a full chase span (ChaseMinimapSettings.chaseSpan) under the ship.",
+      "min": 50,
+      "max": 2000,
+      "unit": "m"
+    },
+    {
+      "name": "showPatrolAlert",
+      "type": "Boolean",
+      "group": "patrolEnabled",
+      "toggleGroup": true,
+      "tooltip": "Announce every fresh patrol with the 'Patrol inbound' story line (RPG dialogue box). Off by default — the minimap and the rumble already show it arriving."
+    },
+    {
+      "name": "showPatrolWarnings",
+      "type": "Boolean",
+      "group": "patrolEnabled",
+      "toggleGroup": true,
+      "tooltip": "Speak the patrol's proximity line (RPG dialogue box) once each time it closes inside its warn distance. Off by default — the minimap shows the gap every frame."
+    },
+    {
+      "name": "patrolProximityRumble",
+      "type": "Boolean",
+      "group": "patrolEnabled",
+      "toggleGroup": true,
+      "tooltip": "Gamepad rumble that grows as the patrol closes inside its warn distance."
+    },
+    {
+      "name": "powerUpSpeedBoost",
+      "type": "Single",
+      "group": "Power-ups",
+      "tooltip": "Base speed gain of a power-up orb in m/s (x3.6 for km/h). Each orb tier multiplies this — green 1x, blue 2.5x, purple 10x (tiers live on the TrackGenerator).",
+      "min": 0,
+      "max": 100,
+      "unit": "m/s"
+    },
+    {
+      "name": "boostRumble",
+      "type": "Vector3",
+      "group": "Power-ups",
+      "tooltip": "Base boost rumble (low motor, high motor, seconds) — a boost orb taken without a timed press, and every non-orb boost (a ramp takeoff)."
+    },
+    {
+      "name": "bustedRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "The arrest (the patrol sat on your tail too long): a long heavy rumble. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "escapeRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "Leaving the track off an end ramp with the objectives met — the win latching. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "endFailRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "Reaching the end without the win (an objective open, or through a gap into the void). (low motor, high motor, seconds)"
+    },
+    {
+      "name": "hullHitRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "A hull hit whose cause has no rumble of its own. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "explosionRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "The hull reaching 0 and the ship exploding. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "repairRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "Taking a repair orb: a soft, even pulse — neither a boost's kick nor a hit's rumble. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "brakeRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "A speed LOSS impulse (a brake pad): a heavier thud than a boost. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "dashRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "A dash: a short kick in the hands. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "loopFailRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "Too slow for a loop: the drop off its top. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "landingRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "Touching down after a jump. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "fallRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "Going over an open edge. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "slideRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "Losing grip on a flat sweep: a long low rumble rather than the wall's sharp knock. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "wallHitRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "A hard wall hit. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "laserHitRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "Flying through a laser beam. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "winBannerRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "The MISSION ACCOMPLISHED / FAILED banner slamming in. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "boostQte",
+      "type": "Boolean",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "Timed boost: press Boost (A / Space) as the ship crosses a boost orb and the boost is multiplied by how close the press was. Taking the orb without a press still gives the plain boost. Off = orbs work exactly as before, no prompt."
+    },
+    {
+      "name": "boostQteShowSeconds",
+      "type": "Single",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "The prompt appears over the next boost orb once the ship is this many seconds from it at its current speed.",
+      "min": 0.20000000298023224,
+      "max": 3,
+      "unit": "s"
+    },
+    {
+      "name": "boostQteWindowSeconds",
+      "type": "Single",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "Graded window on EACH side of the crossing. A press this far before or after gets the low end of the multiplier band; further out is a miss.",
+      "min": 0.05000000074505806,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "boostQtePerfectSeconds",
+      "type": "Single",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "A press within this many seconds of the crossing is PERFECT — the top of the band and the green flash.",
+      "min": 0,
+      "max": 0.20000000298023224,
+      "unit": "s"
+    },
+    {
+      "name": "boostQteMultiplierBand",
+      "type": "Vector2",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "Boost multiplier: X at the edge of the window, Y for a perfect press.",
+      "band": true,
+      "min": 1,
+      "max": 3
+    },
+    {
+      "name": "boostQteFalloff",
+      "type": "AnimationCurve",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "Accuracy (0 = perfect, 1 = window edge) → share of the way from the band's top to its bottom."
+    },
+    {
+      "name": "boostQteWarpAtPerfect",
+      "type": "Single",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "Warp kick of a perfect press, as a scale of the base orb warp. A graded press blends toward it.",
+      "min": 1,
+      "max": 3,
+      "unit": "x"
+    },
+    {
+      "name": "boostQteRumbleAtPerfect",
+      "type": "Vector3",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "Rumble of a perfect press (low motor, high motor, seconds). A graded press blends from the base boost rumble toward it."
+    },
+    {
+      "name": "boostQteGlyphSize",
+      "type": "Single",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "Prompt glyph size as a share of the orb ring's width.",
+      "min": 0.10000000149011612,
+      "max": 1
+    },
+    {
+      "name": "boostQteGlyphLift",
+      "type": "Single",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "Metres the prompt glyph floats above the ring's centre, along the track's up.",
+      "min": 0,
+      "max": 3
+    },
+    {
+      "name": "boostQteMissColor",
+      "type": "Color",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "Prompt colour of a miss (pressed outside the window, or never pressed) and of the window's edge."
+    },
+    {
+      "name": "boostQteMidColor",
+      "type": "Color",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "Prompt colour halfway between the window's edge and perfect."
+    },
+    {
+      "name": "boostQtePerfectColor",
+      "type": "Color",
+      "group": "boostQte",
+      "toggleGroup": true,
+      "tooltip": "Prompt colour of a perfect press."
+    },
+    {
+      "name": "airLaneHeight",
+      "type": "Single",
+      "group": "Track features",
+      "tooltip": "Height of the air lane above the flight line — where Air-lane pads spawn, reachable only off a jump. Prepared for future power-ups; the tables hold no air entries yet.",
+      "min": 5,
+      "max": 150,
+      "unit": "m"
+    },
+    {
+      "name": "landingShake",
+      "type": "CameraShakeSettings",
+      "group": "Track features",
+      "tooltip": "Camera shake when the ship lands after a jump. Empty = no shake."
+    },
+    {
+      "name": "wallHitShake",
+      "type": "CameraShakeSettings",
+      "group": "Track features",
+      "tooltip": "Camera shake when the ship slams a track edge or a ramp's side. Empty = no shake."
+    },
+    {
+      "name": "laserSpeedLoss",
+      "type": "Single",
+      "group": "Track features",
+      "tooltip": "Share of the forward speed a laser beam takes AT ONCE, on top of its hull damage (and still when the hull is off). The invulnerability blink shields it like the damage.",
+      "min": 0,
+      "max": 0.5
+    },
+    {
+      "name": "laserSmokeTextures",
+      "type": "Texture2D[]",
+      "group": "Track features",
+      "tooltip": "Sprites of the smoke that pours off the hull after a laser hit — one is picked per plume. Empty = no smoke."
+    },
+    {
+      "name": "laserSmokeScale",
+      "type": "Single",
+      "group": "Track features",
+      "tooltip": "Size of the laser-hit smoke puffs.",
+      "min": 0.5,
+      "max": 20,
+      "unit": "m"
+    },
+    {
+      "name": "laserSmokeSeconds",
+      "type": "Single",
+      "group": "Track features",
+      "tooltip": "Seconds the hull keeps smoking after a laser hit.",
+      "min": 0.10000000149011612,
+      "max": 6,
+      "unit": "s"
+    },
+    {
+      "name": "laserSmokeRate",
+      "type": "Single",
+      "group": "Track features",
+      "tooltip": "Puffs a second while the hull smokes.",
+      "min": 1,
+      "max": 80,
+      "unit": "/s"
+    },
+    {
+      "name": "laserSmokeBurst",
+      "type": "Int32",
+      "group": "Track features",
+      "tooltip": "Puffs in the burst at the moment of the hit.",
+      "min": 0,
+      "max": 60
+    },
+    {
+      "name": "slideShake",
+      "type": "CameraShakeSettings",
+      "group": "Track features",
+      "tooltip": "Camera shake when the ship starts sliding on a flat sweep taken too fast. Empty = no shake."
+    },
+    {
+      "name": "landingSparkleCount",
+      "type": "Int32",
+      "group": "Track features",
+      "tooltip": "Sparkles sprayed at the touchdown point when the ship lands (after a jump or a loop fall). 0 = no sparkles.",
+      "min": 0,
+      "max": 120
+    },
+    {
+      "name": "landingSparkleScale",
+      "type": "Single",
+      "group": "Track features",
+      "tooltip": "Size of the landing burst — scales the sparks' size, speed and spread together.",
+      "min": 0.5,
+      "max": 10,
+      "unit": "m"
+    },
+    {
+      "name": "landingSparkleColor",
+      "type": "Color",
+      "group": "Track features",
+      "tooltip": "Tint of the landing sparkles (each spark is rolled between this and white)."
+    },
+    {
+      "name": "loopSpeedFloorKmh",
+      "type": "Single",
+      "group": "Loops",
+      "tooltip": "Entry speed a loop demands at the start of the run, km/h. A fresh launch (about 900) must fail it; one green orb (+870) must pass it.",
+      "min": 200,
+      "max": 5000,
+      "unit": "km/h"
+    },
+    {
+      "name": "loopSpeedRampKmhPer100m",
+      "type": "Single",
+      "group": "Loops",
+      "tooltip": "How much the demand grows per 100 m of track travelled — the run's speed climbs, so a fixed number would be trivial late.",
+      "min": 0,
+      "max": 100,
+      "unit": "km/h per 100 m"
+    },
+    {
+      "name": "loopSpeedCapKmh",
+      "type": "Single",
+      "group": "Loops",
+      "tooltip": "Cap on the demand, km/h. Keep it well under Light Speed.",
+      "min": 200,
+      "max": 10000,
+      "unit": "km/h"
+    },
+    {
+      "name": "loopFallGlitchStrength",
+      "type": "Single",
+      "group": "Loops",
+      "tooltip": "Glitch pulse strength when the ship drops off the top of a loop.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "loopCinematic",
+      "type": "Boolean",
+      "group": "Loops",
+      "tooltip": "Cut to the chase camera's cinematic side shot for the loop — and through the fall when the ship was too slow, so the shot never cuts mid-drop. The shot itself is authored on the camera settings asset (its Cinematic group)."
+    },
+    {
+      "name": "loopCinematicHoldSeconds",
+      "type": "Single",
+      "group": "Loops",
+      "tooltip": "Real seconds the cinematic shot lingers after the ship is back on the track — the beat that lets the exit register before the chase view cuts back. The clock is easing up meanwhile.",
+      "min": 0,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "loopSlowMo",
+      "type": "Boolean",
+      "group": "loopSlowMo",
+      "toggleGroup": true,
+      "tooltip": "Slow the world while the ship is inside a loop (and through the fall of a failed one). Ship, patrol and the countdown all ride the same clock, so the loop costs no run time — it only plays longer in real time."
+    },
+    {
+      "name": "loopApparentSpeedKmh",
+      "type": "Single",
+      "group": "loopSlowMo",
+      "toggleGroup": true,
+      "tooltip": "The speed the loop is SHOWN at, km/h: the clock slows by exactly enough that the ship never appears faster than this through the loop, so a loop lasts the same few real seconds whether it was entered at 1300 or at 6000. A 100 m loop is 630 m round — at 650 the loop plays for about 3.5 s.",
+      "min": 100,
+      "max": 2000,
+      "unit": "km/h"
+    },
+    {
+      "name": "loopMinTimeScale",
+      "type": "Single",
+      "group": "loopSlowMo",
+      "toggleGroup": true,
+      "tooltip": "Slowest the clock gets, whatever the entry speed. 1 is real time.",
+      "min": 0.019999999552965164,
+      "max": 0.5
+    },
+    {
+      "name": "loopTimeScale",
+      "type": "Single",
+      "group": "loopSlowMo",
+      "toggleGroup": true,
+      "tooltip": "Fastest the clock stays inside the loop, so even a loop taken right at its floor speed is unmistakably slowed. 1 is real time.",
+      "min": 0.10000000149011612,
+      "max": 1
+    },
+    {
+      "name": "loopSlowMoBlendIn",
+      "type": "Single",
+      "group": "loopSlowMo",
+      "toggleGroup": true,
+      "tooltip": "Real seconds the clock eases down over on entering the loop.",
+      "min": 0,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "loopSlowMoBlendOut",
+      "type": "Single",
+      "group": "loopSlowMo",
+      "toggleGroup": true,
+      "tooltip": "Real seconds the clock eases back to 1 over on leaving it.",
+      "min": 0,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "winCameraHoldSeconds",
+      "type": "Single",
+      "group": "Mission complete",
+      "tooltip": "Real seconds the camera holds a planted trackside shot, watching the escaping ship fly on out of it, before the glitch ramps and the debrief opens. The player cannot move the camera for it. 0 = straight from the chase view into the glitch.",
+      "min": 0,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "winGlitchRampSeconds",
+      "type": "Single",
+      "group": "Mission complete",
+      "tooltip": "Seconds the glitch takes to ramp from its current level to max once the ship is back on the track after the win.",
+      "min": 0.10000000149011612,
+      "max": 3,
+      "unit": "s"
+    },
+    {
+      "name": "winGlitchHoldSeconds",
+      "type": "Single",
+      "group": "Mission complete",
+      "tooltip": "Seconds the glitch holds at max before the Mission Complete panel opens.",
+      "min": 0,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "winBannerDelaySeconds",
+      "type": "Single",
+      "group": "Mission complete",
+      "tooltip": "Real seconds after the ship is back on the track before the MISSION ACCOMPLISHED banner starts slamming in over the fly-past.",
+      "min": 0,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "winBannerLetterStaggerSeconds",
+      "type": "Single",
+      "group": "Mission complete",
+      "tooltip": "Real seconds between one banner letter's entrance and the next. The whole word is in after letters × stagger + slam.",
+      "min": 0.0099999997764825821,
+      "max": 0.20000000298023224,
+      "unit": "s"
+    },
+    {
+      "name": "winBannerLetterSlamSeconds",
+      "type": "Single",
+      "group": "Mission complete",
+      "tooltip": "Real seconds one banner letter takes to drop from 3× onto the screen and bounce to rest.",
+      "min": 0.10000000149011612,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "winBannerGlitchPunch",
+      "type": "Single",
+      "group": "Mission complete",
+      "tooltip": "Glitch pulse strength on the frame the banner's last letter lands. 0 = none.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "winBannerShake",
+      "type": "CameraShakeSettings",
+      "group": "Mission complete",
+      "tooltip": "Camera shake on the frame the banner's last letter lands. Empty = no shake."
+    },
+    {
+      "name": "failBannerHoldSeconds",
+      "type": "Single",
+      "group": "Mission failed",
+      "tooltip": "Real seconds the MISSION FAILED banner stays up before the retry panel opens. A fall off the end of the track plays out under it.",
+      "min": 0,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "failBannerDismissSeconds",
+      "type": "Single",
+      "group": "Mission failed",
+      "tooltip": "Real seconds the MISSION FAILED banner takes to tear away before the retry panel opens.",
+      "min": 0.25,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "failBannerColor",
+      "type": "Color",
+      "group": "Mission failed",
+      "tooltip": "Colour of the MISSION FAILED banner's letters and underline."
+    },
+    {
+      "name": "failVideo",
+      "type": "VideoClip",
+      "group": "Mission failed",
+      "tooltip": "A reaction clip played once, with its sound, in a framed square under the MISSION FAILED banner. The banner holds at least as long as the clip. Empty = no clip."
+    },
+    {
+      "name": "failVideoSize",
+      "type": "Single",
+      "group": "Mission failed",
+      "tooltip": "Height of the fail clip on the 1080p reference screen (its width follows the clip's aspect).",
+      "min": 120,
+      "max": 900,
+      "unit": "px"
+    },
+    {
+      "name": "failVideoOffsetY",
+      "type": "Single",
+      "group": "Mission failed",
+      "tooltip": "Vertical offset of the fail clip from the screen centre (negative = lower; the banner sits in the upper third).",
+      "min": -500,
+      "max": 500,
+      "unit": "px"
+    },
+    {
+      "name": "failVideoVolume",
+      "type": "Single",
+      "group": "Mission failed",
+      "tooltip": "Volume of the fail clip's own sound.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "hullEnabled",
+      "type": "Boolean",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Walls and brake pads damage the ship's hull (the HUD's life bar); at 0 it explodes and the run fails. Every failed run costs a life, and the last one lost is GAME OVER: no retry, back to the Store, the mission forfeited. Off = no damage, no bar, no lives — every loss retries for free."
+    },
+    {
+      "name": "startingLives",
+      "type": "Int32",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Runs a mission forgives: every failed run (destroyed, caught, out of time, off the end) takes one, and losing the last is GAME OVER. A fresh set every time the runner is entered.",
+      "min": 1,
+      "max": 20
+    },
+    {
+      "name": "brakePadDamage",
+      "type": "Single",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Hull points a brake pad takes.",
+      "min": 0,
+      "max": 200
+    },
+    {
+      "name": "wallSlamDamage",
+      "type": "Single",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Hull points a hard wall hit takes: a dash slammed into the track's edge, or a ramp hit from the side.",
+      "min": 0,
+      "max": 200
+    },
+    {
+      "name": "wallScrapeDamage",
+      "type": "Single",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Hull points steering (or sliding) into a wall takes. Still pressed against it when the invulnerability ends, it takes them again.",
+      "min": 0,
+      "max": 200
+    },
+    {
+      "name": "fallDamage",
+      "type": "Single",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Hull points falling off the track takes, the moment the ship goes over an open edge — on top of the time the fall costs. It ignores the invulnerability blink; taking the last points, the ship blows up in the fall.",
+      "min": 0,
+      "max": 200
+    },
+    {
+      "name": "laserDamage",
+      "type": "Single",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Hull points flying through a laser beam takes — a fall's worth by default. The invulnerability blink shields it like any other hit.",
+      "min": 0,
+      "max": 200
+    },
+    {
+      "name": "laserHitShake",
+      "type": "CameraShakeSettings",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Camera shake on a laser hit, on top of the heavy rumble. Empty = no shake."
+    },
+    {
+      "name": "hitInvulnerabilitySeconds",
+      "type": "Single",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Seconds the ship blinks and takes no damage after a hit.",
+      "min": 0,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "repairOrbHealFraction",
+      "type": "Single",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Share of the full hull a repair orb (green cross in a red sphere) gives back, never past the max — the orb is collected even at full hull. Player only — the patrol never takes one.",
+      "min": 0.05000000074505806,
+      "max": 0.5
+    },
+    {
+      "name": "scrapeShake",
+      "type": "CameraShakeSettings",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Camera shake on a wall scrape (the dash slam keeps Wall Hit Shake). Empty = no shake."
+    },
+    {
+      "name": "hullHitGlitchStrength",
+      "type": "Single",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Glitch-effect burst strength on any hull hit.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "explosionTextures",
+      "type": "Texture2D[]",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Sprites of the ship's explosion — one is picked per fireball puff. Empty = no fireball (the ship still vanishes)."
+    },
+    {
+      "name": "explosionScale",
+      "type": "Single",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Size of the explosion's fireball.",
+      "min": 1,
+      "max": 60,
+      "unit": "m"
+    },
+    {
+      "name": "explosionLifetime",
+      "type": "Single",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Seconds the fireball lives.",
+      "min": 0.20000000298023224,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "explosionParticles",
+      "type": "Int32",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Puffs in the fireball.",
+      "min": 1,
+      "max": 80
+    },
+    {
+      "name": "explosionShake",
+      "type": "CameraShakeSettings",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Camera shake as the ship explodes. Empty = no shake."
+    },
+    {
+      "name": "explosionGlitchStrength",
+      "type": "Single",
+      "group": "hullEnabled",
+      "toggleGroup": true,
+      "tooltip": "Glitch-effect burst strength as the ship explodes.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "dashWallGlitchStrength",
+      "type": "Single",
+      "group": "Lateral dash",
+      "tooltip": "Glitch-effect burst strength when a dash slams the track edge.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "dashMeterColor",
+      "type": "Color",
+      "group": "Lateral dash",
+      "tooltip": "Fill colour of the meter once at least one dash is banked; dimmed while still charging. The bar itself is the DashMeter scene object under the Ship."
+    },
+    {
+      "name": "dashEncourageAfterSeconds",
+      "type": "Single",
+      "group": "Lateral dash",
+      "tooltip": "Seconds the meter may sit full and unused before the on-screen hint comes back.",
+      "min": 2,
+      "max": 60,
+      "unit": "s"
+    },
+    {
+      "name": "dashHintText",
+      "type": "String",
+      "group": "Lateral dash",
+      "tooltip": "Caption of the pulsing on-screen hint between the bumper glyphs / key labels."
+    },
+    {
+      "name": "dashHintTextSinglePress",
+      "type": "String",
+      "group": "Lateral dash",
+      "tooltip": "The same caption while the dash is single-press (the ship settings' Dash Single Press, or the player's SINGLE-PRESS DASH setting on the CONTROLS page)."
+    },
+    {
+      "name": "boostTextLeadMeters",
+      "type": "Single",
+      "group": "Floating text offsets",
+      "tooltip": "How far ahead of the ship the '+N' boost popups spawn.",
+      "min": 0,
+      "max": 500,
+      "unit": "m"
+    },
+    {
+      "name": "messageHoldSeconds",
+      "type": "Single",
+      "group": "Story messages",
+      "tooltip": "Seconds an RPG message stays on screen after it finishes typing.",
+      "min": 0,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "messageOrbTierName",
+      "type": "String",
+      "group": "Story messages",
+      "tooltip": "Spawn-table entry (by name, see the TrackGenerator's Core Settings) whose pickup triggers the pilot's hype line. Empty = no orb message."
+    },
+    {
+      "name": "purpleOrbMessage",
+      "type": "String",
+      "group": "Story messages"
+    },
+    {
+      "name": "patrolInboundMessage",
+      "type": "String",
+      "group": "Story messages",
+      "tooltip": "Spoken by the patrol when a fresh one cuts in (only while 'Show patrol alert' is on). {0} = the patrol's number."
+    },
+    {
+      "name": "patrolWarningMessage",
+      "type": "String",
+      "group": "Story messages",
+      "tooltip": "Spoken by the patrol when it closes inside its warn distance (only while 'Show patrol warnings' is on). {0} = the gap in meters."
+    },
+    {
+      "name": "pilotMessageColor",
+      "type": "Color",
+      "group": "Story messages"
+    },
+    {
+      "name": "patrolMessageColor",
+      "type": "Color",
+      "group": "Story messages"
+    },
+    {
+      "name": "rainEnabled",
+      "type": "Boolean",
+      "group": "rainEnabled",
+      "toggleGroup": true,
+      "tooltip": "Spawn the rain over the run. The downpour's own knobs live on the RainSettings asset below — this is only the on/off for this scene."
+    },
+    {
+      "name": "speedLinesEnabled",
+      "type": "Boolean",
+      "group": "speedLinesEnabled",
+      "toggleGroup": true,
+      "tooltip": "Manga speed lines over the picture as the ship nears Light Speed. The look and the speed band (a fraction of Light Speed) live on the asset below — this is only the on/off for this scene."
+    },
+    {
+      "name": "boostPulseStrength",
+      "type": "Single",
+      "group": "speedLinesEnabled",
+      "toggleGroup": true,
+      "tooltip": "Burst of lines on a green (1×) orb pickup; blue and purple scale it by their tier (2.5× / 10×, clamped to full). 0 = no burst.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "boostPulseSeconds",
+      "type": "Single",
+      "group": "speedLinesEnabled",
+      "toggleGroup": true,
+      "tooltip": "How long a boost burst takes to fade back to the speed-driven level.",
+      "min": 0.05000000074505806,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "hyperspaceSkyEnabled",
+      "type": "Boolean",
+      "group": "hyperspaceSkyEnabled",
+      "toggleGroup": true,
+      "tooltip": "While the ship flies at Light Speed, the sky is a hyperspace tunnel of cyan / green streaks instead of the scene's skybox; dropping below it fades the skybox back. The look lives on the HyperspaceSky object's asset — this is only the on/off for this scene."
+    },
+    {
+      "name": "lightSpeedWarpEnabled",
+      "type": "Boolean",
+      "group": "lightSpeedWarpEnabled",
+      "toggleGroup": true,
+      "tooltip": "While the ship flies at Light Speed, the lens distortion is pushed up; dropping below it blends it back to the lens controller's default. (The motion blur follows speed on its own — see Speed motion blur.)"
+    },
+    {
+      "name": "lightSpeedExitMargin",
+      "type": "Single",
+      "group": "lightSpeedWarpEnabled",
+      "toggleGroup": true,
+      "tooltip": "How far below Light Speed (fraction of it) the ship must fall before the warp and the hyperspace sky let go — stops them flickering while the speed hovers on the line. 0.03 = 3 % under.",
+      "min": 0,
+      "max": 0.20000000298023224
+    },
+    {
+      "name": "lightSpeedWarpBlendSeconds",
+      "type": "Single",
+      "group": "lightSpeedWarpEnabled",
+      "toggleGroup": true,
+      "tooltip": "Seconds the lens takes to blend in on reaching Light Speed, and back out on losing it. The speed motion blur also never moves faster than its full range over this time, so a fall or a respawn eases it instead of popping.",
+      "min": 0,
+      "max": 3,
+      "unit": "s"
+    },
+    {
+      "name": "lightSpeedLensIntensity",
+      "type": "Single",
+      "group": "lightSpeedWarpEnabled",
+      "toggleGroup": true,
+      "tooltip": "Lens distortion intensity held at Light Speed (the lens controller rests at its own default otherwise; boost kicks still play on top).",
+      "min": -1,
+      "max": 1
+    },
+    {
+      "name": "speedMotionBlurEnabled",
+      "type": "Boolean",
+      "group": "speedMotionBlurEnabled",
+      "toggleGroup": true,
+      "tooltip": "The motion blur grows with the ship's speed: the curve maps 0 km/h (x = 0) to Light Speed (x = 1, held above it), and its value lerps the blur's intensity and clamp from 0 up to their Light Speed values. Off, the volume profile's own blur is left alone."
+    },
+    {
+      "name": "speedMotionBlurCurve",
+      "type": "AnimationCurve",
+      "group": "speedMotionBlurEnabled",
+      "toggleGroup": true,
+      "tooltip": "x = speed as a fraction of Light Speed (0 = standstill, 1 = Light Speed), y = how much of the Light Speed blur to apply (0 = none, 1 = full)."
+    },
+    {
+      "name": "lightSpeedMotionBlurIntensity",
+      "type": "Single",
+      "group": "speedMotionBlurEnabled",
+      "toggleGroup": true,
+      "tooltip": "Motion blur intensity at Light Speed (curve = 1). How strongly each pixel smears along its motion.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "lightSpeedMotionBlurClamp",
+      "type": "Single",
+      "group": "speedMotionBlurEnabled",
+      "toggleGroup": true,
+      "tooltip": "Motion blur clamp at Light Speed (curve = 1): the longest a blur streak may get, as a fraction of the screen.",
+      "min": 0,
+      "max": 0.20000000298023224
+    },
+    {
+      "name": "hyperspaceJumpEnabled",
+      "type": "Boolean",
+      "group": "hyperspaceJumpEnabled",
+      "toggleGroup": true,
+      "tooltip": "After holding Light Speed a while (every objective met), HIT HYPERSPACE comes up: LB + RB on a pad, Q + E on the keyboard. Pressing it brings the end of the track in where the road currently stops and the autopilot lines the ship up on the nearest end ramp — the win, now. The dash is off while the prompt is up (the chord IS the two dash shoulders)."
+    },
+    {
+      "name": "hyperspacePromptDelaySeconds",
+      "type": "Single",
+      "group": "hyperspaceJumpEnabled",
+      "toggleGroup": true,
+      "tooltip": "Seconds at Light Speed before the prompt comes up. Losing Light Speed hides it and starts the count over.",
+      "min": 0,
+      "max": 20,
+      "unit": "s"
+    },
+    {
+      "name": "hyperspaceRunUpMeters",
+      "type": "Single",
+      "group": "hyperspaceJumpEnabled",
+      "toggleGroup": true,
+      "tooltip": "Length of the straight walled run-up the jump puts before the end ramps (it starts where the road currently stops, ~2.5 km ahead). Never shorter than a ramp plus one segment.",
+      "min": 200,
+      "max": 2000,
+      "unit": "m"
+    },
+    {
+      "name": "startCountdownEnabled",
+      "type": "Boolean",
+      "group": "startCountdownEnabled",
+      "toggleGroup": true,
+      "tooltip": "Race and time trial levels (Race, Beat the Clock, Arcade) open on READY!! 3, 2, 1, GO!: the ship, the rivals, the patrol and the clock all hold on the line and go together on GO — the controls answer from that frame. The plain runner launches at once as ever."
+    },
+    {
+      "name": "countdownReadySeconds",
+      "type": "Single",
+      "group": "startCountdownEnabled",
+      "toggleGroup": true,
+      "tooltip": "How long READY!! holds before the 3.",
+      "min": 0.30000001192092896,
+      "max": 3,
+      "unit": "s"
+    },
+    {
+      "name": "countdownBeatSeconds",
+      "type": "Single",
+      "group": "startCountdownEnabled",
+      "toggleGroup": true,
+      "tooltip": "Seconds per number (3, 2, 1).",
+      "min": 0.30000001192092896,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "countdownGoSeconds",
+      "type": "Single",
+      "group": "startCountdownEnabled",
+      "toggleGroup": true,
+      "tooltip": "How long GO! stays on screen once the run is live.",
+      "min": 0.20000000298023224,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "countdownNumberColor",
+      "type": "Color",
+      "group": "startCountdownEnabled",
+      "toggleGroup": true
+    },
+    {
+      "name": "countdownGoColor",
+      "type": "Color",
+      "group": "startCountdownEnabled",
+      "toggleGroup": true
+    },
+    {
+      "name": "debugBoostChord",
+      "type": "Boolean",
+      "group": "debugBoostChord",
+      "toggleGroup": true,
+      "tooltip": "Debug utility: pressing Y on the pad gives the ship a speed boost, as if it had taken an orb (the +N, rumble and the patrol's boost share included). Also shown on the ship's DebugBoostChord component and the pause menu's DEBUG TOOLS page."
+    },
+    {
+      "name": "debugBoostKmh",
+      "type": "Single",
+      "group": "debugBoostChord",
+      "toggleGroup": true,
+      "tooltip": "Speed added per chord, before the ship's weight scales it (the same raw impulse an orb gives).",
+      "min": 50,
+      "max": 5000,
+      "unit": "km/h"
+    },
+    {
+      "name": "escapeVanishEnabled",
+      "type": "Boolean",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "Every win: the ship leaves the end ramp trailing two fire lines, and a moment later the model vanishes in an electric flash — only the burning trails fly on (Back to the Future)."
+    },
+    {
+      "name": "escapeVanishDelaySeconds",
+      "type": "Single",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "Seconds of flight off the ramp before the model vanishes.",
+      "min": 0.10000000149011612,
+      "max": 3,
+      "unit": "s"
+    },
+    {
+      "name": "escapeTrailSeconds",
+      "type": "Single",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "How long a point of the fire trail burns before it is gone — with the ship at Light Speed and the camera planted, this is how long the two lines stay on screen. A hyperspace jump lights them on the road already, so they must outlast the approach.",
+      "min": 0.20000000298023224,
+      "max": 8,
+      "unit": "s"
+    },
+    {
+      "name": "escapeTrailWidth",
+      "type": "Single",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "Fire trail width at the ship, in metres (it tapers to nothing at the tail).",
+      "min": 0.5,
+      "max": 30,
+      "unit": "m"
+    },
+    {
+      "name": "escapeTrailIntensity",
+      "type": "Single",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "HDR brightness of the fire trails and flames (the material's tint): above 1 the bloom makes them burn.",
+      "min": 0.5,
+      "max": 12
+    },
+    {
+      "name": "escapeTrailGradient",
+      "type": "Gradient",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "The fire trail's colour along its length: head (at the ship) → tail. Additive; Escape Trail Intensity is the brightness on top."
+    },
+    {
+      "name": "escapeTrailTexture",
+      "type": "Texture2D",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "The fire trail's texture, stretched ONCE over the whole line (kilometres), so it must fill its width and length — a sprite with transparent margins becomes a hairline with a blank stretch behind the ship. Empty = the built-in fire band (a soft glow with a hot core), the default."
+    },
+    {
+      "name": "escapeFlameTextures",
+      "type": "Texture2D[]",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "Flame sprites licking off the trail heads (the Kenney flame_* / fire_* pack). Empty = no flames, just the trails."
+    },
+    {
+      "name": "escapeFlameSize",
+      "type": "Single",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "Size of the flame sprites, metres.",
+      "min": 0.5,
+      "max": 12,
+      "unit": "m"
+    },
+    {
+      "name": "escapeFlashColor",
+      "type": "Color",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "Colour of the vanish's electric flash (sparks and the light burst)."
+    },
+    {
+      "name": "escapeFlashScale",
+      "type": "Single",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "Size of the vanish's spark burst (1 = the landing sparkle's).",
+      "min": 0.5,
+      "max": 10
+    },
+    {
+      "name": "escapeFlashLight",
+      "type": "Single",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "Peak intensity of the vanish's light burst, and its range in metres.",
+      "min": 0,
+      "max": 200
+    },
+    {
+      "name": "escapeFlashGlitch",
+      "type": "Single",
+      "group": "escapeVanishEnabled",
+      "toggleGroup": true,
+      "tooltip": "Glitch pulse on the vanish (0 = none).",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "vhsEnabled",
+      "type": "Boolean",
+      "group": "vhsEnabled",
+      "toggleGroup": true,
+      "tooltip": "Play the run back as a worn VHS tape: chroma bleed, row jitter, a crawling tracking band, grain and scanlines over the finished picture. The look lives on the asset below — this is only the on/off for this scene."
+    },
+    {
+      "name": "psxEnabled",
+      "type": "Boolean",
+      "group": "psxEnabled",
+      "toggleGroup": true,
+      "tooltip": "Show the run as a PlayStation-1 console would: a 240-row picture with square pixels, vertex wobble and texture swim per polygon-sized block, 15-bit colour under a Bayer dither. The look lives on the asset below — this is only the on/off for this scene."
+    },
+    {
+      "name": "crtEnabled",
+      "type": "Boolean",
+      "group": "crtEnabled",
+      "toggleGroup": true,
+      "tooltip": "Show the run on a curved CRT tube: barrel curvature with rounded corners, phosphor bleed and colour convergence that grow toward the edges, scanlines, an aperture grille and refresh flicker over the finished picture — the last pass, the display the console and the tape play on. The look lives on the asset below — this is only the on/off for this scene; the player has their own dial on the VIDEO settings page."
+    },
+    {
+      "name": "musicEnabled",
+      "type": "Boolean",
+      "group": "musicEnabled",
+      "toggleGroup": true,
+      "tooltip": "Play the runner's soundtrack loop over the run: a random start point every play, fade in on launch, fade out on win and lose. The clip, volume and fade times live on the asset below — this is only the on/off for this scene."
+    },
+    {
+      "name": "musicSettings",
+      "type": "MusicSettings",
+      "group": "musicEnabled",
+      "toggleGroup": true,
+      "tooltip": "Music asset pushed onto the scene's RunnerMusic system on boot. Empty = leave the system with the asset it was authored with (the shipped FiniteRunner_Music from Resources)."
+    },
+    {
+      "name": "sfxEnabled",
+      "type": "Boolean",
+      "group": "sfxEnabled",
+      "toggleGroup": true,
+      "tooltip": "The ship's own sounds: the speed-driven engine loop, the power-up pickup and the jump takeoff. Clips and feel live on the asset below — this is only the on/off for this scene."
+    },
+    {
+      "name": "sfxSettings",
+      "type": "RunnerSfxSettings",
+      "group": "sfxEnabled",
+      "toggleGroup": true,
+      "tooltip": "Sound effects asset read live by the ship's ShipAudio. Empty = the shipped FiniteRunner_Sfx from Resources."
+    }
+  ],
+  "types": {}
+}

@@ -1,0 +1,34 @@
+{
+  "unityType": "PadDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.PadDefinition",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Track/PadDefinition.cs",
+  "fields": [
+    {
+      "name": "displayName",
+      "type": "String"
+    },
+    {
+      "name": "speedDelta",
+      "type": "Single",
+      "tooltip": "Speed change applied when a ship passes over the pad. Positive = boost, negative = brake."
+    },
+    {
+      "name": "color",
+      "type": "Color",
+      "tooltip": "Tint applied to the pad's renderer so the type is readable at speed."
+    },
+    {
+      "name": "sizeMultiplier",
+      "type": "Single",
+      "tooltip": "Scale applied to the generator's base pad size. Boosts are small (0.3) and must be aimed for; brakes are big (1.2) and must be dodged.",
+      "min": 0.05
+    },
+    {
+      "name": "floatingOrb",
+      "type": "Boolean",
+      "tooltip": "Spawn as a hovering orb on the flight line instead of a flat pad on the road."
+    }
+  ],
+  "types": {}
+}

@@ -1,0 +1,92 @@
+{
+  "unityType": "RepairOrbSpawner",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.RepairOrbSpawner",
+  "baseType": "TrackSpawner",
+  "script": "Assets/01.Scripts/Runner/Track/Spawning/RepairOrbSpawner.cs",
+  "fields": [
+    {
+      "name": "active",
+      "type": "Boolean",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Off = listed but never spawned."
+    },
+    {
+      "name": "displayName",
+      "type": "String",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Name shown in the debug menu and used to seed this spawner's random stream (so renaming reshuffles its layout)."
+    },
+    {
+      "name": "color",
+      "type": "Color",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Tint of this spawner's debug rows."
+    },
+    {
+      "name": "spacing",
+      "type": "Vector2",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Metres of track between one spawn step and the next (min, max).",
+      "band": true,
+      "min": 10,
+      "max": 20000,
+      "unit": "m"
+    },
+    {
+      "name": "startDistance",
+      "type": "Single",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "The first step lands between this distance and this plus the minimum spacing, so the launch stays clean.",
+      "min": 0,
+      "max": 5000,
+      "unit": "m"
+    },
+    {
+      "name": "chance",
+      "type": "Single",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Chance that a step spawns anything at all. 1 = every step.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "prefab",
+      "type": "GameObject",
+      "tooltip": "The repair orb's look, carrying a RepairOrb, modelled at 1 m across. Empty = a code-built translucent sphere (shellColor) round a glowing cross (crossColor)."
+    },
+    {
+      "name": "size",
+      "type": "Single",
+      "tooltip": "Diameter of the repair orb as a share of the pad width (a boost orb's is its definition's size multiplier).",
+      "min": 0.10000000149011612,
+      "max": 2
+    },
+    {
+      "name": "roadClearance",
+      "type": "Single",
+      "tooltip": "Gap between the visible road and the orb's LOWEST point (the bottom of its bob), along the track's up. The centre is placed from this and the orb's radius, so at any size the orb floats clear of the road — and, sitting just above it, is always in the ship's path.",
+      "min": 0,
+      "max": 10,
+      "unit": "m"
+    },
+    {
+      "name": "spinDegreesPerSecond",
+      "type": "Single",
+      "tooltip": "How fast the orb spins about the track's up, degrees per second. 0 = keeps its authored rotation.",
+      "min": 0,
+      "max": 720,
+      "unit": "°/s"
+    },
+    {
+      "name": "shellColor",
+      "type": "Color",
+      "tooltip": "Colour of the code-built orb's translucent shell (alpha = how see-through it is, so the cross shows inside)."
+    },
+    {
+      "name": "crossColor",
+      "type": "Color",
+      "tooltip": "Colour of the code-built orb's glowing cross."
+    }
+  ],
+  "types": {}
+}

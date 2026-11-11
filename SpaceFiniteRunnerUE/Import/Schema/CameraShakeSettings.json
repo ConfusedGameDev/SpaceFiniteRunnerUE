@@ -1,0 +1,38 @@
+{
+  "unityType": "CameraShakeSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Cameras.CameraShakeSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Cameras/CameraShakeSettings.cs",
+  "fields": [
+    {
+      "name": "duration",
+      "type": "Single",
+      "tooltip": "How long the shake lasts, in seconds.",
+      "min": 0.05
+    },
+    {
+      "name": "positionAmplitude",
+      "type": "Single",
+      "tooltip": "Maximum positional offset in local units.",
+      "min": 0
+    },
+    {
+      "name": "rotationAmplitude",
+      "type": "Single",
+      "tooltip": "Maximum rotational offset in degrees.",
+      "min": 0
+    },
+    {
+      "name": "frequency",
+      "type": "Single",
+      "tooltip": "How fast the shake oscillates. Higher = buzzier, lower = heavier.",
+      "min": 0.1
+    },
+    {
+      "name": "falloff",
+      "type": "AnimationCurve",
+      "tooltip": "Amplitude over the shake's normalized lifetime (1 at start, 0 at end for a natural decay)."
+    }
+  ],
+  "types": {}
+}

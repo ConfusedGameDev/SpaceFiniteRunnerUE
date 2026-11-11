@@ -1,0 +1,437 @@
+{
+  "unityType": "MenuTheme",
+  "fullType": "ConfusedGameDev.FiniteRunner.UI.MenuTheme",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/UI/MenuTheme.cs",
+  "fields": [
+    {
+      "name": "titleFont",
+      "type": "Font",
+      "group": "Fonts",
+      "tooltip": "Big headings. 03.UI/Font/Kenney Future.ttf."
+    },
+    {
+      "name": "bodyFont",
+      "type": "Font",
+      "group": "Fonts",
+      "tooltip": "Menu rows and body copy. 03.UI/Font/Kenney Future Narrow.ttf."
+    },
+    {
+      "name": "rowPlate",
+      "type": "Sprite",
+      "group": "Panel sprites (03.UI/PNG/Red/Double)",
+      "tooltip": "Background plate behind a menu row. Suggested: button_square_header_notch_rectangle."
+    },
+    {
+      "name": "titlePlate",
+      "type": "Sprite",
+      "group": "Panel sprites (03.UI/PNG/Red/Double)",
+      "tooltip": "Title bar of a sub-screen. Suggested: button_square_header_blade_rectangle_screws."
+    },
+    {
+      "name": "sliderTrack",
+      "type": "Sprite",
+      "group": "Panel sprites (03.UI/PNG/Red/Double)",
+      "tooltip": "Empty slider track. Suggested: bar_round_large."
+    },
+    {
+      "name": "sliderFill",
+      "type": "Sprite",
+      "group": "Panel sprites (03.UI/PNG/Red/Double)",
+      "tooltip": "Filled portion of a slider. Suggested: bar_round_gloss_large."
+    },
+    {
+      "name": "toggleBox",
+      "type": "Sprite",
+      "group": "Panel sprites (03.UI/PNG/Red/Double)",
+      "tooltip": "Box of the subtitles toggle — the kit has no checkbox sprite, so a small bar end stands in. Suggested: bar_square_small_square."
+    },
+    {
+      "name": "selectionMarker",
+      "type": "Sprite",
+      "group": "Panel sprites (03.UI/PNG/Red/Double)",
+      "tooltip": "Marker beside the focused row, and the tick inside the toggle. Suggested: crosshair_color_a."
+    },
+    {
+      "name": "glyphConfirm",
+      "type": "Sprite",
+      "group": "Xbox prompt glyphs (03.UI/Xbox Series/Double)"
+    },
+    {
+      "name": "glyphBack",
+      "type": "Sprite",
+      "group": "Xbox prompt glyphs (03.UI/Xbox Series/Double)"
+    },
+    {
+      "name": "glyphNavigate",
+      "type": "Sprite",
+      "group": "Xbox prompt glyphs (03.UI/Xbox Series/Double)"
+    },
+    {
+      "name": "glyphAdjust",
+      "type": "Sprite",
+      "group": "Xbox prompt glyphs (03.UI/Xbox Series/Double)"
+    },
+    {
+      "name": "glyphStart",
+      "type": "Sprite",
+      "group": "Xbox prompt glyphs (03.UI/Xbox Series/Double)",
+      "tooltip": "Shown under PRESS START on the attract screen while a controller is connected."
+    },
+    {
+      "name": "glyphBumperLeft",
+      "type": "Sprite",
+      "group": "Xbox prompt glyphs (03.UI/Xbox Series/Double)",
+      "tooltip": "Left bumper, for the dash hint while a controller is connected."
+    },
+    {
+      "name": "glyphBumperRight",
+      "type": "Sprite",
+      "group": "Xbox prompt glyphs (03.UI/Xbox Series/Double)",
+      "tooltip": "Right bumper, for the dash hint while a controller is connected."
+    },
+    {
+      "name": "backdrop",
+      "type": "Color",
+      "group": "Palette",
+      "tooltip": "Full-screen backdrop. Keep it near-opaque: the run is frozen behind the menu, not hidden."
+    },
+    {
+      "name": "accent",
+      "type": "Color",
+      "group": "Palette"
+    },
+    {
+      "name": "textPrimary",
+      "type": "Color",
+      "group": "Palette"
+    },
+    {
+      "name": "textDim",
+      "type": "Color",
+      "group": "Palette"
+    },
+    {
+      "name": "plateIdle",
+      "type": "Color",
+      "group": "Palette",
+      "tooltip": "Tint of an unfocused row plate."
+    },
+    {
+      "name": "plateFocused",
+      "type": "Color",
+      "group": "Palette",
+      "tooltip": "Tint of the focused row plate."
+    },
+    {
+      "name": "rowWidth",
+      "type": "Single",
+      "group": "Layout",
+      "min": 320,
+      "max": 900,
+      "unit": "px"
+    },
+    {
+      "name": "rowHeight",
+      "type": "Single",
+      "group": "Layout",
+      "min": 48,
+      "max": 140,
+      "unit": "px"
+    },
+    {
+      "name": "rowSpacing",
+      "type": "Single",
+      "group": "Layout",
+      "min": 0,
+      "max": 60,
+      "unit": "px"
+    },
+    {
+      "name": "mainColumnX",
+      "type": "Single",
+      "group": "Layout",
+      "tooltip": "X of the main menu's column at 1920x1080, measured from screen centre.",
+      "min": -800,
+      "max": 0,
+      "unit": "px"
+    },
+    {
+      "name": "entranceDuration",
+      "type": "Single",
+      "group": "Motion — entrance (attract to main menu)",
+      "tooltip": "How long one item takes to arrive. The whole entrance is this plus the stagger of the last item.",
+      "min": 0.20000000298023224,
+      "max": 2.5,
+      "unit": "s"
+    },
+    {
+      "name": "entranceSlide",
+      "type": "Single",
+      "group": "Motion — entrance (attract to main menu)",
+      "tooltip": "How far left of its resting place an item starts.",
+      "min": 0,
+      "max": 400,
+      "unit": "px"
+    },
+    {
+      "name": "entranceStagger",
+      "type": "Single",
+      "group": "Motion — entrance (attract to main menu)",
+      "tooltip": "Delay added per item, so rows arrive one after another instead of as a block.",
+      "min": 0,
+      "max": 0.30000001192092896,
+      "unit": "s"
+    },
+    {
+      "name": "titleLead",
+      "type": "Single",
+      "group": "Motion — entrance (attract to main menu)",
+      "tooltip": "Head start the screen title gets over the rows.",
+      "min": 0,
+      "max": 0.5,
+      "unit": "s"
+    },
+    {
+      "name": "entranceCurve",
+      "type": "AnimationCurve",
+      "group": "Motion — entrance (attract to main menu)",
+      "tooltip": "Shape of every eased move. Ease out: quick departure, soft landing."
+    },
+    {
+      "name": "focusEaseSeconds",
+      "type": "Single",
+      "group": "Motion — focus",
+      "tooltip": "Smoothing time of the highlight and of a row's scale/alpha. The highlight never teleports.",
+      "min": 0.019999999552965164,
+      "max": 0.60000002384185791,
+      "unit": "s"
+    },
+    {
+      "name": "focusScale",
+      "type": "Single",
+      "group": "Motion — focus",
+      "min": 1,
+      "max": 1.2999999523162842,
+      "unit": "x"
+    },
+    {
+      "name": "unfocusedAlpha",
+      "type": "Single",
+      "group": "Motion — focus",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "screenTransition",
+      "type": "Single",
+      "group": "Motion — screen transitions",
+      "tooltip": "Main to sub-screen and back. Input is locked for exactly this long.",
+      "min": 0.10000000149011612,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "screenSlide",
+      "type": "Single",
+      "group": "Motion — screen transitions",
+      "min": 100,
+      "max": 1200,
+      "unit": "px"
+    },
+    {
+      "name": "loadingFillSeconds",
+      "type": "Single",
+      "group": "Loading screen",
+      "tooltip": "Time the bar takes to fill from empty to full at its steady pace — also the least time the curtain stays up. The bar is time-driven: a scene loads in one hitch, so a progress readout would sit at 0 and slam to 1; the bar climbs to half, the hitch happens there, and the second half fills once the scene is in.",
+      "min": 0.25,
+      "max": 4,
+      "unit": "s"
+    },
+    {
+      "name": "loadingSpinner",
+      "type": "Sprite",
+      "group": "Loading screen",
+      "tooltip": "Bottom-right corner sprite — the PS1 spinning disc. Empty for now: the slot is hidden until a sprite is assigned."
+    },
+    {
+      "name": "loadingSpinnerSpin",
+      "type": "Single",
+      "group": "Loading screen",
+      "tooltip": "Spin rate of the corner sprite, clockwise. 0 keeps it still.",
+      "min": 0,
+      "max": 720,
+      "unit": "°/s"
+    },
+    {
+      "name": "attractPulseSeconds",
+      "type": "Single",
+      "group": "Motion — attract prompt",
+      "min": 0.40000000596046448,
+      "max": 4,
+      "unit": "s per loop"
+    },
+    {
+      "name": "attractPulseAlpha",
+      "type": "Vector2",
+      "group": "Motion — attract prompt",
+      "tooltip": "Alpha the PRESS prompt pulses between.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "stickDeadZone",
+      "type": "Single",
+      "group": "Input",
+      "tooltip": "Left stick deflection that counts as a direction.",
+      "min": 0.10000000149011612,
+      "max": 0.89999997615814209
+    },
+    {
+      "name": "repeatDelay",
+      "type": "Single",
+      "group": "Input",
+      "tooltip": "How long a direction must be held before it starts repeating.",
+      "min": 0.10000000149011612,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "repeatInterval",
+      "type": "Single",
+      "group": "Input",
+      "tooltip": "Repeat rate once it starts.",
+      "min": 0.029999999329447746,
+      "max": 0.40000000596046448,
+      "unit": "s"
+    },
+    {
+      "name": "inputGrace",
+      "type": "Single",
+      "group": "Input",
+      "tooltip": "Deaf period after any screen opens, so the press that opened it cannot also confirm inside it.",
+      "min": 0,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "mixer",
+      "type": "AudioMixer",
+      "group": "Audio",
+      "tooltip": "The game mixer (Master → Gameplay → Music/FX/Voice, plus UI, PauseMusic and LoadingMusic). Must expose MasterVolume, MusicVolume, SFXVolume, UIVolume and VoiceVolume, and carry the Gameplay/Paused/Loading snapshots — see GameAudio."
+    },
+    {
+      "name": "uiOutput",
+      "type": "AudioMixerGroup",
+      "group": "Audio",
+      "tooltip": "Group the menu's own blips route through — the mixer's UI bus, which sits under Master (not Gameplay) so it is never ducked by the pause snapshot."
+    },
+    {
+      "name": "moveClip",
+      "type": "AudioClip",
+      "group": "Audio",
+      "tooltip": "Focus moved to another row, or a debug tab flipped. 07.Audio/02.UI rollover*."
+    },
+    {
+      "name": "confirmClip",
+      "type": "AudioClip",
+      "group": "Audio",
+      "tooltip": "Row activated, sub-screen opened, run started. 07.Audio/02.UI click*."
+    },
+    {
+      "name": "backClip",
+      "type": "AudioClip",
+      "group": "Audio",
+      "tooltip": "Backed out of a screen / returned to attract. 07.Audio/02.UI click*."
+    },
+    {
+      "name": "adjustClip",
+      "type": "AudioClip",
+      "group": "Audio",
+      "tooltip": "A slider or toggle stepped left/right. Falls back to the move clip when empty. 07.Audio/02.UI switch*."
+    },
+    {
+      "name": "debriefClip",
+      "type": "AudioClip",
+      "group": "Audio",
+      "tooltip": "The debrief (Mission Complete) panel powering on. 07.Audio/01.SFX/FiniteRunner computerNoise*. Empty = silent."
+    },
+    {
+      "name": "uiVolume",
+      "type": "Single",
+      "group": "Audio",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "pauseMusicClip",
+      "type": "AudioClip",
+      "group": "Audio",
+      "tooltip": "Loops on the mixer's PauseMusic bus while the pause menu is up. Left empty on purpose: no placeholder audio ships with the menu."
+    },
+    {
+      "name": "pauseAudioFade",
+      "type": "Single",
+      "group": "Audio",
+      "tooltip": "Seconds the pause crossfade takes — gameplay buses fade out, pause music fades in. The mixer updates on unscaled time, so it plays out at timeScale 0.",
+      "min": 0,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "loadingMusicClip",
+      "type": "AudioClip",
+      "group": "Audio",
+      "tooltip": "Loops on the mixer's LoadingMusic bus while the loading curtain is up. 07.Audio/03.Music/LoadingScreen."
+    },
+    {
+      "name": "loadingAudioFade",
+      "type": "Single",
+      "group": "Audio",
+      "tooltip": "Seconds the loading crossfade takes — every gameplay bus (and any pause music) fades out and the loading music in as the curtain rises, and back as it lifts. Unscaled time.",
+      "min": 0,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "cinemaAudioFade",
+      "type": "Single",
+      "group": "Audio",
+      "tooltip": "Seconds a world-freezing cinema takes to fade the in-game buses out as it opens, and back in once it is done or skipped. The clip's own sound rides the Cinema bus, untouched. Unscaled time.",
+      "min": 0,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "moveRumble",
+      "type": "Single",
+      "group": "Haptics",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "confirmRumble",
+      "type": "Single",
+      "group": "Haptics",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "moveRumbleSeconds",
+      "type": "Single",
+      "group": "Haptics",
+      "tooltip": "How long the cursor-move tick lasts (its strength is moveRumble, on the light motor only).",
+      "min": 0.0099999997764825821,
+      "max": 0.30000001192092896,
+      "unit": "s"
+    },
+    {
+      "name": "rankSlamRumble",
+      "type": "Vector3",
+      "group": "Haptics",
+      "tooltip": "The mission-complete rank letter slamming down. (low motor, high motor, seconds)"
+    }
+  ],
+  "types": {}
+}

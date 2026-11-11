@@ -1,0 +1,106 @@
+{
+  "unityType": "DodgeSlowMoSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Ship.DodgeSlowMoSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Ship/DodgeSlowMoSettings.cs",
+  "fields": [
+    {
+      "name": "enabled",
+      "type": "Boolean",
+      "group": "Trigger",
+      "tooltip": "Master switch. Off, a dash never slows the clock."
+    },
+    {
+      "name": "threatWindowSeconds",
+      "type": "Single",
+      "group": "Trigger",
+      "tooltip": "How close a hit must be, in game seconds, for the dash that avoids it to count as a last-second dodge.",
+      "min": 0.10000000149011612,
+      "max": 3,
+      "unit": "s"
+    },
+    {
+      "name": "dodgeTraffic",
+      "type": "Boolean",
+      "group": "Trigger",
+      "tooltip": "Oncoming cars count as threats."
+    },
+    {
+      "name": "dodgeLasers",
+      "type": "Boolean",
+      "group": "Trigger",
+      "tooltip": "Laser beams count as threats."
+    },
+    {
+      "name": "extraReach",
+      "type": "Single",
+      "group": "Trigger",
+      "tooltip": "Added to the ship's half width and half height in the forecast — a near-miss by less than this still counts as a threat on the old line, and the new line must clear by it.",
+      "min": 0,
+      "max": 5,
+      "unit": "m"
+    },
+    {
+      "name": "minSpeedKmh",
+      "type": "Single",
+      "group": "Trigger",
+      "tooltip": "Below this speed a dash never slows the clock.",
+      "min": 0,
+      "max": 3000,
+      "unit": "km/h"
+    },
+    {
+      "name": "cooldownSeconds",
+      "type": "Single",
+      "group": "Trigger",
+      "tooltip": "Real seconds after a slow-mo ends before another can start.",
+      "min": 0,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "forecastStepSeconds",
+      "type": "Single",
+      "group": "Trigger",
+      "tooltip": "Slice of the forecast against a spinning rotor gate, game seconds. Smaller is finer and costs more.",
+      "min": 0.0099999997764825821,
+      "max": 0.20000000298023224,
+      "unit": "s"
+    },
+    {
+      "name": "timeScale",
+      "type": "Single",
+      "group": "Clock",
+      "tooltip": "The world clock during the dodge.",
+      "min": 0.05000000074505806,
+      "max": 1
+    },
+    {
+      "name": "holdUntilProgress",
+      "type": "Single",
+      "group": "Clock",
+      "tooltip": "The slow-mo holds until the dash has covered this share of its distance (and its window is over), so the whole dash plays in slow motion. 0.5 ends it about when the window does; 1 waits for the very last centimetre.",
+      "min": 0.5,
+      "max": 1
+    },
+    {
+      "name": "blendInSeconds",
+      "type": "Single",
+      "group": "Clock",
+      "tooltip": "Ease into the slow-mo, real seconds.",
+      "min": 0,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "blendOutSeconds",
+      "type": "Single",
+      "group": "Clock",
+      "tooltip": "Ease back to full speed after the dash, real seconds.",
+      "min": 0,
+      "max": 2,
+      "unit": "s"
+    }
+  ],
+  "types": {}
+}

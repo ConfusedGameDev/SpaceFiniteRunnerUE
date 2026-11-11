@@ -1,0 +1,82 @@
+{
+  "unityType": "LaserGateSpawner",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.LaserGateSpawner",
+  "baseType": "TrackSpawner",
+  "script": "Assets/01.Scripts/Runner/Track/Spawning/LaserGateSpawner.cs",
+  "fields": [
+    {
+      "name": "active",
+      "type": "Boolean",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Off = listed but never spawned."
+    },
+    {
+      "name": "displayName",
+      "type": "String",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Name shown in the debug menu and used to seed this spawner's random stream (so renaming reshuffles its layout)."
+    },
+    {
+      "name": "color",
+      "type": "Color",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Tint of this spawner's debug rows."
+    },
+    {
+      "name": "spacing",
+      "type": "Vector2",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Metres of track between one spawn step and the next (min, max).",
+      "band": true,
+      "min": 10,
+      "max": 20000,
+      "unit": "m"
+    },
+    {
+      "name": "startDistance",
+      "type": "Single",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "The first step lands between this distance and this plus the minimum spacing, so the launch stays clean.",
+      "min": 0,
+      "max": 5000,
+      "unit": "m"
+    },
+    {
+      "name": "chance",
+      "type": "Single",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Chance that a step spawns anything at all. 1 = every step.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "laserPrefab",
+      "type": "GameObject",
+      "tooltip": "The emitter pair (PF_LaserSystem): LaserA and LaserB, each with a ShootPoint child, carrying a LaserBeam. One instance per beam — three for the triple gate."
+    },
+    {
+      "name": "definition",
+      "type": "LaserGateDefinition",
+      "tooltip": "Beam size, variant weights, rotor speed and the look. Cloned at play, so the asset is never edited by a run."
+    },
+    {
+      "name": "clearance",
+      "type": "Single",
+      "tooltip": "Clear road kept between a gate and every feature (ramp + its longest landing, loop, tube), flat sweep and the final run-up, either side. Must stay under the settle margin (two segments), which is what guarantees no feature is decided behind an already placed gate.",
+      "min": 0,
+      "max": 500,
+      "unit": "m"
+    },
+    {
+      "name": "onFlatSweeps",
+      "type": "Boolean",
+      "tooltip": "Gates may stand on a FLAT sweep (no bank, the outer wall gone, grip tested). Off = the clearance is kept round every flat sweep too — on a track authored with mostly flat sweeps that leaves few spots."
+    },
+    {
+      "name": "onOpenEdges",
+      "type": "Boolean",
+      "tooltip": "Gates may stand where the road has no wall (an open straight, the outer edge of a flat sweep). Off = walled road only."
+    }
+  ],
+  "types": {}
+}

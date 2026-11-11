@@ -1,0 +1,14 @@
+{
+  "unityType": "TrackSpawnSet",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackSpawnSet",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Track/Spawning/TrackSpawnSet.cs",
+  "fields": [
+    {
+      "name": "spawners",
+      "type": "TrackSpawner[]",
+      "tooltip": "Everything the generator spawns along the track. Add a spawner asset to spawn it, remove it (or untick it on the asset) to stop."
+    }
+  ],
+  "types": {}
+}

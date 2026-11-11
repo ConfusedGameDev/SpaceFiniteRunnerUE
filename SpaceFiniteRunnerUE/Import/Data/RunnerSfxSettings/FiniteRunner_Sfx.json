@@ -1,0 +1,102 @@
+{
+  "unityType": "RunnerSfxSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Audio.RunnerSfxSettings",
+  "name": "FiniteRunner_Sfx",
+  "guid": "51a483726754a874489d5f34f40b4ace",
+  "path": "Assets/04.Data/Resources/FiniteRunner_Sfx.asset",
+  "fields": {
+    "powerUpClip": {
+      "$ref": {
+        "guid": "40a80c9e2630aea40b8067667387fede",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/01.SFX/FiniteRunner/laserSmall_002.ogg",
+        "name": "laserSmall_002",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "powerUpVolume": 0.9,
+    "powerUpPitchBand": {
+      "x": 1,
+      "y": 1.5
+    },
+    "brakeClip": {
+      "$ref": {
+        "guid": "45898f8606c835349b9cd6abdf972810",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/01.SFX/FiniteRunner/slime_000.ogg",
+        "name": "slime_000",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "brakeVolume": 0.9,
+    "engineClip": {
+      "$ref": {
+        "guid": "1ec3b2e5c117bf8439613d0e377b7e1d",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/01.SFX/FiniteRunner/spaceEngineLarge_002.ogg",
+        "name": "spaceEngineLarge_002",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "engineVolumeBand": {
+      "x": 0.25,
+      "y": 0.9
+    },
+    "enginePitchBand": {
+      "x": 0.8,
+      "y": 2
+    },
+    "engineResponse": 6,
+    "engineFadeSeconds": 0.4,
+    "engineFollowsClock": true,
+    "jumpClip": {
+      "$ref": {
+        "guid": "e106f847181bead47b2da90514220902",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/01.SFX/FiniteRunner/doorOpen_002.ogg",
+        "name": "doorOpen_002",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "jumpVolume": 0.8,
+    "dashClip": {
+      "$ref": {
+        "guid": "f84f2815fd94ed54f9587c7b5fa66d84",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/01.SFX/FiniteRunner/thrusterFire_003.ogg",
+        "name": "thrusterFire_003",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "dashVolume": 0.8,
+    "barrelRollClip": {
+      "$ref": {
+        "guid": "617e603137ae0154a8a4c461727d5b7f",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/01.SFX/FiniteRunner/explosionCrunch_003.ogg",
+        "name": "explosionCrunch_003",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "barrelRollVolume": 0.8,
+    "explosionClip": null,
+    "explosionVolume": 1,
+    "laserHitClip": {
+      "$ref": {
+        "guid": "d436ac17ba607df4c8ec6136afd46e45",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/01.SFX/FiniteRunner/laserLarge_000.ogg",
+        "name": "laserLarge_000",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "laserHitVolume": 1
+  }
+}

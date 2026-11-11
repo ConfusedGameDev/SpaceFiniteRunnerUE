@@ -1,0 +1,67 @@
+{
+  "unityType": "HyperspaceSkySettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.FX.HyperspaceSkySettings",
+  "name": "FiniteRunner_HyperspaceSky",
+  "guid": "ba3c2d5b941be3d44af9c9904778ce17",
+  "path": "Assets/04.Data/Resources/FiniteRunner_HyperspaceSky.asset",
+  "fields": {
+    "material": {
+      "$ref": {
+        "guid": "d4cad6a43b21075469a980b3d79c2d58",
+        "fileId": 2100000,
+        "path": "Assets/02.Art/02.Materials/FiniteRunner/SkyboxHyperspace.mat",
+        "name": "SkyboxHyperspace",
+        "type": "Material",
+        "main": true
+      }
+    },
+    "fadeInSeconds": 4.42,
+    "fadeOutSeconds": 2.5,
+    "flashStrength": 1.5,
+    "flashSeconds": 0.8,
+    "axisResponse": 3,
+    "scrollSpeed": 1.7,
+    "speedFactorBand": {
+      "x": 0.5,
+      "y": 2
+    },
+    "backgroundColor": {
+      "r": 0.015,
+      "g": 0.07,
+      "b": 0.08,
+      "a": 1
+    },
+    "coreColor": {
+      "r": 0,
+      "g": 0.01,
+      "b": 0.015,
+      "a": 1
+    },
+    "streakCyan": {
+      "r": 0.2,
+      "g": 1.6,
+      "b": 1.5,
+      "a": 1
+    },
+    "streakAqua": {
+      "r": 0.35,
+      "g": 1.1,
+      "b": 1.8,
+      "a": 1
+    },
+    "streakGreen": {
+      "r": 0.4,
+      "g": 1.8,
+      "b": 0.5,
+      "a": 1
+    },
+    "greenShare": 0.2,
+    "brightness": 4.99,
+    "columns": 72,
+    "density": 0.35,
+    "cellLength": 1.2,
+    "streakLength": 0.45,
+    "streakWidth": 0.55,
+    "coreRadius": 0.12
+  }
+}

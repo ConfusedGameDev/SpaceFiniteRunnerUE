@@ -1,0 +1,23 @@
+{
+  "unityType": "MusicSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Audio.MusicSettings",
+  "name": "FiniteRunner_MenuMusic",
+  "guid": "71ad17b761e44a3994b735a43ff0741d",
+  "path": "Assets/04.Data/Resources/FiniteRunner_MenuMusic.asset",
+  "fields": {
+    "clip": {
+      "$ref": {
+        "guid": "27e7a82f1d204495921da4c97bdbc4b2",
+        "fileId": 8300000,
+        "path": "Assets/07.Audio/03.Music/MainMenu/MainMenu_Long.mp3",
+        "name": "MainMenu_Long",
+        "type": "AudioClip",
+        "main": true
+      }
+    },
+    "volume": 0.8,
+    "randomStart": true,
+    "fadeInSeconds": 2,
+    "fadeOutSeconds": 1.5
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "unityType": "TrafficDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Traffic.TrafficDefinition",
+  "name": "Traffic_Default",
+  "guid": "a53a4393d9c25c642bd84bfa1a1c45cc",
+  "path": "Assets/04.Data/FiniteRunner/Traffic/Traffic_Default.asset",
+  "fields": {
+    "vehicles": [
+      {
+        "prefab": {
+          "$ref": {
+            "guid": "3f0880bf858cf934bb829dde58bc3698",
+            "fileId": 5364836202932860053,
+            "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Car_02.prefab",
+            "name": "CP_Air_Traffic_Car_02",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "weight": 3,
+        "scale": 3.5,
+        "yawOffset": -90,
+        "hoverHeight": 2,
+        "halfLength": 9,
+        "halfWidth": 4,
+        "height": 5
+      },
+      {
+        "prefab": {
+          "$ref": {
+            "guid": "d328a71420fedfd4792b69388c44cc95",
+            "fileId": 1790414118986789532,
+            "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Minivan.prefab",
+            "name": "CP_Air_Traffic_Minivan",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "weight": 2,
+        "scale": 3.5,
+        "yawOffset": -90,
+        "hoverHeight": 2,
+        "halfLength": 9,
+        "halfWidth": 4,
+        "height": 5
+      },
+      {
+        "prefab": {
+          "$ref": {
+            "guid": "a7c8ea8b16efd0e4196cd1eafb002892",
+            "fileId": 8808719998794427116,
+            "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Minibus.prefab",
+            "name": "CP_Air_Traffic_Minibus",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "weight": 1.5,
+        "scale": 3.5,
+        "yawOffset": -90,
+        "hoverHeight": 2,
+        "halfLength": 9,
+        "halfWidth": 4,
+        "height": 5
+      },
+      {
+        "prefab": {
+          "$ref": {
+            "guid": "7e7edacc32657df41b4ab2d00c7c0493",
+            "fileId": 993594225561545305,
+            "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Truck.prefab",
+            "name": "CP_Air_Traffic_Truck",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "weight": 1,
+        "scale": 3.5,
+        "yawOffset": -90,
+        "hoverHeight": 2,
+        "halfLength": 9,
+        "halfWidth": 4,
+        "height": 5
+      },
+      {
+        "prefab": {
+          "$ref": {
+            "guid": "f8a73d8ad9651a24393cc0737ee0317f",
+            "fileId": 4507403118244985283,
+            "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Bus.prefab",
+            "name": "CP_Air_Traffic_Bus",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "weight": 0.75,
+        "scale": 3.5,
+        "yawOffset": -90,
+        "hoverHeight": 2,
+        "halfLength": 9,
+        "halfWidth": 4,
+        "height": 5
+      },
+      {
+        "prefab": {
+          "$ref": {
+            "guid": "c91e4281bd266b14d9e9f0e26d572107",
+            "fileId": 5845748833004437153,
+            "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Garbage_Truck.prefab",
+            "name": "CP_Air_Traffic_Garbage_Truck",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "weight": 0.75,
+        "scale": 3.5,
+        "yawOffset": -90,
+        "hoverHeight": 2,
+        "halfLength": 9,
+        "halfWidth": 4,
+        "height": 5
+      }
+    ],
+    "maxActive": 6,
+    "spawnSpacing": {
+      "x": 160,
+      "y": 440
+    },
+    "spawnAheadSeconds": 4,
+    "minSpawnAhead": 700,
+    "despawnBehind": 40,
+    "noSpawnNearEnd": 1500,
+    "visibleRange": 600,
+    "speedBand": {
+      "x": 40,
+      "y": 90
+    },
+    "lateralSpeed": 8,
+    "avoidLookahead": 120,
+    "avoidMargin": 1.5,
+    "edgeMargin": 4,
+    "explosionScale": 0.8
+  }
+}

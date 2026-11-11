@@ -1,0 +1,85 @@
+{
+  "unityType": "RpgMessageStyle",
+  "fullType": "ConfusedGameDev.FiniteRunner.HUD.RpgMessageStyle",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/HUD/RpgMessageStyle.cs",
+  "fields": [
+    {
+      "name": "borderColor",
+      "type": "Color",
+      "group": "Panel"
+    },
+    {
+      "name": "backgroundColor",
+      "type": "Color"
+    },
+    {
+      "name": "panelHeight",
+      "type": "Single",
+      "min": 120,
+      "max": 480
+    },
+    {
+      "name": "panelSideMargin",
+      "type": "Single",
+      "min": 0,
+      "max": 120
+    },
+    {
+      "name": "panelBottomMargin",
+      "type": "Single",
+      "min": 0,
+      "max": 120
+    },
+    {
+      "name": "portraitPosition",
+      "type": "Vector2",
+      "group": "Portrait"
+    },
+    {
+      "name": "portraitSize",
+      "type": "Vector2"
+    },
+    {
+      "name": "speakerFontSize",
+      "type": "Int32",
+      "group": "Text",
+      "min": 16,
+      "max": 72
+    },
+    {
+      "name": "bodyFontSize",
+      "type": "Int32",
+      "min": 16,
+      "max": 72
+    },
+    {
+      "name": "textLeftInset",
+      "type": "Single",
+      "tooltip": "Left inset that clears the portrait frame.",
+      "min": 0,
+      "max": 600
+    },
+    {
+      "name": "continueMarkerInset",
+      "type": "Vector2",
+      "group": "Continue marker",
+      "tooltip": "The blinking triangle shown once a page has typed — distance from the panel's bottom-right corner."
+    },
+    {
+      "name": "continueMarkerFontSize",
+      "type": "Int32",
+      "min": 12,
+      "max": 64
+    },
+    {
+      "name": "continueMarkerBlinkSeconds",
+      "type": "Single",
+      "tooltip": "Full blink cycle. 0 = steady, no blink.",
+      "min": 0,
+      "max": 2,
+      "unit": "s"
+    }
+  ],
+  "types": {}
+}

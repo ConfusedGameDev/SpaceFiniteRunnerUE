@@ -1,2 +1,27 @@
 .env
 .DS_Store
+
+# Unreal build output and caches
+SpaceFiniteRunnerUE/Binaries/
+SpaceFiniteRunnerUE/Intermediate/
+SpaceFiniteRunnerUE/Saved/
+SpaceFiniteRunnerUE/DerivedDataCache/
+SpaceFiniteRunnerUE/Build/
+SpaceFiniteRunnerUE/Plugins/*/Binaries/
+SpaceFiniteRunnerUE/Plugins/*/Intermediate/
+SpaceFiniteRunnerUE/Content/Developers/
+SpaceFiniteRunnerUE/Content/Collections/
+
+# IDE
+.vs/
+.idea/
+*.sln
+*.slnx
+*.suo
+*.user
+*.VC.db
+*.opensdf
+*.sdf
+
+# Local Claude settings
+.claude/settings.local.json

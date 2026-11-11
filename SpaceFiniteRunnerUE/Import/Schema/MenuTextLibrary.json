@@ -1,0 +1,2629 @@
+{
+  "unityType": "MenuTextLibrary",
+  "fullType": "ConfusedGameDev.FiniteRunner.UI.MenuTextLibrary",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/UI/MenuTextLibrary.cs",
+  "fields": [
+    {
+      "name": "start",
+      "type": "LocalizedString",
+      "group": "Main menu rows"
+    },
+    {
+      "name": "settings",
+      "type": "LocalizedString",
+      "group": "Main menu rows"
+    },
+    {
+      "name": "cheats",
+      "type": "LocalizedString",
+      "group": "Main menu rows"
+    },
+    {
+      "name": "credits",
+      "type": "LocalizedString",
+      "group": "Main menu rows"
+    },
+    {
+      "name": "exit",
+      "type": "LocalizedString",
+      "group": "Main menu rows"
+    },
+    {
+      "name": "masterVolume",
+      "type": "LocalizedString",
+      "group": "Settings rows"
+    },
+    {
+      "name": "musicVolume",
+      "type": "LocalizedString",
+      "group": "Settings rows"
+    },
+    {
+      "name": "fxVolume",
+      "type": "LocalizedString",
+      "group": "Settings rows"
+    },
+    {
+      "name": "subtitles",
+      "type": "LocalizedString",
+      "group": "Settings rows"
+    },
+    {
+      "name": "language",
+      "type": "LocalizedString",
+      "group": "Settings rows"
+    },
+    {
+      "name": "on",
+      "type": "LocalizedString",
+      "group": "Settings rows"
+    },
+    {
+      "name": "off",
+      "type": "LocalizedString",
+      "group": "Settings rows"
+    },
+    {
+      "name": "nothingHereYet",
+      "type": "LocalizedString",
+      "group": "Screens"
+    },
+    {
+      "name": "areYouSure",
+      "type": "LocalizedString",
+      "group": "Screens"
+    },
+    {
+      "name": "yes",
+      "type": "LocalizedString",
+      "group": "Screens"
+    },
+    {
+      "name": "no",
+      "type": "LocalizedString",
+      "group": "Screens"
+    },
+    {
+      "name": "cheatEnterCode",
+      "type": "LocalizedString",
+      "group": "Cheats page"
+    },
+    {
+      "name": "cheatUnlocked",
+      "type": "LocalizedString",
+      "group": "Cheats page"
+    },
+    {
+      "name": "pressEnter",
+      "type": "LocalizedString",
+      "group": "Attract prompt"
+    },
+    {
+      "name": "pressStart",
+      "type": "LocalizedString",
+      "group": "Attract prompt"
+    },
+    {
+      "name": "hintMove",
+      "type": "LocalizedString",
+      "group": "Footer hints"
+    },
+    {
+      "name": "hintSelect",
+      "type": "LocalizedString",
+      "group": "Footer hints"
+    },
+    {
+      "name": "hintBack",
+      "type": "LocalizedString",
+      "group": "Footer hints"
+    },
+    {
+      "name": "hintChange",
+      "type": "LocalizedString",
+      "group": "Footer hints"
+    },
+    {
+      "name": "hintCancel",
+      "type": "LocalizedString",
+      "group": "Footer hints"
+    },
+    {
+      "name": "hintTitle",
+      "type": "LocalizedString",
+      "group": "Footer hints"
+    },
+    {
+      "name": "holdToSkip",
+      "type": "LocalizedString",
+      "group": "Footer hints"
+    },
+    {
+      "name": "roleMaster",
+      "type": "LocalizedString",
+      "group": "Credits"
+    },
+    {
+      "name": "roleFool",
+      "type": "LocalizedString",
+      "group": "Credits"
+    },
+    {
+      "name": "paused",
+      "type": "LocalizedString",
+      "group": "Pause menu"
+    },
+    {
+      "name": "resume",
+      "type": "LocalizedString",
+      "group": "Pause menu"
+    },
+    {
+      "name": "exitToMenu",
+      "type": "LocalizedString",
+      "group": "Pause menu"
+    },
+    {
+      "name": "quitGame",
+      "type": "LocalizedString",
+      "group": "Pause menu"
+    },
+    {
+      "name": "debug",
+      "type": "LocalizedString",
+      "group": "Debug menu"
+    },
+    {
+      "name": "debugTabCore",
+      "type": "LocalizedString",
+      "group": "Debug menu"
+    },
+    {
+      "name": "debugTabMultipliers",
+      "type": "LocalizedString",
+      "group": "Debug menu"
+    },
+    {
+      "name": "debugTabShipSpeed",
+      "type": "LocalizedString",
+      "group": "Debug menu"
+    },
+    {
+      "name": "debugTabShipHandling",
+      "type": "LocalizedString",
+      "group": "Debug menu"
+    },
+    {
+      "name": "debugTabShipDash",
+      "type": "LocalizedString",
+      "group": "Debug menu"
+    },
+    {
+      "name": "debugTabShipHover",
+      "type": "LocalizedString",
+      "group": "Debug menu"
+    },
+    {
+      "name": "trackWidth",
+      "type": "LocalizedString",
+      "group": "Debug menu"
+    },
+    {
+      "name": "straightness",
+      "type": "LocalizedString",
+      "group": "Debug menu"
+    },
+    {
+      "name": "elevationBand",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "maxGrade",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "gradeStep",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "baselinePull",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "maxBank",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "bankPerTurn",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "bankStep",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "levelLead",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "reloadScene",
+      "type": "LocalizedString",
+      "group": "Debug menu"
+    },
+    {
+      "name": "reloadScenePrompt",
+      "type": "LocalizedString",
+      "group": "Debug menu"
+    },
+    {
+      "name": "launchSpeed",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "deceleration",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "acceleration",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "weight",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "lateralSpeed",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "steerResponse",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "bankAngle",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "bankResponse",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "dashDistance",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "dashDuration",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "dashRecharge",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "dashGhosts",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "barrelRollSeconds",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "hoverHeight",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "bobAmplitude",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "bobFrequency",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "pitchWobble",
+      "type": "LocalizedString",
+      "group": "Ship stats"
+    },
+    {
+      "name": "debugTabPatrol",
+      "type": "LocalizedString",
+      "group": "Patrol stats"
+    },
+    {
+      "name": "patrolBaseSpeed",
+      "type": "LocalizedString",
+      "group": "Patrol stats"
+    },
+    {
+      "name": "patrolRamp",
+      "type": "LocalizedString",
+      "group": "Patrol stats"
+    },
+    {
+      "name": "patrolRubberBand",
+      "type": "LocalizedString",
+      "group": "Patrol stats"
+    },
+    {
+      "name": "patrolCatchUp",
+      "type": "LocalizedString",
+      "group": "Patrol stats"
+    },
+    {
+      "name": "patrolStartGap",
+      "type": "LocalizedString",
+      "group": "Patrol stats"
+    },
+    {
+      "name": "patrolCatchDistance",
+      "type": "LocalizedString",
+      "group": "Patrol stats"
+    },
+    {
+      "name": "patrolWarnDistance",
+      "type": "LocalizedString",
+      "group": "Patrol stats"
+    },
+    {
+      "name": "patrolAlertLead",
+      "type": "LocalizedString",
+      "group": "Patrol stats"
+    },
+    {
+      "name": "patrolBoostShare",
+      "type": "LocalizedString",
+      "group": "Patrol stats"
+    },
+    {
+      "name": "debugTabCarDrive",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "debugTabCarGrip",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carMass",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carCenterOfMass",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carDownforce",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carMotorTorque",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carTopSpeed",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carBrakeTorque",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carHillRollback",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carSteerAngle",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carHandbrakeTorque",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carHandbrakeGrip",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carForwardGrip",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carSideGrip",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carBurnoutTorque",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carBurnoutGrip",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carBurnoutMaxSpeed",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carPhysicsBackend",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carPhysicsBuiltIn",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "carPhysicsEvp",
+      "type": "LocalizedString",
+      "group": "Car stats"
+    },
+    {
+      "name": "debugTabAirTime",
+      "type": "LocalizedString",
+      "group": "Air time"
+    },
+    {
+      "name": "airSlowMo",
+      "type": "LocalizedString",
+      "group": "Air time"
+    },
+    {
+      "name": "airSlowMoDelay",
+      "type": "LocalizedString",
+      "group": "Air time"
+    },
+    {
+      "name": "airSlowMoScale",
+      "type": "LocalizedString",
+      "group": "Air time"
+    },
+    {
+      "name": "airSlowMoMinScale",
+      "type": "LocalizedString",
+      "group": "Air time"
+    },
+    {
+      "name": "airSlowMoMaxScale",
+      "type": "LocalizedString",
+      "group": "Air time"
+    },
+    {
+      "name": "airSlowMoBlendIn",
+      "type": "LocalizedString",
+      "group": "Air time"
+    },
+    {
+      "name": "airSlowMoBlendOut",
+      "type": "LocalizedString",
+      "group": "Air time"
+    },
+    {
+      "name": "airControlRate",
+      "type": "LocalizedString",
+      "group": "Air time"
+    },
+    {
+      "name": "airControlResponse",
+      "type": "LocalizedString",
+      "group": "Air time"
+    },
+    {
+      "name": "debugTabDamage",
+      "type": "LocalizedString",
+      "group": "Body damage"
+    },
+    {
+      "name": "evpDamage",
+      "type": "LocalizedString",
+      "group": "Body damage"
+    },
+    {
+      "name": "evpDamageWheels",
+      "type": "LocalizedString",
+      "group": "Body damage"
+    },
+    {
+      "name": "evpDamageMinSpeed",
+      "type": "LocalizedString",
+      "group": "Body damage"
+    },
+    {
+      "name": "evpDamageMultiplier",
+      "type": "LocalizedString",
+      "group": "Body damage"
+    },
+    {
+      "name": "evpDamageRadius",
+      "type": "LocalizedString",
+      "group": "Body damage"
+    },
+    {
+      "name": "evpDamageMaxDisplacement",
+      "type": "LocalizedString",
+      "group": "Body damage"
+    },
+    {
+      "name": "evpDamageVertexFracture",
+      "type": "LocalizedString",
+      "group": "Body damage"
+    },
+    {
+      "name": "evpDamageWheelBend",
+      "type": "LocalizedString",
+      "group": "Body damage"
+    },
+    {
+      "name": "evpDamageRepairRate",
+      "type": "LocalizedString",
+      "group": "Body damage"
+    },
+    {
+      "name": "debugTabCamera",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camDistance",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camHeight",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camPitch",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camDamping",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camRecenterDelay",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camRecenterSpeed",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camBaseFov",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camSpeedFov",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camLookBackAngle",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camLookBackIn",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camLookBackOut",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camLookBackDistance",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "camLookBackDamping",
+      "type": "LocalizedString",
+      "group": "Chase camera stats"
+    },
+    {
+      "name": "debugTabCameraModes",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "camModeBlend",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "camCloseDistance",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "camCloseHeight",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "camClosePitch",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "camFirstPersonForward",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "camFirstPersonHeight",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "camFirstPersonDamping",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "debugTabWeather",
+      "type": "LocalizedString",
+      "group": "Weather stats"
+    },
+    {
+      "name": "rainIntensity",
+      "type": "LocalizedString",
+      "group": "Weather stats"
+    },
+    {
+      "name": "rainAmount",
+      "type": "LocalizedString",
+      "group": "Weather stats"
+    },
+    {
+      "name": "rainFallSpeed",
+      "type": "LocalizedString",
+      "group": "Weather stats"
+    },
+    {
+      "name": "rainDropSize",
+      "type": "LocalizedString",
+      "group": "Weather stats"
+    },
+    {
+      "name": "rainStreak",
+      "type": "LocalizedString",
+      "group": "Weather stats"
+    },
+    {
+      "name": "rainWind",
+      "type": "LocalizedString",
+      "group": "Weather stats"
+    },
+    {
+      "name": "rainWindDirection",
+      "type": "LocalizedString",
+      "group": "Weather stats"
+    },
+    {
+      "name": "rainArea",
+      "type": "LocalizedString",
+      "group": "Weather stats"
+    },
+    {
+      "name": "thunderFrequency",
+      "type": "LocalizedString",
+      "group": "Weather stats"
+    },
+    {
+      "name": "thunderFlash",
+      "type": "LocalizedString",
+      "group": "Weather stats"
+    },
+    {
+      "name": "debugTabDistanceFog",
+      "type": "LocalizedString",
+      "group": "Fog stats"
+    },
+    {
+      "name": "fogIntensity",
+      "type": "LocalizedString",
+      "group": "Fog stats"
+    },
+    {
+      "name": "fogStart",
+      "type": "LocalizedString",
+      "group": "Fog stats"
+    },
+    {
+      "name": "fogEnd",
+      "type": "LocalizedString",
+      "group": "Fog stats"
+    },
+    {
+      "name": "fogDensity",
+      "type": "LocalizedString",
+      "group": "Fog stats"
+    },
+    {
+      "name": "fogSkyAmount",
+      "type": "LocalizedString",
+      "group": "Fog stats"
+    },
+    {
+      "name": "fogHeightFalloff",
+      "type": "LocalizedString",
+      "group": "Fog stats"
+    },
+    {
+      "name": "farGlitchStart",
+      "type": "LocalizedString",
+      "group": "Fog stats"
+    },
+    {
+      "name": "farGlitchStrength",
+      "type": "LocalizedString",
+      "group": "Fog stats"
+    },
+    {
+      "name": "farGlitchRate",
+      "type": "LocalizedString",
+      "group": "Fog stats"
+    },
+    {
+      "name": "debugTabSpeedLines",
+      "type": "LocalizedString",
+      "group": "Speed lines stats"
+    },
+    {
+      "name": "speedLinesIntensity",
+      "type": "LocalizedString",
+      "group": "Speed lines stats"
+    },
+    {
+      "name": "speedLinesStart",
+      "type": "LocalizedString",
+      "group": "Speed lines stats"
+    },
+    {
+      "name": "speedLinesFull",
+      "type": "LocalizedString",
+      "group": "Speed lines stats"
+    },
+    {
+      "name": "speedLinesDensity",
+      "type": "LocalizedString",
+      "group": "Speed lines stats"
+    },
+    {
+      "name": "speedLinesWidth",
+      "type": "LocalizedString",
+      "group": "Speed lines stats"
+    },
+    {
+      "name": "speedLinesInnerMax",
+      "type": "LocalizedString",
+      "group": "Speed lines stats"
+    },
+    {
+      "name": "speedLinesInnerMin",
+      "type": "LocalizedString",
+      "group": "Speed lines stats"
+    },
+    {
+      "name": "speedLinesFlicker",
+      "type": "LocalizedString",
+      "group": "Speed lines stats"
+    },
+    {
+      "name": "speedLinesResponse",
+      "type": "LocalizedString",
+      "group": "Speed lines stats"
+    },
+    {
+      "name": "debugTabVhs",
+      "type": "LocalizedString",
+      "group": "VHS tape stats"
+    },
+    {
+      "name": "vhsIntensity",
+      "type": "LocalizedString",
+      "group": "VHS tape stats"
+    },
+    {
+      "name": "vhsChromaBleed",
+      "type": "LocalizedString",
+      "group": "VHS tape stats"
+    },
+    {
+      "name": "vhsChromaLag",
+      "type": "LocalizedString",
+      "group": "VHS tape stats"
+    },
+    {
+      "name": "vhsJitter",
+      "type": "LocalizedString",
+      "group": "VHS tape stats"
+    },
+    {
+      "name": "vhsTracking",
+      "type": "LocalizedString",
+      "group": "VHS tape stats"
+    },
+    {
+      "name": "vhsNoise",
+      "type": "LocalizedString",
+      "group": "VHS tape stats"
+    },
+    {
+      "name": "vhsScanlines",
+      "type": "LocalizedString",
+      "group": "VHS tape stats"
+    },
+    {
+      "name": "vhsWash",
+      "type": "LocalizedString",
+      "group": "VHS tape stats"
+    },
+    {
+      "name": "vhsVignette",
+      "type": "LocalizedString",
+      "group": "VHS tape stats"
+    },
+    {
+      "name": "debugTabPsx",
+      "type": "LocalizedString",
+      "group": "PSX look stats"
+    },
+    {
+      "name": "psxIntensity",
+      "type": "LocalizedString",
+      "group": "PSX look stats"
+    },
+    {
+      "name": "psxResolution",
+      "type": "LocalizedString",
+      "group": "PSX look stats"
+    },
+    {
+      "name": "psxColorBits",
+      "type": "LocalizedString",
+      "group": "PSX look stats"
+    },
+    {
+      "name": "psxDither",
+      "type": "LocalizedString",
+      "group": "PSX look stats"
+    },
+    {
+      "name": "psxWobble",
+      "type": "LocalizedString",
+      "group": "PSX look stats"
+    },
+    {
+      "name": "psxWobbleBlock",
+      "type": "LocalizedString",
+      "group": "PSX look stats"
+    },
+    {
+      "name": "psxSwim",
+      "type": "LocalizedString",
+      "group": "PSX look stats"
+    },
+    {
+      "name": "psxJitterRate",
+      "type": "LocalizedString",
+      "group": "PSX look stats"
+    },
+    {
+      "name": "psxDepthFalloff",
+      "type": "LocalizedString",
+      "group": "PSX look stats"
+    },
+    {
+      "name": "video",
+      "type": "LocalizedString",
+      "group": "Video settings"
+    },
+    {
+      "name": "filterPsx",
+      "type": "LocalizedString",
+      "group": "Video settings"
+    },
+    {
+      "name": "filterVhs",
+      "type": "LocalizedString",
+      "group": "Video settings"
+    },
+    {
+      "name": "filterCrt",
+      "type": "LocalizedString",
+      "group": "Video settings"
+    },
+    {
+      "name": "debugTabCrt",
+      "type": "LocalizedString",
+      "group": "CRT screen stats"
+    },
+    {
+      "name": "crtIntensity",
+      "type": "LocalizedString",
+      "group": "CRT screen stats"
+    },
+    {
+      "name": "crtCurvature",
+      "type": "LocalizedString",
+      "group": "CRT screen stats"
+    },
+    {
+      "name": "crtCorners",
+      "type": "LocalizedString",
+      "group": "CRT screen stats"
+    },
+    {
+      "name": "crtScanlines",
+      "type": "LocalizedString",
+      "group": "CRT screen stats"
+    },
+    {
+      "name": "crtBleed",
+      "type": "LocalizedString",
+      "group": "CRT screen stats"
+    },
+    {
+      "name": "crtGlow",
+      "type": "LocalizedString",
+      "group": "CRT screen stats"
+    },
+    {
+      "name": "crtMask",
+      "type": "LocalizedString",
+      "group": "CRT screen stats"
+    },
+    {
+      "name": "crtConvergence",
+      "type": "LocalizedString",
+      "group": "CRT screen stats"
+    },
+    {
+      "name": "crtFlicker",
+      "type": "LocalizedString",
+      "group": "CRT screen stats"
+    },
+    {
+      "name": "debugTabPoliceFleet",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "debugTabPoliceChase",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "policePatrolCount",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "policeSpawnMin",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "policeSpawnMax",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "policeDespawn",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "policeDetection",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "policeLoseSight",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "policeSearchTime",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "policePatrolSpeed",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "policeChaseSpeed",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "policeCornerSpeed",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "policeRamSpeed",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "policeRamBackoff",
+      "type": "LocalizedString",
+      "group": "City police stats"
+    },
+    {
+      "name": "debugTabLevel",
+      "type": "LocalizedString",
+      "group": "City level objectives"
+    },
+    {
+      "name": "objectiveReachSpeed",
+      "type": "LocalizedString",
+      "group": "City level objectives"
+    },
+    {
+      "name": "objectiveEscapePolice",
+      "type": "LocalizedString",
+      "group": "City level objectives"
+    },
+    {
+      "name": "objectiveGoTo",
+      "type": "LocalizedString",
+      "group": "City level objectives"
+    },
+    {
+      "name": "objectiveSurvive",
+      "type": "LocalizedString",
+      "group": "City level objectives"
+    },
+    {
+      "name": "objectiveChaseCar",
+      "type": "LocalizedString",
+      "group": "City level objectives"
+    },
+    {
+      "name": "objectiveTimeLimit",
+      "type": "LocalizedString",
+      "group": "City level objectives"
+    },
+    {
+      "name": "objectiveHoldFor",
+      "type": "LocalizedString",
+      "group": "City level objectives"
+    },
+    {
+      "name": "objectiveDestroy",
+      "type": "LocalizedString",
+      "group": "City level objectives"
+    },
+    {
+      "name": "objectiveCollect",
+      "type": "LocalizedString",
+      "group": "City level objectives"
+    },
+    {
+      "name": "objectiveJump",
+      "type": "LocalizedString",
+      "group": "City level objectives"
+    },
+    {
+      "name": "debugTabFeatures",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "featureSpacing",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "jumpWidth",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "jumpLength",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "jumpAngle",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "jumpAirDistance",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "jumpMaxAir",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "jumpAirControl",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "jumpSideHitLoss",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "jumpLandingClearance",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "loopRadius",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "loopFallGravity",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "loopFallLoss",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "loopGateHeadroom",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "loopDrift",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "loopCarry",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "loopExitYaw",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "loopTurns",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "tubeRadius",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "tubeBand",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "tubeCurl",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "gameOver",
+      "type": "LocalizedString",
+      "group": "Game over"
+    },
+    {
+      "name": "retryPrompt",
+      "type": "LocalizedString",
+      "group": "Game over"
+    },
+    {
+      "name": "loseCaught",
+      "type": "LocalizedString",
+      "group": "Game over"
+    },
+    {
+      "name": "loseTimeOut",
+      "type": "LocalizedString",
+      "group": "Game over"
+    },
+    {
+      "name": "loseStalled",
+      "type": "LocalizedString",
+      "group": "Game over"
+    },
+    {
+      "name": "missionFailed",
+      "type": "LocalizedString",
+      "group": "Game over",
+      "tooltip": "The banner that slams onto the screen on every lost run, and the title of the retry panel that follows it."
+    },
+    {
+      "name": "loseMissedRamp",
+      "type": "LocalizedString",
+      "group": "Game over",
+      "tooltip": "Lose reason: the ship reached the end of the track with every objective met but not on one of the end ramps."
+    },
+    {
+      "name": "loseTooSlow",
+      "type": "LocalizedString",
+      "group": "Game over",
+      "tooltip": "Lose reason: the ship reached the end of the track without having reached Light Speed."
+    },
+    {
+      "name": "loseObjectivesIncomplete",
+      "type": "LocalizedString",
+      "group": "Game over",
+      "tooltip": "Lose reason: the ship reached the end of the track with an objective other than Light Speed still open."
+    },
+    {
+      "name": "hudDistanceToEnd",
+      "type": "LocalizedString",
+      "group": "Game over",
+      "tooltip": "The runner HUD's distance-to-the-end line. {0} = kilometres left."
+    },
+    {
+      "name": "loseDestroyed",
+      "type": "LocalizedString",
+      "group": "Game over",
+      "tooltip": "Lose reason: the ship's hull reached 0 and it exploded."
+    },
+    {
+      "name": "pressAnyButton",
+      "type": "LocalizedString",
+      "group": "Game over",
+      "tooltip": "The final GAME OVER's only prompt (the last life is gone, there is no retry): any key or button leads back to the Store."
+    },
+    {
+      "name": "store",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "storeSectionCar",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "storeSectionShip",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "storeSectionCharacter",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "storeModel",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "startMission",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "max",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "hintBuy",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "hintRotate",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "hintSection",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeSpeed",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeAcceleration",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeWeight",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeResistance",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeHandling",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeDashPower",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeSpeedMultiplier",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeJumpStrength",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeHackingSpeed",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeHackValue",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeStrength",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeRange",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "upgradeAccuracy",
+      "type": "LocalizedString",
+      "group": "Store"
+    },
+    {
+      "name": "missions",
+      "type": "LocalizedString",
+      "group": "Campaign"
+    },
+    {
+      "name": "missionLabel",
+      "type": "LocalizedString",
+      "group": "Campaign"
+    },
+    {
+      "name": "missionNext",
+      "type": "LocalizedString",
+      "group": "Campaign"
+    },
+    {
+      "name": "startMissionTarget",
+      "type": "LocalizedString",
+      "group": "Campaign"
+    },
+    {
+      "name": "requiresMoney",
+      "type": "LocalizedString",
+      "group": "Campaign"
+    },
+    {
+      "name": "requiresUpgrade",
+      "type": "LocalizedString",
+      "group": "Campaign"
+    },
+    {
+      "name": "comingSoon",
+      "type": "LocalizedString",
+      "group": "Campaign"
+    },
+    {
+      "name": "hintPlay",
+      "type": "LocalizedString",
+      "group": "Campaign"
+    },
+    {
+      "name": "deleteProgress",
+      "type": "LocalizedString",
+      "group": "Campaign"
+    },
+    {
+      "name": "deleteProgressQuestion",
+      "type": "LocalizedString",
+      "group": "Campaign"
+    },
+    {
+      "name": "deleteProgressWarning",
+      "type": "LocalizedString",
+      "group": "Campaign"
+    },
+    {
+      "name": "controls",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "controlsSectionShip",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "controlsSectionCar",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "controlsSectionGeneral",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "pressKey",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "pressButton",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "swappedWith",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "restoreDefaults",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "defaultsRestored",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "noGamepad",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "hintRebind",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "hintDevice",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionSteerLeft",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionSteerRight",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionDashLeft",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionDashRight",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "dashSinglePress",
+      "type": "LocalizedString",
+      "group": "Controls",
+      "tooltip": "The CONTROLS page's toggle: ON = one press of a dash control dashes, OFF = the double tap."
+    },
+    {
+      "name": "actionAccelerate",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionBrake",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "qteTooFast",
+      "type": "LocalizedString",
+      "group": "Boost QTE",
+      "tooltip": "HUD result label: pressed before the window."
+    },
+    {
+      "name": "qteTooLate",
+      "type": "LocalizedString",
+      "group": "Boost QTE",
+      "tooltip": "HUD result label: pressed after the window, or not at all."
+    },
+    {
+      "name": "qteSweet",
+      "type": "LocalizedString",
+      "group": "Boost QTE",
+      "tooltip": "HUD result label: inside the window."
+    },
+    {
+      "name": "qtePerfect",
+      "type": "LocalizedString",
+      "group": "Boost QTE",
+      "tooltip": "HUD result label: the perfect band."
+    },
+    {
+      "name": "customize",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "adjustColor",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "savePrompt",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "revertPrompt",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "resetDefaultPrompt",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "cancel",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "hintSave",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "hintRevert",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "hintDefault",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "hintVehicle",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "hintZoom",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "hintResetView",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "hintSlider",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "hintHue",
+      "type": "LocalizedString",
+      "group": "Customize"
+    },
+    {
+      "name": "actionBoost",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionHyperspaceLeft",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "actionHyperspaceRight",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "actionHandbrake",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionRespawn",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionCityMap",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionRadioPrevious",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionRadioNext",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionCameraCycle",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionLookBack",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionCameraLeft",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionCameraRight",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionCameraUp",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "actionCameraDown",
+      "type": "LocalizedString",
+      "group": "Controls"
+    },
+    {
+      "name": "loading",
+      "type": "LocalizedString",
+      "group": "Loading screen"
+    },
+    {
+      "name": "missionBrief",
+      "type": "LocalizedString",
+      "group": "Mission brief"
+    },
+    {
+      "name": "optionalChallenges",
+      "type": "LocalizedString",
+      "group": "Mission brief"
+    },
+    {
+      "name": "reward",
+      "type": "LocalizedString",
+      "group": "Mission brief"
+    },
+    {
+      "name": "accept",
+      "type": "LocalizedString",
+      "group": "Mission brief"
+    },
+    {
+      "name": "challengeBonus",
+      "type": "LocalizedString",
+      "group": "Mission brief"
+    },
+    {
+      "name": "challengeDone",
+      "type": "LocalizedString",
+      "group": "Mission brief"
+    },
+    {
+      "name": "challengeFailed",
+      "type": "LocalizedString",
+      "group": "Mission brief"
+    },
+    {
+      "name": "missionComplete",
+      "type": "LocalizedString",
+      "group": "Mission complete"
+    },
+    {
+      "name": "missionAccomplished",
+      "type": "LocalizedString",
+      "group": "Mission complete",
+      "tooltip": "The banner that slams onto the screen over the escaping ship the moment the win is sealed, before the debrief panel."
+    },
+    {
+      "name": "mainObjectives",
+      "type": "LocalizedString",
+      "group": "Mission complete"
+    },
+    {
+      "name": "finiteRunObjectives",
+      "type": "LocalizedString",
+      "group": "Mission complete"
+    },
+    {
+      "name": "total",
+      "type": "LocalizedString",
+      "group": "Mission complete"
+    },
+    {
+      "name": "rank",
+      "type": "LocalizedString",
+      "group": "Mission complete"
+    },
+    {
+      "name": "nextMission",
+      "type": "LocalizedString",
+      "group": "Mission complete"
+    },
+    {
+      "name": "retry",
+      "type": "LocalizedString",
+      "group": "Mission complete"
+    },
+    {
+      "name": "missionBonus",
+      "type": "LocalizedString",
+      "group": "Mission complete"
+    },
+    {
+      "name": "statRank",
+      "type": "LocalizedString",
+      "group": "Mission complete"
+    },
+    {
+      "name": "log",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "logSectionGlobal",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "logSectionVehicles",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "logSectionCollectibles",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statCollectibles",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "logSectionLastLevel",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "logSectionRunner",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statPlayTime",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statLevelsCompleted",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statDeaths",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statArrests",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statMaxSpeed",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statMaxJump",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statTotaledCars",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statTotaledPolice",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statMoneyEarned",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statBonusObjectives",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statLevelName",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statLastObjective",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statOptionalObjectives",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statEscapesAttempted",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statEscapesCompleted",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statFastestEscape",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statPowerUps",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "statSlowDowns",
+      "type": "LocalizedString",
+      "group": "Log"
+    },
+    {
+      "name": "cruiseSpeed",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "thrust",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "brakePower",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "coastDrag",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "keyThrottleRamp",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "gripBase",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "gripPerSpeed",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "slideThreshold",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "slideSpeedLoss",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "unbankedSweeps",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "openStraights",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "laserDensity",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "debugTabDuel",
+      "type": "LocalizedString",
+      "group": "Patrol duel"
+    },
+    {
+      "name": "duelOverdrive",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelCommitFrom",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelCommitInterval",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelCommitTimeout",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelAlongsideDistance",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelFlankOffset",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelAlongsideHold",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelAbortGrace",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelBreakOff",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelBackOffSpeed",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelCooldown",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelLookahead",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelShoveMeters",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelTugForce",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelTugPress",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelTimeScale",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelAssist",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelMashPrompt",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelFinisherPrompt",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "hyperspacePrompt",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelAbortMeters",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelStandoff",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelKillGap",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelFinisherWindow",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelHitStop",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelTierPerKill",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelTierMax",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelTugForceCap",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelArmedWindow",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelStationAccel",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelDamagePool",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelRamDistance",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelRamLateral",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelRamClosing",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelRamCost",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelOvershootHold",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelOvershootBrake",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelOvershootDecel",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelOvershootMargin",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelPushFraction",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelFinisherSeparation",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelMissBrake",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelMissBrakeSpeed",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "camDuelDistance",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "camDuelHeight",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "camDuelPitch",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "camDuelBlend",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelMinClosing",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "duelPushGain",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "trackLength",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "debugTabFall",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "edgeOverhang",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "edgeGrace",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "fallGravity",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "fallDuration",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "fallCameraFollow",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "respawnWait",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "respawnBlinkRate",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "respawnSpeedPenalty",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "respawnClearance",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "respawnRollingStart",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "debugTabTools",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "debugBoostChord",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "debugBoostAmount",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "debugTabTraffic",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "trafficMaxActive",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "trafficSpeedMin",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "trafficSpeedMax",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "trafficSpawnAhead",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "trafficMinSpawnAhead",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "trafficNoSpawnNearEnd",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "selectCourse",
+      "type": "LocalizedString",
+      "group": "Select course"
+    },
+    {
+      "name": "difficulty",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "hudRacePosition",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "loseRaceBeaten",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "loseRacePosition",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "debugTabRace",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceRubberBand",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceGhostPace",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceThrustShare",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceOrbShare",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceFormVariance",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceSurgeAmount",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceLaneSpread",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceRamSpeedCost",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceSideShove",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceCreditWindow",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceKillCam",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceKillCamScale",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceKillCamSeconds",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceKillCamRange",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceReadout",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceGhostWireframes",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceKillNearest",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceDnfAll",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceFinishAll",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceResults",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceFinishPlace",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceWrecked",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceBounties",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceLeadGovernor",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "raceLeadCapFar",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "hudCheckpoint",
+      "type": "LocalizedString",
+      "group": "Time trial"
+    },
+    {
+      "name": "hudBeatTheClock",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttCheckpoint",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttClean",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttPatrolDown",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttLifeLost",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttResults",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttTimeLeft",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttRunTime",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttCheckpoints",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttCleanCheckpoints",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttPatrolsDowned",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttLivesLost",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "debugTabTimeTrial",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttStartSeconds",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttTimeLimit",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttMaxClock",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttAutoCount",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttPaceShare",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttGrace",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttCleanBonus",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttKillBonus",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttLifePenalty",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttLowTime",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttCrossNext",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttRelayout",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttAddTime",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttPaceFloor",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttDirty",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttDirtyPenalty",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttAwardScale",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "countdownReady",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "countdownGo",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "debugTabBoostMeter",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "boostMeterPotence",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "boostMeterDrain",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "boostMeterCooldown",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "boostMeterRefill",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "ttDebugLog",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "spawnDensity",
+      "type": "LocalizedString",
+      "tooltip": "The debug menu's per-spawner density row. {0} = the spawner's name."
+    },
+    {
+      "name": "respawnPatrolGap",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "stallGrace",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "debugTabPatrolDriver",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "patrolCatchLateral",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "patrolSustainedCatch",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "patrolCurveLookahead",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "patrolOrbLookahead",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "patrolOrbSeek",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "patrolOrbBoost",
+      "type": "LocalizedString"
+    },
+    {
+      "name": "patrolRampLookahead",
+      "type": "LocalizedString"
+    }
+  ],
+  "types": {
+    "LocalizedString": {
+      "fullType": "ConfusedGameDev.FiniteRunner.UI.LocalizedString",
+      "fields": [
+        {
+          "name": "english",
+          "type": "String"
+        },
+        {
+          "name": "spanish",
+          "type": "String"
+        },
+        {
+          "name": "japanese",
+          "type": "String"
+        },
+        {
+          "name": "french",
+          "type": "String"
+        }
+      ]
+    }
+  }
+}

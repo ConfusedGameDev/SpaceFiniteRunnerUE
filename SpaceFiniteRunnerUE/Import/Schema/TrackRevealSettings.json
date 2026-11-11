@@ -1,0 +1,85 @@
+{
+  "unityType": "TrackRevealSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackRevealSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Track/TrackRevealSettings.cs",
+  "fields": [
+    {
+      "name": "revealEnabled",
+      "type": "Boolean",
+      "group": "Reveal",
+      "tooltip": "Master switch. Off, the whole track stands assembled, as before."
+    },
+    {
+      "name": "startAhead",
+      "type": "Single",
+      "group": "Reveal",
+      "tooltip": "Metres ahead of the reference where a piece STARTS rising. The runner's fog ends at ~480 m: keep this inside it.",
+      "min": 50,
+      "max": 1500,
+      "unit": "m"
+    },
+    {
+      "name": "band",
+      "type": "Single",
+      "group": "Reveal",
+      "tooltip": "Metres a piece takes to seat once the front passes it. Seated at Start Ahead − Band (+ its stagger).",
+      "min": 10,
+      "max": 1000,
+      "unit": "m"
+    },
+    {
+      "name": "stagger",
+      "type": "Single",
+      "group": "Reveal",
+      "tooltip": "Random extra delay per piece, metres: pieces land one by one instead of as a wall.",
+      "min": 0,
+      "max": 300,
+      "unit": "m"
+    },
+    {
+      "name": "creepSpeed",
+      "type": "Single",
+      "group": "Reveal",
+      "tooltip": "While the reference is slower than this, the front creeps ahead on its own until the visible road is seated (Start Ahead + Band) — so nothing hangs mid-air at a standstill or on the start line.",
+      "min": 0,
+      "max": 1000,
+      "unit": "m/s"
+    },
+    {
+      "name": "drop",
+      "type": "Single",
+      "group": "Motion",
+      "tooltip": "How far below its rest a piece starts, metres along its own up.",
+      "min": 0,
+      "max": 200,
+      "unit": "m"
+    },
+    {
+      "name": "tiltDegrees",
+      "type": "Single",
+      "group": "Motion",
+      "tooltip": "How far a piece starts tipped about its own X axis, degrees (the side is random per piece).",
+      "min": 0,
+      "max": 90,
+      "unit": "°"
+    },
+    {
+      "name": "startScale",
+      "type": "Single",
+      "group": "Motion",
+      "tooltip": "Scale a piece starts at (1 = full size all the way).",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "overshoot",
+      "type": "Single",
+      "group": "Motion",
+      "tooltip": "Overshoot of the landing: 0 = a plain ease out, higher = the piece rises past its rest and settles back.",
+      "min": 0,
+      "max": 3
+    }
+  ],
+  "types": {}
+}

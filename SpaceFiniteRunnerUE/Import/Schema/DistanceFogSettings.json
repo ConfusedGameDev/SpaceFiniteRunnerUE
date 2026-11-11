@@ -1,0 +1,179 @@
+{
+  "unityType": "DistanceFogSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.FX.DistanceFogSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/FX/Atmosphere/DistanceFogSettings.cs",
+  "fields": [
+    {
+      "name": "intensity",
+      "type": "Single",
+      "group": "Fog",
+      "tooltip": "Master dial. 0 = off (the render pass is skipped entirely), 1 = the full fog and glitch below. Gameplay scales it further with DistanceFog.SetIntensity.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "fogStart",
+      "type": "Single",
+      "group": "Fog",
+      "tooltip": "Distance the fog starts building at — everything closer is untouched.",
+      "min": 0,
+      "max": 2000,
+      "unit": "m"
+    },
+    {
+      "name": "fogEnd",
+      "type": "Single",
+      "group": "Fog",
+      "tooltip": "Distance the fog is solid at. Keep at or below the city's streamEnterDistance so the block pop-in happens inside the fog.",
+      "min": 50,
+      "max": 3000,
+      "unit": "m"
+    },
+    {
+      "name": "fogDensity",
+      "type": "Single",
+      "group": "Fog",
+      "tooltip": "Shape of the ramp between start and end (exponential-squared). Low = a slow build that is still see-through near the end; high = clear then a wall.",
+      "min": 0.5,
+      "max": 6
+    },
+    {
+      "name": "fogColorNear",
+      "type": "Color",
+      "group": "Fog",
+      "tooltip": "Fog colour where it begins. Keep the values below 1 unless the fog should bloom — the pass runs before post-processing."
+    },
+    {
+      "name": "fogColorFar",
+      "type": "Color",
+      "group": "Fog",
+      "tooltip": "Fog colour at the far end, also the colour dropped-out glitch blocks snap to."
+    },
+    {
+      "name": "skyFogAmount",
+      "type": "Single",
+      "group": "Fog",
+      "tooltip": "How much of the sky the far fog colour covers. 1 buries the skybox; lower keeps a horizon band visible.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "heightFog",
+      "type": "Boolean",
+      "group": "heightFog",
+      "toggleGroup": true,
+      "tooltip": "Thin the fog with altitude, so rooftops and overpass decks stand out of a low-lying haze."
+    },
+    {
+      "name": "heightFalloff",
+      "type": "Single",
+      "group": "heightFog",
+      "toggleGroup": true,
+      "tooltip": "How fast the fog thins per metre above the base height.",
+      "min": 0,
+      "max": 0.20000000298023224,
+      "unit": "1/m"
+    },
+    {
+      "name": "heightBase",
+      "type": "Single",
+      "group": "heightFog",
+      "toggleGroup": true,
+      "tooltip": "World height the fog is full at; above it the falloff applies.",
+      "min": -20,
+      "max": 200,
+      "unit": "m"
+    },
+    {
+      "name": "farGlitch",
+      "type": "Boolean",
+      "group": "farGlitch",
+      "toggleGroup": true,
+      "tooltip": "Tear, drop out and colour-split the distant picture as it fogs — the far city dissolving into signal noise."
+    },
+    {
+      "name": "glitchStart",
+      "type": "Single",
+      "group": "farGlitch",
+      "toggleGroup": true,
+      "tooltip": "Distance the glitch starts at; it reaches full strength at the fog end.",
+      "min": 0,
+      "max": 3000,
+      "unit": "m"
+    },
+    {
+      "name": "glitchStrength",
+      "type": "Single",
+      "group": "farGlitch",
+      "toggleGroup": true,
+      "tooltip": "Overall glitch amount at the fog end.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "glitchRate",
+      "type": "Single",
+      "group": "farGlitch",
+      "toggleGroup": true,
+      "tooltip": "Corrupt frames per second — the glitch jumps between states at this rate rather than sliding.",
+      "min": 1,
+      "max": 60,
+      "unit": "steps/s"
+    },
+    {
+      "name": "sliceStrength",
+      "type": "Single",
+      "group": "farGlitch",
+      "toggleGroup": true,
+      "tooltip": "How far torn rows shift sideways, as a fraction of the screen.",
+      "min": 0,
+      "max": 0.40000000596046448
+    },
+    {
+      "name": "blockAmount",
+      "type": "Single",
+      "group": "farGlitch",
+      "toggleGroup": true,
+      "tooltip": "How many distant macroblocks drop to the far fog colour — blocks that have not streamed in yet.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "colorSplit",
+      "type": "Single",
+      "group": "farGlitch",
+      "toggleGroup": true,
+      "tooltip": "Red/blue channel offset on the glitching band, as a fraction of the screen.",
+      "min": 0,
+      "max": 0.05000000074505806
+    },
+    {
+      "name": "scanlineStrength",
+      "type": "Single",
+      "group": "farGlitch",
+      "toggleGroup": true,
+      "tooltip": "Scanline darkening on the glitching band.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "clampFarClip",
+      "type": "Boolean",
+      "group": "clampFarClip",
+      "toggleGroup": true,
+      "tooltip": "Pull the chase camera's far clip plane in to fog end + margin: nothing past the solid fog can be seen, so nothing past it needs culling or drawing. The biggest free win of the fog."
+    },
+    {
+      "name": "farClipMargin",
+      "type": "Single",
+      "group": "clampFarClip",
+      "toggleGroup": true,
+      "tooltip": "Metres past the fog end the camera still draws — a safety band for the fog's last few percent.",
+      "min": 0,
+      "max": 1000,
+      "unit": "m"
+    }
+  ],
+  "types": {}
+}

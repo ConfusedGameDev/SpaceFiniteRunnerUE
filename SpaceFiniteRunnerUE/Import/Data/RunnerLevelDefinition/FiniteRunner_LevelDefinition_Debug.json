@@ -1,0 +1,71 @@
+{
+  "unityType": "RunnerLevelDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.RunnerLevelDefinition",
+  "name": "FiniteRunner_LevelDefinition_Debug",
+  "guid": "c911d231881e0a44fa674af8d2c8d048",
+  "path": "Assets/04.Data/FiniteRunner/Levels/FiniteRunner_LevelDefinition_Debug.asset",
+  "fields": {
+    "levelName": "Escape Run",
+    "nextSceneName": "Store",
+    "trackLengthMeters": 0,
+    "track": null,
+    "traffic": null,
+    "race": null,
+    "timeTrial": null,
+    "trackReveal": true,
+    "completeVideo": null,
+    "rankTable": {
+      "sThreshold": 10000,
+      "aThreshold": 5000,
+      "bThreshold": 2500,
+      "cThreshold": 1000
+    },
+    "optionalChallenges": [
+      {
+        "type": {
+          "$enum": "JumpCount",
+          "value": 1
+        },
+        "targetSpeedKmh": 6500,
+        "jumpCount": 3,
+        "raceMode": {
+          "$enum": "Win",
+          "value": 0
+        },
+        "racePosition": 3,
+        "minSecondsLeft": 0,
+        "reward": 0,
+        "accent": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "multiplier": 2
+      }
+    ],
+    "objectives": [
+      {
+        "type": {
+          "$enum": "ReachSpeed",
+          "value": 0
+        },
+        "targetSpeedKmh": 6507,
+        "jumpCount": 3,
+        "raceMode": {
+          "$enum": "Win",
+          "value": 0
+        },
+        "racePosition": 3,
+        "minSecondsLeft": 0,
+        "reward": 500,
+        "accent": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        }
+      }
+    ]
+  }
+}

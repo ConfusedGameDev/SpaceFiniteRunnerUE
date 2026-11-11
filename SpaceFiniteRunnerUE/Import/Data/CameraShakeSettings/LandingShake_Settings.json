@@ -1,0 +1,46 @@
+{
+  "unityType": "CameraShakeSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Cameras.CameraShakeSettings",
+  "name": "LandingShake_Settings",
+  "guid": "408b45efec3b4c198db77479e94c0f1e",
+  "path": "Assets/04.Data/FiniteRunner/CameraShake/LandingShake_Settings.asset",
+  "fields": {
+    "duration": 0.5,
+    "positionAmplitude": 0.6,
+    "rotationAmplitude": 3,
+    "frequency": 13,
+    "falloff": {
+      "$curve": [
+        {
+          "time": 0,
+          "value": 1,
+          "inTangent": 0,
+          "outTangent": 0,
+          "inWeight": 0,
+          "outWeight": 0,
+          "weightedMode": 0
+        },
+        {
+          "time": 0.2,
+          "value": 1,
+          "inTangent": 0,
+          "outTangent": 0,
+          "inWeight": 0,
+          "outWeight": 0,
+          "weightedMode": 0
+        },
+        {
+          "time": 1,
+          "value": 0,
+          "inTangent": 0,
+          "outTangent": 0,
+          "inWeight": 0,
+          "outWeight": 0,
+          "weightedMode": 0
+        }
+      ],
+      "preWrapMode": "ClampForever",
+      "postWrapMode": "ClampForever"
+    }
+  }
+}

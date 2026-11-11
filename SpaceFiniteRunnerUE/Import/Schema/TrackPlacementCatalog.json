@@ -1,0 +1,177 @@
+{
+  "unityType": "TrackPlacementCatalog",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackPlacementCatalog",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Track/Layout/TrackPlacementCatalog.cs",
+  "fields": [
+    {
+      "name": "entries",
+      "type": "Entry[]"
+    }
+  ],
+  "types": {
+    "Entry": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackPlacementCatalog+Entry",
+      "fields": [
+        {
+          "name": "displayName",
+          "type": "String",
+          "tooltip": "The palette's label."
+        },
+        {
+          "name": "builtAs",
+          "type": "TrackPlacementKind",
+          "tooltip": "SpeedOrb = a tier of the spawn set's speed orbs (below). RepairOrb = the repair orb. Pickup = a new power-up built from the pad below."
+        },
+        {
+          "name": "speedOrbTier",
+          "type": "Int32",
+          "tooltip": "SpeedOrb only: the tier (0 Green, 1 Blue, 2 Purple in the shipped set).",
+          "min": 0
+        },
+        {
+          "name": "pad",
+          "type": "PadSpawnEntry",
+          "tooltip": "Pickup only: the power-up — prefab, definition (what it does), boost multiplier, colour, sway, lane."
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "tooltip": "The palette's and the gizmo's colour."
+        }
+      ]
+    },
+    "TrackPlacementKind": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackPlacementKind",
+      "enum": [
+        {
+          "name": "SpeedOrb",
+          "value": 0
+        },
+        {
+          "name": "RepairOrb",
+          "value": 1
+        },
+        {
+          "name": "LaserGate",
+          "value": 2
+        },
+        {
+          "name": "Ramp",
+          "value": 3
+        },
+        {
+          "name": "Collectible",
+          "value": 4
+        },
+        {
+          "name": "Pickup",
+          "value": 5
+        },
+        {
+          "name": "CustomPrefab",
+          "value": 6
+        },
+        {
+          "name": "EndRamp",
+          "value": 7
+        },
+        {
+          "name": "Loop",
+          "value": 8
+        },
+        {
+          "name": "BrakePad",
+          "value": 9
+        },
+        {
+          "name": "Checkpoint",
+          "value": 10
+        }
+      ]
+    },
+    "PadSpawnEntry": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.PadSpawnEntry",
+      "fields": [
+        {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "prefab",
+          "type": "GameObject",
+          "tooltip": "Optional model spawned instead of the code-built primitive. Colliders are forced to triggers; one is added if the prefab has none."
+        },
+        {
+          "name": "definition",
+          "type": "PadDefinition",
+          "tooltip": "What the pad does on pickup (boost/brake, orb or flat pad, size)."
+        },
+        {
+          "name": "probability",
+          "type": "Single",
+          "tooltip": "Share of every spawn roll this entry wins. The tiers always sum to 100%. Unused by a single-entry spawner.",
+          "min": 0,
+          "max": 100,
+          "unit": "%"
+        },
+        {
+          "name": "multiplier",
+          "type": "Single",
+          "tooltip": "Boosts only: multiplies GameSettings.powerUpSpeedBoost. Brakes use their definition's own delta.",
+          "min": 0
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "tooltip": "Tint of the code-built primitive (prefabs keep their own materials) and of the pickup's story color."
+        },
+        {
+          "name": "swayAmplitude",
+          "type": "Single",
+          "tooltip": "How far the orb sways side to side across the track, in meters. 0 = holds the flight line.",
+          "min": 0
+        },
+        {
+          "name": "swayFrequency",
+          "type": "Single",
+          "tooltip": "Sway cycles per second.",
+          "min": 0
+        },
+        {
+          "name": "spinDegreesPerSecond",
+          "type": "Single",
+          "tooltip": "Floating orbs only: how fast the orb turns about the track's up, degrees per second. 0 = holds the prefab's authored rotation (a model tilted inside its prefab wobbles when spun).",
+          "min": 0,
+          "max": 360,
+          "unit": "°/s"
+        },
+        {
+          "name": "pickupScale",
+          "type": "Single",
+          "tooltip": "Scales the pickup volume (the prefab's colliders and the analytic box) without touching the picture. 2 = twice as easy to hit.",
+          "min": 0.5,
+          "max": 4
+        },
+        {
+          "name": "lane",
+          "type": "PadLane",
+          "tooltip": "Ground = on the flight line. Air = GameSettings.airLaneHeight above it, where only a jump reaches — the future air lane, keep such entries at 0% until jumps ship them."
+        }
+      ]
+    },
+    "PadLane": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.PadLane",
+      "enum": [
+        {
+          "name": "Ground",
+          "value": 0
+        },
+        {
+          "name": "Air",
+          "value": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "unityType": "CameraShakeSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Cameras.CameraShakeSettings",
+  "name": "BoostShake_Settings",
+  "guid": "85de930d8b13f4410bd9db61f21434fa",
+  "path": "Assets/04.Data/FiniteRunner/CameraShake/BoostShake_Settings.asset",
+  "fields": {
+    "duration": 0.3,
+    "positionAmplitude": 0.3,
+    "rotationAmplitude": 1.5,
+    "frequency": 24,
+    "falloff": {
+      "$curve": [
+        {
+          "time": 0,
+          "value": 1,
+          "inTangent": 0,
+          "outTangent": 0,
+          "inWeight": 0,
+          "outWeight": 0,
+          "weightedMode": 0
+        },
+        {
+          "time": 0.2,
+          "value": 1,
+          "inTangent": 0,
+          "outTangent": 0,
+          "inWeight": 0,
+          "outWeight": 0,
+          "weightedMode": 0
+        },
+        {
+          "time": 1,
+          "value": 0,
+          "inTangent": 0,
+          "outTangent": 0,
+          "inWeight": 0,
+          "outWeight": 0,
+          "weightedMode": 0
+        }
+      ],
+      "preWrapMode": "ClampForever",
+      "postWrapMode": "ClampForever"
+    }
+  }
+}

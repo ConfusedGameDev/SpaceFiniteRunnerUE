@@ -1,0 +1,142 @@
+{
+  "unityType": "SpeedOrbSpawner",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.SpeedOrbSpawner",
+  "name": "Spawner_SpeedOrbs",
+  "guid": "ad19493ad18c4018974ad5e34e2daa52",
+  "path": "Assets/04.Data/FiniteRunner/Spawnables/Spawner_SpeedOrbs.asset",
+  "fields": {
+    "active": true,
+    "displayName": "Speed Orbs",
+    "color": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 1
+    },
+    "spacing": {
+      "x": 386.8,
+      "y": 489.2
+    },
+    "startDistance": 120,
+    "chance": 1,
+    "tiers": [
+      {
+        "name": "Green",
+        "prefab": {
+          "$ref": {
+            "guid": "2b4d6f8a0c2e4b6d8f0a2c4e6b8d0f2a",
+            "fileId": 2850359091044272792,
+            "path": "Assets/03.Prefabs/Runner/PowerUp_Green.prefab",
+            "name": "PowerUp_Green",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "definition": {
+          "$ref": {
+            "guid": "b81b7f4bb38e240e9b1c43f76f25dc45",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/TrackSettings/Pads/BoostPad_Definition.asset",
+            "name": "BoostPad_Definition",
+            "type": "PadDefinition",
+            "main": true
+          }
+        },
+        "probability": 98,
+        "multiplier": 4.499998,
+        "color": {
+          "r": 0.1,
+          "g": 1,
+          "b": 0.3,
+          "a": 1
+        },
+        "swayAmplitude": 0,
+        "swayFrequency": 0,
+        "spinDegreesPerSecond": 75,
+        "pickupScale": 2,
+        "lane": {
+          "$enum": "Ground",
+          "value": 0
+        }
+      },
+      {
+        "name": "Blue",
+        "prefab": {
+          "$ref": {
+            "guid": "8d0f2a4c6e8b0d2f4a6c8e0b2d4f6a8c",
+            "fileId": 2850359091044272792,
+            "path": "Assets/03.Prefabs/Runner/PowerUp_Blue.prefab",
+            "name": "PowerUp_Blue",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "definition": {
+          "$ref": {
+            "guid": "b81b7f4bb38e240e9b1c43f76f25dc45",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/TrackSettings/Pads/BoostPad_Definition.asset",
+            "name": "BoostPad_Definition",
+            "type": "PadDefinition",
+            "main": true
+          }
+        },
+        "probability": 2,
+        "multiplier": 0.69999814,
+        "color": {
+          "r": 0.25,
+          "g": 0.55,
+          "b": 1,
+          "a": 1
+        },
+        "swayAmplitude": 0,
+        "swayFrequency": 0,
+        "spinDegreesPerSecond": 60,
+        "pickupScale": 1,
+        "lane": {
+          "$enum": "Ground",
+          "value": 0
+        }
+      },
+      {
+        "name": "Purple",
+        "prefab": {
+          "$ref": {
+            "guid": "4c6e8a0b2d4f6a8c0e2b4d6f8a0c2e4b",
+            "fileId": 2850359091044272792,
+            "path": "Assets/03.Prefabs/Runner/PowerUp_Purple.prefab",
+            "name": "PowerUp_Purple",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "definition": {
+          "$ref": {
+            "guid": "b81b7f4bb38e240e9b1c43f76f25dc45",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/TrackSettings/Pads/BoostPad_Definition.asset",
+            "name": "BoostPad_Definition",
+            "type": "PadDefinition",
+            "main": true
+          }
+        },
+        "probability": 0,
+        "multiplier": 0.1,
+        "color": {
+          "r": 0.75,
+          "g": 0.3,
+          "b": 1,
+          "a": 1
+        },
+        "swayAmplitude": 0,
+        "swayFrequency": 0,
+        "spinDegreesPerSecond": 60,
+        "pickupScale": 1,
+        "lane": {
+          "$enum": "Ground",
+          "value": 0
+        }
+      }
+    ]
+  }
+}

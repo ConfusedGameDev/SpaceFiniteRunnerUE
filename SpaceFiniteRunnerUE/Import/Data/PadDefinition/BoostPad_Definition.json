@@ -1,0 +1,19 @@
+{
+  "unityType": "PadDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.PadDefinition",
+  "name": "BoostPad_Definition",
+  "guid": "b81b7f4bb38e240e9b1c43f76f25dc45",
+  "path": "Assets/04.Data/FiniteRunner/TrackSettings/Pads/BoostPad_Definition.asset",
+  "fields": {
+    "displayName": "Boost",
+    "speedDelta": 1585.87,
+    "color": {
+      "r": 0.4433962,
+      "g": 0.4433962,
+      "b": 0.4433962,
+      "a": 1
+    },
+    "sizeMultiplier": 0.75,
+    "floatingOrb": false
+  }
+}

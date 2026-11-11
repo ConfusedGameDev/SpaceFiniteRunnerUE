@@ -1,0 +1,269 @@
+{
+  "unityType": "TrackLayoutAsset",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackLayoutAsset",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Track/Layout/TrackLayoutAsset.cs",
+  "fields": [
+    {
+      "name": "timeLimitSeconds",
+      "type": "Single",
+      "group": "Run",
+      "tooltip": "Seconds on the run's countdown for this track. 0 = GameSettings.timeLimitSeconds.",
+      "min": 0,
+      "max": 600,
+      "unit": "s"
+    },
+    {
+      "name": "shape",
+      "type": "TrackShapeSettings",
+      "group": "Generated with",
+      "tooltip": "The shape asset the track was generated with: its feature table builds the ramps (records point into it by index), and Generate starts from it."
+    },
+    {
+      "name": "spawnSet",
+      "type": "TrackSpawnSet",
+      "group": "Generated with",
+      "tooltip": "The spawn set the track was generated with: its spawners build the orbs, repair orbs and gates."
+    },
+    {
+      "name": "customPrefabs",
+      "type": "GameObject[]",
+      "group": "Track",
+      "tooltip": "Prefabs placed by hand on this track (Custom Prefab placements point into this list by index). Anything: a decoration, a pickup, a prop."
+    },
+    {
+      "name": "layout",
+      "type": "TrackLayout",
+      "hidden": true
+    }
+  ],
+  "types": {
+    "TrackLayout": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackLayout",
+      "fields": [
+        {
+          "name": "formatVersion",
+          "type": "Int32"
+        },
+        {
+          "name": "seed",
+          "type": "UInt32"
+        },
+        {
+          "name": "width",
+          "type": "Single"
+        },
+        {
+          "name": "length",
+          "type": "Single"
+        },
+        {
+          "name": "endZoneStart",
+          "type": "Single"
+        },
+        {
+          "name": "endDistance",
+          "type": "Single"
+        },
+        {
+          "name": "endRunUp",
+          "type": "Single"
+        },
+        {
+          "name": "knots",
+          "type": "Knot[]"
+        },
+        {
+          "name": "knotDistances",
+          "type": "Single[]"
+        },
+        {
+          "name": "sections",
+          "type": "Section[]"
+        },
+        {
+          "name": "flatSweeps",
+          "type": "Span[]"
+        },
+        {
+          "name": "openStretches",
+          "type": "Span[]"
+        },
+        {
+          "name": "keepOuts",
+          "type": "Vector2[]"
+        },
+        {
+          "name": "placements",
+          "type": "TrackPlacement[]"
+        }
+      ]
+    },
+    "Knot": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackLayout+Knot",
+      "fields": [
+        {
+          "name": "position",
+          "type": "Vector3"
+        },
+        {
+          "name": "rotation",
+          "type": "Quaternion"
+        },
+        {
+          "name": "tangentIn",
+          "type": "Vector3"
+        },
+        {
+          "name": "tangentOut",
+          "type": "Vector3"
+        },
+        {
+          "name": "mode",
+          "type": "TangentMode"
+        }
+      ]
+    },
+    "Section": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackLayout+Section",
+      "fields": [
+        {
+          "name": "featureIndex",
+          "type": "Int32"
+        },
+        {
+          "name": "start",
+          "type": "Single"
+        },
+        {
+          "name": "rngState",
+          "type": "UInt32"
+        },
+        {
+          "name": "splineExtent",
+          "type": "Single"
+        }
+      ]
+    },
+    "Span": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackLayout+Span",
+      "fields": [
+        {
+          "name": "start",
+          "type": "Single"
+        },
+        {
+          "name": "end",
+          "type": "Single"
+        },
+        {
+          "name": "outerSide",
+          "type": "Int32"
+        }
+      ]
+    },
+    "TrackPlacement": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackPlacement",
+      "fields": [
+        {
+          "name": "kind",
+          "type": "TrackPlacementKind"
+        },
+        {
+          "name": "distance",
+          "type": "Single"
+        },
+        {
+          "name": "lateral",
+          "type": "Single"
+        },
+        {
+          "name": "height",
+          "type": "Single"
+        },
+        {
+          "name": "variant",
+          "type": "Int32"
+        },
+        {
+          "name": "data",
+          "type": "Vector4"
+        }
+      ]
+    },
+    "TangentMode": {
+      "fullType": "UnityEngine.Splines.TangentMode",
+      "enum": [
+        {
+          "name": "AutoSmooth",
+          "value": 0
+        },
+        {
+          "name": "Linear",
+          "value": 1
+        },
+        {
+          "name": "Mirrored",
+          "value": 2
+        },
+        {
+          "name": "Continuous",
+          "value": 3
+        },
+        {
+          "name": "Broken",
+          "value": 4
+        }
+      ]
+    },
+    "TrackPlacementKind": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackPlacementKind",
+      "enum": [
+        {
+          "name": "SpeedOrb",
+          "value": 0
+        },
+        {
+          "name": "RepairOrb",
+          "value": 1
+        },
+        {
+          "name": "LaserGate",
+          "value": 2
+        },
+        {
+          "name": "Ramp",
+          "value": 3
+        },
+        {
+          "name": "Collectible",
+          "value": 4
+        },
+        {
+          "name": "Pickup",
+          "value": 5
+        },
+        {
+          "name": "CustomPrefab",
+          "value": 6
+        },
+        {
+          "name": "EndRamp",
+          "value": 7
+        },
+        {
+          "name": "Loop",
+          "value": 8
+        },
+        {
+          "name": "BrakePad",
+          "value": 9
+        },
+        {
+          "name": "Checkpoint",
+          "value": 10
+        }
+      ]
+    }
+  }
+}

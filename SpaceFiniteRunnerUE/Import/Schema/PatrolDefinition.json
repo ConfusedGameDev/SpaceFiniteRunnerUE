@@ -1,0 +1,751 @@
+{
+  "unityType": "PatrolDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.PatrolDefinition",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/GameFlow/PatrolDefinition.cs",
+  "fields": [
+    {
+      "name": "baseSpeed",
+      "type": "Single",
+      "group": "Chase",
+      "tooltip": "Launch speed and the rubber band's initial floor — the patrol never goes slower than this. Keep it above the ship's launch speed.",
+      "min": 1,
+      "max": 600,
+      "unit": "m/s"
+    },
+    {
+      "name": "ramp",
+      "type": "Single",
+      "group": "Chase",
+      "tooltip": "How much the rubber band's floor grows per second — the chase tightens the longer the run lasts.",
+      "min": 0,
+      "max": 15,
+      "unit": "m/s per s"
+    },
+    {
+      "name": "rubberBand",
+      "type": "Single",
+      "group": "Chase",
+      "tooltip": "Rubber band: the patrol chases the ship's current speed times this factor (1.05 = always 5% faster), but never below the floor above.",
+      "min": 0.5,
+      "max": 2,
+      "unit": "x ship speed"
+    },
+    {
+      "name": "catchUpAccel",
+      "type": "Single",
+      "group": "Chase",
+      "tooltip": "How fast the patrol's speed adapts toward its rubber-band target. Lower = boosts buy more breathing room before the patrol matches them.",
+      "min": 0.5,
+      "max": 150,
+      "unit": "m/s per s"
+    },
+    {
+      "name": "boostShare",
+      "type": "Single",
+      "group": "Chase",
+      "tooltip": "Share of every speed-up the ship collects that the patrol gets at once (0.7 = a +100 km/h orb also gives the patrol +70 km/h). Measured on the ship's actual gain (after its weight), so boosts can't buy the breathing room the rubber band's catch-up accel would otherwise leave. Brakes are never shared. 0 = off.",
+      "min": 0,
+      "max": 1.5,
+      "unit": "x ship boost"
+    },
+    {
+      "name": "lateralSpeed",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Lateral speed the patrol's full steer settles at — the same force-against-drag steering as the ship. Below the ship's, so the player can out-dodge it.",
+      "min": 0,
+      "max": 100,
+      "unit": "m/s"
+    },
+    {
+      "name": "handlingResponse",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Lateral drag, 1/s: how fast its steering settles.",
+      "min": 0.0099999997764825821,
+      "max": 30
+    },
+    {
+      "name": "gripBase",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Grip at a standstill on a flat sweep (the ship's rule). The driver brakes to the speed this grip holds, so lower = it slows more for flat sweeps.",
+      "min": 0,
+      "max": 500,
+      "unit": "m/s²"
+    },
+    {
+      "name": "gripPerSpeed",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Extra grip per m/s of speed (the ship's rule).",
+      "min": 0,
+      "max": 3,
+      "unit": "m/s² per m/s"
+    },
+    {
+      "name": "brakeDecel",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "How hard the patrol can brake for a flat sweep ahead.",
+      "min": 0,
+      "max": 500,
+      "unit": "m/s per s"
+    },
+    {
+      "name": "slideThreshold",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Lateral speed (m/s) past which a slide on a flat sweep starts costing speed (the ship's rule, for the cruiser's body).",
+      "min": 0,
+      "max": 30,
+      "unit": "m/s"
+    },
+    {
+      "name": "slideSpeedLoss",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Share of its speed a sliding cruiser loses per second past the threshold.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "wallHitCooldownSeconds",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Minimum seconds between two wall hits the cruiser's body reports.",
+      "min": 0.10000000149011612,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "curveLookaheadSeconds",
+      "type": "Single",
+      "group": "Driver",
+      "tooltip": "How far ahead (in seconds at its speed) the driver looks for a flat sweep to brake for.",
+      "min": 0.5,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "orbLookaheadSeconds",
+      "type": "Single",
+      "group": "Driver",
+      "tooltip": "How far ahead (seconds) it looks for boost orbs it can still reach.",
+      "min": 0,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "orbSeekWeight",
+      "type": "Single",
+      "group": "Driver",
+      "tooltip": "How strongly a reachable orb pulls its line away from the ship's: 0 = it only ever chases, 1 = it goes straight for the orb. Fades out as the gap closes — up close it wants the ship.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "orbBoostShare",
+      "type": "Single",
+      "group": "Driver",
+      "tooltip": "Share of an orb's boost the patrol gains when it collects one ITSELF (the orb is used up). Separate from Boost Share, which is its cut of the SHIP's pickups.",
+      "min": 0,
+      "max": 1.5,
+      "unit": "x orb boost"
+    },
+    {
+      "name": "rampLookaheadSeconds",
+      "type": "Single",
+      "group": "Driver",
+      "tooltip": "How far ahead (seconds) it decides about a ramp in its line: round it if the sideways travel still fits, otherwise line up and jump it.",
+      "min": 0.5,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "startGap",
+      "type": "Single",
+      "group": "Distances",
+      "tooltip": "Meters behind the start line the patrol launches from.",
+      "min": 0,
+      "max": 1000,
+      "unit": "m"
+    },
+    {
+      "name": "redeploys",
+      "type": "Boolean",
+      "group": "Distances",
+      "tooltip": "Keep the chase alive: once the ship is clear by the band's outer distance, this cruiser drops out and a fresh one cuts in."
+    },
+    {
+      "name": "redeployBand",
+      "type": "Vector2",
+      "group": "Distances",
+      "tooltip": "Redeploy band, in meters: X = how far behind the ship the fresh cruiser drops in (keep it inside the minimap range so the player sees it arrive), Y = the gap that retires the old one.",
+      "band": true,
+      "min": 50,
+      "max": 2000
+    },
+    {
+      "name": "redeploySpeedFactor",
+      "type": "Single",
+      "group": "Distances",
+      "tooltip": "The fresh cruiser's speed as a multiple of the ship's current speed. Above 1 so it closes in until the next boost; that speed becomes the new rubber-band floor.",
+      "min": 1,
+      "max": 3,
+      "unit": "x ship speed"
+    },
+    {
+      "name": "catchDistance",
+      "type": "Single",
+      "group": "Distances",
+      "tooltip": "Gap inside which the patrol can catch the ship. Inside it the patrol stops gaining and sits on the ship's tail, steering for it. Keep it below the warn distance.",
+      "min": 0,
+      "max": 100,
+      "unit": "m"
+    },
+    {
+      "name": "alongsideLateral",
+      "type": "Single",
+      "group": "Distances",
+      "tooltip": "How close across the track counts as ALONGSIDE — the band an attack run has to hold, and the band the ship has to break out of to shake one off. With the duel off it is the old catch width instead: inside the catch distance AND this far across is an arrest.",
+      "min": 0,
+      "max": 60,
+      "unit": "m"
+    },
+    {
+      "name": "sustainedCatchSeconds",
+      "type": "Single",
+      "group": "Distances",
+      "tooltip": "Tailing the ship this long inside the catch distance is an arrest. Suspended for the whole of an attack run, so it only ever punishes a patrol that sits there WITHOUT committing — keep it long.",
+      "min": 0,
+      "max": 20,
+      "unit": "s"
+    },
+    {
+      "name": "warnDistance",
+      "type": "Single",
+      "group": "Distances",
+      "tooltip": "Gap below which the patrol's proximity line (once per approach) and the proximity rumble kick in.",
+      "min": 0,
+      "max": 500,
+      "unit": "m"
+    },
+    {
+      "name": "duelEnabled",
+      "type": "Boolean",
+      "group": "Duel",
+      "tooltip": "The patrol hunts you: it commits to an attack run, pulls onto a flank and shoves you into the wall or off the edge, then breaks off. Off returns the old chase exactly, proximity arrest included."
+    },
+    {
+      "name": "duelTimeScale",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "World timescale during a tug of war. Slow-mo buys PERCEPTION, not advantage: the bar runs on real seconds and the run's countdown keeps full pace, so an exchange still costs you mission time.",
+      "min": 0.10000000149011612,
+      "max": 1
+    },
+    {
+      "name": "duelTimeBlendSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How long the world clock takes to ease into and out of the duel's slow motion.",
+      "min": 0,
+      "max": 1,
+      "unit": "s"
+    },
+    {
+      "name": "duelAssistStrength",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "DORMANT since the cinematic duel (2026-09-25): the exchange LOCKS the ship's controls outright (see PatrolEncounterIntent.ShipLateralTarget), so no soft assist is added. Kept for the old soft-assist path and the debug row; it does nothing today.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "finisherWindowSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How long the kill prompt stays open after you win the bar. Generous on purpose: missing it costs nothing but the kill.",
+      "min": 0.20000000298023224,
+      "max": 3,
+      "unit": "s"
+    },
+    {
+      "name": "duelHitStopSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "The deeper dip the world takes on the kill's connect, before it snaps back to full speed.",
+      "min": 0,
+      "max": 0.5,
+      "unit": "s"
+    },
+    {
+      "name": "armedWindowSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How long a strong boost orb leaves the ship ARMED: an exchange that draws level inside this skips the tug of war and goes straight to the kill prompt.",
+      "min": 0.5,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "armingOrbTiers",
+      "type": "String[]",
+      "group": "Duel",
+      "tooltip": "Which orb tiers arm the ship, by their name in the orb spawner's tiers. Green would make the window permanent; purple alone would make it a rumour."
+    },
+    {
+      "name": "armedTellColor",
+      "type": "Color",
+      "group": "Duel",
+      "tooltip": "Colour of the sparks streaming off an ARMED ship. The tell is on the ship, not the HUD."
+    },
+    {
+      "name": "ramSpeedCost",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "What a rear ram costs the SHIP, as a share of its current forward speed — so the price scales with how fast you arrive.",
+      "min": 0,
+      "max": 0.5,
+      "unit": "x speed"
+    },
+    {
+      "name": "killExplosionScale",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "Size of the fireball a killed cruiser leaves, as a multiple of the ship's own explosion (GameSettings). It reuses the same textures.",
+      "min": 0.10000000149011612,
+      "max": 3,
+      "unit": "x ship blast"
+    },
+    {
+      "name": "duelDebugReadout",
+      "type": "Boolean",
+      "group": "Duel",
+      "tooltip": "Print the attack run's state, gap and gates on screen — the only way to tell 'it decided not to' from 'it is broken'."
+    },
+    {
+      "name": "duelBarColor",
+      "type": "Color",
+      "group": "Duel",
+      "tooltip": "The colour the PATROL pushes the tug-of-war bar with. Your side uses the dash meter's colour."
+    },
+    {
+      "name": "duelSparkColor",
+      "type": "Color",
+      "group": "Duel",
+      "tooltip": "Tint of the sparks grinding between the hulls in a tug of war (each spark rolls between this and white). The glow between the cars takes it too."
+    },
+    {
+      "name": "duelSparkScale",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "Size of the contact-spark rig: scales the spark rates, their size and the glow's brightness together. 1 = the authored look.",
+      "min": 0.25,
+      "max": 3,
+      "unit": "x"
+    },
+    {
+      "name": "killRumble",
+      "type": "Vector3",
+      "group": "Duel",
+      "tooltip": "The kill: the cruiser destroyed. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "ramRumble",
+      "type": "Vector3",
+      "group": "Duel",
+      "tooltip": "Ramming the cruiser from behind. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "shoveRumble",
+      "type": "Vector3",
+      "group": "Duel",
+      "tooltip": "A lost tug of war: the shove into the wall or off the road. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "redeployRumble",
+      "type": "Vector3",
+      "group": "Duel",
+      "tooltip": "A fresh cruiser cutting in behind you. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "tugSlamRumble",
+      "type": "Vector3",
+      "group": "Duel",
+      "tooltip": "A slam in the tug of war at the weakest (X) and hardest (Y) push: the low motor rides between them by the slam's strength. (low motor, high motor, seconds) for the weakest; only the low motor changes."
+    },
+    {
+      "name": "tugSlamRumbleMax",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "The low motor of the hardest slam (the weakest is tugSlamRumble.x).",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "duelBarRumbleEven",
+      "type": "Vector3",
+      "group": "Duel",
+      "tooltip": "The tug-of-war bar's rumble with the bar even (the patrol's share at 0). (low motor, high motor, seconds)"
+    },
+    {
+      "name": "duelBarRumbleLosing",
+      "type": "Vector3",
+      "group": "Duel",
+      "tooltip": "The tug-of-war bar's rumble with the patrol winning outright (share 1); it rises from the even rumble with the share. (low motor, high motor, seconds)"
+    },
+    {
+      "name": "attackRunOverdrive",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How much FASTER than the ship the patrol drives while committing to an attack run. This burst is what closes the gap — and it is the telegraph, so keep it visible.",
+      "min": 1,
+      "max": 2,
+      "unit": "x ship speed"
+    },
+    {
+      "name": "minClosingSpeed",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "The LEAST closing speed an attack run gets, in m/s, whatever the ship is doing. The overdrive is a multiple of the SHIP's speed, so on its own a run against a slow or stopped ship could never reach the flank — the cruiser parked in its standoff for ever. This floor lets it close at least this fast, so a duel can open at any speed.",
+      "min": 0,
+      "max": 60,
+      "unit": "m/s"
+    },
+    {
+      "name": "commitFromDistance",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "The patrol only starts an attack run once the gap is inside this — keep it just above the standoff, and inside the warn distance. The ordinary rubber band does the APPROACH; the overdrive only has to cover this last stretch. Large values make the run cross so much road that a ramp or loop is almost certain to interrupt it, and the run aborts for nothing.",
+      "min": 20,
+      "max": 1500,
+      "unit": "m"
+    },
+    {
+      "name": "commitIntervalSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "Minimum seconds between attack runs, counted from the END of the last one. The single number that decides how much of a run is spent duelling.",
+      "min": 2,
+      "max": 60,
+      "unit": "s"
+    },
+    {
+      "name": "commitTimeoutSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "An attack run that has not drawn level within this gives up and goes on cooldown — a ship that keeps boosting away is never chased forever.",
+      "min": 2,
+      "max": 60,
+      "unit": "s"
+    },
+    {
+      "name": "alongsideDistance",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "The longitudinal gap at which the patrol counts as alongside and the exchange begins.",
+      "min": 0,
+      "max": 60,
+      "unit": "m"
+    },
+    {
+      "name": "flankOffsetMeters",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How far to the side of the ship the patrol drives during a run — beside it, not behind it. Keep it well inside the alongside width.",
+      "min": 0,
+      "max": 30,
+      "unit": "m"
+    },
+    {
+      "name": "alongsideHoldSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How long the patrol holds the flank before it shoves. The tug of war takes this hold over later.",
+      "min": 0,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "abortGraceSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How long the ship has to hold outside the alongside width to break the run off. Short, so a decisive dodge works and a wobble does not.",
+      "min": 0,
+      "max": 3,
+      "unit": "s"
+    },
+    {
+      "name": "breakOffSpeedFactor",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How fast the patrol drives relative to the ship while backing off after a run — below 1 so it actually opens a gap instead of sitting on the bumper. This is what makes the chase a rhythm rather than a permanent tailgate.",
+      "min": 0.5,
+      "max": 1,
+      "unit": "x ship speed"
+    },
+    {
+      "name": "breakOffSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "Disengage time after a shove or an abort, before the cooldown starts.",
+      "min": 0,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "attackRunCooldownSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How long after a run ends before the patrol may commit to another one.",
+      "min": 0,
+      "max": 60,
+      "unit": "s"
+    },
+    {
+      "name": "encounterLookaheadMeters",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How far ahead of the SHIP the road has to be clear of ramps, landings, loops, tubes and the final run-up for an attack run to START.",
+      "min": 50,
+      "max": 1000,
+      "unit": "m"
+    },
+    {
+      "name": "encounterAbortMeters",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How far ahead a run ALREADY UNDER WAY looks before it lets go. Much shorter than the starting distance on purpose: judge a running exchange by the starting window and every feature that drifts into range kills a run that just began.",
+      "min": 20,
+      "max": 400,
+      "unit": "m"
+    },
+    {
+      "name": "killTeleportGap",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How far behind the ship the replacement appears after a kill. Inside the minimap's range, so the player watches the next one come rather than being surprised by it. 0 = use the ordinary redeploy gap.",
+      "min": 0,
+      "max": 1500,
+      "unit": "m"
+    },
+    {
+      "name": "standoffDistance",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How close the patrol may sit while NOT attacking. Inside this it eases off to the back-off speed instead of driving into you — without it a raised floor parks the cruiser inside the ship between runs.",
+      "min": 0,
+      "max": 200,
+      "unit": "m"
+    },
+    {
+      "name": "tugPatrolForce",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How fast the patrol drives the tug-of-war bar toward its own side, in bar widths per REAL second. 0.2 = centre to the edge in 2.5 s if you never press.",
+      "min": 0,
+      "max": 1,
+      "unit": "bar / s"
+    },
+    {
+      "name": "tugPressValue",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How much of the bar one press wins back. 0.08 = about six presses to take it from the centre.",
+      "min": 0.0099999997764825821,
+      "max": 0.5,
+      "unit": "bar / press"
+    },
+    {
+      "name": "shoveMeters",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How far sideways the shove is sized to throw the ship — into the wall on a walled stretch, off the road on an open edge. The shove itself deals no damage; whatever it puts you into does.",
+      "min": 0,
+      "max": 40,
+      "unit": "m"
+    },
+    {
+      "name": "stationAccel",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How fast the cruiser can change speed DURING a run, overriding the chase's catch-up accel. The cruise rate is deliberately sluggish so boosts buy breathing room, but holding a flank means ±10 m/s corrections inside a second — at the cruise rate it answers three seconds late and sails straight past you. 0 = use the chase rate.",
+      "min": 0,
+      "max": 300,
+      "unit": "m/s per s"
+    },
+    {
+      "name": "tierScalePerKill",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How much harder each KILL (or outrun) makes the next cruiser, as a fraction. 0.15 = the fifth replacement is 1.75x. It drives two things at once: the attack-run interval is DIVIDED by it (they come sooner) and the tug-of-war push is MULTIPLIED by it (they shove harder). 0 = no escalation.",
+      "min": 0,
+      "max": 1,
+      "unit": "per kill"
+    },
+    {
+      "name": "tierScaleMax",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "Ceiling on the escalation above. Mostly it bounds the ATTACK INTERVAL: without it a long run divides 12 s by a growing number until cruisers arrive on top of each other.",
+      "min": 1,
+      "max": 5,
+      "unit": "x"
+    },
+    {
+      "name": "tugForceMaxScale",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "Separate, LOWER ceiling on what escalation does to the tug-of-war push. Escalation is allowed to compress your recovery time; it must never make the mash mathematically unwinnable, so this is capped below the interval's ceiling.",
+      "min": 1,
+      "max": 3,
+      "unit": "x push"
+    },
+    {
+      "name": "damagePoolMax",
+      "type": "Int32",
+      "group": "Duel",
+      "tooltip": "How many rear rams the cruiser soaks up. The pool never kills it — it sets how hard the tug of war pushes: a full pool is full strength, one point left is a pushover. It refills on every fresh patrol.",
+      "min": 1,
+      "max": 10,
+      "unit": "hits"
+    },
+    {
+      "name": "ramContactDistance",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How far BEHIND the cruiser the ship's nose counts as rear contact. Only reachable once the patrol is ahead of you — brake past it or let it overshoot.",
+      "min": 0,
+      "max": 30,
+      "unit": "m"
+    },
+    {
+      "name": "ramContactLateral",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How close across the track a rear ram has to line up. Tight on purpose: ramming is an aimed move, not a side-swipe.",
+      "min": 0,
+      "max": 20,
+      "unit": "m"
+    },
+    {
+      "name": "ramClosingSpeedThreshold",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How much faster than the cruiser the ship has to be arriving for a ram to register. Below it the contact is a harmless nudge — drifting into its bumper is not an attack.",
+      "min": 0,
+      "max": 100,
+      "unit": "m/s closing"
+    },
+    {
+      "name": "overshootHoldSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How long a cruiser caught out by the player BRAKING holds its speed and sails past before it drops back behind. The overshoot is the cinematic beat and the way into a rear ram; too long and it drives out of the chase.",
+      "min": 0,
+      "max": 6,
+      "unit": "s"
+    },
+    {
+      "name": "overshootBrakeThreshold",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "Brake input (0..1) the ship has to hold, with the cruiser in its standoff, for the cruiser to overshoot. 0 = never on the brake input alone.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "overshootDecelThreshold",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "Ship deceleration that also triggers the overshoot — a brake pad slows the ship with no brake input at all. 0 = off.",
+      "min": 0,
+      "max": 200,
+      "unit": "m/s²"
+    },
+    {
+      "name": "overshootTriggerMargin",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How far beyond the standoff distance still counts as 'in the standoff' for the overshoot. The cruiser oscillates around its station by design, so give it some room.",
+      "min": 0,
+      "max": 100,
+      "unit": "m"
+    },
+    {
+      "name": "tugPushFraction",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How much of the room between the ship and the far lane edge the tug of war pushes it across when the bar is fully the cruiser's way. The bar IS the ship's position (it opens at the centre, so the cruiser's arrival shoves the ship halfway out at once; presses claw it back). Kept below 1 so the bar never drops the ship off an open edge by itself — that is the SHOVE's job when the bar bottoms out.",
+      "min": 0,
+      "max": 0.85000002384185791
+    },
+    {
+      "name": "tugPushGain",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How HARD the tug of war shoves the ship sideways: a multiplier on the steering pull that walks the locked ship toward the edge. 1 is the ship's own autopilot pull (a creep); higher moves it decisively. The DISTANCE it can be pushed is the push room above; this is the force.",
+      "min": 0.25,
+      "max": 8,
+      "unit": "x"
+    },
+    {
+      "name": "tugSlamIntervalSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How often the cruiser SLAMS the ship sideways during a tug of war, in REAL seconds — the same clock as the bar, so an exchange always carries the same number of hits whatever the slow-mo. Each slam is presentation: the cruiser lurches into the ship nose-first, the ship is knocked, a burst of sparks jumps out of the seam, the glow flares, the pad rumbles and the camera takes the wall-hit shake. The bar is untouched — it stays a steady push.",
+      "min": 0.20000000298023224,
+      "max": 3,
+      "unit": "s"
+    },
+    {
+      "name": "tugSlamYawDegrees",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How far the cruiser's nose turns INTO the ship at the peak of a slam, on the visual only. Between slams it holds a third of this, so the whole exchange reads as the cruiser leaning on you.",
+      "min": 0,
+      "max": 40,
+      "unit": "°"
+    },
+    {
+      "name": "tugSlamKickMeters",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How far the two visuals are knocked sideways by a slam: the cruiser lurches this far INTO the ship and the ship this far AWAY, both snapping back over the hit. Visual only — where the bodies actually are is the bar's business.",
+      "min": 0,
+      "max": 3,
+      "unit": "m"
+    },
+    {
+      "name": "finisherSeparationMeters",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How far the cruiser peels away from the ship once the player has WON the bar and the kill prompt is open — the two separate a little before the button.",
+      "min": 0,
+      "max": 15,
+      "unit": "m"
+    },
+    {
+      "name": "finisherMissBrakeSeconds",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "How long the cruiser brakes HARD after the player misses the kill prompt (wrong shoulder or no press), before it goes on the ordinary cooldown.",
+      "min": 0,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "finisherMissBrakeSpeedFactor",
+      "type": "Single",
+      "group": "Duel",
+      "tooltip": "The speed the miss brake stops at, as a share of the ship's — how far back the cruiser visibly drops.",
+      "min": 0.20000000298023224,
+      "max": 1,
+      "unit": "x ship speed"
+    }
+  ],
+  "types": {}
+}

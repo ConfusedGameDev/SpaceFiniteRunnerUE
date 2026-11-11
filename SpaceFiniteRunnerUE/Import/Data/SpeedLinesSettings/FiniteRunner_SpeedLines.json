@@ -1,0 +1,48 @@
+{
+  "unityType": "SpeedLinesSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.FX.SpeedLinesSettings",
+  "name": "FiniteRunner_SpeedLines",
+  "guid": "121749c11ebf4e41969b1188e0e39b3c",
+  "path": "Assets/04.Data/Resources/FiniteRunner_SpeedLines.asset",
+  "fields": {
+    "material": {
+      "$ref": {
+        "guid": "947115ad6b8341738625b354beb26538",
+        "fileId": 2100000,
+        "path": "Assets/02.Art/02.Materials/FiniteRunner/SpeedLines.mat",
+        "name": "SpeedLines",
+        "type": "Material",
+        "main": true
+      }
+    },
+    "intensity": 0.228,
+    "speedBand": {
+      "x": 0.466559619,
+      "y": 0.4823152
+    },
+    "responseSharpness": 4,
+    "focusResponse": 8,
+    "color": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "lineCount": 48,
+    "fineLineCount": 140,
+    "density": 0.55,
+    "lineWidth": 0.45,
+    "taperLength": 0.35,
+    "innerRadius": {
+      "x": 0.18,
+      "y": 0.42
+    },
+    "innerJitter": 0.3,
+    "flickerRate": 12,
+    "edgeSoftness": 1,
+    "farMultiplier": 1,
+    "closeMultiplier": 1,
+    "firstPersonMultiplier": 1.3,
+    "cinematicMultiplier": 0
+  }
+}

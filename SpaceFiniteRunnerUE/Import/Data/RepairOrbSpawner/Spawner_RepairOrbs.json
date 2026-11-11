@@ -1,0 +1,48 @@
+{
+  "unityType": "RepairOrbSpawner",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.RepairOrbSpawner",
+  "name": "Spawner_RepairOrbs",
+  "guid": "5e20e5f1cfa54c4c909586110134597f",
+  "path": "Assets/04.Data/FiniteRunner/Spawnables/Spawner_RepairOrbs.asset",
+  "fields": {
+    "active": true,
+    "displayName": "Repair Orbs",
+    "color": {
+      "r": 0.2,
+      "g": 1,
+      "b": 0.35,
+      "a": 1
+    },
+    "spacing": {
+      "x": 1750,
+      "y": 2350
+    },
+    "startDistance": 200,
+    "chance": 0.58,
+    "prefab": {
+      "$ref": {
+        "guid": "293ffa51b0701a34ea072b637eb8e69b",
+        "fileId": 919132149155446097,
+        "path": "Assets/02.Art/01.Models/FiniteRunner/OriginalModels/MedPack.fbx",
+        "name": "MedPack",
+        "type": "GameObject",
+        "main": true
+      }
+    },
+    "size": 0.41,
+    "roadClearance": 1.5,
+    "spinDegreesPerSecond": 408,
+    "shellColor": {
+      "r": 1,
+      "g": 0.1,
+      "b": 0.1,
+      "a": 0.45
+    },
+    "crossColor": {
+      "r": 0.1,
+      "g": 1,
+      "b": 0.25,
+      "a": 1
+    }
+  }
+}

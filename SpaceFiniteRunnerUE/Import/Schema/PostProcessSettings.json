@@ -1,0 +1,254 @@
+{
+  "unityType": "PostProcessSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.FX.PostProcessSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/FX/PostProcessing/PostProcessSettings.cs",
+  "fields": [
+    {
+      "name": "runtimeAdjustments",
+      "type": "Boolean",
+      "tooltip": "Master switch. Off = every effect below holds its baseline, whatever gameplay asks for."
+    },
+    {
+      "name": "lensRuntime",
+      "type": "Boolean",
+      "group": "lensRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "lensRange",
+      "type": "Vector2",
+      "group": "lensRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band a runtime request is clamped to (the override's intensity).",
+      "band": true,
+      "min": -1,
+      "max": 1
+    },
+    {
+      "name": "motionBlurRuntime",
+      "type": "Boolean",
+      "group": "motionBlurRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "motionBlurRange",
+      "type": "Vector2",
+      "group": "motionBlurRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band a runtime request is clamped to (the override's intensity).",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "motionBlurClampRuntime",
+      "type": "Boolean",
+      "group": "motionBlurClampRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "motionBlurClampRange",
+      "type": "Vector2",
+      "group": "motionBlurClampRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band a runtime request is clamped to (the longest blur streak, as a fraction of the screen).",
+      "band": true,
+      "min": 0,
+      "max": 0.2
+    },
+    {
+      "name": "bloomRuntime",
+      "type": "Boolean",
+      "group": "bloomRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "bloomRange",
+      "type": "Vector2",
+      "group": "bloomRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band a runtime request is clamped to (the override's intensity).",
+      "band": true,
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "vignetteRuntime",
+      "type": "Boolean",
+      "group": "vignetteRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "vignetteRange",
+      "type": "Vector2",
+      "group": "vignetteRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band a runtime request is clamped to (the override's intensity).",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "chromaticRuntime",
+      "type": "Boolean",
+      "group": "chromaticRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "chromaticRange",
+      "type": "Vector2",
+      "group": "chromaticRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band a runtime request is clamped to (the override's intensity).",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "filmGrainRuntime",
+      "type": "Boolean",
+      "group": "filmGrainRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "filmGrainRange",
+      "type": "Vector2",
+      "group": "filmGrainRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band a runtime request is clamped to (the override's intensity).",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "glitchRuntime",
+      "type": "Boolean",
+      "group": "glitchRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "glitchRange",
+      "type": "Vector2",
+      "group": "glitchRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band the glitch intensity is clamped to while gameplay drives it.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "distanceFogRuntime",
+      "type": "Boolean",
+      "group": "distanceFogRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "distanceFogRange",
+      "type": "Vector2",
+      "group": "distanceFogRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band the fog intensity is clamped to while gameplay ramps it off its asset value.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "speedLinesRuntime",
+      "type": "Boolean",
+      "group": "speedLinesRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "speedLinesRange",
+      "type": "Vector2",
+      "group": "speedLinesRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band the speed-line intensity is clamped to while the speed or a boost drives it.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "vhsRuntime",
+      "type": "Boolean",
+      "group": "vhsRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "vhsRange",
+      "type": "Vector2",
+      "group": "vhsRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band the tape intensity is clamped to while gameplay ramps it off its asset value. The player's VIDEO dial multiplies in afterwards.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "psxRuntime",
+      "type": "Boolean",
+      "group": "psxRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "psxRange",
+      "type": "Vector2",
+      "group": "psxRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band the console intensity is clamped to while gameplay ramps it off its asset value. The player's VIDEO dial multiplies in afterwards.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "crtRuntime",
+      "type": "Boolean",
+      "group": "crtRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "crtRange",
+      "type": "Vector2",
+      "group": "crtRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band the tube intensity is clamped to while gameplay ramps it off its asset value. The player's VIDEO dial multiplies in afterwards.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "hyperspaceRuntime",
+      "type": "Boolean",
+      "group": "hyperspaceRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "hyperspaceRange",
+      "type": "Vector2",
+      "group": "hyperspaceRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band the sky crossfade is clamped to while Light Speed holds it in.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "rainAtmosphereRuntime",
+      "type": "Boolean",
+      "group": "rainAtmosphereRuntime",
+      "toggleGroup": true
+    },
+    {
+      "name": "rainAtmosphereRange",
+      "type": "Vector2",
+      "group": "rainAtmosphereRuntime",
+      "toggleGroup": true,
+      "tooltip": "Band the rain's fog and ambient dimming is clamped to.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    }
+  ],
+  "types": {}
+}

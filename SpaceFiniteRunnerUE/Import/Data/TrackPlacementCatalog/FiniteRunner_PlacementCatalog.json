@@ -1,0 +1,151 @@
+{
+  "unityType": "TrackPlacementCatalog",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackPlacementCatalog",
+  "name": "FiniteRunner_PlacementCatalog",
+  "guid": "d6aea1d54cc524f508ce1b9c76ee68ac",
+  "path": "Assets/04.Data/Resources/FiniteRunner_PlacementCatalog.asset",
+  "fields": {
+    "entries": [
+      {
+        "displayName": "Green orb",
+        "builtAs": {
+          "$enum": "SpeedOrb",
+          "value": 0
+        },
+        "speedOrbTier": 0,
+        "pad": {
+          "name": "PowerUp",
+          "prefab": null,
+          "definition": null,
+          "probability": 100,
+          "multiplier": 1,
+          "color": {
+            "r": 0.1,
+            "g": 1,
+            "b": 0.3,
+            "a": 1
+          },
+          "swayAmplitude": 0,
+          "swayFrequency": 0.5,
+          "spinDegreesPerSecond": 60,
+          "pickupScale": 1,
+          "lane": {
+            "$enum": "Ground",
+            "value": 0
+          }
+        },
+        "color": {
+          "r": 0.1,
+          "g": 1,
+          "b": 0.3,
+          "a": 1
+        }
+      },
+      {
+        "displayName": "Blue orb",
+        "builtAs": {
+          "$enum": "SpeedOrb",
+          "value": 0
+        },
+        "speedOrbTier": 1,
+        "pad": {
+          "name": "PowerUp",
+          "prefab": null,
+          "definition": null,
+          "probability": 100,
+          "multiplier": 1,
+          "color": {
+            "r": 0.1,
+            "g": 1,
+            "b": 0.3,
+            "a": 1
+          },
+          "swayAmplitude": 0,
+          "swayFrequency": 0.5,
+          "spinDegreesPerSecond": 60,
+          "pickupScale": 1,
+          "lane": {
+            "$enum": "Ground",
+            "value": 0
+          }
+        },
+        "color": {
+          "r": 0.25,
+          "g": 0.55,
+          "b": 1,
+          "a": 1
+        }
+      },
+      {
+        "displayName": "Purple orb",
+        "builtAs": {
+          "$enum": "SpeedOrb",
+          "value": 0
+        },
+        "speedOrbTier": 2,
+        "pad": {
+          "name": "PowerUp",
+          "prefab": null,
+          "definition": null,
+          "probability": 100,
+          "multiplier": 1,
+          "color": {
+            "r": 0.1,
+            "g": 1,
+            "b": 0.3,
+            "a": 1
+          },
+          "swayAmplitude": 0,
+          "swayFrequency": 0.5,
+          "spinDegreesPerSecond": 60,
+          "pickupScale": 1,
+          "lane": {
+            "$enum": "Ground",
+            "value": 0
+          }
+        },
+        "color": {
+          "r": 0.75,
+          "g": 0.3,
+          "b": 1,
+          "a": 1
+        }
+      },
+      {
+        "displayName": "Repair orb",
+        "builtAs": {
+          "$enum": "RepairOrb",
+          "value": 1
+        },
+        "speedOrbTier": 0,
+        "pad": {
+          "name": "PowerUp",
+          "prefab": null,
+          "definition": null,
+          "probability": 100,
+          "multiplier": 1,
+          "color": {
+            "r": 0.1,
+            "g": 1,
+            "b": 0.3,
+            "a": 1
+          },
+          "swayAmplitude": 0,
+          "swayFrequency": 0.5,
+          "spinDegreesPerSecond": 60,
+          "pickupScale": 1,
+          "lane": {
+            "$enum": "Ground",
+            "value": 0
+          }
+        },
+        "color": {
+          "r": 1,
+          "g": 0.2,
+          "b": 0.2,
+          "a": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "unityType": "TrackSelectCatalog",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackSelectCatalog",
+  "name": "FiniteRunner_TrackCatalog",
+  "guid": "8ede2bc9700cd4e8b8ab3712db5c631b",
+  "path": "Assets/04.Data/Resources/FiniteRunner_TrackCatalog.asset",
+  "fields": {
+    "entries": [
+      {
+        "track": {
+          "$ref": {
+            "guid": "85fc55fe72f0f40adbb02b784c5265ac",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/Tracks/Track_FiniteRunner_LevelDefinition_2.asset",
+            "name": "Track_FiniteRunner_LevelDefinition_2",
+            "type": "TrackLayoutAsset",
+            "main": true
+          }
+        },
+        "displayName": "FINITE RUNNER LEVEL DEFINITION 2",
+        "subtitle": "",
+        "difficulty": 1,
+        "thumbnail": null
+      },
+      {
+        "track": {
+          "$ref": {
+            "guid": "5e868e0e072fa4c2d99a119ab474213c",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/Tracks/Track_FiniteRunner_LevelDefinition_3.asset",
+            "name": "Track_FiniteRunner_LevelDefinition_3",
+            "type": "TrackLayoutAsset",
+            "main": true
+          }
+        },
+        "displayName": "FINITE RUNNER LEVEL DEFINITION 3",
+        "subtitle": "",
+        "difficulty": 1,
+        "thumbnail": null
+      },
+      {
+        "track": {
+          "$ref": {
+            "guid": "41bb4e9b09cad42119dd2979af123942",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/Tracks/Track_FiniteRunner_LevelDefinition_60878307.asset",
+            "name": "Track_FiniteRunner_LevelDefinition_60878307",
+            "type": "TrackLayoutAsset",
+            "main": true
+          }
+        },
+        "displayName": "FINITE RUNNER LEVEL DEFINITION 60878307",
+        "subtitle": "",
+        "difficulty": 1,
+        "thumbnail": null
+      },
+      {
+        "track": {
+          "$ref": {
+            "guid": "22525e129aa624ec182b8a6e483f6efb",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/Tracks/test4.asset",
+            "name": "test4",
+            "type": "TrackLayoutAsset",
+            "main": true
+          }
+        },
+        "displayName": "TEST 4",
+        "subtitle": "",
+        "difficulty": 1,
+        "thumbnail": null
+      },
+      {
+        "track": {
+          "$ref": {
+            "guid": "9cf6475950c3e4b1d95099c04c4b32a6",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/Tracks/Track_FiniteRunner_LevelDefinition_newLasers.asset",
+            "name": "Track_FiniteRunner_LevelDefinition_newLasers",
+            "type": "TrackLayoutAsset",
+            "main": true
+          }
+        },
+        "displayName": "FINITE RUNNER LEVEL DEFINITION NEW LASERS",
+        "subtitle": "",
+        "difficulty": 1,
+        "thumbnail": null
+      },
+      {
+        "track": {
+          "$ref": {
+            "guid": "9ee7495a33c474fa7b07fd063287f016",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/Tracks/Track_Arcade.asset",
+            "name": "Track_Arcade",
+            "type": "TrackLayoutAsset",
+            "main": true
+          }
+        },
+        "displayName": "ARCADE",
+        "subtitle": "",
+        "difficulty": 1,
+        "thumbnail": null
+      },
+      {
+        "track": {
+          "$ref": {
+            "guid": "ee13ca43e6d1437fbaf1b7e911c9b011",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/Tracks/Track_BeatTheClock.asset",
+            "name": "Track_BeatTheClock",
+            "type": "TrackLayoutAsset",
+            "main": true
+          }
+        },
+        "displayName": "BEAT THE CLOCK",
+        "subtitle": "",
+        "difficulty": 1,
+        "thumbnail": null
+      },
+      {
+        "track": {
+          "$ref": {
+            "guid": "0107574ce81b4ee198155b04208de20a",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/Tracks/Track_Race.asset",
+            "name": "Track_Race",
+            "type": "TrackLayoutAsset",
+            "main": true
+          }
+        },
+        "displayName": "RACE",
+        "subtitle": "",
+        "difficulty": 1,
+        "thumbnail": null
+      },
+      {
+        "track": {
+          "$ref": {
+            "guid": "ec876427ee3040c7a26ee57ac2fe5a85",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/Tracks/Track_Standard.asset",
+            "name": "Track_Standard",
+            "type": "TrackLayoutAsset",
+            "main": true
+          }
+        },
+        "displayName": "STANDARD",
+        "subtitle": "",
+        "difficulty": 1,
+        "thumbnail": null
+      },
+      {
+        "track": {
+          "$ref": {
+            "guid": "a674b9fff642a194dba9fe2055e5b956",
+            "fileId": 11400000,
+            "path": "Assets/04.Data/FiniteRunner/Tracks/Track_StandardCurved.asset",
+            "name": "Track_StandardCurved",
+            "type": "TrackLayoutAsset",
+            "main": true
+          }
+        },
+        "displayName": "STANDARD CURVED",
+        "subtitle": "",
+        "difficulty": 1,
+        "thumbnail": null
+      }
+    ]
+  }
+}

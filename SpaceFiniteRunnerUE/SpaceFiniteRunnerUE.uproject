@@ -1,0 +1,34 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.9",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{ "Name": "RunnerContracts", "Type": "Runtime", "LoadingPhase": "Default" },
+		{ "Name": "RunnerSave", "Type": "Runtime", "LoadingPhase": "Default" },
+		{ "Name": "RunnerUI", "Type": "Runtime", "LoadingPhase": "Default" },
+		{ "Name": "RunnerFX", "Type": "Runtime", "LoadingPhase": "Default" },
+		{ "Name": "RunnerCameras", "Type": "Runtime", "LoadingPhase": "Default" },
+		{ "Name": "RunnerShip", "Type": "Runtime", "LoadingPhase": "Default" },
+		{ "Name": "RunnerCore", "Type": "Runtime", "LoadingPhase": "Default" },
+		{ "Name": "RunnerEditor", "Type": "Editor", "LoadingPhase": "Default" }
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{ "Name": "MCPClientToolset", "Enabled": true },
+		{ "Name": "UnrealCanvasBridge", "Enabled": true },
+		{ "Name": "UnrealCanvasAnnotations", "Enabled": true },
+		{ "Name": "CommonUI", "Enabled": true },
+		{ "Name": "EnhancedInput", "Enabled": true },
+		{ "Name": "Niagara", "Enabled": true },
+		{ "Name": "GeometryScripting", "Enabled": true },
+		{ "Name": "ElectraPlayer", "Enabled": true },
+		{ "Name": "WmfMedia", "Enabled": true }
+	]
+}

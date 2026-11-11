@@ -1,0 +1,273 @@
+{
+  "unityType": "RaceDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Race.RaceDefinition",
+  "name": "Race_Default",
+  "guid": "554e2404b4adac04aba1bfb90a514d6d",
+  "path": "Assets/04.Data/FiniteRunner/Race/Race_Default.asset",
+  "fields": {
+    "rivals": [
+      {
+        "displayName": "Vega",
+        "prefab": {
+          "$ref": {
+            "guid": "e4e6780fb9cfcfe47bca8f156bebc45e",
+            "fileId": 3755038905665920760,
+            "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Quadron.prefab",
+            "name": "CP_Quadron",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "scale": 3.6,
+        "yawOffset": -90,
+        "hoverHeight": 2,
+        "halfLength": 9.5,
+        "halfWidth": 4.2,
+        "paintTint": {
+          "r": 1,
+          "g": 0.2,
+          "b": 0.25,
+          "a": 0.65
+        },
+        "mapColor": {
+          "r": 1,
+          "g": 0.2,
+          "b": 0.25,
+          "a": 1
+        },
+        "cruiseFraction": 0.82,
+        "thrustFactor": 1.06,
+        "aggression": 0.15,
+        "mistakeRate": 0.01,
+        "orbAppetite": 0.7,
+        "ramHull": 3,
+        "bounty": 400
+      },
+      {
+        "displayName": "Kade",
+        "prefab": {
+          "$ref": {
+            "guid": "3277a38815cced548bca27a8246d48be",
+            "fileId": 5362156547587734002,
+            "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Taxi.prefab",
+            "name": "CP_Taxi",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "scale": 3.8,
+        "yawOffset": -90,
+        "hoverHeight": 2,
+        "halfLength": 9.5,
+        "halfWidth": 4.5,
+        "paintTint": {
+          "r": 1,
+          "g": 0.6,
+          "b": 0.1,
+          "a": 0.65
+        },
+        "mapColor": {
+          "r": 1,
+          "g": 0.6,
+          "b": 0.1,
+          "a": 1
+        },
+        "cruiseFraction": 0.78,
+        "thrustFactor": 1.02,
+        "aggression": 0.85,
+        "mistakeRate": 0.06,
+        "orbAppetite": 0.9,
+        "ramHull": 3,
+        "bounty": 300
+      },
+      {
+        "displayName": "Mirai",
+        "prefab": {
+          "$ref": {
+            "guid": "3f0880bf858cf934bb829dde58bc3698",
+            "fileId": 5364836202932860053,
+            "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Car_02.prefab",
+            "name": "CP_Air_Traffic_Car_02",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "scale": 2.55,
+        "yawOffset": -90,
+        "hoverHeight": 2,
+        "halfLength": 9.6,
+        "halfWidth": 3,
+        "paintTint": {
+          "r": 0.3,
+          "g": 1,
+          "b": 0.45,
+          "a": 0.65
+        },
+        "mapColor": {
+          "r": 0.3,
+          "g": 1,
+          "b": 0.45,
+          "a": 1
+        },
+        "cruiseFraction": 0.74,
+        "thrustFactor": 0.98,
+        "aggression": 0.35,
+        "mistakeRate": 0.03,
+        "orbAppetite": 0.5,
+        "ramHull": 3,
+        "bounty": 250
+      },
+      {
+        "displayName": "Orso",
+        "prefab": {
+          "$ref": {
+            "guid": "ffa093b655d5fd14592f519601e259b8",
+            "fileId": 1528590909750929743,
+            "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Minivan.prefab",
+            "name": "CP_Minivan",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "scale": 4,
+        "yawOffset": -90,
+        "hoverHeight": 2,
+        "halfLength": 9.5,
+        "halfWidth": 4.4,
+        "paintTint": {
+          "r": 0.75,
+          "g": 0.4,
+          "b": 1,
+          "a": 0.65
+        },
+        "mapColor": {
+          "r": 0.75,
+          "g": 0.4,
+          "b": 1,
+          "a": 1
+        },
+        "cruiseFraction": 0.7,
+        "thrustFactor": 0.95,
+        "aggression": 0.5,
+        "mistakeRate": 0.04,
+        "orbAppetite": 0.4,
+        "ramHull": 4,
+        "bounty": 200
+      },
+      {
+        "displayName": "Dune",
+        "prefab": {
+          "$ref": {
+            "guid": "d328a71420fedfd4792b69388c44cc95",
+            "fileId": 1790414118986789532,
+            "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Minivan.prefab",
+            "name": "CP_Air_Traffic_Minivan",
+            "type": "GameObject",
+            "main": true
+          }
+        },
+        "scale": 3.9,
+        "yawOffset": -90,
+        "hoverHeight": 2,
+        "halfLength": 9.4,
+        "halfWidth": 4.3,
+        "paintTint": {
+          "r": 1,
+          "g": 0.95,
+          "b": 0.3,
+          "a": 0.65
+        },
+        "mapColor": {
+          "r": 1,
+          "g": 0.95,
+          "b": 0.3,
+          "a": 1
+        },
+        "cruiseFraction": 0.64,
+        "thrustFactor": 0.9,
+        "aggression": 0.25,
+        "mistakeRate": 0.02,
+        "orbAppetite": 0.3,
+        "ramHull": 3,
+        "bounty": 150
+      }
+    ],
+    "gridColumns": 3,
+    "gridRowSpacing": 32,
+    "gridLaneSpacing": 14,
+    "playerGridSlot": -1,
+    "rubberBand": 0.15,
+    "rubberRange": 1500,
+    "ghostPaceFactor": 0.94,
+    "thrustShare": 0.8,
+    "overPaceBleed": 40,
+    "orbBoostShare": 0.4,
+    "formVariance": 0.08,
+    "surgeAmount": 0.2,
+    "surgePeriod": 14,
+    "launchReaction": {
+      "x": 0,
+      "y": 0.7
+    },
+    "laneSpread": 0.65,
+    "leadGovernor": true,
+    "leadCapNear": 1.05,
+    "leadCapFar": 0.9,
+    "leadSpeedSmoothing": 3,
+    "shipHalfLength": 9.6,
+    "shipHalfWidth": 4.75,
+    "ramClosingThreshold": 8,
+    "ramSpeedCost": 0.06,
+    "ramSpeedTransfer": 0.6,
+    "sideShoveMeters": 6,
+    "sideShoveBias": 0.6,
+    "ramKnockMeters": 8,
+    "passLookaheadSeconds": 1.5,
+    "creditWindow": 3,
+    "contactSparkColor": {
+      "r": 1,
+      "g": 0.75,
+      "b": 0.3,
+      "a": 1
+    },
+    "lateralSpeed": 26,
+    "handlingResponse": 6,
+    "gripBase": 130,
+    "gripPerSpeed": 0.5,
+    "brakeDecel": 140,
+    "slideThreshold": 4,
+    "slideSpeedLoss": 0.1,
+    "orbLookaheadSeconds": 2.5,
+    "hazardLookaheadSeconds": 2.5,
+    "gateClearance": 7,
+    "verticalBeamHalfWidth": 3,
+    "gateMargin": 4,
+    "curveLookaheadSeconds": 4,
+    "rivalSeparation": 10,
+    "mistakeOverspeed": 1.3,
+    "mistakeEdgeShave": 3,
+    "edgeHazardLength": 800,
+    "killCam": true,
+    "killCamRange": 700,
+    "killCamTimeScale": 0.2,
+    "killCamSeconds": 1.3,
+    "killCamBlend": {
+      "x": 0.12,
+      "y": 0.3
+    },
+    "killCamGrace": 1,
+    "killCamCooldown": 6,
+    "killCamOffset": {
+      "x": 40,
+      "y": 14,
+      "z": 30
+    },
+    "fullSimBand": {
+      "x": 400,
+      "y": 1700
+    },
+    "finishFlightSeconds": 4,
+    "debugReadout": false,
+    "debugGhostWireframes": false
+  }
+}

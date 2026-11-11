@@ -1,0 +1,271 @@
+{
+  "unityType": "TimeTrialDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.TimeTrial.TimeTrialDefinition",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/TimeTrial/TimeTrialDefinition.cs",
+  "fields": [
+    {
+      "name": "mode",
+      "type": "TimeTrialMode",
+      "group": "Mode",
+      "tooltip": "Beat the Clock: a set time to reach the end ramps. Arcade: a short clock that checkpoints, clean flying and patrol kills feed, and lost lives drain."
+    },
+    {
+      "name": "timeLimitSeconds",
+      "type": "Single",
+      "group": "Clock",
+      "tooltip": "The whole time to reach the end ramps, seconds. 0 = the saved track's own time limit, else GameSettings.timeLimitSeconds.",
+      "min": 0,
+      "max": 600,
+      "unit": "s"
+    },
+    {
+      "name": "startSeconds",
+      "type": "Single",
+      "group": "Clock",
+      "tooltip": "What the clock starts on, seconds — enough to reach the first checkpoint at the reference pace, and little more.",
+      "min": 3,
+      "max": 120,
+      "unit": "s"
+    },
+    {
+      "name": "maxClockSeconds",
+      "type": "Single",
+      "group": "Clock",
+      "tooltip": "The most the clock can hold, seconds: banking time is bounded, arcade style. Also caps Beat the Clock's start.",
+      "min": 10,
+      "max": 999,
+      "unit": "s"
+    },
+    {
+      "name": "lowTimeWarningSeconds",
+      "type": "Single",
+      "group": "Clock",
+      "tooltip": "Below this the HUD clock turns red and pulses, seconds.",
+      "min": 0,
+      "max": 30,
+      "unit": "s"
+    },
+    {
+      "name": "autoCount",
+      "type": "Int32",
+      "group": "Checkpoints",
+      "tooltip": "How many checkpoints a track WITHOUT authored ones gets, spread evenly from the first checkpoint distance to the start of the final run-up. A saved track's own Checkpoint placements always win — Edit Track's Lay Auto Checkpoints writes this same layout into the track to move and tune by hand.",
+      "min": 1,
+      "max": 40
+    },
+    {
+      "name": "firstCheckpointMeters",
+      "type": "Single",
+      "group": "Checkpoints",
+      "tooltip": "Where the first auto checkpoint may stand at the earliest, metres from the start.",
+      "min": 500,
+      "max": 20000,
+      "unit": "m"
+    },
+    {
+      "name": "featureClearance",
+      "type": "Single",
+      "group": "Checkpoints",
+      "tooltip": "An auto checkpoint keeps this far from a loop, a tube, a ramp and its landing, and a laser gate, metres. It slides forward past one, else back.",
+      "min": 0,
+      "max": 500,
+      "unit": "m"
+    },
+    {
+      "name": "paceShare",
+      "type": "Single",
+      "group": "Checkpoints",
+      "tooltip": "A checkpoint's award is the time to the next one at this share of the speed the ship CROSSES it at (never below the floor below), plus the grace: keep the pace you came in with and you make it. Below 1 is kinder — it allows for slowing down; above 1 asks you to speed up.",
+      "min": 0.30000001192092896,
+      "max": 2
+    },
+    {
+      "name": "paceFloorKmh",
+      "type": "Single",
+      "group": "Checkpoints",
+      "tooltip": "The slowest pace an award is ever sized for, km/h: a checkpoint crossed crawling still pays the time to the next one at this speed.",
+      "min": 100,
+      "max": 6000,
+      "unit": "km/h"
+    },
+    {
+      "name": "graceSeconds",
+      "type": "Single",
+      "group": "Checkpoints",
+      "tooltip": "Seconds added to every checkpoint's award on top of the travel time — the slack for a fall, a sweep braked for, a bad line.",
+      "min": 0,
+      "max": 20,
+      "unit": "s"
+    },
+    {
+      "name": "awardBand",
+      "type": "Vector2",
+      "group": "Checkpoints",
+      "tooltip": "A checkpoint's award is never less / more than this band, seconds.",
+      "band": true,
+      "min": 1,
+      "max": 120
+    },
+    {
+      "name": "awardScale",
+      "type": "Single",
+      "group": "Checkpoints",
+      "tooltip": "Every pace-sized award is multiplied by this AFTER the band: 0.5 pays half. The one knob for how generous the whole trial is. A checkpoint's fixed award (an override) is never scaled.",
+      "min": 0.10000000149011612,
+      "max": 2
+    },
+    {
+      "name": "cleanCheckpointBonus",
+      "type": "Single",
+      "group": "Bonuses",
+      "tooltip": "Added on reaching a checkpoint with no hit since the last one (hull damage, a beam, a car, a fall, a life), seconds. A checkpoint on a saved track can override it.",
+      "min": 0,
+      "max": 20,
+      "unit": "s"
+    },
+    {
+      "name": "dirtyCheckpointPenalty",
+      "type": "Single",
+      "group": "Bonuses",
+      "tooltip": "Taken away on reaching a checkpoint AFTER a hit since the last one, seconds. 0 = a dirty checkpoint just misses the clean bonus. A checkpoint on a saved track can override it.",
+      "min": 0,
+      "max": 20,
+      "unit": "s"
+    },
+    {
+      "name": "patrolKillBonus",
+      "type": "Single",
+      "group": "Bonuses",
+      "tooltip": "Added when a patrol cruiser is destroyed — the finisher, or steered into a laser beam, seconds. A checkpoint on a saved track can override it for the stretch leading up to it.",
+      "min": 0,
+      "max": 30,
+      "unit": "s"
+    },
+    {
+      "name": "lifePenaltySeconds",
+      "type": "Single",
+      "group": "Bonuses",
+      "tooltip": "Taken away when a life is lost (the hull reaches 0, or an arrest) — the ship respawns down the track, seconds. A checkpoint on a saved track can override it for the stretch leading up to it.",
+      "min": 0,
+      "max": 30,
+      "unit": "s"
+    },
+    {
+      "name": "trafficKillPays",
+      "type": "Boolean",
+      "group": "Bonuses",
+      "tooltip": "A cruiser an oncoming car destroys pays the kill bonus too. Off: only the player's own kills pay."
+    },
+    {
+      "name": "scrapeBreaksClean",
+      "type": "Boolean",
+      "group": "Bonuses",
+      "tooltip": "Plain wall contact (the scrape) breaks a clean checkpoint as well. Off: only hard hits, beams, cars, falls and lives do."
+    },
+    {
+      "name": "patrolEnabled",
+      "type": "Boolean",
+      "group": "Hazards",
+      "tooltip": "The patrol hunts in this level (and GameSettings.patrolEnabled is on). Arcade needs it for the kill bonus."
+    },
+    {
+      "name": "gatePrefab",
+      "type": "GameObject",
+      "group": "Gate",
+      "tooltip": "A checkpoint gate's picture, scaled across the road; empty = two code-built pylons and a beam overhead. Colliders are stripped — a checkpoint is judged on distance."
+    },
+    {
+      "name": "gateHeight",
+      "type": "Single",
+      "group": "Gate",
+      "tooltip": "Height of the code-built gate's beam above the road, metres.",
+      "min": 5,
+      "max": 80,
+      "unit": "m"
+    },
+    {
+      "name": "gateThickness",
+      "type": "Single",
+      "group": "Gate",
+      "tooltip": "Thickness of the code-built pylons and beam, metres.",
+      "min": 0.5,
+      "max": 10,
+      "unit": "m"
+    },
+    {
+      "name": "gatePendingColor",
+      "type": "Color",
+      "group": "Gate"
+    },
+    {
+      "name": "gateCleanColor",
+      "type": "Color",
+      "group": "Gate"
+    },
+    {
+      "name": "gateDirtyColor",
+      "type": "Color",
+      "group": "Gate"
+    },
+    {
+      "name": "showGateLabels",
+      "type": "Boolean",
+      "group": "Gate",
+      "tooltip": "The floating text over each gate: the time it adds (sized live at the ship's speed, or its fixed award) and the clean bonus — or the dirty penalty once the run to it is dirty."
+    },
+    {
+      "name": "labelGap",
+      "type": "Single",
+      "group": "Gate",
+      "tooltip": "How far above the gate's beam the floating text stands, metres.",
+      "min": 0,
+      "max": 60,
+      "unit": "m"
+    },
+    {
+      "name": "labelSize",
+      "type": "Single",
+      "group": "Gate",
+      "tooltip": "The floating text's character size (the loop gate's label is 5).",
+      "min": 0.5,
+      "max": 15
+    },
+    {
+      "name": "labelAwardColor",
+      "type": "Color",
+      "group": "Gate"
+    },
+    {
+      "name": "labelCleanColor",
+      "type": "Color",
+      "group": "Gate"
+    },
+    {
+      "name": "labelDirtyColor",
+      "type": "Color",
+      "group": "Gate"
+    },
+    {
+      "name": "debugLog",
+      "type": "Boolean",
+      "group": "Debug",
+      "tooltip": "Logs every checkpoint laid and every clock change ([TimeTrial])."
+    }
+  ],
+  "types": {
+    "TimeTrialMode": {
+      "fullType": "ConfusedGameDev.FiniteRunner.TimeTrial.TimeTrialMode",
+      "enum": [
+        {
+          "name": "BeatTheClock",
+          "value": 0
+        },
+        {
+          "name": "Arcade",
+          "value": 1
+        }
+      ]
+    }
+  }
+}

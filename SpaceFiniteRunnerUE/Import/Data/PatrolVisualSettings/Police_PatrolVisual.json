@@ -1,0 +1,98 @@
+{
+  "unityType": "PatrolVisualSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.PatrolVisualSettings",
+  "name": "Police_PatrolVisual",
+  "guid": "c552587b2f05b417aa8efedb8dfcd9e7",
+  "path": "Assets/04.Data/FiniteRunner/Patrol/Police_PatrolVisual.asset",
+  "fields": {
+    "modelPrefab": {
+      "$ref": {
+        "guid": "a8964ef1d2dcd944e9e9ec2490ad5377",
+        "fileId": 2919269426456305765,
+        "path": "Assets/03.Prefabs/FiniteRunner/PF_PatrolCarModel.prefab",
+        "name": "PF_PatrolCarModel",
+        "type": "GameObject",
+        "main": true
+      }
+    },
+    "modelScale": 2.3,
+    "modelYawOffset": -90,
+    "modelLocalOffset": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "bodyMaterial": {
+      "$ref": {
+        "guid": "ec734ad7799ad433bb142a489fcdc2e9",
+        "fileId": 2100000,
+        "path": "Assets/02.Art/02.Materials/FiniteRunner/PatrolBody_Mat.mat",
+        "name": "PatrolBody_Mat",
+        "type": "Material",
+        "main": true
+      }
+    },
+    "trimMaterial": {
+      "$ref": {
+        "guid": "f182689e1b1a44eb8bacd3e77eae3d7b",
+        "fileId": 2100000,
+        "path": "Assets/02.Art/02.Materials/FiniteRunner/PatrolTrim_Mat.mat",
+        "name": "PatrolTrim_Mat",
+        "type": "Material",
+        "main": true
+      }
+    },
+    "redLightMaterial": {
+      "$ref": {
+        "guid": "4c6c0a1cd126d4a838207811c68d376f",
+        "fileId": 2100000,
+        "path": "Assets/02.Art/02.Materials/FiniteRunner/PatrolRedLight_Mat.mat",
+        "name": "PatrolRedLight_Mat",
+        "type": "Material",
+        "main": true
+      }
+    },
+    "blueLightMaterial": {
+      "$ref": {
+        "guid": "8497a54b49f9e4e72aebc7770bd31225",
+        "fileId": 2100000,
+        "path": "Assets/02.Art/02.Materials/FiniteRunner/PatrolBlueLight_Mat.mat",
+        "name": "PatrolBlueLight_Mat",
+        "type": "Material",
+        "main": true
+      }
+    },
+    "overallScale": 1.6,
+    "hullSize": {
+      "x": 3,
+      "y": 0.9,
+      "z": 6
+    },
+    "cabinPosition": {
+      "x": 0,
+      "y": 0.7,
+      "z": -0.4
+    },
+    "cabinSize": {
+      "x": 2,
+      "y": 0.7,
+      "z": 2.6
+    },
+    "skidPosition": {
+      "x": 1.8,
+      "y": -0.1,
+      "z": 0
+    },
+    "skidSize": {
+      "x": 0.6,
+      "y": 0.5,
+      "z": 4
+    },
+    "lightPosition": {
+      "x": 0.55,
+      "y": 1.6,
+      "z": -0.4
+    },
+    "lightDiameter": 0.7
+  }
+}

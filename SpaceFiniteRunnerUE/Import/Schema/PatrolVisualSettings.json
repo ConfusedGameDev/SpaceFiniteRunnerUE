@@ -1,0 +1,94 @@
+{
+  "unityType": "PatrolVisualSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.PatrolVisualSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/GameFlow/PatrolVisualSettings.cs",
+  "fields": [
+    {
+      "name": "modelPrefab",
+      "type": "GameObject",
+      "group": "Model",
+      "tooltip": "The cruiser's model. Instantiated under the Visual child with its own transform RESET (a prefab dragged out of a scene carries that scene's pose), every collider under it stripped — the patrol never has one. Empty = the primitive cop car below."
+    },
+    {
+      "name": "modelScale",
+      "type": "Single",
+      "group": "Model",
+      "tooltip": "Scale of the model prefab, on top of the overall scale below — THE size knob for the cruiser (the prefab's own transform is discarded, so scaling the prefab does nothing). The light bar's position and diameter scale with it. Read once when the patrol is built, so a change bites on the next run, not live. The shipped car is 5.18 m long at 1: at 2.3 × the 1.6 overall it is 19 m, the ship's own length.",
+      "min": 0.10000000149011612,
+      "max": 5
+    },
+    {
+      "name": "modelYawOffset",
+      "type": "Single",
+      "group": "Model",
+      "tooltip": "Yaw that turns the model's nose down the track (+Z). A model built along X wants ±90.",
+      "min": -180,
+      "max": 180,
+      "unit": "°"
+    },
+    {
+      "name": "modelLocalOffset",
+      "type": "Vector3",
+      "group": "Model",
+      "tooltip": "Where the model sits relative to the cruiser's flight line, in the Visual child's local metres."
+    },
+    {
+      "name": "bodyMaterial",
+      "type": "Material",
+      "group": "Materials"
+    },
+    {
+      "name": "trimMaterial",
+      "type": "Material"
+    },
+    {
+      "name": "redLightMaterial",
+      "type": "Material"
+    },
+    {
+      "name": "blueLightMaterial",
+      "type": "Material"
+    },
+    {
+      "name": "overallScale",
+      "type": "Single",
+      "group": "Proportions",
+      "min": 0.5,
+      "max": 4
+    },
+    {
+      "name": "hullSize",
+      "type": "Vector3"
+    },
+    {
+      "name": "cabinPosition",
+      "type": "Vector3"
+    },
+    {
+      "name": "cabinSize",
+      "type": "Vector3"
+    },
+    {
+      "name": "skidPosition",
+      "type": "Vector3",
+      "tooltip": "Right skid; the left one is mirrored on X."
+    },
+    {
+      "name": "skidSize",
+      "type": "Vector3"
+    },
+    {
+      "name": "lightPosition",
+      "type": "Vector3",
+      "tooltip": "Blue light; the red one is mirrored on X. With a model prefab these are in the MODEL's own metres (multiplied by its scale, like the diameter), so they stay on the roof whatever size the car is; with the primitive car they are Visual-local."
+    },
+    {
+      "name": "lightDiameter",
+      "type": "Single",
+      "min": 0.10000000149011612,
+      "max": 2
+    }
+  ],
+  "types": {}
+}

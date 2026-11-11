@@ -1,0 +1,3351 @@
+{
+  "unityType": "MenuTextLibrary",
+  "fullType": "ConfusedGameDev.FiniteRunner.UI.MenuTextLibrary",
+  "name": "FiniteRunner_MenuTexts",
+  "guid": "7a1c4f2e9b3d4a5c8e6f0d1b2c3a4d65",
+  "path": "Assets/04.Data/Resources/FiniteRunner_MenuTexts.asset",
+  "fields": {
+    "start": {
+      "english": "START",
+      "spanish": "INICIAR",
+      "japanese": "スタート",
+      "french": "DÉMARRER"
+    },
+    "settings": {
+      "english": "SETTINGS",
+      "spanish": "AJUSTES",
+      "japanese": "設定",
+      "french": "OPTIONS"
+    },
+    "cheats": {
+      "english": "CHEATS",
+      "spanish": "TRUCOS",
+      "japanese": "チート",
+      "french": "TRICHES"
+    },
+    "credits": {
+      "english": "CREDITS",
+      "spanish": "CRÉDITOS",
+      "japanese": "クレジット",
+      "french": "CRÉDITS"
+    },
+    "exit": {
+      "english": "EXIT",
+      "spanish": "SALIR",
+      "japanese": "終了",
+      "french": "QUITTER"
+    },
+    "masterVolume": {
+      "english": "MASTER VOLUME",
+      "spanish": "VOLUMEN GENERAL",
+      "japanese": "マスター音量",
+      "french": "VOLUME GÉNÉRAL"
+    },
+    "musicVolume": {
+      "english": "MUSIC VOLUME",
+      "spanish": "VOLUMEN DE MÚSICA",
+      "japanese": "ミュージック音量",
+      "french": "VOLUME MUSIQUE"
+    },
+    "fxVolume": {
+      "english": "FX VOLUME",
+      "spanish": "VOLUMEN DE EFECTOS",
+      "japanese": "効果音音量",
+      "french": "VOLUME EFFETS"
+    },
+    "subtitles": {
+      "english": "SUBTITLES",
+      "spanish": "SUBTÍTULOS",
+      "japanese": "字幕",
+      "french": "SOUS-TITRES"
+    },
+    "language": {
+      "english": "LANGUAGE",
+      "spanish": "IDIOMA",
+      "japanese": "言語",
+      "french": "LANGUE"
+    },
+    "on": {
+      "english": "ON",
+      "spanish": "SÍ",
+      "japanese": "オン",
+      "french": "OUI"
+    },
+    "off": {
+      "english": "OFF",
+      "spanish": "NO",
+      "japanese": "オフ",
+      "french": "NON"
+    },
+    "nothingHereYet": {
+      "english": "NOTHING HERE YET",
+      "spanish": "AQUÍ NO HAY NADA AÚN",
+      "japanese": "まだ何もない",
+      "french": "RIEN ICI POUR L'INSTANT"
+    },
+    "areYouSure": {
+      "english": "ARE YOU SURE?",
+      "spanish": "¿SEGURO QUE QUIERES SALIR?",
+      "japanese": "本当に終了する？",
+      "french": "VOUS ÊTES SÛR ?"
+    },
+    "yes": {
+      "english": "YES",
+      "spanish": "SÍ",
+      "japanese": "はい",
+      "french": "OUI"
+    },
+    "no": {
+      "english": "NO",
+      "spanish": "NO",
+      "japanese": "いいえ",
+      "french": "NON"
+    },
+    "cheatEnterCode": {
+      "english": "ENTER A CODE",
+      "spanish": "INTRODUCE UN CÓDIGO",
+      "japanese": "コードを入力",
+      "french": "ENTREZ UN CODE"
+    },
+    "cheatUnlocked": {
+      "english": "CHEAT UNLOCKED",
+      "spanish": "TRUCO DESBLOQUEADO",
+      "japanese": "チート解除",
+      "french": "TRICHE DÉBLOQUÉE"
+    },
+    "pressEnter": {
+      "english": "PRESS ENTER",
+      "spanish": "PULSA ENTER",
+      "japanese": "ENTERキーを押してください",
+      "french": "APPUYEZ SUR ENTRÉE"
+    },
+    "pressStart": {
+      "english": "PRESS START",
+      "spanish": "PULSA START",
+      "japanese": "スタートボタンを押してください",
+      "french": "APPUYEZ SUR START"
+    },
+    "hintMove": {
+      "english": "MOVE",
+      "spanish": "MOVER",
+      "japanese": "移動",
+      "french": "DÉPLACER"
+    },
+    "hintSelect": {
+      "english": "SELECT",
+      "spanish": "ELEGIR",
+      "japanese": "決定",
+      "french": "VALIDER"
+    },
+    "hintBack": {
+      "english": "BACK",
+      "spanish": "ATRÁS",
+      "japanese": "戻る",
+      "french": "RETOUR"
+    },
+    "hintChange": {
+      "english": "CHANGE",
+      "spanish": "CAMBIAR",
+      "japanese": "変更",
+      "french": "MODIFIER"
+    },
+    "hintCancel": {
+      "english": "CANCEL",
+      "spanish": "CANCELAR",
+      "japanese": "キャンセル",
+      "french": "ANNULER"
+    },
+    "hintTitle": {
+      "english": "TITLE",
+      "spanish": "TÍTULO",
+      "japanese": "タイトルへ",
+      "french": "TITRE"
+    },
+    "holdToSkip": {
+      "english": "HOLD TO SKIP",
+      "spanish": "MANTÉN PARA SALTAR",
+      "japanese": "長押しでスキップ",
+      "french": "MAINTENIR POUR PASSER"
+    },
+    "roleMaster": {
+      "english": "MASTER OF DISASTER",
+      "spanish": "MAESTRO DEL DESASTRE",
+      "japanese": "ディザスターマスター",
+      "french": "MAÎTRE DU DÉSASTRE"
+    },
+    "roleFool": {
+      "english": "TOWN FOOL",
+      "spanish": "EL TONTO DEL PUEBLO",
+      "japanese": "町の道化師",
+      "french": "L'IDIOT DU VILLAGE"
+    },
+    "paused": {
+      "english": "PAUSED",
+      "spanish": "PAUSA",
+      "japanese": "ポーズ",
+      "french": "PAUSE"
+    },
+    "resume": {
+      "english": "RESUME",
+      "spanish": "CONTINUAR",
+      "japanese": "再開",
+      "french": "REPRENDRE"
+    },
+    "exitToMenu": {
+      "english": "EXIT TO MAIN MENU",
+      "spanish": "SALIR AL MENÚ PRINCIPAL",
+      "japanese": "メインメニューへ",
+      "french": "RETOUR AU MENU"
+    },
+    "quitGame": {
+      "english": "QUIT GAME",
+      "spanish": "SALIR DEL JUEGO",
+      "japanese": "ゲームを終了",
+      "french": "QUITTER LE JEU"
+    },
+    "debug": {
+      "english": "DEBUG",
+      "spanish": "DEPURACIÓN",
+      "japanese": "デバッグ",
+      "french": "DÉBOGAGE"
+    },
+    "debugTabCore": {
+      "english": "DEBUG — CORE SETTINGS",
+      "spanish": "DEPURACIÓN — AJUSTES BÁSICOS",
+      "japanese": "デバッグ — 基本設定",
+      "french": "DÉBOGAGE — RÉGLAGES DE BASE"
+    },
+    "debugTabMultipliers": {
+      "english": "DEBUG — MULTIPLIERS",
+      "spanish": "DEPURACIÓN — MULTIPLICADORES",
+      "japanese": "デバッグ — 倍率",
+      "french": "DÉBOGAGE — MULTIPLICATEURS"
+    },
+    "debugTabShipSpeed": {
+      "english": "DEBUG — SHIP SPEED",
+      "spanish": "DEPURACIÓN — VELOCIDAD DE LA NAVE",
+      "japanese": "デバッグ — 機体スピード",
+      "french": "DÉBOGAGE — VITESSE DU VAISSEAU"
+    },
+    "debugTabShipHandling": {
+      "english": "DEBUG — SHIP HANDLING",
+      "spanish": "DEPURACIÓN — MANEJO DE LA NAVE",
+      "japanese": "デバッグ — 機体ハンドリング",
+      "french": "DÉBOGAGE — MANIABILITÉ DU VAISSEAU"
+    },
+    "debugTabShipDash": {
+      "english": "DEBUG — SHIP DASH",
+      "spanish": "DEPURACIÓN — DASH DE LA NAVE",
+      "japanese": "デバッグ — 機体ダッシュ",
+      "french": "DÉBOGAGE — DASH DU VAISSEAU"
+    },
+    "debugTabShipHover": {
+      "english": "DEBUG — SHIP HOVER",
+      "spanish": "DEPURACIÓN — FLOTACIÓN DE LA NAVE",
+      "japanese": "デバッグ — 機体ホバー",
+      "french": "DÉBOGAGE — SUSTENTATION DU VAISSEAU"
+    },
+    "trackWidth": {
+      "english": "TRACK WIDTH",
+      "spanish": "ANCHO DE PISTA",
+      "japanese": "トラック幅",
+      "french": "LARGEUR DE PISTE"
+    },
+    "straightness": {
+      "english": "STRAIGHTNESS",
+      "spanish": "RECTITUD",
+      "japanese": "直線度",
+      "french": "RECTITUDE"
+    },
+    "elevationBand": {
+      "english": "ELEVATION BAND",
+      "spanish": "BANDA DE ALTURA",
+      "japanese": "高低差の幅",
+      "french": "BANDE D'ALTITUDE"
+    },
+    "maxGrade": {
+      "english": "MAX GRADE",
+      "spanish": "PENDIENTE MÁXIMA",
+      "japanese": "最大勾配",
+      "french": "PENTE MAXIMALE"
+    },
+    "gradeStep": {
+      "english": "GRADE STEP",
+      "spanish": "PASO DE PENDIENTE",
+      "japanese": "勾配ステップ",
+      "french": "PAS DE PENTE"
+    },
+    "baselinePull": {
+      "english": "BASELINE PULL",
+      "spanish": "RETORNO AL NIVEL",
+      "japanese": "基準高への復帰",
+      "french": "RAPPEL AU NIVEAU"
+    },
+    "maxBank": {
+      "english": "MAX BANK",
+      "spanish": "PERALTE MÁXIMO",
+      "japanese": "最大バンク",
+      "french": "INCLINAISON MAX"
+    },
+    "bankPerTurn": {
+      "english": "BANK PER TURN",
+      "spanish": "PERALTE POR GIRO",
+      "japanese": "旋回バンク率",
+      "french": "INCLINAISON PAR VIRAGE"
+    },
+    "bankStep": {
+      "english": "BANK STEP",
+      "spanish": "PASO DE PERALTE",
+      "japanese": "バンクステップ",
+      "french": "PAS D'INCLINAISON"
+    },
+    "levelLead": {
+      "english": "LEVEL LEAD",
+      "spanish": "TRAMO NIVELADO",
+      "japanese": "水平化距離",
+      "french": "APPROCHE À PLAT"
+    },
+    "reloadScene": {
+      "english": "RELOAD SCENE",
+      "spanish": "RECARGAR ESCENA",
+      "japanese": "シーンをリロード",
+      "french": "RECHARGER LA SCÈNE"
+    },
+    "reloadScenePrompt": {
+      "english": "DO YOU WANT TO RELOAD THE SCENE?",
+      "spanish": "¿QUIERES RECARGAR LA ESCENA?",
+      "japanese": "シーンをリロードしますか？",
+      "french": "VOULEZ-VOUS RECHARGER LA SCÈNE ?"
+    },
+    "launchSpeed": {
+      "english": "LAUNCH SPEED",
+      "spanish": "VELOCIDAD DE LANZAMIENTO",
+      "japanese": "発進速度",
+      "french": "VITESSE DE LANCEMENT"
+    },
+    "deceleration": {
+      "english": "DECELERATION",
+      "spanish": "DESACELERACIÓN",
+      "japanese": "減速",
+      "french": "DÉCÉLÉRATION"
+    },
+    "acceleration": {
+      "english": "ACCELERATION",
+      "spanish": "ACELERACIÓN",
+      "japanese": "加速",
+      "french": "ACCÉLÉRATION"
+    },
+    "weight": {
+      "english": "WEIGHT",
+      "spanish": "PESO",
+      "japanese": "重量",
+      "french": "POIDS"
+    },
+    "lateralSpeed": {
+      "english": "LATERAL SPEED",
+      "spanish": "VELOCIDAD LATERAL",
+      "japanese": "横移動速度",
+      "french": "VITESSE LATÉRALE"
+    },
+    "steerResponse": {
+      "english": "STEER RESPONSE",
+      "spanish": "RESPUESTA DE GIRO",
+      "japanese": "操舵レスポンス",
+      "french": "RÉPONSE DE DIRECTION"
+    },
+    "bankAngle": {
+      "english": "BANK ANGLE",
+      "spanish": "ÁNGULO DE INCLINACIÓN",
+      "japanese": "バンク角",
+      "french": "ANGLE D'INCLINAISON"
+    },
+    "bankResponse": {
+      "english": "BANK RESPONSE",
+      "spanish": "RESPUESTA DE INCLINACIÓN",
+      "japanese": "バンクレスポンス",
+      "french": "RÉPONSE D'INCLINAISON"
+    },
+    "dashDistance": {
+      "english": "DASH DISTANCE",
+      "spanish": "DISTANCIA DEL DASH",
+      "japanese": "ダッシュ距離",
+      "french": "DISTANCE DU DASH"
+    },
+    "dashDuration": {
+      "english": "DASH DURATION",
+      "spanish": "DURACIÓN DEL DASH",
+      "japanese": "ダッシュ時間",
+      "french": "DURÉE DU DASH"
+    },
+    "dashRecharge": {
+      "english": "DASH RECHARGE",
+      "spanish": "RECARGA DEL DASH",
+      "japanese": "ダッシュ充電",
+      "french": "RECHARGE DU DASH"
+    },
+    "dashGhosts": {
+      "english": "DASH GHOSTS",
+      "spanish": "ESTELAS DEL DASH",
+      "japanese": "ダッシュ残像",
+      "french": "FANTÔMES DU DASH"
+    },
+    "barrelRollSeconds": {
+      "english": "BARREL ROLL TIME",
+      "spanish": "DURACIÓN DEL TONEL",
+      "japanese": "バレルロール時間",
+      "french": "DURÉE DU TONNEAU"
+    },
+    "hoverHeight": {
+      "english": "HOVER HEIGHT",
+      "spanish": "ALTURA DE FLOTACIÓN",
+      "japanese": "ホバー高度",
+      "french": "HAUTEUR DE SUSTENTATION"
+    },
+    "bobAmplitude": {
+      "english": "BOB AMPLITUDE",
+      "spanish": "AMPLITUD DE BALANCEO",
+      "japanese": "浮遊の振幅",
+      "french": "AMPLITUDE D'OSCILLATION"
+    },
+    "bobFrequency": {
+      "english": "BOB FREQUENCY",
+      "spanish": "FRECUENCIA DE BALANCEO",
+      "japanese": "浮遊の周波数",
+      "french": "FRÉQUENCE D'OSCILLATION"
+    },
+    "pitchWobble": {
+      "english": "PITCH WOBBLE",
+      "spanish": "CABECEO",
+      "japanese": "ピッチの揺れ",
+      "french": "TANGAGE"
+    },
+    "debugTabPatrol": {
+      "english": "DEBUG — PATROL",
+      "spanish": "DEPURACIÓN — PATRULLA",
+      "japanese": "デバッグ — パトロール",
+      "french": "DÉBOGAGE — PATROUILLE"
+    },
+    "patrolBaseSpeed": {
+      "english": "BASE SPEED",
+      "spanish": "VELOCIDAD BASE",
+      "japanese": "基本速度",
+      "french": "VITESSE DE BASE"
+    },
+    "patrolRamp": {
+      "english": "SPEED RAMP",
+      "spanish": "RAMPA DE VELOCIDAD",
+      "japanese": "速度上昇率",
+      "french": "MONTÉE EN VITESSE"
+    },
+    "patrolRubberBand": {
+      "english": "RUBBER BAND",
+      "spanish": "BANDA ELÁSTICA",
+      "japanese": "ラバーバンド",
+      "french": "ÉLASTIQUE"
+    },
+    "patrolCatchUp": {
+      "english": "CATCH-UP ACCEL",
+      "spanish": "ACELERACIÓN DE ALCANCE",
+      "japanese": "追従加速",
+      "french": "ACCÉL. DE RATTRAPAGE"
+    },
+    "patrolStartGap": {
+      "english": "START GAP",
+      "spanish": "DISTANCIA INICIAL",
+      "japanese": "開始距離",
+      "french": "ÉCART INITIAL"
+    },
+    "patrolCatchDistance": {
+      "english": "CATCH DISTANCE",
+      "spanish": "DISTANCIA DE CAPTURA",
+      "japanese": "捕獲距離",
+      "french": "DISTANCE DE CAPTURE"
+    },
+    "patrolWarnDistance": {
+      "english": "WARN DISTANCE",
+      "spanish": "DISTANCIA DE ALERTA",
+      "japanese": "警告距離",
+      "french": "DISTANCE D'ALERTE"
+    },
+    "patrolAlertLead": {
+      "english": "ALERT LEAD",
+      "spanish": "ADELANTO DE ALERTA",
+      "japanese": "警告の先行距離",
+      "french": "AVANCE D'ALERTE"
+    },
+    "patrolBoostShare": {
+      "english": "BOOST SHARE",
+      "spanish": "PARTE DEL TURBO",
+      "japanese": "ブースト分配",
+      "french": "PART DU BOOST"
+    },
+    "debugTabCarDrive": {
+      "english": "DEBUG — CAR DRIVE",
+      "spanish": "DEPURACIÓN — MOTOR DEL COCHE",
+      "japanese": "デバッグ — 車の駆動",
+      "french": "DÉBOGAGE — MOTRICITÉ"
+    },
+    "debugTabCarGrip": {
+      "english": "DEBUG — CAR GRIP",
+      "spanish": "DEPURACIÓN — AGARRE DEL COCHE",
+      "japanese": "デバッグ — 車のグリップ",
+      "french": "DÉBOGAGE — ADHÉRENCE"
+    },
+    "carMass": {
+      "english": "MASS",
+      "spanish": "MASA",
+      "japanese": "重量",
+      "french": "MASSE"
+    },
+    "carCenterOfMass": {
+      "english": "CENTER OF MASS",
+      "spanish": "CENTRO DE MASA",
+      "japanese": "重心の下げ",
+      "french": "CENTRE DE MASSE"
+    },
+    "carDownforce": {
+      "english": "DOWNFORCE",
+      "spanish": "CARGA AERODINÁMICA",
+      "japanese": "ダウンフォース",
+      "french": "APPUI AÉRO"
+    },
+    "carMotorTorque": {
+      "english": "MOTOR TORQUE",
+      "spanish": "PAR DEL MOTOR",
+      "japanese": "エンジントルク",
+      "french": "COUPLE MOTEUR"
+    },
+    "carTopSpeed": {
+      "english": "TOP SPEED",
+      "spanish": "VELOCIDAD MÁXIMA",
+      "japanese": "最高速度",
+      "french": "VITESSE MAX"
+    },
+    "carBrakeTorque": {
+      "english": "BRAKE TORQUE",
+      "spanish": "PAR DE FRENADO",
+      "japanese": "ブレーキトルク",
+      "french": "COUPLE DE FREIN"
+    },
+    "carHillRollback": {
+      "english": "HILL ASSIST",
+      "spanish": "AYUDA EN PENDIENTE",
+      "japanese": "ヒルアシスト",
+      "french": "ASSIST. EN CÔTE"
+    },
+    "carSteerAngle": {
+      "english": "STEER ANGLE",
+      "spanish": "ÁNGULO DE GIRO",
+      "japanese": "操舵角",
+      "french": "ANGLE DE BRAQUAGE"
+    },
+    "carHandbrakeTorque": {
+      "english": "HANDBRAKE TORQUE",
+      "spanish": "PAR DEL FRENO DE MANO",
+      "japanese": "ハンドブレーキトルク",
+      "french": "COUPLE DE FREIN À MAIN"
+    },
+    "carHandbrakeGrip": {
+      "english": "HANDBRAKE GRIP",
+      "spanish": "AGARRE CON FRENO DE MANO",
+      "japanese": "ハンドブレーキ時グリップ",
+      "french": "ADHÉRENCE FREIN À MAIN"
+    },
+    "carForwardGrip": {
+      "english": "FORWARD GRIP",
+      "spanish": "AGARRE LONGITUDINAL",
+      "japanese": "前後グリップ",
+      "french": "ADHÉRENCE LONGITUDINALE"
+    },
+    "carSideGrip": {
+      "english": "SIDE GRIP",
+      "spanish": "AGARRE LATERAL",
+      "japanese": "横方向グリップ",
+      "french": "ADHÉRENCE LATÉRALE"
+    },
+    "carBurnoutTorque": {
+      "english": "BURNOUT TORQUE",
+      "spanish": "PAR DE BURNOUT",
+      "japanese": "バーンアウトトルク",
+      "french": "COUPLE DE BURNOUT"
+    },
+    "carBurnoutGrip": {
+      "english": "BURNOUT GRIP",
+      "spanish": "AGARRE EN BURNOUT",
+      "japanese": "バーンアウト時グリップ",
+      "french": "ADHÉRENCE BURNOUT"
+    },
+    "carBurnoutMaxSpeed": {
+      "english": "BURNOUT MAX SPEED",
+      "spanish": "VEL. MÁX. DE BURNOUT",
+      "japanese": "バーンアウト上限速度",
+      "french": "VITESSE MAX BURNOUT"
+    },
+    "carPhysicsBackend": {
+      "english": "VEHICLE PHYSICS",
+      "spanish": "FÍSICA DE VEHÍCULOS",
+      "japanese": "車両物理エンジン",
+      "french": "PHYSIQUE DES VÉHICULES"
+    },
+    "carPhysicsBuiltIn": {
+      "english": "BUILT-IN",
+      "spanish": "INTEGRADA",
+      "japanese": "標準",
+      "french": "INTÉGRÉE"
+    },
+    "carPhysicsEvp": {
+      "english": "EVP",
+      "spanish": "EVP",
+      "japanese": "EVP",
+      "french": "EVP"
+    },
+    "debugTabAirTime": {
+      "english": "AIR TIME",
+      "spanish": "TIEMPO EN EL AIRE",
+      "japanese": "エアタイム",
+      "french": "TEMPS EN L'AIR"
+    },
+    "airSlowMo": {
+      "english": "AIR SLOW-MO",
+      "spanish": "CÁMARA LENTA EN EL AIRE",
+      "japanese": "空中スローモーション",
+      "french": "RALENTI EN L'AIR"
+    },
+    "airSlowMoDelay": {
+      "english": "AIR DELAY",
+      "spanish": "RETARDO EN EL AIRE",
+      "japanese": "発動までの滞空時間",
+      "french": "DÉLAI EN L'AIR"
+    },
+    "airSlowMoScale": {
+      "english": "SLOW-MO SPEED",
+      "spanish": "VELOCIDAD CÁMARA LENTA",
+      "japanese": "スロー速度",
+      "french": "VITESSE DU RALENTI"
+    },
+    "airSlowMoMinScale": {
+      "english": "SLOWEST SPEED",
+      "spanish": "VELOCIDAD MÍNIMA",
+      "japanese": "最遅速度",
+      "french": "VITESSE MINIMALE"
+    },
+    "airSlowMoMaxScale": {
+      "english": "FASTEST SPEED",
+      "spanish": "VELOCIDAD MÁXIMA",
+      "japanese": "最速速度",
+      "french": "VITESSE MAXIMALE"
+    },
+    "airSlowMoBlendIn": {
+      "english": "SLOW-MO FADE IN",
+      "spanish": "ENTRADA CÁMARA LENTA",
+      "japanese": "スロー開始フェード",
+      "french": "FONDU D'ENTRÉE"
+    },
+    "airSlowMoBlendOut": {
+      "english": "SLOW-MO FADE OUT",
+      "spanish": "SALIDA CÁMARA LENTA",
+      "japanese": "スロー終了フェード",
+      "french": "FONDU DE SORTIE"
+    },
+    "airControlRate": {
+      "english": "AIR CONTROL RATE",
+      "spanish": "GIRO EN EL AIRE",
+      "japanese": "空中操作速度",
+      "french": "ROTATION EN L'AIR"
+    },
+    "airControlResponse": {
+      "english": "AIR CONTROL RESPONSE",
+      "spanish": "RESPUESTA EN EL AIRE",
+      "japanese": "空中操作の反応",
+      "french": "RÉPONSE EN L'AIR"
+    },
+    "debugTabDamage": {
+      "english": "BODY DAMAGE",
+      "spanish": "DAÑOS EN LA CARROCERÍA",
+      "japanese": "車体ダメージ",
+      "french": "DÉGÂTS CARROSSERIE"
+    },
+    "evpDamage": {
+      "english": "BODY DAMAGE",
+      "spanish": "DAÑOS EN LA CARROCERÍA",
+      "japanese": "車体ダメージ",
+      "french": "DÉGÂTS CARROSSERIE"
+    },
+    "evpDamageWheels": {
+      "english": "BENT WHEELS",
+      "spanish": "RUEDAS TORCIDAS",
+      "japanese": "ホイールの歪み",
+      "french": "ROUES VOILÉES"
+    },
+    "evpDamageMinSpeed": {
+      "english": "DENT MIN SPEED",
+      "spanish": "VELOCIDAD MÍN. DE ABOLLADO",
+      "japanese": "凹み最低速度",
+      "french": "VITESSE MIN. DE BOSSE"
+    },
+    "evpDamageMultiplier": {
+      "english": "DENT STRENGTH",
+      "spanish": "FUERZA DE ABOLLADO",
+      "japanese": "凹みの強さ",
+      "french": "FORCE DES BOSSES"
+    },
+    "evpDamageRadius": {
+      "english": "DENT RADIUS",
+      "spanish": "RADIO DE ABOLLADO",
+      "japanese": "凹みの半径",
+      "french": "RAYON DES BOSSES"
+    },
+    "evpDamageMaxDisplacement": {
+      "english": "MAX DENT DEPTH",
+      "spanish": "PROFUNDIDAD MÁXIMA",
+      "japanese": "凹みの最大深さ",
+      "french": "PROFONDEUR MAX"
+    },
+    "evpDamageVertexFracture": {
+      "english": "PANEL TEARING",
+      "spanish": "DESGARRO DE CHAPA",
+      "japanese": "パネルの裂け",
+      "french": "DÉCHIRURE DES TÔLES"
+    },
+    "evpDamageWheelBend": {
+      "english": "MAX WHEEL BEND",
+      "spanish": "TORSIÓN MÁX. DE RUEDA",
+      "japanese": "ホイール最大傾き",
+      "french": "VOILAGE MAX DES ROUES"
+    },
+    "evpDamageRepairRate": {
+      "english": "REPAIR SPEED",
+      "spanish": "VELOCIDAD DE REPARACIÓN",
+      "japanese": "修理速度",
+      "french": "VITESSE DE RÉPARATION"
+    },
+    "debugTabCamera": {
+      "english": "DEBUG — CHASE CAMERA",
+      "spanish": "DEPURACIÓN — CÁMARA",
+      "japanese": "デバッグ — カメラ",
+      "french": "DÉBOGAGE — CAMÉRA"
+    },
+    "camDistance": {
+      "english": "CAMERA DISTANCE",
+      "spanish": "DISTANCIA DE CÁMARA",
+      "japanese": "カメラ距離",
+      "french": "DISTANCE CAMÉRA"
+    },
+    "camHeight": {
+      "english": "LOOK HEIGHT",
+      "spanish": "ALTURA DE MIRA",
+      "japanese": "注視点の高さ",
+      "french": "HAUTEUR DE VISÉE"
+    },
+    "camPitch": {
+      "english": "DEFAULT PITCH",
+      "spanish": "INCLINACIÓN POR DEFECTO",
+      "japanese": "既定の俯角",
+      "french": "TANGAGE PAR DÉFAUT"
+    },
+    "camDamping": {
+      "english": "POSITION DAMPING",
+      "spanish": "AMORTIGUACIÓN",
+      "japanese": "位置ダンピング",
+      "french": "AMORTISSEMENT"
+    },
+    "camRecenterDelay": {
+      "english": "RECENTER DELAY",
+      "spanish": "RETARDO DE RECENTRADO",
+      "japanese": "再センタリング遅延",
+      "french": "DÉLAI DE RECENTRAGE"
+    },
+    "camRecenterSpeed": {
+      "english": "RECENTER SPEED",
+      "spanish": "VELOCIDAD DE RECENTRADO",
+      "japanese": "再センタリング速度",
+      "french": "VITESSE DE RECENTRAGE"
+    },
+    "camBaseFov": {
+      "english": "BASE FOV",
+      "spanish": "FOV BASE",
+      "japanese": "基本FOV",
+      "french": "FOV DE BASE"
+    },
+    "camSpeedFov": {
+      "english": "SPEED FOV",
+      "spanish": "FOV POR VELOCIDAD",
+      "japanese": "速度FOV",
+      "french": "FOV VITESSE"
+    },
+    "camLookBackAngle": {
+      "english": "LOOK BACK ANGLE",
+      "spanish": "ÁNGULO DE MIRAR ATRÁS",
+      "japanese": "後方視の角度",
+      "french": "ANGLE REGARD ARRIÈRE"
+    },
+    "camLookBackIn": {
+      "english": "LOOK BACK TIME",
+      "spanish": "TIEMPO DE GIRO ATRÁS",
+      "japanese": "後方視の時間",
+      "french": "TEMPS REGARD ARRIÈRE"
+    },
+    "camLookBackOut": {
+      "english": "LOOK BACK RETURN",
+      "spanish": "REGRESO DE MIRAR ATRÁS",
+      "japanese": "後方視の復帰",
+      "french": "RETOUR REGARD ARRIÈRE"
+    },
+    "camLookBackDistance": {
+      "english": "LOOK BACK DISTANCE",
+      "spanish": "DISTANCIA DE MIRAR ATRÁS",
+      "japanese": "後方視の距離",
+      "french": "DISTANCE REGARD ARRIÈRE"
+    },
+    "camLookBackDamping": {
+      "english": "LOOK BACK DAMPING",
+      "spanish": "AMORTIGUACIÓN DE MIRAR ATRÁS",
+      "japanese": "後方視のダンピング",
+      "french": "AMORTISSEMENT REGARD ARRIÈRE"
+    },
+    "debugTabCameraModes": {
+      "english": "DEBUG — CAMERA MODES",
+      "spanish": "DEPURACIÓN — MODOS DE CÁMARA",
+      "japanese": "デバッグ — カメラモード",
+      "french": "DÉBOGAGE — MODES CAMÉRA"
+    },
+    "camModeBlend": {
+      "english": "MODE BLEND",
+      "spanish": "TRANSICIÓN DE MODO",
+      "japanese": "モード切替時間",
+      "french": "FONDU DE MODE"
+    },
+    "camCloseDistance": {
+      "english": "CLOSE DISTANCE",
+      "spanish": "DISTANCIA CERCANA",
+      "japanese": "近距離",
+      "french": "DISTANCE PROCHE"
+    },
+    "camCloseHeight": {
+      "english": "CLOSE HEIGHT",
+      "spanish": "ALTURA CERCANA",
+      "japanese": "近距離の高さ",
+      "french": "HAUTEUR PROCHE"
+    },
+    "camClosePitch": {
+      "english": "CLOSE PITCH",
+      "spanish": "INCLINACIÓN CERCANA",
+      "japanese": "近距離の角度",
+      "french": "INCLINAISON PROCHE"
+    },
+    "camFirstPersonForward": {
+      "english": "FIRST PERSON FORWARD",
+      "spanish": "AVANCE EN PRIMERA PERSONA",
+      "japanese": "一人称の前方位置",
+      "french": "AVANCE PREMIÈRE PERSONNE"
+    },
+    "camFirstPersonHeight": {
+      "english": "FIRST PERSON HEIGHT",
+      "spanish": "ALTURA EN PRIMERA PERSONA",
+      "japanese": "一人称の高さ",
+      "french": "HAUTEUR PREMIÈRE PERSONNE"
+    },
+    "camFirstPersonDamping": {
+      "english": "FIRST PERSON DAMPING",
+      "spanish": "AMORTIGUACIÓN EN PRIMERA PERSONA",
+      "japanese": "一人称の減衰",
+      "french": "AMORTISSEMENT PREMIÈRE PERSONNE"
+    },
+    "debugTabWeather": {
+      "english": "DEBUG — WEATHER",
+      "spanish": "DEPURACIÓN — CLIMA",
+      "japanese": "デバッグ — 天候",
+      "french": "DÉBOGAGE — MÉTÉO"
+    },
+    "rainIntensity": {
+      "english": "RAIN INTENSITY",
+      "spanish": "INTENSIDAD DE LLUVIA",
+      "japanese": "雨の強さ",
+      "french": "INTENSITÉ DE PLUIE"
+    },
+    "rainAmount": {
+      "english": "DROPS PER SECOND",
+      "spanish": "GOTAS POR SEGUNDO",
+      "japanese": "毎秒の雨粒",
+      "french": "GOUTTES PAR SECONDE"
+    },
+    "rainFallSpeed": {
+      "english": "FALL SPEED",
+      "spanish": "VELOCIDAD DE CAÍDA",
+      "japanese": "落下速度",
+      "french": "VITESSE DE CHUTE"
+    },
+    "rainDropSize": {
+      "english": "DROP SIZE",
+      "spanish": "TAMAÑO DE GOTA",
+      "japanese": "雨粒の大きさ",
+      "french": "TAILLE DES GOUTTES"
+    },
+    "rainStreak": {
+      "english": "STREAK LENGTH",
+      "spanish": "LARGO DEL TRAZO",
+      "japanese": "雨脚の長さ",
+      "french": "LONGUEUR DES TRAÎNÉES"
+    },
+    "rainWind": {
+      "english": "WIND SPEED",
+      "spanish": "VELOCIDAD DEL VIENTO",
+      "japanese": "風速",
+      "french": "VITESSE DU VENT"
+    },
+    "rainWindDirection": {
+      "english": "WIND DIRECTION",
+      "spanish": "DIRECCIÓN DEL VIENTO",
+      "japanese": "風向き",
+      "french": "DIRECTION DU VENT"
+    },
+    "rainArea": {
+      "english": "RAIN RADIUS",
+      "spanish": "RADIO DE LLUVIA",
+      "japanese": "降雨半径",
+      "french": "RAYON DE PLUIE"
+    },
+    "thunderFrequency": {
+      "english": "THUNDER RATE",
+      "spanish": "FRECUENCIA DE TRUENOS",
+      "japanese": "雷の頻度",
+      "french": "FRÉQUENCE DU TONNERRE"
+    },
+    "thunderFlash": {
+      "english": "FLASH STRENGTH",
+      "spanish": "FUERZA DEL DESTELLO",
+      "japanese": "閃光の強さ",
+      "french": "FORCE DE L'ÉCLAIR"
+    },
+    "debugTabDistanceFog": {
+      "english": "DEBUG — FOG",
+      "spanish": "DEPURACIÓN — NIEBLA",
+      "japanese": "デバッグ — 霧",
+      "french": "DÉBOGAGE — BROUILLARD"
+    },
+    "fogIntensity": {
+      "english": "FOG INTENSITY",
+      "spanish": "INTENSIDAD DE NIEBLA",
+      "japanese": "霧の強さ",
+      "french": "INTENSITÉ DU BROUILLARD"
+    },
+    "fogStart": {
+      "english": "FOG START",
+      "spanish": "INICIO DE NIEBLA",
+      "japanese": "霧の開始距離",
+      "french": "DÉBUT DU BROUILLARD"
+    },
+    "fogEnd": {
+      "english": "FOG END",
+      "spanish": "FIN DE NIEBLA",
+      "japanese": "霧の終了距離",
+      "french": "FIN DU BROUILLARD"
+    },
+    "fogDensity": {
+      "english": "FOG THICKNESS",
+      "spanish": "ESPESOR DE NIEBLA",
+      "japanese": "霧の濃さ",
+      "french": "ÉPAISSEUR DU BROUILLARD"
+    },
+    "fogSkyAmount": {
+      "english": "SKY FOG",
+      "spanish": "NIEBLA EN EL CIELO",
+      "japanese": "空の霧",
+      "french": "BROUILLARD DU CIEL"
+    },
+    "fogHeightFalloff": {
+      "english": "HEIGHT FALLOFF",
+      "spanish": "ATENUACIÓN POR ALTURA",
+      "japanese": "高さによる減衰",
+      "french": "ATTÉNUATION EN HAUTEUR"
+    },
+    "farGlitchStart": {
+      "english": "GLITCH START",
+      "spanish": "INICIO DEL GLITCH",
+      "japanese": "グリッチの開始距離",
+      "french": "DÉBUT DU GLITCH"
+    },
+    "farGlitchStrength": {
+      "english": "GLITCH STRENGTH",
+      "spanish": "FUERZA DEL GLITCH",
+      "japanese": "グリッチの強さ",
+      "french": "FORCE DU GLITCH"
+    },
+    "farGlitchRate": {
+      "english": "GLITCH RATE",
+      "spanish": "FRECUENCIA DEL GLITCH",
+      "japanese": "グリッチの頻度",
+      "french": "FRÉQUENCE DU GLITCH"
+    },
+    "debugTabSpeedLines": {
+      "english": "DEBUG — SPEED LINES",
+      "spanish": "DEPURACIÓN — LÍNEAS DE VELOCIDAD",
+      "japanese": "デバッグ — 集中線",
+      "french": "DÉBOGAGE — LIGNES DE VITESSE"
+    },
+    "speedLinesIntensity": {
+      "english": "LINES INTENSITY",
+      "spanish": "INTENSIDAD DE LÍNEAS",
+      "japanese": "集中線の強さ",
+      "french": "INTENSITÉ DES LIGNES"
+    },
+    "speedLinesStart": {
+      "english": "START SPEED",
+      "spanish": "VELOCIDAD DE INICIO",
+      "japanese": "開始速度",
+      "french": "VITESSE DE DÉBUT"
+    },
+    "speedLinesFull": {
+      "english": "FULL SPEED",
+      "spanish": "VELOCIDAD PLENA",
+      "japanese": "最大速度",
+      "french": "VITESSE PLEINE"
+    },
+    "speedLinesDensity": {
+      "english": "LINE DENSITY",
+      "spanish": "DENSIDAD DE LÍNEAS",
+      "japanese": "線の密度",
+      "french": "DENSITÉ DES LIGNES"
+    },
+    "speedLinesWidth": {
+      "english": "LINE WIDTH",
+      "spanish": "GROSOR DE LÍNEA",
+      "japanese": "線の太さ",
+      "french": "LARGEUR DES LIGNES"
+    },
+    "speedLinesInnerMax": {
+      "english": "CLEAR RADIUS (SLOW)",
+      "spanish": "RADIO LIBRE (LENTO)",
+      "japanese": "中央の空き（低速）",
+      "french": "RAYON LIBRE (LENT)"
+    },
+    "speedLinesInnerMin": {
+      "english": "CLEAR RADIUS (FAST)",
+      "spanish": "RADIO LIBRE (RÁPIDO)",
+      "japanese": "中央の空き（高速）",
+      "french": "RAYON LIBRE (RAPIDE)"
+    },
+    "speedLinesFlicker": {
+      "english": "FLICKER RATE",
+      "spanish": "FRECUENCIA DE PARPADEO",
+      "japanese": "ちらつきの頻度",
+      "french": "FRÉQUENCE DE SCINTILLEMENT"
+    },
+    "speedLinesResponse": {
+      "english": "RESPONSE",
+      "spanish": "RESPUESTA",
+      "japanese": "反応速度",
+      "french": "RÉACTIVITÉ"
+    },
+    "debugTabVhs": {
+      "english": "DEBUG — VHS TAPE",
+      "spanish": "DEPURACIÓN — CINTA VHS",
+      "japanese": "デバッグ — VHSテープ",
+      "french": "DÉBOGAGE — CASSETTE VHS"
+    },
+    "vhsIntensity": {
+      "english": "TAPE INTENSITY",
+      "spanish": "INTENSIDAD DE CINTA",
+      "japanese": "テープの強さ",
+      "french": "INTENSITÉ DE LA CASSETTE"
+    },
+    "vhsChromaBleed": {
+      "english": "COLOR BLEED",
+      "spanish": "SANGRADO DE COLOR",
+      "japanese": "色にじみ",
+      "french": "BAVURE DES COULEURS"
+    },
+    "vhsChromaLag": {
+      "english": "COLOR LAG",
+      "spanish": "RETRASO DE COLOR",
+      "japanese": "色ずれ",
+      "french": "DÉCALAGE DES COULEURS"
+    },
+    "vhsJitter": {
+      "english": "LINE JITTER",
+      "spanish": "TEMBLOR DE LÍNEAS",
+      "japanese": "走査線のゆれ",
+      "french": "TREMBLEMENT DES LIGNES"
+    },
+    "vhsTracking": {
+      "english": "TRACKING",
+      "spanish": "TRACKING",
+      "japanese": "トラッキング",
+      "french": "TRACKING"
+    },
+    "vhsNoise": {
+      "english": "TAPE NOISE",
+      "spanish": "RUIDO DE CINTA",
+      "japanese": "テープノイズ",
+      "french": "BRUIT DE BANDE"
+    },
+    "vhsScanlines": {
+      "english": "SCANLINES",
+      "spanish": "LÍNEAS DE BARRIDO",
+      "japanese": "走査線",
+      "french": "LIGNES DE BALAYAGE"
+    },
+    "vhsWash": {
+      "english": "WASHED OUT",
+      "spanish": "DESLAVADO",
+      "japanese": "色あせ",
+      "french": "DÉLAVAGE"
+    },
+    "vhsVignette": {
+      "english": "VIGNETTE",
+      "spanish": "VIÑETA",
+      "japanese": "ビネット",
+      "french": "VIGNETTAGE"
+    },
+    "debugTabPsx": {
+      "english": "DEBUG — PSX LOOK",
+      "spanish": "DEPURACIÓN — ESTILO PSX",
+      "japanese": "デバッグ — PSX風",
+      "french": "DÉBOGAGE — STYLE PSX"
+    },
+    "psxIntensity": {
+      "english": "PSX INTENSITY",
+      "spanish": "INTENSIDAD PSX",
+      "japanese": "PSXの強さ",
+      "french": "INTENSITÉ PSX"
+    },
+    "psxResolution": {
+      "english": "RESOLUTION (ROWS)",
+      "spanish": "RESOLUCIÓN (FILAS)",
+      "japanese": "解像度（行）",
+      "french": "RÉSOLUTION (LIGNES)"
+    },
+    "psxColorBits": {
+      "english": "COLOR BITS",
+      "spanish": "BITS DE COLOR",
+      "japanese": "色深度（ビット）",
+      "french": "BITS DE COULEUR"
+    },
+    "psxDither": {
+      "english": "DITHER",
+      "spanish": "TRAMADO",
+      "japanese": "ディザ",
+      "french": "TRAMAGE"
+    },
+    "psxWobble": {
+      "english": "VERTEX WOBBLE",
+      "spanish": "TEMBLOR DE VÉRTICES",
+      "japanese": "頂点のゆれ",
+      "french": "TREMBLEMENT DES SOMMETS"
+    },
+    "psxWobbleBlock": {
+      "english": "POLYGON SIZE",
+      "spanish": "TAMAÑO DE POLÍGONO",
+      "japanese": "ポリゴンの大きさ",
+      "french": "TAILLE DES POLYGONES"
+    },
+    "psxSwim": {
+      "english": "TEXTURE SWIM",
+      "spanish": "DERIVA DE TEXTURAS",
+      "japanese": "テクスチャのゆがみ",
+      "french": "DÉRIVE DES TEXTURES"
+    },
+    "psxJitterRate": {
+      "english": "JITTER RATE",
+      "spanish": "FRECUENCIA DE TEMBLOR",
+      "japanese": "ゆれの頻度",
+      "french": "FRÉQUENCE DU TREMBLEMENT"
+    },
+    "psxDepthFalloff": {
+      "english": "DEPTH FALLOFF",
+      "spanish": "ATENUACIÓN POR DISTANCIA",
+      "japanese": "距離による減衰",
+      "french": "ATTÉNUATION PAR DISTANCE"
+    },
+    "video": {
+      "english": "VIDEO",
+      "spanish": "VÍDEO",
+      "japanese": "映像",
+      "french": "VIDÉO"
+    },
+    "filterPsx": {
+      "english": "PSX LOOK",
+      "spanish": "ESTILO PSX",
+      "japanese": "PSX風",
+      "french": "STYLE PSX"
+    },
+    "filterVhs": {
+      "english": "VHS TAPE",
+      "spanish": "CINTA VHS",
+      "japanese": "VHSテープ",
+      "french": "CASSETTE VHS"
+    },
+    "filterCrt": {
+      "english": "CRT SCREEN",
+      "spanish": "PANTALLA CRT",
+      "japanese": "ブラウン管",
+      "french": "ÉCRAN CRT"
+    },
+    "debugTabCrt": {
+      "english": "DEBUG — CRT SCREEN",
+      "spanish": "DEPURACIÓN — PANTALLA CRT",
+      "japanese": "デバッグ — ブラウン管",
+      "french": "DÉBOGAGE — ÉCRAN CRT"
+    },
+    "crtIntensity": {
+      "english": "CRT INTENSITY",
+      "spanish": "INTENSIDAD CRT",
+      "japanese": "ブラウン管の強さ",
+      "french": "INTENSITÉ CRT"
+    },
+    "crtCurvature": {
+      "english": "CURVATURE",
+      "spanish": "CURVATURA",
+      "japanese": "画面の湾曲",
+      "french": "COURBURE"
+    },
+    "crtCorners": {
+      "english": "CORNER RADIUS",
+      "spanish": "RADIO DE ESQUINAS",
+      "japanese": "角の丸み",
+      "french": "RAYON DES COINS"
+    },
+    "crtScanlines": {
+      "english": "SCANLINES",
+      "spanish": "LÍNEAS DE BARRIDO",
+      "japanese": "走査線",
+      "french": "LIGNES DE BALAYAGE"
+    },
+    "crtBleed": {
+      "english": "PHOSPHOR BLEED",
+      "spanish": "SANGRADO DE FÓSFORO",
+      "japanese": "蛍光体のにじみ",
+      "french": "BAVURE DU PHOSPHORE"
+    },
+    "crtGlow": {
+      "english": "HALATION",
+      "spanish": "HALO",
+      "japanese": "ハレーション",
+      "french": "HALO"
+    },
+    "crtMask": {
+      "english": "APERTURE GRILLE",
+      "spanish": "REJILLA DE APERTURA",
+      "japanese": "アパーチャーグリル",
+      "french": "GRILLE D'OUVERTURE"
+    },
+    "crtConvergence": {
+      "english": "CONVERGENCE",
+      "spanish": "CONVERGENCIA",
+      "japanese": "色ずれ",
+      "french": "CONVERGENCE"
+    },
+    "crtFlicker": {
+      "english": "REFRESH FLICKER",
+      "spanish": "PARPADEO",
+      "japanese": "ちらつき",
+      "french": "SCINTILLEMENT"
+    },
+    "debugTabPoliceFleet": {
+      "english": "DEBUG — POLICE FLEET",
+      "spanish": "DEPURACIÓN — FLOTA POLICIAL",
+      "japanese": "デバッグ — 警察の台数",
+      "french": "DÉBOGAGE — FLOTTE DE POLICE"
+    },
+    "debugTabPoliceChase": {
+      "english": "DEBUG — POLICE CHASE",
+      "spanish": "DEPURACIÓN — PERSECUCIÓN",
+      "japanese": "デバッグ — 追跡",
+      "french": "DÉBOGAGE — POURSUITE"
+    },
+    "policePatrolCount": {
+      "english": "PATROL COUNT",
+      "spanish": "NÚMERO DE PATRULLAS",
+      "japanese": "パトカーの数",
+      "french": "NOMBRE DE PATROUILLES"
+    },
+    "policeSpawnMin": {
+      "english": "SPAWN MIN",
+      "spanish": "APARICIÓN MÍN",
+      "japanese": "出現距離 最小",
+      "french": "APPARITION MIN"
+    },
+    "policeSpawnMax": {
+      "english": "SPAWN MAX",
+      "spanish": "APARICIÓN MÁX",
+      "japanese": "出現距離 最大",
+      "french": "APPARITION MAX"
+    },
+    "policeDespawn": {
+      "english": "DESPAWN DISTANCE",
+      "spanish": "DISTANCIA DE RETIRADA",
+      "japanese": "消滅距離",
+      "french": "DISTANCE DE RETRAIT"
+    },
+    "policeDetection": {
+      "english": "DETECTION RANGE",
+      "spanish": "ALCANCE DE DETECCIÓN",
+      "japanese": "発見距離",
+      "french": "PORTÉE DE DÉTECTION"
+    },
+    "policeLoseSight": {
+      "english": "LOSE SIGHT",
+      "spanish": "PERDER DE VISTA",
+      "japanese": "見失う時間",
+      "french": "PERTE DE VUE"
+    },
+    "policeSearchTime": {
+      "english": "SEARCH TIME",
+      "spanish": "TIEMPO DE BÚSQUEDA",
+      "japanese": "捜索時間",
+      "french": "TEMPS DE RECHERCHE"
+    },
+    "policePatrolSpeed": {
+      "english": "PATROL SPEED",
+      "spanish": "VELOCIDAD DE PATRULLA",
+      "japanese": "巡回速度",
+      "french": "VITESSE DE PATROUILLE"
+    },
+    "policeChaseSpeed": {
+      "english": "CHASE SPEED",
+      "spanish": "VELOCIDAD DE PERSECUCIÓN",
+      "japanese": "追跡速度",
+      "french": "VITESSE DE POURSUITE"
+    },
+    "policeCornerSpeed": {
+      "english": "CORNER SPEED",
+      "spanish": "VELOCIDAD EN CURVA",
+      "japanese": "コーナー速度",
+      "french": "VITESSE EN VIRAGE"
+    },
+    "policeRamSpeed": {
+      "english": "RAM SPEED",
+      "spanish": "VELOCIDAD DE EMBESTIDA",
+      "japanese": "突撃速度",
+      "french": "VITESSE DE PERCUSSION"
+    },
+    "policeRamBackoff": {
+      "english": "RAM BACK-OFF",
+      "spanish": "RETROCESO DE EMBESTIDA",
+      "japanese": "突撃の後退距離",
+      "french": "RECUL DE PERCUSSION"
+    },
+    "debugTabLevel": {
+      "english": "DEBUG — LEVEL",
+      "spanish": "DEPURACIÓN — NIVEL",
+      "japanese": "デバッグ — レベル",
+      "french": "DÉBOGAGE — NIVEAU"
+    },
+    "objectiveReachSpeed": {
+      "english": "REACH SPEED",
+      "spanish": "ALCANZAR VELOCIDAD",
+      "japanese": "速度到達",
+      "french": "ATTEINDRE LA VITESSE"
+    },
+    "objectiveEscapePolice": {
+      "english": "ESCAPE POLICE",
+      "spanish": "ESCAPAR DE LA POLICÍA",
+      "japanese": "警察から逃げる",
+      "french": "SEMER LA POLICE"
+    },
+    "objectiveGoTo": {
+      "english": "GO TO",
+      "spanish": "IR A",
+      "japanese": "目的地へ",
+      "french": "ALLER À"
+    },
+    "objectiveSurvive": {
+      "english": "SURVIVE",
+      "spanish": "SOBREVIVIR",
+      "japanese": "生き延びる",
+      "french": "SURVIVRE"
+    },
+    "objectiveChaseCar": {
+      "english": "CHASE",
+      "spanish": "PERSEGUIR",
+      "japanese": "追跡",
+      "french": "POURSUIVRE"
+    },
+    "objectiveTimeLimit": {
+      "english": "TIME LIMIT",
+      "spanish": "TIEMPO LÍMITE",
+      "japanese": "制限時間",
+      "french": "TEMPS LIMITE"
+    },
+    "objectiveHoldFor": {
+      "english": "HOLD FOR",
+      "spanish": "MANTENER",
+      "japanese": "維持",
+      "french": "MAINTENIR"
+    },
+    "objectiveDestroy": {
+      "english": "DESTROY",
+      "spanish": "DESTRUIR",
+      "japanese": "破壊",
+      "french": "DÉTRUIRE"
+    },
+    "objectiveCollect": {
+      "english": "COLLECT",
+      "spanish": "RECOGER",
+      "japanese": "回収",
+      "french": "RAMASSER"
+    },
+    "objectiveJump": {
+      "english": "JUMP",
+      "spanish": "SALTO",
+      "japanese": "ジャンプ",
+      "french": "SAUT"
+    },
+    "debugTabFeatures": {
+      "english": "FEATURES",
+      "spanish": "ELEMENTOS",
+      "japanese": "ギミック",
+      "french": "ÉLÉMENTS"
+    },
+    "featureSpacing": {
+      "english": "FEATURE SPACING",
+      "spanish": "SEPARACIÓN",
+      "japanese": "ギミック間隔",
+      "french": "ESPACEMENT"
+    },
+    "jumpWidth": {
+      "english": "RAMP WIDTH",
+      "spanish": "ANCHO DE RAMPA",
+      "japanese": "ランプ幅",
+      "french": "LARGEUR DE RAMPE"
+    },
+    "jumpLength": {
+      "english": "RAMP LENGTH",
+      "spanish": "LARGO DE RAMPA",
+      "japanese": "ランプ長",
+      "french": "LONGUEUR DE RAMPE"
+    },
+    "jumpAngle": {
+      "english": "RAMP ANGLE",
+      "spanish": "ÁNGULO DE RAMPA",
+      "japanese": "ランプ角度",
+      "french": "ANGLE DE RAMPE"
+    },
+    "jumpAirDistance": {
+      "english": "AIR PER SPEED",
+      "spanish": "VUELO POR VELOCIDAD",
+      "japanese": "速度あたり飛距離",
+      "french": "VOL PAR VITESSE"
+    },
+    "jumpMaxAir": {
+      "english": "MAX AIR DISTANCE",
+      "spanish": "VUELO MÁXIMO",
+      "japanese": "最大飛距離",
+      "french": "VOL MAXIMUM"
+    },
+    "jumpAirControl": {
+      "english": "AIR CONTROL",
+      "spanish": "CONTROL AÉREO",
+      "japanese": "空中操作",
+      "french": "CONTRÔLE AÉRIEN"
+    },
+    "jumpSideHitLoss": {
+      "english": "SIDE HIT LOSS",
+      "spanish": "PÉRDIDA LATERAL",
+      "japanese": "側面衝突ロス",
+      "french": "PERTE LATÉRALE"
+    },
+    "jumpLandingClearance": {
+      "english": "LANDING CLEARANCE",
+      "spanish": "ZONA DE ATERRIZAJE",
+      "japanese": "着地クリアランス",
+      "french": "DÉGAGEMENT D'ATTERRISSAGE"
+    },
+    "loopRadius": {
+      "english": "LOOP RADIUS",
+      "spanish": "RADIO DEL LOOP",
+      "japanese": "ループ半径",
+      "french": "RAYON DU LOOPING"
+    },
+    "loopFallGravity": {
+      "english": "FALL GRAVITY",
+      "spanish": "GRAVEDAD DE CAÍDA",
+      "japanese": "落下重力",
+      "french": "GRAVITÉ DE CHUTE"
+    },
+    "loopFallLoss": {
+      "english": "FALL SPEED LOSS",
+      "spanish": "PÉRDIDA POR CAÍDA",
+      "japanese": "落下速度ロス",
+      "french": "PERTE DE CHUTE"
+    },
+    "loopGateHeadroom": {
+      "english": "LOOP SPEED MARGIN",
+      "spanish": "MARGEN DEL LOOP",
+      "japanese": "ループ速度余裕",
+      "french": "MARGE DU LOOPING"
+    },
+    "loopDrift": {
+      "english": "LOOP DRIFT",
+      "spanish": "DERIVA DEL LOOP",
+      "japanese": "ループ横ずれ",
+      "french": "DÉRIVE DU LOOPING"
+    },
+    "loopCarry": {
+      "english": "LOOP CARRY",
+      "spanish": "AVANCE DEL LOOP",
+      "japanese": "ループ前進",
+      "french": "AVANCÉE DU LOOPING"
+    },
+    "loopExitYaw": {
+      "english": "LOOP EXIT YAW",
+      "spanish": "GIRO DE SALIDA",
+      "japanese": "ループ出口角",
+      "french": "ANGLE DE SORTIE"
+    },
+    "loopTurns": {
+      "english": "LOOP TURNS",
+      "spanish": "VUELTAS DEL LOOP",
+      "japanese": "ループ回転数",
+      "french": "TOURS DU LOOPING"
+    },
+    "tubeRadius": {
+      "english": "TUBE RADIUS",
+      "spanish": "RADIO DEL TUBO",
+      "japanese": "チューブ半径",
+      "french": "RAYON DU TUBE"
+    },
+    "tubeBand": {
+      "english": "TUBE BAND",
+      "spanish": "BANDA DEL TUBO",
+      "japanese": "チューブ可動域",
+      "french": "BANDE DU TUBE"
+    },
+    "tubeCurl": {
+      "english": "TUBE CURL",
+      "spanish": "CURVATURA DEL TUBO",
+      "japanese": "チューブ巻き込み",
+      "french": "COURBURE DU TUBE"
+    },
+    "gameOver": {
+      "english": "GAME OVER",
+      "spanish": "FIN DE LA PARTIDA",
+      "japanese": "ゲームオーバー",
+      "french": "PARTIE TERMINÉE"
+    },
+    "retryPrompt": {
+      "english": "RETRY?",
+      "spanish": "¿REINTENTAR?",
+      "japanese": "リトライしますか？",
+      "french": "RÉESSAYER ?"
+    },
+    "loseCaught": {
+      "english": "CAUGHT BY THE PATROL",
+      "spanish": "ATRAPADO POR LA PATRULLA",
+      "japanese": "パトロールに捕まった",
+      "french": "RATTRAPÉ PAR LA PATROUILLE"
+    },
+    "loseTimeOut": {
+      "english": "TIME RAN OUT",
+      "spanish": "SE ACABÓ EL TIEMPO",
+      "japanese": "時間切れ",
+      "french": "TEMPS ÉCOULÉ"
+    },
+    "loseStalled": {
+      "english": "OUT OF SPEED",
+      "spanish": "SIN VELOCIDAD",
+      "japanese": "速度切れ",
+      "french": "PLUS DE VITESSE"
+    },
+    "missionFailed": {
+      "english": "MISSION FAILED",
+      "spanish": "MISIÓN FALLIDA",
+      "japanese": "ミッション失敗",
+      "french": "MISSION ÉCHOUÉE"
+    },
+    "loseMissedRamp": {
+      "english": "MISSED THE ESCAPE RAMP",
+      "spanish": "RAMPA DE ESCAPE FALLADA",
+      "japanese": "脱出ランプを逃した",
+      "french": "RAMPE D'ÉVASION MANQUÉE"
+    },
+    "loseTooSlow": {
+      "english": "LIGHT SPEED NOT REACHED",
+      "spanish": "VELOCIDAD LUZ NO ALCANZADA",
+      "japanese": "ライトスピード未達",
+      "french": "VITESSE LUMIÈRE NON ATTEINTE"
+    },
+    "loseObjectivesIncomplete": {
+      "english": "OBJECTIVES INCOMPLETE",
+      "spanish": "OBJETIVOS INCOMPLETOS",
+      "japanese": "目標未達成",
+      "french": "OBJECTIFS INCOMPLETS"
+    },
+    "hudDistanceToEnd": {
+      "english": "END  {0} KM",
+      "spanish": "FIN  {0} KM",
+      "japanese": "ゴールまで  {0} KM",
+      "french": "FIN  {0} KM"
+    },
+    "loseDestroyed": {
+      "english": "SHIP DESTROYED",
+      "spanish": "NAVE DESTRUIDA",
+      "japanese": "機体大破",
+      "french": "VAISSEAU DÉTRUIT"
+    },
+    "pressAnyButton": {
+      "english": "PRESS ANY BUTTON",
+      "spanish": "PULSA CUALQUIER BOTÓN",
+      "japanese": "ボタンを押してください",
+      "french": "APPUYEZ SUR UN BOUTON"
+    },
+    "store": {
+      "english": "STORE",
+      "spanish": "TIENDA",
+      "japanese": "ストア",
+      "french": "BOUTIQUE"
+    },
+    "storeSectionCar": {
+      "english": "STORE — CAR",
+      "spanish": "TIENDA — COCHE",
+      "japanese": "ストア — 車",
+      "french": "BOUTIQUE — VOITURE"
+    },
+    "storeSectionShip": {
+      "english": "STORE — SHIP",
+      "spanish": "TIENDA — NAVE",
+      "japanese": "ストア — 機体",
+      "french": "BOUTIQUE — VAISSEAU"
+    },
+    "storeSectionCharacter": {
+      "english": "STORE — CHARACTER",
+      "spanish": "TIENDA — PERSONAJE",
+      "japanese": "ストア — キャラクター",
+      "french": "BOUTIQUE — PERSONNAGE"
+    },
+    "storeModel": {
+      "english": "MODEL",
+      "spanish": "MODELO",
+      "japanese": "モデル",
+      "french": "MODÈLE"
+    },
+    "startMission": {
+      "english": "START MISSION",
+      "spanish": "INICIAR MISIÓN",
+      "japanese": "ミッション開始",
+      "french": "LANCER LA MISSION"
+    },
+    "max": {
+      "english": "MAX",
+      "spanish": "MÁX",
+      "japanese": "最大",
+      "french": "MAX"
+    },
+    "hintBuy": {
+      "english": "BUY",
+      "spanish": "COMPRAR",
+      "japanese": "購入",
+      "french": "ACHETER"
+    },
+    "hintRotate": {
+      "english": "ROTATE",
+      "spanish": "GIRAR",
+      "japanese": "回転",
+      "french": "PIVOTER"
+    },
+    "hintSection": {
+      "english": "SECTION",
+      "spanish": "SECCIÓN",
+      "japanese": "セクション",
+      "french": "SECTION"
+    },
+    "upgradeSpeed": {
+      "english": "SPEED",
+      "spanish": "VELOCIDAD",
+      "japanese": "スピード",
+      "french": "VITESSE"
+    },
+    "upgradeAcceleration": {
+      "english": "ACCELERATION",
+      "spanish": "ACELERACIÓN",
+      "japanese": "加速",
+      "french": "ACCÉLÉRATION"
+    },
+    "upgradeWeight": {
+      "english": "WEIGHT",
+      "spanish": "PESO",
+      "japanese": "重量",
+      "french": "POIDS"
+    },
+    "upgradeResistance": {
+      "english": "RESISTANCE",
+      "spanish": "RESISTENCIA",
+      "japanese": "耐久",
+      "french": "RÉSISTANCE"
+    },
+    "upgradeHandling": {
+      "english": "HANDLING",
+      "spanish": "MANEJO",
+      "japanese": "ハンドリング",
+      "french": "MANIABILITÉ"
+    },
+    "upgradeDashPower": {
+      "english": "DASH POWER",
+      "spanish": "POTENCIA DASH",
+      "japanese": "ダッシュ力",
+      "french": "PUISSANCE DASH"
+    },
+    "upgradeSpeedMultiplier": {
+      "english": "SPEED MULTIPLIER",
+      "spanish": "MULT. VELOCIDAD",
+      "japanese": "スピード倍率",
+      "french": "MULT. VITESSE"
+    },
+    "upgradeJumpStrength": {
+      "english": "JUMP STRENGTH",
+      "spanish": "FUERZA DE SALTO",
+      "japanese": "ジャンプ力",
+      "french": "FORCE DE SAUT"
+    },
+    "upgradeHackingSpeed": {
+      "english": "HACKING SPEED",
+      "spanish": "VEL. DE HACKEO",
+      "japanese": "ハッキング速度",
+      "french": "VITESSE PIRATAGE"
+    },
+    "upgradeHackValue": {
+      "english": "HACK VALUE",
+      "spanish": "VALOR DE HACKEO",
+      "japanese": "ハッキング価値",
+      "french": "VALEUR PIRATAGE"
+    },
+    "upgradeStrength": {
+      "english": "STRENGTH",
+      "spanish": "FUERZA",
+      "japanese": "筋力",
+      "french": "FORCE"
+    },
+    "upgradeRange": {
+      "english": "RANGE",
+      "spanish": "ALCANCE",
+      "japanese": "射程",
+      "french": "PORTÉE"
+    },
+    "upgradeAccuracy": {
+      "english": "ACCURACY",
+      "spanish": "PRECISIÓN",
+      "japanese": "命中率",
+      "french": "PRÉCISION"
+    },
+    "missions": {
+      "english": "MISSIONS",
+      "spanish": "MISIONES",
+      "japanese": "ミッション",
+      "french": "MISSIONS"
+    },
+    "missionLabel": {
+      "english": "MISSION {0} — {1}",
+      "spanish": "MISIÓN {0} — {1}",
+      "japanese": "ミッション{0} — {1}",
+      "french": "MISSION {0} — {1}"
+    },
+    "missionNext": {
+      "english": "NEXT",
+      "spanish": "SIGUIENTE",
+      "japanese": "次",
+      "french": "SUIVANTE"
+    },
+    "startMissionTarget": {
+      "english": "START MISSION — {0}: {1}",
+      "spanish": "INICIAR MISIÓN — {0}: {1}",
+      "japanese": "ミッション開始 — {0}: {1}",
+      "french": "LANCER LA MISSION — {0} : {1}"
+    },
+    "requiresMoney": {
+      "english": "REQUIRES: {0}",
+      "spanish": "REQUIERE: {0}",
+      "japanese": "必要: {0}",
+      "french": "REQUIS : {0}"
+    },
+    "requiresUpgrade": {
+      "english": "REQUIRES: {0} LV {1}",
+      "spanish": "REQUIERE: {0} NV {1}",
+      "japanese": "必要: {0} LV{1}",
+      "french": "REQUIS : {0} NIV {1}"
+    },
+    "comingSoon": {
+      "english": "COMING SOON",
+      "spanish": "PRÓXIMAMENTE",
+      "japanese": "近日公開",
+      "french": "BIENTÔT DISPONIBLE"
+    },
+    "hintPlay": {
+      "english": "PLAY",
+      "spanish": "JUGAR",
+      "japanese": "プレイ",
+      "french": "JOUER"
+    },
+    "deleteProgress": {
+      "english": "DELETE CAMPAIGN PROGRESS",
+      "spanish": "BORRAR PROGRESO DE CAMPAÑA",
+      "japanese": "キャンペーン進行を削除",
+      "french": "EFFACER LA PROGRESSION"
+    },
+    "deleteProgressQuestion": {
+      "english": "ERASE ALL CAMPAIGN PROGRESS?",
+      "spanish": "¿BORRAR TODO EL PROGRESO?",
+      "japanese": "進行状況をすべて消去しますか？",
+      "french": "EFFACER TOUTE LA PROGRESSION ?"
+    },
+    "deleteProgressWarning": {
+      "english": "MISSIONS, WALLET AND UPGRADES WILL BE LOST. THIS CANNOT BE UNDONE.",
+      "spanish": "SE PERDERÁN MISIONES, DINERO Y MEJORAS. NO SE PUEDE DESHACER.",
+      "japanese": "ミッション・所持金・アップグレードが失われます。元に戻せません。",
+      "french": "MISSIONS, ARGENT ET AMÉLIORATIONS SERONT PERDUS. IRRÉVERSIBLE."
+    },
+    "controls": {
+      "english": "CONTROLS",
+      "spanish": "CONTROLES",
+      "japanese": "操作設定",
+      "french": "COMMANDES"
+    },
+    "controlsSectionShip": {
+      "english": "SHIP",
+      "spanish": "NAVE",
+      "japanese": "シップ",
+      "french": "VAISSEAU"
+    },
+    "controlsSectionCar": {
+      "english": "CAR",
+      "spanish": "COCHE",
+      "japanese": "クルマ",
+      "french": "VOITURE"
+    },
+    "controlsSectionGeneral": {
+      "english": "GENERAL",
+      "spanish": "GENERAL",
+      "japanese": "全般",
+      "french": "GÉNÉRAL"
+    },
+    "pressKey": {
+      "english": "PRESS A KEY…",
+      "spanish": "PULSA UNA TECLA…",
+      "japanese": "キーを押してください…",
+      "french": "APPUYEZ SUR UNE TOUCHE…"
+    },
+    "pressButton": {
+      "english": "PRESS A BUTTON…",
+      "spanish": "PULSA UN BOTÓN…",
+      "japanese": "ボタンを押してください…",
+      "french": "APPUYEZ SUR UN BOUTON…"
+    },
+    "swappedWith": {
+      "english": "SWAPPED WITH {0}",
+      "spanish": "INTERCAMBIADO CON {0}",
+      "japanese": "{0} と入れ替えました",
+      "french": "ÉCHANGÉ AVEC {0}"
+    },
+    "restoreDefaults": {
+      "english": "RESTORE DEFAULTS",
+      "spanish": "RESTAURAR VALORES",
+      "japanese": "初期設定に戻す",
+      "french": "RÉTABLIR PAR DÉFAUT"
+    },
+    "defaultsRestored": {
+      "english": "DEFAULTS RESTORED",
+      "spanish": "VALORES RESTAURADOS",
+      "japanese": "初期設定に戻しました",
+      "french": "VALEURS PAR DÉFAUT RÉTABLIES"
+    },
+    "noGamepad": {
+      "english": "NO GAMEPAD CONNECTED",
+      "spanish": "NO HAY MANDO CONECTADO",
+      "japanese": "ゲームパッドが接続されていません",
+      "french": "AUCUNE MANETTE CONNECTÉE"
+    },
+    "hintRebind": {
+      "english": "REBIND",
+      "spanish": "REASIGNAR",
+      "japanese": "再割り当て",
+      "french": "RÉASSIGNER"
+    },
+    "hintDevice": {
+      "english": "DEVICE",
+      "spanish": "DISPOSITIVO",
+      "japanese": "デバイス",
+      "french": "APPAREIL"
+    },
+    "actionSteerLeft": {
+      "english": "STEER LEFT",
+      "spanish": "GIRAR IZQUIERDA",
+      "japanese": "左に操舵",
+      "french": "BRAQUER À GAUCHE"
+    },
+    "actionSteerRight": {
+      "english": "STEER RIGHT",
+      "spanish": "GIRAR DERECHA",
+      "japanese": "右に操舵",
+      "french": "BRAQUER À DROITE"
+    },
+    "actionDashLeft": {
+      "english": "DASH LEFT",
+      "spanish": "IMPULSO IZQUIERDA",
+      "japanese": "左ダッシュ",
+      "french": "DASH À GAUCHE"
+    },
+    "actionDashRight": {
+      "english": "DASH RIGHT",
+      "spanish": "IMPULSO DERECHA",
+      "japanese": "右ダッシュ",
+      "french": "DASH À DROITE"
+    },
+    "dashSinglePress": {
+      "english": "SINGLE-PRESS DASH",
+      "spanish": "DASH DE UN TOQUE",
+      "japanese": "ワンプッシュダッシュ",
+      "french": "DASH EN UN APPUI"
+    },
+    "actionAccelerate": {
+      "english": "ACCELERATE",
+      "spanish": "ACELERAR",
+      "japanese": "アクセル",
+      "french": "ACCÉLÉRER"
+    },
+    "actionBrake": {
+      "english": "BRAKE / REVERSE",
+      "spanish": "FRENO / MARCHA ATRÁS",
+      "japanese": "ブレーキ / バック",
+      "french": "FREIN / MARCHE ARRIÈRE"
+    },
+    "qteTooFast": {
+      "english": "TOO FAST!",
+      "spanish": "¡DEMASIADO RÁPIDO!",
+      "japanese": "早すぎ！",
+      "french": "TROP RAPIDE !"
+    },
+    "qteTooLate": {
+      "english": "TOO LATE!",
+      "spanish": "¡DEMASIADO TARDE!",
+      "japanese": "遅すぎ！",
+      "french": "TROP TARD !"
+    },
+    "qteSweet": {
+      "english": "SWEET!",
+      "spanish": "¡GENIAL!",
+      "japanese": "いいね！",
+      "french": "SUPER !"
+    },
+    "qtePerfect": {
+      "english": "PERFECT!",
+      "spanish": "¡PERFECTO!",
+      "japanese": "パーフェクト！",
+      "french": "PARFAIT !"
+    },
+    "customize": {
+      "english": "CUSTOMIZE",
+      "spanish": "PERSONALIZAR",
+      "japanese": "カスタマイズ",
+      "french": "PERSONNALISER"
+    },
+    "adjustColor": {
+      "english": "ADJUST COLOR",
+      "spanish": "AJUSTAR COLOR",
+      "japanese": "カラー調整",
+      "french": "RÉGLER LA COULEUR"
+    },
+    "savePrompt": {
+      "english": "SAVE?",
+      "spanish": "¿GUARDAR?",
+      "japanese": "保存しますか？",
+      "french": "SAUVEGARDER ?"
+    },
+    "revertPrompt": {
+      "english": "REVERT CHANGES?",
+      "spanish": "¿DESHACER CAMBIOS?",
+      "japanese": "変更を元に戻しますか？",
+      "french": "ANNULER LES MODIFICATIONS ?"
+    },
+    "resetDefaultPrompt": {
+      "english": "RESET TO DEFAULT?",
+      "spanish": "¿RESTABLECER POR DEFECTO?",
+      "japanese": "初期設定に戻しますか？",
+      "french": "RÉTABLIR PAR DÉFAUT ?"
+    },
+    "cancel": {
+      "english": "CANCEL",
+      "spanish": "CANCELAR",
+      "japanese": "キャンセル",
+      "french": "ANNULER"
+    },
+    "hintSave": {
+      "english": "SAVE",
+      "spanish": "GUARDAR",
+      "japanese": "保存",
+      "french": "SAUVER"
+    },
+    "hintRevert": {
+      "english": "REVERT",
+      "spanish": "DESHACER",
+      "japanese": "元に戻す",
+      "french": "ANNULER"
+    },
+    "hintDefault": {
+      "english": "DEFAULT",
+      "spanish": "POR DEFECTO",
+      "japanese": "初期設定",
+      "french": "DÉFAUT"
+    },
+    "hintVehicle": {
+      "english": "VEHICLE",
+      "spanish": "VEHÍCULO",
+      "japanese": "車両",
+      "french": "VÉHICULE"
+    },
+    "hintZoom": {
+      "english": "ZOOM",
+      "spanish": "ZOOM",
+      "japanese": "ズーム",
+      "french": "ZOOM"
+    },
+    "hintResetView": {
+      "english": "RESET VIEW",
+      "spanish": "REINICIAR VISTA",
+      "japanese": "視点リセット",
+      "french": "RÉINIT. VUE"
+    },
+    "hintSlider": {
+      "english": "PART",
+      "spanish": "PIEZA",
+      "japanese": "パーツ",
+      "french": "PIÈCE"
+    },
+    "hintHue": {
+      "english": "COLOR",
+      "spanish": "COLOR",
+      "japanese": "カラー",
+      "french": "COULEUR"
+    },
+    "actionBoost": {
+      "english": "BOOST",
+      "spanish": "IMPULSO TURBO",
+      "japanese": "ブースト",
+      "french": "BOOST"
+    },
+    "actionHyperspaceLeft": {
+      "english": "HYPERSPACE (LEFT)",
+      "spanish": "HIPERESPACIO (IZQ.)",
+      "japanese": "ハイパースペース（左）",
+      "french": "HYPERESPACE (GAUCHE)"
+    },
+    "actionHyperspaceRight": {
+      "english": "HYPERSPACE (RIGHT)",
+      "spanish": "HIPERESPACIO (DER.)",
+      "japanese": "ハイパースペース（右）",
+      "french": "HYPERESPACE (DROITE)"
+    },
+    "actionHandbrake": {
+      "english": "HANDBRAKE",
+      "spanish": "FRENO DE MANO",
+      "japanese": "ハンドブレーキ",
+      "french": "FREIN À MAIN"
+    },
+    "actionRespawn": {
+      "english": "RESPAWN",
+      "spanish": "REAPARECER",
+      "japanese": "リスポーン",
+      "french": "RÉAPPARAÎTRE"
+    },
+    "actionCityMap": {
+      "english": "MAP",
+      "spanish": "MAPA",
+      "japanese": "マップ",
+      "french": "CARTE"
+    },
+    "actionRadioPrevious": {
+      "english": "RADIO PREVIOUS",
+      "spanish": "RADIO ANTERIOR",
+      "japanese": "ラジオ 前へ",
+      "french": "RADIO PRÉCÉDENT"
+    },
+    "actionRadioNext": {
+      "english": "RADIO NEXT",
+      "spanish": "RADIO SIGUIENTE",
+      "japanese": "ラジオ 次へ",
+      "french": "RADIO SUIVANT"
+    },
+    "actionCameraCycle": {
+      "english": "CAMERA VIEW",
+      "spanish": "VISTA DE CÁMARA",
+      "japanese": "カメラ視点",
+      "french": "VUE CAMÉRA"
+    },
+    "actionLookBack": {
+      "english": "LOOK BACK",
+      "spanish": "MIRAR ATRÁS",
+      "japanese": "後方を見る",
+      "french": "REGARDER DERRIÈRE"
+    },
+    "actionCameraLeft": {
+      "english": "CAMERA LEFT",
+      "spanish": "CÁMARA IZQUIERDA",
+      "japanese": "カメラ 左",
+      "french": "CAMÉRA GAUCHE"
+    },
+    "actionCameraRight": {
+      "english": "CAMERA RIGHT",
+      "spanish": "CÁMARA DERECHA",
+      "japanese": "カメラ 右",
+      "french": "CAMÉRA DROITE"
+    },
+    "actionCameraUp": {
+      "english": "CAMERA UP",
+      "spanish": "CÁMARA ARRIBA",
+      "japanese": "カメラ 上",
+      "french": "CAMÉRA HAUT"
+    },
+    "actionCameraDown": {
+      "english": "CAMERA DOWN",
+      "spanish": "CÁMARA ABAJO",
+      "japanese": "カメラ 下",
+      "french": "CAMÉRA BAS"
+    },
+    "loading": {
+      "english": "LOADING...",
+      "spanish": "CARGANDO...",
+      "japanese": "ロード中...",
+      "french": "CHARGEMENT..."
+    },
+    "missionBrief": {
+      "english": "MISSION BRIEF",
+      "spanish": "INFORME DE MISIÓN",
+      "japanese": "ミッションブリーフ",
+      "french": "BRIEFING DE MISSION"
+    },
+    "optionalChallenges": {
+      "english": "OPTIONAL CHALLENGES",
+      "spanish": "DESAFÍOS OPCIONALES",
+      "japanese": "追加チャレンジ",
+      "french": "DÉFIS OPTIONNELS"
+    },
+    "reward": {
+      "english": "REWARD",
+      "spanish": "RECOMPENSA",
+      "japanese": "報酬",
+      "french": "RÉCOMPENSE"
+    },
+    "accept": {
+      "english": "ACCEPT",
+      "spanish": "ACEPTAR",
+      "japanese": "承諾",
+      "french": "ACCEPTER"
+    },
+    "challengeBonus": {
+      "english": "BONUS",
+      "spanish": "EXTRA",
+      "japanese": "ボーナス",
+      "french": "BONUS"
+    },
+    "challengeDone": {
+      "english": "DONE",
+      "spanish": "HECHO",
+      "japanese": "完了",
+      "french": "FAIT"
+    },
+    "challengeFailed": {
+      "english": "FAILED",
+      "spanish": "FALLIDO",
+      "japanese": "失敗",
+      "french": "ÉCHOUÉ"
+    },
+    "missionComplete": {
+      "english": "MISSION COMPLETE",
+      "spanish": "MISIÓN COMPLETADA",
+      "japanese": "ミッション完了",
+      "french": "MISSION ACCOMPLIE"
+    },
+    "missionAccomplished": {
+      "english": "MISSION ACCOMPLISHED",
+      "spanish": "MISIÓN CUMPLIDA",
+      "japanese": "ミッション達成",
+      "french": "MISSION ACCOMPLIE"
+    },
+    "mainObjectives": {
+      "english": "MAIN OBJECTIVES",
+      "spanish": "OBJETIVOS PRINCIPALES",
+      "japanese": "メイン目標",
+      "french": "OBJECTIFS PRINCIPAUX"
+    },
+    "finiteRunObjectives": {
+      "english": "ESCAPE RUN",
+      "spanish": "CARRERA DE HUIDA",
+      "japanese": "エスケープラン",
+      "french": "COURSE D'ÉVASION"
+    },
+    "total": {
+      "english": "TOTAL",
+      "spanish": "TOTAL",
+      "japanese": "合計",
+      "french": "TOTAL"
+    },
+    "rank": {
+      "english": "RANK",
+      "spanish": "RANGO",
+      "japanese": "ランク",
+      "french": "RANG"
+    },
+    "nextMission": {
+      "english": "NEXT MISSION",
+      "spanish": "SIGUIENTE MISIÓN",
+      "japanese": "次のミッション",
+      "french": "MISSION SUIVANTE"
+    },
+    "retry": {
+      "english": "RETRY",
+      "spanish": "REINTENTAR",
+      "japanese": "リトライ",
+      "french": "RÉESSAYER"
+    },
+    "missionBonus": {
+      "english": "MISSION BONUS",
+      "spanish": "BONO DE MISIÓN",
+      "japanese": "ミッションボーナス",
+      "french": "PRIME DE MISSION"
+    },
+    "statRank": {
+      "english": "RANK",
+      "spanish": "RANGO",
+      "japanese": "ランク",
+      "french": "RANG"
+    },
+    "log": {
+      "english": "LOG",
+      "spanish": "REGISTRO",
+      "japanese": "ログ",
+      "french": "JOURNAL"
+    },
+    "logSectionGlobal": {
+      "english": "GLOBAL",
+      "spanish": "GLOBAL",
+      "japanese": "全体",
+      "french": "GLOBAL"
+    },
+    "logSectionVehicles": {
+      "english": "TOTALED VEHICLES",
+      "spanish": "VEHÍCULOS DESTROZADOS",
+      "japanese": "破壊した車両",
+      "french": "VÉHICULES DÉTRUITS"
+    },
+    "logSectionCollectibles": {
+      "english": "COLLECTIBLES",
+      "spanish": "COLECCIONABLES",
+      "japanese": "収集アイテム",
+      "french": "OBJETS À COLLECTIONNER"
+    },
+    "statCollectibles": {
+      "english": "TOTAL COLLECTED",
+      "spanish": "TOTAL RECOGIDO",
+      "japanese": "総収集数",
+      "french": "TOTAL RAMASSÉ"
+    },
+    "logSectionLastLevel": {
+      "english": "LAST LEVEL",
+      "spanish": "ÚLTIMO NIVEL",
+      "japanese": "前回のレベル",
+      "french": "DERNIER NIVEAU"
+    },
+    "logSectionRunner": {
+      "english": "ESCAPE RUNS",
+      "spanish": "HUIDAS",
+      "japanese": "逃走ラン",
+      "french": "ÉVASIONS"
+    },
+    "statPlayTime": {
+      "english": "TOTAL PLAY TIME",
+      "spanish": "TIEMPO TOTAL DE JUEGO",
+      "japanese": "総プレイ時間",
+      "french": "TEMPS DE JEU TOTAL"
+    },
+    "statLevelsCompleted": {
+      "english": "LEVELS COMPLETED",
+      "spanish": "NIVELES COMPLETADOS",
+      "japanese": "クリアしたレベル",
+      "french": "NIVEAUX TERMINÉS"
+    },
+    "statDeaths": {
+      "english": "TOTAL DEATHS",
+      "spanish": "MUERTES TOTALES",
+      "japanese": "総死亡回数",
+      "french": "MORTS TOTALES"
+    },
+    "statArrests": {
+      "english": "TIMES ARRESTED",
+      "spanish": "VECES ARRESTADO",
+      "japanese": "逮捕回数",
+      "french": "ARRESTATIONS"
+    },
+    "statMaxSpeed": {
+      "english": "MAX SPEED",
+      "spanish": "VELOCIDAD MÁXIMA",
+      "japanese": "最高速度",
+      "french": "VITESSE MAX"
+    },
+    "statMaxJump": {
+      "english": "LONGEST JUMP",
+      "spanish": "SALTO MÁS LARGO",
+      "japanese": "最長ジャンプ",
+      "french": "PLUS LONG SAUT"
+    },
+    "statTotaledCars": {
+      "english": "TOTALED CARS",
+      "spanish": "COCHES DESTROZADOS",
+      "japanese": "破壊した車",
+      "french": "VOITURES DÉTRUITES"
+    },
+    "statTotaledPolice": {
+      "english": "TOTALED POLICE CARS",
+      "spanish": "PATRULLAS DESTROZADAS",
+      "japanese": "破壊したパトカー",
+      "french": "VOITURES DE POLICE DÉTRUITES"
+    },
+    "statMoneyEarned": {
+      "english": "MONEY EARNED",
+      "spanish": "DINERO GANADO",
+      "japanese": "獲得金額",
+      "french": "ARGENT GAGNÉ"
+    },
+    "statBonusObjectives": {
+      "english": "BONUS OBJECTIVES",
+      "spanish": "OBJETIVOS EXTRA",
+      "japanese": "ボーナス目標",
+      "french": "OBJECTIFS BONUS"
+    },
+    "statLevelName": {
+      "english": "LEVEL",
+      "spanish": "NIVEL",
+      "japanese": "レベル",
+      "french": "NIVEAU"
+    },
+    "statLastObjective": {
+      "english": "LAST OBJECTIVE",
+      "spanish": "ÚLTIMO OBJETIVO",
+      "japanese": "最後の目標",
+      "french": "DERNIER OBJECTIF"
+    },
+    "statOptionalObjectives": {
+      "english": "OPTIONAL OBJECTIVES",
+      "spanish": "OBJETIVOS OPCIONALES",
+      "japanese": "任意目標",
+      "french": "OBJECTIFS OPTIONNELS"
+    },
+    "statEscapesAttempted": {
+      "english": "ESCAPES ATTEMPTED",
+      "spanish": "HUIDAS INTENTADAS",
+      "japanese": "逃走試行",
+      "french": "ÉVASIONS TENTÉES"
+    },
+    "statEscapesCompleted": {
+      "english": "ESCAPES COMPLETED",
+      "spanish": "HUIDAS LOGRADAS",
+      "japanese": "逃走成功",
+      "french": "ÉVASIONS RÉUSSIES"
+    },
+    "statFastestEscape": {
+      "english": "FASTEST ESCAPE",
+      "spanish": "HUIDA MÁS RÁPIDA",
+      "japanese": "最速逃走",
+      "french": "ÉVASION LA PLUS RAPIDE"
+    },
+    "statPowerUps": {
+      "english": "POWER-UPS COLLECTED",
+      "spanish": "POTENCIADORES RECOGIDOS",
+      "japanese": "取得したパワーアップ",
+      "french": "BONUS RAMASSÉS"
+    },
+    "statSlowDowns": {
+      "english": "SLOW-DOWNS COLLECTED",
+      "spanish": "RALENTIZADORES RECOGIDOS",
+      "japanese": "取得したスローダウン",
+      "french": "MALUS RAMASSÉS"
+    },
+    "cruiseSpeed": {
+      "english": "CRUISE SPEED",
+      "spanish": "VELOCIDAD DE CRUCERO",
+      "japanese": "巡航速度",
+      "french": "VITESSE DE CROISIÈRE"
+    },
+    "thrust": {
+      "english": "THRUST",
+      "spanish": "EMPUJE",
+      "japanese": "推力",
+      "french": "POUSSÉE"
+    },
+    "brakePower": {
+      "english": "BRAKE POWER",
+      "spanish": "POTENCIA DE FRENO",
+      "japanese": "ブレーキ力",
+      "french": "PUISSANCE DE FREIN"
+    },
+    "coastDrag": {
+      "english": "COAST DRAG",
+      "spanish": "RESISTENCIA SIN GAS",
+      "japanese": "惰性抵抗",
+      "french": "TRAÎNÉE EN ROUE LIBRE"
+    },
+    "keyThrottleRamp": {
+      "english": "KEY THROTTLE RAMP",
+      "spanish": "RAMPA DE GAS (TECLAS)",
+      "japanese": "キー入力の立ち上がり",
+      "french": "RAMPE DES GAZ (TOUCHES)"
+    },
+    "gripBase": {
+      "english": "GRIP",
+      "spanish": "AGARRE",
+      "japanese": "グリップ",
+      "french": "ADHÉRENCE"
+    },
+    "gripPerSpeed": {
+      "english": "GRIP PER SPEED",
+      "spanish": "AGARRE POR VELOCIDAD",
+      "japanese": "速度あたりのグリップ",
+      "french": "ADHÉRENCE PAR VITESSE"
+    },
+    "slideThreshold": {
+      "english": "SLIDE THRESHOLD",
+      "spanish": "UMBRAL DE DERRAPE",
+      "japanese": "スライドしきい値",
+      "french": "SEUIL DE GLISSADE"
+    },
+    "slideSpeedLoss": {
+      "english": "SLIDE SPEED LOSS",
+      "spanish": "PÉRDIDA AL DERRAPAR",
+      "japanese": "スライド時の減速",
+      "french": "PERTE EN GLISSADE"
+    },
+    "unbankedSweeps": {
+      "english": "FLAT CURVES %",
+      "spanish": "CURVAS PLANAS %",
+      "japanese": "フラットカーブ %",
+      "french": "VIRAGES PLATS %"
+    },
+    "openStraights": {
+      "english": "OPEN STRAIGHTS %",
+      "spanish": "RECTAS ABIERTAS %",
+      "japanese": "壁なし直線 %",
+      "french": "LIGNES DROITES OUVERTES %"
+    },
+    "laserDensity": {
+      "english": "LASER DENSITY",
+      "spanish": "DENSIDAD DE LÁSERES",
+      "japanese": "レーザー密度",
+      "french": "DENSITÉ DES LASERS"
+    },
+    "debugTabDuel": {
+      "english": "PATROL DUEL",
+      "spanish": "DUELO DE PATRULLA",
+      "japanese": "パトロール決闘",
+      "french": "DUEL DE PATROUILLE"
+    },
+    "duelOverdrive": {
+      "english": "ATTACK OVERDRIVE",
+      "spanish": "SOBREMARCHA DE ATAQUE",
+      "japanese": "攻撃オーバードライブ",
+      "french": "SURRÉGIME D'ATTAQUE"
+    },
+    "duelCommitFrom": {
+      "english": "COMMIT FROM",
+      "spanish": "ATACA DESDE",
+      "japanese": "攻撃開始距離",
+      "french": "ENGAGER DEPUIS"
+    },
+    "duelCommitInterval": {
+      "english": "ATTACK INTERVAL",
+      "spanish": "INTERVALO DE ATAQUE",
+      "japanese": "攻撃間隔",
+      "french": "INTERVALLE D'ATTAQUE"
+    },
+    "duelCommitTimeout": {
+      "english": "ATTACK TIMEOUT",
+      "spanish": "TIEMPO DE ATAQUE",
+      "japanese": "攻撃タイムアウト",
+      "french": "DÉLAI D'ATTAQUE"
+    },
+    "duelAlongsideDistance": {
+      "english": "ALONGSIDE GAP",
+      "spanish": "DISTANCIA AL COSTADO",
+      "japanese": "並走距離",
+      "french": "ÉCART DE FLANC"
+    },
+    "duelFlankOffset": {
+      "english": "FLANK OFFSET",
+      "spanish": "DESVÍO LATERAL",
+      "japanese": "側面オフセット",
+      "french": "DÉCALAGE DE FLANC"
+    },
+    "duelAlongsideHold": {
+      "english": "FLANK HOLD",
+      "spanish": "ESPERA AL COSTADO",
+      "japanese": "並走保持",
+      "french": "MAINTIEN DE FLANC"
+    },
+    "duelAbortGrace": {
+      "english": "ESCAPE GRACE",
+      "spanish": "MARGEN DE ESCAPE",
+      "japanese": "回避猶予",
+      "french": "DÉLAI D'ESQUIVE"
+    },
+    "duelBreakOff": {
+      "english": "BREAK OFF TIME",
+      "spanish": "TIEMPO DE RETIRADA",
+      "japanese": "離脱時間",
+      "french": "TEMPS DE RETRAIT"
+    },
+    "duelBackOffSpeed": {
+      "english": "BACK OFF SPEED",
+      "spanish": "VELOCIDAD DE RETIRADA",
+      "japanese": "離脱速度",
+      "french": "VITESSE DE RETRAIT"
+    },
+    "duelCooldown": {
+      "english": "ATTACK COOLDOWN",
+      "spanish": "ENFRIAMIENTO DE ATAQUE",
+      "japanese": "攻撃クールダウン",
+      "french": "RECHARGE D'ATTAQUE"
+    },
+    "duelLookahead": {
+      "english": "CLEAR ROAD AHEAD",
+      "spanish": "PISTA LIBRE DELANTE",
+      "japanese": "前方クリア距離",
+      "french": "ROUTE LIBRE DEVANT"
+    },
+    "duelShoveMeters": {
+      "english": "SHOVE DISTANCE",
+      "spanish": "DISTANCIA DE EMPUJE",
+      "japanese": "突き飛ばし距離",
+      "french": "DISTANCE DE POUSSÉE"
+    },
+    "duelTugForce": {
+      "english": "PATROL PUSH",
+      "spanish": "EMPUJE DE PATRULLA",
+      "japanese": "パトロールの押し",
+      "french": "POUSSÉE DE PATROUILLE"
+    },
+    "duelTugPress": {
+      "english": "PRESS VALUE",
+      "spanish": "VALOR POR PULSACIÓN",
+      "japanese": "1回の押し戻し",
+      "french": "GAIN PAR APPUI"
+    },
+    "duelTimeScale": {
+      "english": "DUEL TIME SCALE",
+      "spanish": "TIEMPO EN DUELO",
+      "japanese": "決闘中の時間",
+      "french": "TEMPS EN DUEL"
+    },
+    "duelAssist": {
+      "english": "DUEL STEER ASSIST",
+      "spanish": "AYUDA DE DIRECCIÓN",
+      "japanese": "決闘時の操舵補助",
+      "french": "ASSISTANCE DE DIRECTION"
+    },
+    "duelMashPrompt": {
+      "english": "MASH",
+      "spanish": "APORREA",
+      "japanese": "連打",
+      "french": "MARTELEZ"
+    },
+    "duelFinisherPrompt": {
+      "english": "TAKE THEM OUT",
+      "spanish": "ACÁBALOS",
+      "japanese": "とどめを刺せ",
+      "french": "ACHEVEZ-LES"
+    },
+    "hyperspacePrompt": {
+      "english": "HIT HYPERSPACE",
+      "spanish": "¡SALTA AL HIPERESPACIO!",
+      "japanese": "ハイパースペースへ",
+      "french": "PASSEZ EN HYPERESPACE"
+    },
+    "duelAbortMeters": {
+      "english": "ABORT LOOKAHEAD",
+      "spanish": "MARGEN DE ABORTO",
+      "japanese": "中断の先読み",
+      "french": "ANTICIPATION D'ABANDON"
+    },
+    "duelStandoff": {
+      "english": "STANDOFF",
+      "spanish": "DISTANCIA DE ESPERA",
+      "japanese": "待機距離",
+      "french": "DISTANCE D'ATTENTE"
+    },
+    "duelKillGap": {
+      "english": "KILL RESPAWN GAP",
+      "spanish": "REAPARICIÓN TRAS MUERTE",
+      "japanese": "撃破後の復帰距離",
+      "french": "ÉCART APRÈS DESTRUCTION"
+    },
+    "duelFinisherWindow": {
+      "english": "FINISHER WINDOW",
+      "spanish": "VENTANA DE REMATE",
+      "japanese": "とどめの猶予",
+      "french": "FENÊTRE D'ACHÈVEMENT"
+    },
+    "duelHitStop": {
+      "english": "HIT STOP",
+      "spanish": "PARÓN DE IMPACTO",
+      "japanese": "ヒットストップ",
+      "french": "ARRÊT SUR IMPACT"
+    },
+    "duelTierPerKill": {
+      "english": "ESCALATION / KILL",
+      "spanish": "ESCALADA POR MUERTE",
+      "japanese": "撃破ごとの強化",
+      "french": "ESCALADE PAR MISE À MORT"
+    },
+    "duelTierMax": {
+      "english": "ESCALATION CAP",
+      "spanish": "LÍMITE DE ESCALADA",
+      "japanese": "強化の上限",
+      "french": "PLAFOND D'ESCALADE"
+    },
+    "duelTugForceCap": {
+      "english": "PUSH CAP",
+      "spanish": "LÍMITE DE EMPUJE",
+      "japanese": "押しの上限",
+      "french": "PLAFOND DE POUSSÉE"
+    },
+    "duelArmedWindow": {
+      "english": "ARMED WINDOW",
+      "spanish": "VENTANA ARMADA",
+      "japanese": "武装時間",
+      "french": "FENÊTRE ARMÉE"
+    },
+    "duelStationAccel": {
+      "english": "DUEL ACCEL",
+      "spanish": "ACELERACIÓN EN DUELO",
+      "japanese": "決闘中の加速",
+      "french": "ACCÉLÉRATION EN DUEL"
+    },
+    "duelDamagePool": {
+      "english": "PATROL HITS",
+      "spanish": "GOLPES DE PATRULLA",
+      "japanese": "パトロールの耐久",
+      "french": "COUPS DE PATROUILLE"
+    },
+    "duelRamDistance": {
+      "english": "RAM REACH",
+      "spanish": "ALCANCE DE EMBESTIDA",
+      "japanese": "追突の間合い",
+      "french": "PORTÉE DU CHOC"
+    },
+    "duelRamLateral": {
+      "english": "RAM WIDTH",
+      "spanish": "ANCHO DE EMBESTIDA",
+      "japanese": "追突の横幅",
+      "french": "LARGEUR DU CHOC"
+    },
+    "duelRamClosing": {
+      "english": "RAM SPEED NEEDED",
+      "spanish": "VELOCIDAD PARA EMBESTIR",
+      "japanese": "追突に必要な速度",
+      "french": "VITESSE POUR CHOQUER"
+    },
+    "duelRamCost": {
+      "english": "RAM SPEED COST",
+      "spanish": "COSTE DE EMBESTIDA",
+      "japanese": "追突の速度コスト",
+      "french": "COÛT DU CHOC"
+    },
+    "duelOvershootHold": {
+      "english": "OVERSHOOT HOLD",
+      "spanish": "DURACIÓN DEL REBASE",
+      "japanese": "追い越し保持",
+      "french": "MAINTIEN DU DÉPASSEMENT"
+    },
+    "duelOvershootBrake": {
+      "english": "OVERSHOOT ON BRAKE",
+      "spanish": "REBASE AL FRENAR",
+      "japanese": "ブレーキで追い越し",
+      "french": "DÉPASSEMENT AU FREINAGE"
+    },
+    "duelOvershootDecel": {
+      "english": "OVERSHOOT DECEL",
+      "spanish": "DECELERACIÓN DE REBASE",
+      "japanese": "追い越し減速しきい値",
+      "french": "DÉCÉLÉRATION DE DÉPASSEMENT"
+    },
+    "duelOvershootMargin": {
+      "english": "OVERSHOOT RANGE",
+      "spanish": "ALCANCE DE REBASE",
+      "japanese": "追い越し範囲",
+      "french": "PORTÉE DU DÉPASSEMENT"
+    },
+    "duelPushFraction": {
+      "english": "TUG PUSH ROOM",
+      "spanish": "EMPUJE LATERAL",
+      "japanese": "押し出し幅",
+      "french": "POUSSÉE LATÉRALE"
+    },
+    "duelFinisherSeparation": {
+      "english": "FINISHER GAP",
+      "spanish": "SEPARACIÓN DE REMATE",
+      "japanese": "とどめの間隔",
+      "french": "ÉCART D'ACHÈVEMENT"
+    },
+    "duelMissBrake": {
+      "english": "MISS BRAKE TIME",
+      "spanish": "FRENADA TRAS FALLO",
+      "japanese": "失敗時ブレーキ時間",
+      "french": "FREINAGE APRÈS ÉCHEC"
+    },
+    "duelMissBrakeSpeed": {
+      "english": "MISS BRAKE SPEED",
+      "spanish": "VELOCIDAD TRAS FALLO",
+      "japanese": "失敗時ブレーキ速度",
+      "french": "VITESSE APRÈS ÉCHEC"
+    },
+    "camDuelDistance": {
+      "english": "DUEL CAM DISTANCE",
+      "spanish": "DISTANCIA CÁMARA DUELO",
+      "japanese": "決闘カメラ距離",
+      "french": "DISTANCE CAMÉRA DUEL"
+    },
+    "camDuelHeight": {
+      "english": "DUEL CAM HEIGHT",
+      "spanish": "ALTURA CÁMARA DUELO",
+      "japanese": "決闘カメラ高さ",
+      "french": "HAUTEUR CAMÉRA DUEL"
+    },
+    "camDuelPitch": {
+      "english": "DUEL CAM PITCH",
+      "spanish": "INCLINACIÓN CÁMARA DUELO",
+      "japanese": "決闘カメラ角度",
+      "french": "INCLINAISON CAMÉRA DUEL"
+    },
+    "camDuelBlend": {
+      "english": "DUEL CAM BLEND",
+      "spanish": "TRANSICIÓN CÁMARA DUELO",
+      "japanese": "決闘カメラ遷移",
+      "french": "FONDU CAMÉRA DUEL"
+    },
+    "duelMinClosing": {
+      "english": "MIN CLOSING SPEED",
+      "spanish": "CIERRE MÍNIMO",
+      "japanese": "最低接近速度",
+      "french": "RAPPROCHEMENT MINIMAL"
+    },
+    "duelPushGain": {
+      "english": "TUG PUSH FORCE",
+      "spanish": "FUERZA DE EMPUJE",
+      "japanese": "押し出しの強さ",
+      "french": "FORCE DE POUSSÉE"
+    },
+    "trackLength": {
+      "english": "TRACK LENGTH",
+      "spanish": "LONGITUD DE PISTA",
+      "japanese": "コース長",
+      "french": "LONGUEUR DE PISTE"
+    },
+    "debugTabFall": {
+      "english": "FALL & RESPAWN",
+      "spanish": "CAÍDA Y REAPARICIÓN",
+      "japanese": "落下とリスポーン",
+      "french": "CHUTE ET RETOUR"
+    },
+    "edgeOverhang": {
+      "english": "EDGE OVERHANG",
+      "spanish": "MARGEN DEL BORDE",
+      "japanese": "縁のはみ出し",
+      "french": "DÉBORD DU BORD"
+    },
+    "edgeGrace": {
+      "english": "EDGE GRACE TIME",
+      "spanish": "TIEMPO DE GRACIA",
+      "japanese": "縁の猶予時間",
+      "french": "DÉLAI DE GRÂCE"
+    },
+    "fallGravity": {
+      "english": "FALL GRAVITY",
+      "spanish": "GRAVEDAD DE CAÍDA",
+      "japanese": "落下重力",
+      "french": "GRAVITÉ DE CHUTE"
+    },
+    "fallDuration": {
+      "english": "FALL TIME",
+      "spanish": "TIEMPO DE CAÍDA",
+      "japanese": "落下時間",
+      "french": "DURÉE DE CHUTE"
+    },
+    "fallCameraFollow": {
+      "english": "CAMERA FOLLOW TIME",
+      "spanish": "SEGUIMIENTO DE CÁMARA",
+      "japanese": "カメラ追従時間",
+      "french": "SUIVI CAMÉRA"
+    },
+    "respawnWait": {
+      "english": "RESPAWN WAIT",
+      "spanish": "ESPERA DE REAPARICIÓN",
+      "japanese": "リスポーン待機",
+      "french": "ATTENTE DE RETOUR"
+    },
+    "respawnBlinkRate": {
+      "english": "BLINK RATE",
+      "spanish": "PARPADEO",
+      "japanese": "点滅速度",
+      "french": "CLIGNOTEMENT"
+    },
+    "respawnSpeedPenalty": {
+      "english": "RESPAWN SPEED PENALTY",
+      "spanish": "PENALIZACIÓN DE VELOCIDAD",
+      "japanese": "リスポーン速度ペナルティ",
+      "french": "PÉNALITÉ DE VITESSE"
+    },
+    "respawnClearance": {
+      "english": "RESPAWN CLEARANCE",
+      "spanish": "DESPEJE DE REAPARICIÓN",
+      "japanese": "リスポーン前方の余裕",
+      "french": "DÉGAGEMENT DE RETOUR"
+    },
+    "respawnRollingStart": {
+      "english": "ROLLING RESPAWN",
+      "spanish": "REAPARICIÓN EN MARCHA",
+      "japanese": "走行中リスポーン",
+      "french": "RETOUR LANCÉ"
+    },
+    "debugTabTools": {
+      "english": "DEBUG TOOLS",
+      "spanish": "HERRAMIENTAS DEBUG",
+      "japanese": "デバッグツール",
+      "french": "OUTILS DE DEBUG"
+    },
+    "debugBoostChord": {
+      "english": "Y BOOST",
+      "spanish": "IMPULSO CON Y",
+      "japanese": "Y ブースト",
+      "french": "BOOST Y"
+    },
+    "debugBoostAmount": {
+      "english": "BOOST AMOUNT (KM/H)",
+      "spanish": "CANTIDAD DE IMPULSO (KM/H)",
+      "japanese": "ブースト量 (KM/H)",
+      "french": "VALEUR DU BOOST (KM/H)"
+    },
+    "debugTabTraffic": {
+      "english": "TRAFFIC",
+      "spanish": "TRÁFICO",
+      "japanese": "交通",
+      "french": "TRAFIC"
+    },
+    "trafficMaxActive": {
+      "english": "CARS ON THE ROAD",
+      "spanish": "COCHES EN LA PISTA",
+      "japanese": "走行台数",
+      "french": "VOITURES SUR LA ROUTE"
+    },
+    "trafficSpeedMin": {
+      "english": "MIN CAR SPEED (M/S)",
+      "spanish": "VELOCIDAD MÍN. COCHE (M/S)",
+      "japanese": "車の最低速度 (M/S)",
+      "french": "VITESSE MIN. VOITURE (M/S)"
+    },
+    "trafficSpeedMax": {
+      "english": "MAX CAR SPEED (M/S)",
+      "spanish": "VELOCIDAD MÁX. COCHE (M/S)",
+      "japanese": "車の最高速度 (M/S)",
+      "french": "VITESSE MAX. VOITURE (M/S)"
+    },
+    "trafficSpawnAhead": {
+      "english": "SPAWN AHEAD (S)",
+      "spanish": "APARICIÓN ADELANTE (S)",
+      "japanese": "前方出現 (秒)",
+      "french": "APPARITION DEVANT (S)"
+    },
+    "trafficMinSpawnAhead": {
+      "english": "MIN SPAWN DISTANCE (M)",
+      "spanish": "DISTANCIA MÍN. DE APARICIÓN (M)",
+      "japanese": "最小出現距離 (M)",
+      "french": "DISTANCE MIN. D'APPARITION (M)"
+    },
+    "trafficNoSpawnNearEnd": {
+      "english": "NO SPAWN NEAR END (M)",
+      "spanish": "SIN APARICIÓN CERCA DEL FINAL (M)",
+      "japanese": "終点付近は出現なし (M)",
+      "french": "PAS D'APPARITION PRÈS DE LA FIN (M)"
+    },
+    "selectCourse": {
+      "english": "SELECT COURSE",
+      "spanish": "ELIGE CIRCUITO",
+      "japanese": "コース選択",
+      "french": "CHOISIR LE CIRCUIT"
+    },
+    "difficulty": {
+      "english": "DIFFICULTY",
+      "spanish": "DIFICULTAD",
+      "japanese": "難易度",
+      "french": "DIFFICULTÉ"
+    },
+    "hudRacePosition": {
+      "english": "POS  {0}/{1}",
+      "spanish": "POS  {0}/{1}",
+      "japanese": "順位  {0}/{1}",
+      "french": "POS  {0}/{1}"
+    },
+    "loseRaceBeaten": {
+      "english": "BEATEN TO THE FINISH",
+      "spanish": "TE GANARON LA CARRERA",
+      "japanese": "ゴールで先を越された",
+      "french": "BATTU À L'ARRIVÉE"
+    },
+    "loseRacePosition": {
+      "english": "POSITION OUT OF REACH",
+      "spanish": "POSICIÓN FUERA DE ALCANCE",
+      "japanese": "目標の順位に届かない",
+      "french": "POSITION HORS D'ATTEINTE"
+    },
+    "debugTabRace": {
+      "english": "RACE",
+      "spanish": "CARRERA",
+      "japanese": "レース",
+      "french": "COURSE"
+    },
+    "raceRubberBand": {
+      "english": "RUBBER BAND",
+      "spanish": "ELÁSTICO",
+      "japanese": "ラバーバンド",
+      "french": "ÉLASTIQUE"
+    },
+    "raceGhostPace": {
+      "english": "GHOST PACE",
+      "spanish": "RITMO FANTASMA",
+      "japanese": "ゴーストのペース",
+      "french": "RYTHME FANTÔME"
+    },
+    "raceThrustShare": {
+      "english": "RIVAL THRUST",
+      "spanish": "EMPUJE RIVAL",
+      "japanese": "ライバルの推力",
+      "french": "POUSSÉE DES RIVAUX"
+    },
+    "raceOrbShare": {
+      "english": "RIVAL ORB BOOST",
+      "spanish": "IMPULSO DE ORBES RIVAL",
+      "japanese": "ライバルのオーブ加速",
+      "french": "BOOST D'ORBE DES RIVAUX"
+    },
+    "raceFormVariance": {
+      "english": "FORM VARIANCE",
+      "spanish": "VARIACIÓN DE FORMA",
+      "japanese": "調子のばらつき",
+      "french": "VARIATION DE FORME"
+    },
+    "raceSurgeAmount": {
+      "english": "SURGE",
+      "spanish": "ARRANQUES",
+      "japanese": "スパート",
+      "french": "POUSSÉES"
+    },
+    "raceLaneSpread": {
+      "english": "LANE SPREAD",
+      "spanish": "DISPERSIÓN DE CARRIL",
+      "japanese": "レーンの散らばり",
+      "french": "DISPERSION DES VOIES"
+    },
+    "raceRamSpeedCost": {
+      "english": "RAM SPEED COST",
+      "spanish": "VELOCIDAD PERDIDA AL EMBESTIR",
+      "japanese": "体当たりの速度損失",
+      "french": "VITESSE PERDUE À L'IMPACT"
+    },
+    "raceSideShove": {
+      "english": "SIDE SHOVE",
+      "spanish": "EMPUJÓN LATERAL",
+      "japanese": "横からの押し",
+      "french": "POUSSÉE LATÉRALE"
+    },
+    "raceCreditWindow": {
+      "english": "KILL CREDIT WINDOW",
+      "spanish": "VENTANA DE CRÉDITO",
+      "japanese": "撃破判定の猶予",
+      "french": "FENÊTRE DE CRÉDIT"
+    },
+    "raceKillCam": {
+      "english": "KILL CAM",
+      "spanish": "CÁMARA DE DERRIBO",
+      "japanese": "キルカメラ",
+      "french": "CAMÉRA D'ÉLIMINATION"
+    },
+    "raceKillCamScale": {
+      "english": "KILL CAM SLOW MOTION",
+      "spanish": "CÁMARA LENTA DEL DERRIBO",
+      "japanese": "キルカメラのスロー",
+      "french": "RALENTI DE L'ÉLIMINATION"
+    },
+    "raceKillCamSeconds": {
+      "english": "KILL CAM HOLD",
+      "spanish": "DURACIÓN DEL DERRIBO",
+      "japanese": "キルカメラの長さ",
+      "french": "DURÉE DE L'ÉLIMINATION"
+    },
+    "raceKillCamRange": {
+      "english": "KILL CAM RANGE",
+      "spanish": "ALCANCE DEL DERRIBO",
+      "japanese": "キルカメラの範囲",
+      "french": "PORTÉE DE L'ÉLIMINATION"
+    },
+    "raceReadout": {
+      "english": "STANDINGS READOUT",
+      "spanish": "LECTURA DE POSICIONES",
+      "japanese": "順位の表示",
+      "french": "AFFICHAGE DU CLASSEMENT"
+    },
+    "raceGhostWireframes": {
+      "english": "GHOST WIREFRAMES",
+      "spanish": "FANTASMAS EN ALAMBRE",
+      "japanese": "ゴーストのワイヤー表示",
+      "french": "FANTÔMES EN FILAIRE"
+    },
+    "raceKillNearest": {
+      "english": "WRECK NEAREST RIVAL",
+      "spanish": "DESTRUIR RIVAL MÁS CERCANO",
+      "japanese": "最寄りのライバルを破壊",
+      "french": "DÉTRUIRE LE RIVAL LE PLUS PROCHE"
+    },
+    "raceDnfAll": {
+      "english": "WRECK ALL RIVALS",
+      "spanish": "DESTRUIR A TODOS LOS RIVALES",
+      "japanese": "全ライバルを破壊",
+      "french": "DÉTRUIRE TOUS LES RIVAUX"
+    },
+    "raceFinishAll": {
+      "english": "ALL RIVALS FINISH",
+      "spanish": "TODOS LOS RIVALES TERMINAN",
+      "japanese": "全ライバルをゴール",
+      "french": "TOUS LES RIVAUX FINISSENT"
+    },
+    "raceResults": {
+      "english": "RACE",
+      "spanish": "CARRERA",
+      "japanese": "レース",
+      "french": "COURSE"
+    },
+    "raceFinishPlace": {
+      "english": "FINISHING PLACE",
+      "spanish": "POSICIÓN FINAL",
+      "japanese": "最終順位",
+      "french": "CLASSEMENT FINAL"
+    },
+    "raceWrecked": {
+      "english": "RIVALS WRECKED",
+      "spanish": "RIVALES DESTRUIDOS",
+      "japanese": "破壊したライバル",
+      "french": "RIVAUX DÉTRUITS"
+    },
+    "raceBounties": {
+      "english": "BOUNTIES",
+      "spanish": "RECOMPENSAS",
+      "japanese": "賞金",
+      "french": "PRIMES"
+    },
+    "raceLeadGovernor": {
+      "english": "LEAD GOVERNOR",
+      "spanish": "LIMITADOR DEL LÍDER",
+      "japanese": "先頭の速度制限",
+      "french": "LIMITEUR DU MENEUR"
+    },
+    "raceLeadCapFar": {
+      "english": "LEADER SPEED CAP",
+      "spanish": "TOPE DE VELOCIDAD DEL LÍDER",
+      "japanese": "先頭の速度上限",
+      "french": "PLAFOND DE VITESSE DU MENEUR"
+    },
+    "hudCheckpoint": {
+      "english": "CHECKPOINT  {0}/{1}",
+      "spanish": "CONTROL  {0}/{1}",
+      "japanese": "チェックポイント  {0}/{1}",
+      "french": "CHECKPOINT  {0}/{1}"
+    },
+    "hudBeatTheClock": {
+      "english": "BEAT THE CLOCK",
+      "spanish": "VENCE AL RELOJ",
+      "japanese": "時間内にゴール",
+      "french": "BATTEZ LA MONTRE"
+    },
+    "ttCheckpoint": {
+      "english": "CHECKPOINT {0}",
+      "spanish": "CONTROL {0}",
+      "japanese": "チェックポイント {0}",
+      "french": "CHECKPOINT {0}"
+    },
+    "ttClean": {
+      "english": "CLEAN {0}",
+      "spanish": "LIMPIO {0}",
+      "japanese": "ノーミス {0}",
+      "french": "SANS FAUTE {0}"
+    },
+    "ttPatrolDown": {
+      "english": "PATROL DOWN {0}",
+      "spanish": "PATRULLA ABATIDA {0}",
+      "japanese": "パトロール撃破 {0}",
+      "french": "PATROUILLE ABATTUE {0}"
+    },
+    "ttLifeLost": {
+      "english": "LIFE LOST {0}",
+      "spanish": "VIDA PERDIDA {0}",
+      "japanese": "ライフ喪失 {0}",
+      "french": "VIE PERDUE {0}"
+    },
+    "ttResults": {
+      "english": "TIME TRIAL",
+      "spanish": "CONTRARRELOJ",
+      "japanese": "タイムトライアル",
+      "french": "CONTRE-LA-MONTRE"
+    },
+    "ttTimeLeft": {
+      "english": "TIME LEFT",
+      "spanish": "TIEMPO RESTANTE",
+      "japanese": "残り時間",
+      "french": "TEMPS RESTANT"
+    },
+    "ttRunTime": {
+      "english": "RUN TIME",
+      "spanish": "TIEMPO DE CARRERA",
+      "japanese": "走行時間",
+      "french": "TEMPS DE COURSE"
+    },
+    "ttCheckpoints": {
+      "english": "CHECKPOINTS",
+      "spanish": "CONTROLES",
+      "japanese": "チェックポイント",
+      "french": "CHECKPOINTS"
+    },
+    "ttCleanCheckpoints": {
+      "english": "CLEAN CHECKPOINTS",
+      "spanish": "CONTROLES LIMPIOS",
+      "japanese": "ノーミス通過",
+      "french": "CHECKPOINTS SANS FAUTE"
+    },
+    "ttPatrolsDowned": {
+      "english": "PATROLS DOWNED",
+      "spanish": "PATRULLAS ABATIDAS",
+      "japanese": "撃破したパトロール",
+      "french": "PATROUILLES ABATTUES"
+    },
+    "ttLivesLost": {
+      "english": "LIVES LOST",
+      "spanish": "VIDAS PERDIDAS",
+      "japanese": "失ったライフ",
+      "french": "VIES PERDUES"
+    },
+    "debugTabTimeTrial": {
+      "english": "TIME TRIAL",
+      "spanish": "CONTRARRELOJ",
+      "japanese": "タイムトライアル",
+      "french": "CONTRE-LA-MONTRE"
+    },
+    "ttStartSeconds": {
+      "english": "START TIME (S)",
+      "spanish": "TIEMPO INICIAL (S)",
+      "japanese": "開始時間 (秒)",
+      "french": "TEMPS DE DÉPART (S)"
+    },
+    "ttTimeLimit": {
+      "english": "TIME LIMIT (S)",
+      "spanish": "LÍMITE DE TIEMPO (S)",
+      "japanese": "制限時間 (秒)",
+      "french": "TEMPS LIMITE (S)"
+    },
+    "ttMaxClock": {
+      "english": "CLOCK CAP (S)",
+      "spanish": "TOPE DEL RELOJ (S)",
+      "japanese": "時間の上限 (秒)",
+      "french": "PLAFOND DU CHRONO (S)"
+    },
+    "ttAutoCount": {
+      "english": "CHECKPOINT COUNT",
+      "spanish": "NÚMERO DE CONTROLES",
+      "japanese": "チェックポイント数",
+      "french": "NOMBRE DE CHECKPOINTS"
+    },
+    "ttPaceShare": {
+      "english": "CHECKPOINT PACE",
+      "spanish": "RITMO DE CONTROL",
+      "japanese": "チェックポイントのペース",
+      "french": "RYTHME DES CHECKPOINTS"
+    },
+    "ttGrace": {
+      "english": "CHECKPOINT GRACE (S)",
+      "spanish": "MARGEN DE CONTROL (S)",
+      "japanese": "チェックポイントの猶予 (秒)",
+      "french": "MARGE DES CHECKPOINTS (S)"
+    },
+    "ttCleanBonus": {
+      "english": "CLEAN BONUS (S)",
+      "spanish": "BONUS LIMPIO (S)",
+      "japanese": "ノーミスボーナス (秒)",
+      "french": "BONUS SANS FAUTE (S)"
+    },
+    "ttKillBonus": {
+      "english": "PATROL KILL BONUS (S)",
+      "spanish": "BONUS POR PATRULLA (S)",
+      "japanese": "パトロール撃破ボーナス (秒)",
+      "french": "BONUS PATROUILLE (S)"
+    },
+    "ttLifePenalty": {
+      "english": "LIFE PENALTY (S)",
+      "spanish": "PENALIZACIÓN POR VIDA (S)",
+      "japanese": "ライフ喪失ペナルティ (秒)",
+      "french": "PÉNALITÉ DE VIE (S)"
+    },
+    "ttLowTime": {
+      "english": "LOW TIME WARNING (S)",
+      "spanish": "AVISO DE POCO TIEMPO (S)",
+      "japanese": "残り時間警告 (秒)",
+      "french": "ALERTE TEMPS FAIBLE (S)"
+    },
+    "ttCrossNext": {
+      "english": "CROSS NEXT CHECKPOINT",
+      "spanish": "PASAR EL SIGUIENTE CONTROL",
+      "japanese": "次のチェックポイントを通過",
+      "french": "PASSER LE CHECKPOINT SUIVANT"
+    },
+    "ttRelayout": {
+      "english": "LAY CHECKPOINTS AGAIN",
+      "spanish": "RECOLOCAR CONTROLES",
+      "japanese": "チェックポイントを再配置",
+      "french": "REPLACER LES CHECKPOINTS"
+    },
+    "ttAddTime": {
+      "english": "ADD 10 SECONDS",
+      "spanish": "SUMAR 10 SEGUNDOS",
+      "japanese": "10秒追加",
+      "french": "AJOUTER 10 SECONDES"
+    },
+    "ttPaceFloor": {
+      "english": "CHECKPOINT PACE FLOOR (KM/H)",
+      "spanish": "RITMO MÍNIMO DE CONTROL (KM/H)",
+      "japanese": "チェックポイントの最低ペース (KM/H)",
+      "french": "RYTHME MIN. DES CHECKPOINTS (KM/H)"
+    },
+    "ttDirty": {
+      "english": "DIRTY {0}",
+      "spanish": "CON DAÑOS {0}",
+      "japanese": "被弾 {0}",
+      "french": "TOUCHÉ {0}"
+    },
+    "ttDirtyPenalty": {
+      "english": "DIRTY PENALTY (S)",
+      "spanish": "PENALIZACIÓN CON DAÑOS (S)",
+      "japanese": "被弾ペナルティ (秒)",
+      "french": "PÉNALITÉ TOUCHÉ (S)"
+    },
+    "ttAwardScale": {
+      "english": "CHECKPOINT AWARD SCALE",
+      "spanish": "ESCALA DE PREMIO DE CONTROL",
+      "japanese": "チェックポイント報酬倍率",
+      "french": "ÉCHELLE DES GAINS DE CHECKPOINT"
+    },
+    "countdownReady": {
+      "english": "READY!!",
+      "spanish": "¡¡LISTOS!!",
+      "japanese": "レディ!!",
+      "french": "PRÊTS !!"
+    },
+    "countdownGo": {
+      "english": "GO!",
+      "spanish": "¡YA!",
+      "japanese": "ゴー!",
+      "french": "PARTEZ !"
+    },
+    "debugTabBoostMeter": {
+      "english": "DEBUG — BOOST METER",
+      "spanish": "DEPURACIÓN — MEDIDOR DE TURBO",
+      "japanese": "デバッグ — ブーストメーター",
+      "french": "DÉBOGAGE — JAUGE DE BOOST"
+    },
+    "boostMeterPotence": {
+      "english": "BOOST POWER (KM/H PER S)",
+      "spanish": "POTENCIA DEL TURBO (KM/H POR S)",
+      "japanese": "ブースト出力 (KM/H/秒)",
+      "french": "PUISSANCE DU BOOST (KM/H PAR S)"
+    },
+    "boostMeterDrain": {
+      "english": "DRAIN RATE (PER S)",
+      "spanish": "CONSUMO (POR S)",
+      "japanese": "消費速度 (毎秒)",
+      "french": "VITESSE DE VIDAGE (PAR S)"
+    },
+    "boostMeterCooldown": {
+      "english": "REFILL COOLDOWN (S)",
+      "spanish": "ESPERA DE RECARGA (S)",
+      "japanese": "回復までの待ち (秒)",
+      "french": "DÉLAI AVANT RECHARGE (S)"
+    },
+    "boostMeterRefill": {
+      "english": "REFILL RATE (PER S)",
+      "spanish": "RECARGA (POR S)",
+      "japanese": "回復速度 (毎秒)",
+      "french": "VITESSE DE RECHARGE (PAR S)"
+    },
+    "ttDebugLog": {
+      "english": "CLOCK LOG",
+      "spanish": "REGISTRO DEL RELOJ",
+      "japanese": "時間ログ",
+      "french": "JOURNAL DU CHRONO"
+    },
+    "spawnDensity": {
+      "english": "{0} DENSITY",
+      "spanish": "DENSIDAD: {0}",
+      "japanese": "{0} 密度",
+      "french": "DENSITÉ : {0}"
+    },
+    "respawnPatrolGap": {
+      "english": "RESPAWN PATROL GAP",
+      "spanish": "VENTAJA SOBRE LA PATRULLA",
+      "japanese": "リスポーン時のパトロール差",
+      "french": "AVANCE SUR LA PATROUILLE"
+    },
+    "stallGrace": {
+      "english": "STALL GRACE",
+      "spanish": "GRACIA AL DETENERSE",
+      "japanese": "停止の猶予",
+      "french": "DÉLAI DE CALAGE"
+    },
+    "debugTabPatrolDriver": {
+      "english": "PATROL DRIVER",
+      "spanish": "PILOTO DE PATRULLA",
+      "japanese": "パトロールドライバー",
+      "french": "PILOTE DE PATROUILLE"
+    },
+    "patrolCatchLateral": {
+      "english": "ALONGSIDE WIDTH",
+      "spanish": "ANCHO DE COSTADO",
+      "japanese": "並走幅",
+      "french": "LARGEUR DE FLANC"
+    },
+    "patrolSustainedCatch": {
+      "english": "TAIL CATCH TIME",
+      "spanish": "TIEMPO DE CAPTURA EN COLA",
+      "japanese": "追尾捕捉時間",
+      "french": "TEMPS DE CAPTURE EN FILE"
+    },
+    "patrolCurveLookahead": {
+      "english": "CURVE LOOKAHEAD",
+      "spanish": "ANTICIPACIÓN DE CURVAS",
+      "japanese": "カーブ先読み",
+      "french": "ANTICIPATION VIRAGES"
+    },
+    "patrolOrbLookahead": {
+      "english": "ORB LOOKAHEAD",
+      "spanish": "ANTICIPACIÓN DE ORBES",
+      "japanese": "オーブ先読み",
+      "french": "ANTICIPATION ORBES"
+    },
+    "patrolOrbSeek": {
+      "english": "ORB SEEKING",
+      "spanish": "BÚSQUEDA DE ORBES",
+      "japanese": "オーブ追尾",
+      "french": "RECHERCHE D'ORBES"
+    },
+    "patrolOrbBoost": {
+      "english": "ORB BOOST SHARE",
+      "spanish": "PARTE DEL ORBE",
+      "japanese": "オーブブースト分配",
+      "french": "PART DU BOOST D'ORBE"
+    },
+    "patrolRampLookahead": {
+      "english": "RAMP LOOKAHEAD",
+      "spanish": "ANTICIPACIÓN DE RAMPAS",
+      "japanese": "ランプ先読み",
+      "french": "ANTICIPATION RAMPES"
+    }
+  }
+}

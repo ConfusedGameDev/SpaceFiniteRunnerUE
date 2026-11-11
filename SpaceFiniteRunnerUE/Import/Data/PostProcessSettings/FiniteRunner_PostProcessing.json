@@ -1,0 +1,85 @@
+{
+  "unityType": "PostProcessSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.FX.PostProcessSettings",
+  "name": "FiniteRunner_PostProcessing",
+  "guid": "ad63e80d0cce81f409a2785d59f7bd00",
+  "path": "Assets/04.Data/Resources/FiniteRunner_PostProcessing.asset",
+  "fields": {
+    "runtimeAdjustments": true,
+    "lensRuntime": true,
+    "lensRange": {
+      "x": -1,
+      "y": 1
+    },
+    "motionBlurRuntime": true,
+    "motionBlurRange": {
+      "x": 0,
+      "y": 1
+    },
+    "motionBlurClampRuntime": true,
+    "motionBlurClampRange": {
+      "x": 0,
+      "y": 0.2
+    },
+    "bloomRuntime": true,
+    "bloomRange": {
+      "x": 0,
+      "y": 10
+    },
+    "vignetteRuntime": true,
+    "vignetteRange": {
+      "x": 0,
+      "y": 1
+    },
+    "chromaticRuntime": true,
+    "chromaticRange": {
+      "x": 0,
+      "y": 1
+    },
+    "filmGrainRuntime": true,
+    "filmGrainRange": {
+      "x": 0,
+      "y": 1
+    },
+    "glitchRuntime": true,
+    "glitchRange": {
+      "x": 0,
+      "y": 1
+    },
+    "distanceFogRuntime": true,
+    "distanceFogRange": {
+      "x": 0,
+      "y": 1
+    },
+    "speedLinesRuntime": true,
+    "speedLinesRange": {
+      "x": 0,
+      "y": 1
+    },
+    "vhsRuntime": true,
+    "vhsRange": {
+      "x": 0,
+      "y": 1
+    },
+    "psxRuntime": true,
+    "psxRange": {
+      "x": 0,
+      "y": 1
+    },
+    "crtRuntime": true,
+    "crtRange": {
+      "x": 0,
+      "y": 1
+    },
+    "hyperspaceRuntime": true,
+    "hyperspaceRange": {
+      "x": 0,
+      "y": 1
+    },
+    "rainAtmosphereRuntime": true,
+    "rainAtmosphereRange": {
+      "x": 0,
+      "y": 1
+    }
+  }
+}

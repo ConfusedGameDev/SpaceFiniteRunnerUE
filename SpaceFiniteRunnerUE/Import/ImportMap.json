@@ -1,0 +1,23 @@
+{
+  "defaultFolder": "/Game/Runner/Data",
+  "defaultPrefix": "DA_",
+  "types": {
+    "TrackLayoutAsset": { "folder": "/Game/Runner/Data/Tracks", "prefix": "TL_" },
+    "TrackShapeSettings": { "folder": "/Game/Runner/Data/Track" },
+    "BoostMeterSettings": { "folder": "/Game/Runner/Data/Ship" }
+  },
+  "assets": {
+    "FiniteRunner_TrackShape": "/Game/Runner/Data/Track/DA_TrackShape",
+    "BoostMeter_Settings": "/Game/Runner/Data/Ship/DA_BoostMeter",
+    "Track_Standard": "/Game/Runner/Data/Tracks/TL_Standard",
+    "Track_StandardCurved": "/Game/Runner/Data/Tracks/TL_StandardCurved",
+    "Track_Arcade": "/Game/Runner/Data/Tracks/TL_Arcade",
+    "Track_BeatTheClock": "/Game/Runner/Data/Tracks/TL_BeatTheClock",
+    "Track_Race": "/Game/Runner/Data/Tracks/TL_Race",
+    "Track_FiniteRunner_LevelDefinition_2": "/Game/Runner/Data/Tracks/TL_Level_02",
+    "Track_FiniteRunner_LevelDefinition_3": "/Game/Runner/Data/Tracks/TL_Level_03",
+    "Track_FiniteRunner_LevelDefinition_60878307": "/Game/Runner/Data/Tracks/TL_Level_60878307",
+    "Track_FiniteRunner_LevelDefinition_newLasers": "/Game/Runner/Data/Tracks/TL_NewLasers",
+    "test4": "/Game/Runner/Data/Tracks/TL_Test4"
+  }
+}

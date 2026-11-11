@@ -1,0 +1,143 @@
+{
+  "unityType": "SpeedOrbSpawner",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.SpeedOrbSpawner",
+  "baseType": "TrackSpawner",
+  "script": "Assets/01.Scripts/Runner/Track/Spawning/SpeedOrbSpawner.cs",
+  "fields": [
+    {
+      "name": "active",
+      "type": "Boolean",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Off = listed but never spawned."
+    },
+    {
+      "name": "displayName",
+      "type": "String",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Name shown in the debug menu and used to seed this spawner's random stream (so renaming reshuffles its layout)."
+    },
+    {
+      "name": "color",
+      "type": "Color",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Tint of this spawner's debug rows."
+    },
+    {
+      "name": "spacing",
+      "type": "Vector2",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Metres of track between one spawn step and the next (min, max).",
+      "band": true,
+      "min": 10,
+      "max": 20000,
+      "unit": "m"
+    },
+    {
+      "name": "startDistance",
+      "type": "Single",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "The first step lands between this distance and this plus the minimum spacing, so the launch stays clean.",
+      "min": 0,
+      "max": 5000,
+      "unit": "m"
+    },
+    {
+      "name": "chance",
+      "type": "Single",
+      "declaredIn": "TrackSpawner",
+      "tooltip": "Chance that a step spawns anything at all. 1 = every step.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "tiers",
+      "type": "PadSpawnEntry[]",
+      "tooltip": "One entry per orb tier. Every step draws one by probability; the sliders auto-rebalance to always total 100%."
+    }
+  ],
+  "types": {
+    "PadSpawnEntry": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.PadSpawnEntry",
+      "fields": [
+        {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "prefab",
+          "type": "GameObject",
+          "tooltip": "Optional model spawned instead of the code-built primitive. Colliders are forced to triggers; one is added if the prefab has none."
+        },
+        {
+          "name": "definition",
+          "type": "PadDefinition",
+          "tooltip": "What the pad does on pickup (boost/brake, orb or flat pad, size)."
+        },
+        {
+          "name": "probability",
+          "type": "Single",
+          "tooltip": "Share of every spawn roll this entry wins. The tiers always sum to 100%. Unused by a single-entry spawner.",
+          "min": 0,
+          "max": 100,
+          "unit": "%"
+        },
+        {
+          "name": "multiplier",
+          "type": "Single",
+          "tooltip": "Boosts only: multiplies GameSettings.powerUpSpeedBoost. Brakes use their definition's own delta.",
+          "min": 0
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "tooltip": "Tint of the code-built primitive (prefabs keep their own materials) and of the pickup's story color."
+        },
+        {
+          "name": "swayAmplitude",
+          "type": "Single",
+          "tooltip": "How far the orb sways side to side across the track, in meters. 0 = holds the flight line.",
+          "min": 0
+        },
+        {
+          "name": "swayFrequency",
+          "type": "Single",
+          "tooltip": "Sway cycles per second.",
+          "min": 0
+        },
+        {
+          "name": "spinDegreesPerSecond",
+          "type": "Single",
+          "tooltip": "Floating orbs only: how fast the orb turns about the track's up, degrees per second. 0 = holds the prefab's authored rotation (a model tilted inside its prefab wobbles when spun).",
+          "min": 0,
+          "max": 360,
+          "unit": "°/s"
+        },
+        {
+          "name": "pickupScale",
+          "type": "Single",
+          "tooltip": "Scales the pickup volume (the prefab's colliders and the analytic box) without touching the picture. 2 = twice as easy to hit.",
+          "min": 0.5,
+          "max": 4
+        },
+        {
+          "name": "lane",
+          "type": "PadLane",
+          "tooltip": "Ground = on the flight line. Air = GameSettings.airLaneHeight above it, where only a jump reaches — the future air lane, keep such entries at 0% until jumps ship them."
+        }
+      ]
+    },
+    "PadLane": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.PadLane",
+      "enum": [
+        {
+          "name": "Ground",
+          "value": 0
+        },
+        {
+          "name": "Air",
+          "value": 1
+        }
+      ]
+    }
+  }
+}

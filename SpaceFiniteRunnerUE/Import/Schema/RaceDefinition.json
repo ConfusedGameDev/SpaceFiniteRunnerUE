@@ -1,0 +1,636 @@
+{
+  "unityType": "RaceDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Race.RaceDefinition",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Race/RaceDefinition.cs",
+  "fields": [
+    {
+      "name": "rivals",
+      "type": "RivalEntry[]",
+      "group": "Rivals",
+      "tooltip": "The pilots on the grid, front row first. One pooled shell each, built at bind."
+    },
+    {
+      "name": "gridColumns",
+      "type": "Int32",
+      "group": "Grid",
+      "tooltip": "Racers per grid row (the ship included).",
+      "min": 1,
+      "max": 6
+    },
+    {
+      "name": "gridRowSpacing",
+      "type": "Single",
+      "group": "Grid",
+      "tooltip": "Metres between two grid rows along the track.",
+      "min": 10,
+      "max": 120,
+      "unit": "m"
+    },
+    {
+      "name": "gridLaneSpacing",
+      "type": "Single",
+      "group": "Grid",
+      "tooltip": "Metres between two grid lanes across the track.",
+      "min": 5,
+      "max": 40,
+      "unit": "m"
+    },
+    {
+      "name": "playerGridSlot",
+      "type": "Int32",
+      "group": "Grid",
+      "tooltip": "The ship's own slot, counted row by row from the front-left (0). -1 = the middle of the back row, so the player starts behind the field.",
+      "min": -1,
+      "max": 30
+    },
+    {
+      "name": "rubberBand",
+      "type": "Single",
+      "group": "Pace",
+      "tooltip": "Most the rubber band moves a rival's thrust and target pace, as a ± share: a rival ahead of the ship eases off, one behind pushes. Keeps a runaway leader catchable without erasing the skill spread.",
+      "min": 0,
+      "max": 0.30000001192092896
+    },
+    {
+      "name": "rubberRange",
+      "type": "Single",
+      "group": "Pace",
+      "tooltip": "Gap to the ship at which the rubber band is at full strength, metres.",
+      "min": 100,
+      "max": 10000,
+      "unit": "m"
+    },
+    {
+      "name": "ghostPaceFactor",
+      "type": "Single",
+      "group": "Pace",
+      "tooltip": "A ghost (out of sight) accelerates and cruises at its thrust and target pace × this — the stand-in for the time it would lose to sweeps and hazards.",
+      "min": 0.5,
+      "max": 1.2000000476837158
+    },
+    {
+      "name": "thrustShare",
+      "type": "Single",
+      "group": "Pace",
+      "tooltip": "Acceleration up to its target pace, as a share of the player's ship's BASE thrust (its definition asset, before Store upgrades). Below 1 a player holding the throttle out-accelerates the field and the orbs decide the race; upgrades make the player faster against it.",
+      "min": 0.30000001192092896,
+      "max": 1.5
+    },
+    {
+      "name": "overPaceBleed",
+      "type": "Single",
+      "group": "Pace",
+      "tooltip": "Above its target pace (a boost), the speed bleeds back down at this rate, m/s².",
+      "min": 1,
+      "max": 300,
+      "unit": "m/s²"
+    },
+    {
+      "name": "orbBoostShare",
+      "type": "Single",
+      "group": "Pace",
+      "tooltip": "Share of a boost orb's speed a rival gets when it takes one (used up, like the patrol's).",
+      "min": 0,
+      "max": 2
+    },
+    {
+      "name": "formVariance",
+      "type": "Single",
+      "group": "Pace",
+      "tooltip": "Each run every rival's thrust and pace are rolled up to this ± share off its authored values: its form on the day, so the same field finishes in a different order.",
+      "min": 0,
+      "max": 0.30000001192092896
+    },
+    {
+      "name": "surgeAmount",
+      "type": "Single",
+      "group": "Pace",
+      "tooltip": "How much a rival's thrust swings over the run (± share), each on its own slow wave: surges and fades that make the pack trade places.",
+      "min": 0,
+      "max": 0.5
+    },
+    {
+      "name": "surgePeriod",
+      "type": "Single",
+      "group": "Pace",
+      "tooltip": "Seconds per swing of the surge.",
+      "min": 3,
+      "max": 60,
+      "unit": "s"
+    },
+    {
+      "name": "launchReaction",
+      "type": "Vector2",
+      "group": "Pace",
+      "tooltip": "Each rival's reaction at lights out, seconds after the ship moves (rolled per run in this band): the grid breaks up from the first second.",
+      "band": true,
+      "min": 0,
+      "max": 2
+    },
+    {
+      "name": "laneSpread",
+      "type": "Single",
+      "group": "Pace",
+      "tooltip": "Share of the half road a rival's home lane is rolled across each run (0 = its grid lane for the whole race).",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "leadGovernor",
+      "type": "Boolean",
+      "group": "leadGovernor",
+      "toggleGroup": true,
+      "tooltip": "A rival AHEAD of the ship can go no faster than the ship's recent speed × a factor (Near right ahead, Far at the rubber range and beyond). Rivals drive clean and lose nothing to beams, walls or braking; without this a leader built on one bad stretch of the player's was never caught."
+    },
+    {
+      "name": "leadCapNear",
+      "type": "Single",
+      "group": "leadGovernor",
+      "toggleGroup": true,
+      "tooltip": "Speed cap, as a share of the ship's recent speed, for a rival just ahead of it: above 1 it can still pull away a little while you are close.",
+      "min": 0.800000011920929,
+      "max": 1.2999999523162842
+    },
+    {
+      "name": "leadCapFar",
+      "type": "Single",
+      "group": "leadGovernor",
+      "toggleGroup": true,
+      "tooltip": "Speed cap, as a share of the ship's recent speed, for a rival the rubber range or more ahead: below 1 a player holding their speed always reels it in.",
+      "min": 0.60000002384185791,
+      "max": 1.1000000238418579
+    },
+    {
+      "name": "leadSpeedSmoothing",
+      "type": "Single",
+      "group": "leadGovernor",
+      "toggleGroup": true,
+      "tooltip": "Seconds the ship's speed is smoothed over for the cap: a laser hit or a fall does not stop the field dead.",
+      "min": 0.20000000298023224,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "shipHalfLength",
+      "type": "Single",
+      "group": "Contact",
+      "tooltip": "The ship's half length along the track, for contact with rivals.",
+      "min": 1,
+      "max": 20,
+      "unit": "m"
+    },
+    {
+      "name": "shipHalfWidth",
+      "type": "Single",
+      "group": "Contact",
+      "tooltip": "The ship's half width across the track, for contact with rivals.",
+      "min": 1,
+      "max": 10,
+      "unit": "m"
+    },
+    {
+      "name": "ramClosingThreshold",
+      "type": "Single",
+      "group": "Contact",
+      "tooltip": "Closing speed below which running into a rival is a nudge (it is held clear, nobody pays), m/s.",
+      "min": 0,
+      "max": 60,
+      "unit": "m/s"
+    },
+    {
+      "name": "ramSpeedCost",
+      "type": "Single",
+      "group": "Contact",
+      "tooltip": "Share of the ship's speed a ram from behind costs it.",
+      "min": 0,
+      "max": 0.5
+    },
+    {
+      "name": "ramSpeedTransfer",
+      "type": "Single",
+      "group": "Contact",
+      "tooltip": "Share of the closing speed a rammed rival is knocked forward with.",
+      "min": 0,
+      "max": 1.5
+    },
+    {
+      "name": "sideShoveMeters",
+      "type": "Single",
+      "group": "Contact",
+      "tooltip": "Metres a side-by-side contact throws each hull away from the other (the ship's dash scale).",
+      "min": 0,
+      "max": 30,
+      "unit": "m"
+    },
+    {
+      "name": "sideShoveBias",
+      "type": "Single",
+      "group": "Contact",
+      "tooltip": "How far the side shove is weighted toward the one that was NOT steering in: 0 = both always shoved the same, 0.6 = the loser of a hard swerve takes 1.6x the shove and the winner 0.4x.",
+      "min": 0,
+      "max": 0.89999997615814209
+    },
+    {
+      "name": "ramKnockMeters",
+      "type": "Single",
+      "group": "Contact",
+      "tooltip": "Metres a rammed rival is knocked sideways (its side picked by where it was hit).",
+      "min": 0,
+      "max": 30,
+      "unit": "m"
+    },
+    {
+      "name": "passLookaheadSeconds",
+      "type": "Single",
+      "group": "Contact",
+      "tooltip": "Seconds of travel ahead a rival plans to pass the ship rather than run into it.",
+      "min": 0,
+      "max": 4,
+      "unit": "s"
+    },
+    {
+      "name": "creditWindow",
+      "type": "Single",
+      "group": "Contact",
+      "tooltip": "A rival wrecked within this many seconds of its last contact with the ship is the player's kill (and pays its bounty).",
+      "min": 0,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "contactSparkColor",
+      "type": "Color",
+      "group": "Contact",
+      "tooltip": "Colour of the sparks a contact throws."
+    },
+    {
+      "name": "lateralSpeed",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Lateral speed full steer settles at, m/s.",
+      "min": 5,
+      "max": 120,
+      "unit": "m/s"
+    },
+    {
+      "name": "handlingResponse",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Lateral drag, 1/s: how fast the lateral velocity settles.",
+      "min": 0.5,
+      "max": 20
+    },
+    {
+      "name": "gripBase",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Grip on a flat sweep at rest, m/s².",
+      "min": 0,
+      "max": 400,
+      "unit": "m/s²"
+    },
+    {
+      "name": "gripPerSpeed",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Extra grip per m/s of speed.",
+      "min": 0,
+      "max": 3
+    },
+    {
+      "name": "brakeDecel",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Deceleration at full brake, m/s².",
+      "min": 10,
+      "max": 600,
+      "unit": "m/s²"
+    },
+    {
+      "name": "slideThreshold",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Outward lateral speed past which a slip is a slide, m/s.",
+      "min": 0,
+      "max": 30,
+      "unit": "m/s"
+    },
+    {
+      "name": "slideSpeedLoss",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Share of the forward speed a slide scrubs per second.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "orbLookaheadSeconds",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Seconds of travel ahead a boost orb is considered.",
+      "min": 0.20000000298023224,
+      "max": 6,
+      "unit": "s"
+    },
+    {
+      "name": "hazardLookaheadSeconds",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Seconds of travel ahead a ramp or laser gate is planned for.",
+      "min": 0.20000000298023224,
+      "max": 6,
+      "unit": "s"
+    },
+    {
+      "name": "gateClearance",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Metres past a horizontal beam's end (or a rotor blade's tip) a rival treats as burning — the emitter's body plus a margin.",
+      "min": 0,
+      "max": 20,
+      "unit": "m"
+    },
+    {
+      "name": "verticalBeamHalfWidth",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Half width of a VERTICAL beam's sheet, metres either side of it, for gates not built yet. Once one is built its measured width is used when larger (the shipped model is ~10 m).",
+      "min": 0.5,
+      "max": 30,
+      "unit": "m"
+    },
+    {
+      "name": "gateMargin",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Extra metres a rival keeps between its hull and a beam's zone, on top of the clearances above: steering closes on its line gradually, so the target sits this far inside the free road.",
+      "min": 0,
+      "max": 15,
+      "unit": "m"
+    },
+    {
+      "name": "curveLookaheadSeconds",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Seconds of travel ahead a flat sweep is braked for.",
+      "min": 0.5,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "rivalSeparation",
+      "type": "Single",
+      "group": "Handling",
+      "tooltip": "Least lateral gap two rivals side by side keep, metres.",
+      "min": 2,
+      "max": 30,
+      "unit": "m"
+    },
+    {
+      "name": "mistakeOverspeed",
+      "type": "Single",
+      "group": "Mistakes",
+      "tooltip": "A rival that misjudges a flat sweep arrives at its grip limit × this (above 1 it slides, and may go off an open edge).",
+      "min": 1,
+      "max": 2
+    },
+    {
+      "name": "mistakeEdgeShave",
+      "type": "Single",
+      "group": "Mistakes",
+      "tooltip": "A rival that misjudges an open edge holds its line this far past it — long enough and it falls.",
+      "min": 0,
+      "max": 10,
+      "unit": "m"
+    },
+    {
+      "name": "edgeHazardLength",
+      "type": "Single",
+      "group": "Mistakes",
+      "tooltip": "Metres of open-edged road counted as one hazard (one roll of the rival's mistake rate).",
+      "min": 100,
+      "max": 3000,
+      "unit": "m"
+    },
+    {
+      "name": "killCam",
+      "type": "Boolean",
+      "group": "killCam",
+      "toggleGroup": true,
+      "tooltip": "A rival wrecked near the ship (in view) plays the kill cam: slow motion, a cut to a planted shot of the explosion, the ship on autopilot and untouchable, then back."
+    },
+    {
+      "name": "killCamRange",
+      "type": "Single",
+      "group": "killCam",
+      "toggleGroup": true,
+      "tooltip": "Farthest a wreck can be from the ship, along the track, and still play it.",
+      "min": 50,
+      "max": 3000,
+      "unit": "m"
+    },
+    {
+      "name": "killCamTimeScale",
+      "type": "Single",
+      "group": "killCam",
+      "toggleGroup": true,
+      "tooltip": "The world clock's scale at the bottom of the slow motion.",
+      "min": 0.05000000074505806,
+      "max": 1
+    },
+    {
+      "name": "killCamSeconds",
+      "type": "Single",
+      "group": "killCam",
+      "toggleGroup": true,
+      "tooltip": "Real seconds the shot holds at full slow motion.",
+      "min": 0.20000000298023224,
+      "max": 4,
+      "unit": "s"
+    },
+    {
+      "name": "killCamBlend",
+      "type": "Vector2",
+      "group": "killCam",
+      "toggleGroup": true,
+      "tooltip": "Real seconds the clock eases in and back out.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "killCamGrace",
+      "type": "Single",
+      "group": "killCam",
+      "toggleGroup": true,
+      "tooltip": "Seconds the ship stays untouchable (blinking) after the cut back.",
+      "min": 0,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "killCamCooldown",
+      "type": "Single",
+      "group": "killCam",
+      "toggleGroup": true,
+      "tooltip": "Real seconds after one kill cam before another can play.",
+      "min": 0,
+      "max": 30,
+      "unit": "s"
+    },
+    {
+      "name": "killCamOffset",
+      "type": "Vector3",
+      "group": "killCam",
+      "toggleGroup": true,
+      "tooltip": "The camera's spot, from the explosion in the track's frame: metres out to its side (away from the ship), up, and ahead along the track."
+    },
+    {
+      "name": "fullSimBand",
+      "type": "Vector2",
+      "group": "Fidelity",
+      "tooltip": "The full-sim window round the ship: metres BEHIND it / AHEAD of it (clamped to the built road). Outside it a rival is a ghost. Keep the ahead edge past the fog.",
+      "band": true,
+      "min": 0,
+      "max": 5000
+    },
+    {
+      "name": "finishFlightSeconds",
+      "type": "Single",
+      "group": "Fidelity",
+      "tooltip": "Seconds a finished rival flies on off its ramp before it is parked.",
+      "min": 0.5,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "debugReadout",
+      "type": "Boolean",
+      "group": "Debug",
+      "tooltip": "Prints the live standings and each rival's state, pace and fidelity on screen."
+    },
+    {
+      "name": "debugGhostWireframes",
+      "type": "Boolean",
+      "group": "Debug",
+      "tooltip": "Draws every ghost rival (hidden, off the full sim) as a wireframe box in its map colour, where its distance and home lane put it."
+    }
+  ],
+  "types": {
+    "RivalEntry": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Race.RivalEntry",
+      "fields": [
+        {
+          "name": "displayName",
+          "type": "String",
+          "tooltip": "Debug / inspector name of this pilot."
+        },
+        {
+          "name": "prefab",
+          "type": "GameObject",
+          "tooltip": "The rival's model. Instantiated under the pooled shell with its transform reset and every collider stripped. Empty = a code-built placeholder hull in the map colour."
+        },
+        {
+          "name": "scale",
+          "type": "Single",
+          "tooltip": "Size of the model.",
+          "min": 0.10000000149011612,
+          "max": 10
+        },
+        {
+          "name": "yawOffset",
+          "type": "Single",
+          "tooltip": "Yaw that turns the model's nose down its own +Z.",
+          "min": -180,
+          "max": 180,
+          "unit": "°"
+        },
+        {
+          "name": "hoverHeight",
+          "type": "Single",
+          "tooltip": "Height of the model above the flight line, along the track's up.",
+          "min": 0,
+          "max": 10,
+          "unit": "m"
+        },
+        {
+          "name": "halfLength",
+          "type": "Single",
+          "tooltip": "Half its length along the track, for contact and spacing.",
+          "min": 0.5,
+          "max": 20,
+          "unit": "m"
+        },
+        {
+          "name": "halfWidth",
+          "type": "Single",
+          "tooltip": "Half its width across the track, for contact, spacing and pickups.",
+          "min": 0.5,
+          "max": 10,
+          "unit": "m"
+        },
+        {
+          "name": "paintTint",
+          "type": "Color",
+          "tooltip": "Paint over the model's own colour; the alpha is how much of it (0 = the model as authored, 1 = fully this colour). Applied to a per-rival copy of the model's materials."
+        },
+        {
+          "name": "mapColor",
+          "type": "Color",
+          "tooltip": "Its dot on the minimap (and the placeholder hull's colour)."
+        },
+        {
+          "name": "cruiseFraction",
+          "type": "Single",
+          "tooltip": "Cruise pace as a share of the run's Light Speed. The pack's skill spread lives here.",
+          "min": 0.20000000298023224,
+          "max": 1.5
+        },
+        {
+          "name": "thrustFactor",
+          "type": "Single",
+          "tooltip": "How hard it accelerates, as a multiple of the field's thrust. With the pace caps out of reach on most tracks, this is what orders the pack.",
+          "min": 0.5,
+          "max": 1.5
+        },
+        {
+          "name": "aggression",
+          "type": "Single",
+          "tooltip": "How far it wanders off its grid lane fighting for the line, 0 (holds its lane) to 1 (all over the road).",
+          "min": 0,
+          "max": 1
+        },
+        {
+          "name": "mistakeRate",
+          "type": "Single",
+          "tooltip": "Chance per hazard of misjudging it (late brake for a flat sweep, a shaved open edge, a gap at the end). Read from M3 of the race PRD.",
+          "min": 0,
+          "max": 1
+        },
+        {
+          "name": "orbAppetite",
+          "type": "Single",
+          "tooltip": "Chance it goes for a boost orb it can reach. Rolled once per orb.",
+          "min": 0,
+          "max": 1
+        },
+        {
+          "name": "ramHull",
+          "type": "Int32",
+          "tooltip": "Rams from behind it takes before it is wrecked.",
+          "min": 1,
+          "max": 10
+        },
+        {
+          "name": "bounty",
+          "type": "Int32",
+          "tooltip": "Money the player is paid when it is wrecked because of them (a ram, or a shove into a beam, off an edge or into a gap). Its own mistakes pay nothing.",
+          "min": 0,
+          "max": 5000,
+          "unit": "$"
+        }
+      ]
+    }
+  }
+}

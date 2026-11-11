@@ -1,0 +1,507 @@
+{
+  "unityType": "ShipSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Ship.ShipSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Ship/ShipSettings.cs",
+  "fields": [
+    {
+      "name": "maxStepMeters",
+      "type": "Single",
+      "group": "Simulation",
+      "tooltip": "Longest distance one substep may cover. A tick is split so no step is longer: 4 m = 5 substeps at cruise (1000 m/s), 10 at Light Speed. Smaller follows tight geometry (a loop, a ramp) more exactly and costs more queries.",
+      "min": 1,
+      "max": 12,
+      "unit": "m"
+    },
+    {
+      "name": "maxSubsteps",
+      "type": "Int32",
+      "group": "Simulation",
+      "tooltip": "Hard cap on substeps per tick, whatever the speed.",
+      "min": 1,
+      "max": 48
+    },
+    {
+      "name": "groundLayers",
+      "type": "LayerMask",
+      "group": "World",
+      "tooltip": "Layers the ship rides, lands on and hits. Default + ShipGround flies over any ordinary level as it is; a level that shares its physics scene with colliders the ship must never touch (the runner during the city handoff) narrows this to ShipGround alone."
+    },
+    {
+      "name": "pickupsEnabled",
+      "type": "Boolean",
+      "group": "World",
+      "tooltip": "Take pickups (needs a ShipPickupSweeper on the ship)."
+    },
+    {
+      "name": "pickupLayers",
+      "type": "LayerMask",
+      "group": "World",
+      "tooltip": "Layers the pickup sweep looks on. A pickup is anything there with an IShipPickup on it, found by its own collider (trigger or not)."
+    },
+    {
+      "name": "attachRange",
+      "type": "Single",
+      "group": "Surface",
+      "tooltip": "How far below the ride height the probes still find ground. Inside it the ship is held to the surface; past it (for the coyote distance) it lets go.",
+      "min": 0.5,
+      "max": 20,
+      "unit": "m"
+    },
+    {
+      "name": "probeHalfExtents",
+      "type": "Vector2",
+      "group": "Surface",
+      "tooltip": "Half spacing of the side probes (x) and the nose / tail probes (y), around the centre probe. The plane through them is the ship's up."
+    },
+    {
+      "name": "coyoteMeters",
+      "type": "Single",
+      "group": "Surface",
+      "tooltip": "Distance the ship keeps flying straight after the probes lose the ground before it counts as a take-off. Bridges seams and small gaps.",
+      "min": 0,
+      "max": 40,
+      "unit": "m"
+    },
+    {
+      "name": "visualLift",
+      "type": "Single",
+      "group": "Surface",
+      "tooltip": "Extra cosmetic lift of the model above the physical ride height (which is the ship definition's hover height).",
+      "min": -5,
+      "max": 5,
+      "unit": "m"
+    },
+    {
+      "name": "magnetic",
+      "type": "Boolean",
+      "group": "Surface",
+      "tooltip": "Magnetic hover: the ship holds to whatever surface is under its probes, at any angle — loops, tubes and steep banks are plain geometry. Off = world gravity rules: only surfaces within the ground angle hold, anything steeper needs centripetal load, and a bank pulls the ship downhill."
+    },
+    {
+      "name": "magnetStrength",
+      "type": "Single",
+      "group": "Surface",
+      "tooltip": "Centripetal pull the magnet can supply over a CREST, m/s². The ship lets go when speed² × curvature exceeds it. 0 = unlimited (never launches off a crest).",
+      "min": 0,
+      "max": 50000,
+      "unit": "m/s²"
+    },
+    {
+      "name": "maxGroundAngle",
+      "type": "Single",
+      "group": "Surface",
+      "tooltip": "World-gravity mode only: steepest surface, from level, that holds the ship on its own.",
+      "min": 0,
+      "max": 90,
+      "unit": "°"
+    },
+    {
+      "name": "hullRadius",
+      "type": "Single",
+      "group": "Walls",
+      "tooltip": "Radius of the hull sweep that finds walls and obstacles, centred on the ship. Must stay below the hover height or it scrapes the floor.",
+      "min": 0.25,
+      "max": 5,
+      "unit": "m"
+    },
+    {
+      "name": "climbAngle",
+      "type": "Single",
+      "group": "Walls",
+      "tooltip": "A surface tilted up to this far from the ship's up is floor (a ramp, a bank) and is climbed; steeper is a wall.",
+      "min": 5,
+      "max": 85,
+      "unit": "°"
+    },
+    {
+      "name": "wallHitCooldownSeconds",
+      "type": "Single",
+      "group": "Walls",
+      "tooltip": "Seconds before another wall hit can cost speed / fire feedback.",
+      "min": 0,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "airDistancePerSpeed",
+      "type": "Single",
+      "group": "Flight",
+      "tooltip": "Metres of air per m/s of take-off speed. A flight's gravity is solved so it lands this far on, at the speed it left with — real 9.81 at 1000 m/s would be a 65 km jump.",
+      "min": 0,
+      "max": 2
+    },
+    {
+      "name": "airDistanceRange",
+      "type": "Vector2",
+      "group": "Flight",
+      "tooltip": "Shortest and longest flight, metres, before the ship's jump strength.",
+      "band": true,
+      "min": 10,
+      "max": 2000
+    },
+    {
+      "name": "airControlFactor",
+      "type": "Single",
+      "group": "Flight",
+      "tooltip": "Steering and dash authority while airborne, 0..1.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "minAirGravity",
+      "type": "Single",
+      "group": "Flight",
+      "tooltip": "Gentlest gravity a flight may get, and the gravity of a fall with no ground found below.",
+      "min": 1,
+      "max": 200,
+      "unit": "m/s²"
+    },
+    {
+      "name": "maxLandAngle",
+      "type": "Single",
+      "group": "Flight",
+      "tooltip": "Steepest surface, from the ship's up, it can land on. Anything steeper met in the air is a wall.",
+      "min": 5,
+      "max": 85,
+      "unit": "°"
+    },
+    {
+      "name": "useGuide",
+      "type": "Boolean",
+      "group": "Guide",
+      "tooltip": "Take the help of a guide spline when the level has one in reach. Off = always free flight."
+    },
+    {
+      "name": "guideAssist",
+      "type": "Single",
+      "group": "Guide",
+      "tooltip": "The ship's own share of a guide's assist (multiplied with the guide's). 1 on a full-assist guide = the heading is the line's and the stick strafes, the runner's feel; lower keeps turning in the player's hands and only leans the heading toward the line.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "guideHeadingResponse",
+      "type": "Single",
+      "group": "Guide",
+      "tooltip": "How fast a partial assist eases the heading onto the line, 1/s (scaled by the assist). Full assist locks it.",
+      "min": 0.5,
+      "max": 30
+    },
+    {
+      "name": "guideRefreshMeters",
+      "type": "Single",
+      "group": "Guide",
+      "tooltip": "Metres flown between full projections onto the guide. In between, the ship's place on the line is advanced by what it flew and the line's tangent is turned by its curvature — no query at all. A projection is the expensive part of a guided substep (a spline-backed track costs ~0.04 ms each, ten substeps a tick at Light Speed); 0 = project every substep.",
+      "min": 0,
+      "max": 100,
+      "unit": "m"
+    },
+    {
+      "name": "guideSearchSeconds",
+      "type": "Single",
+      "group": "Guide",
+      "tooltip": "How often a ship with no guide looks for one.",
+      "min": 0.10000000149011612,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "dashEnabled",
+      "type": "Boolean",
+      "group": "Dash",
+      "tooltip": "Master switch for the lateral dash and its airborne barrel roll."
+    },
+    {
+      "name": "dashCost",
+      "type": "Single",
+      "group": "Dash",
+      "tooltip": "Share of the meter one dash spends. The recharge time is the ship definition's.",
+      "min": 0.05000000074505806,
+      "max": 1
+    },
+    {
+      "name": "dashSinglePress",
+      "type": "Boolean",
+      "group": "Dash",
+      "tooltip": "One press is the whole dash gesture (the player's own CONTROLS toggle can also switch this on)."
+    },
+    {
+      "name": "dashDoubleTapSeconds",
+      "type": "Single",
+      "group": "Dash",
+      "tooltip": "Window for the second tap of a double-tap dash.",
+      "min": 0.10000000149011612,
+      "max": 0.60000002384185791,
+      "unit": "s"
+    },
+    {
+      "name": "stallGraceSeconds",
+      "type": "Single",
+      "group": "Stall",
+      "tooltip": "Seconds at a standstill with the throttle released before the ship reports itself stopped. Braking to a stop alone never stalls it. The report is only a signal (a game may end its run on it): the ship itself keeps flying.",
+      "min": 0.25,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "recoveryEnabled",
+      "type": "Boolean",
+      "group": "Recovery",
+      "tooltip": "Falling off the world and coming back (needs a ShipRecovery on the ship). Off = a lost ship just keeps falling."
+    },
+    {
+      "name": "groundlessSeconds",
+      "type": "Single",
+      "group": "Recovery",
+      "tooltip": "Seconds in the air with NO ground anywhere below before the ship counts as lost. A jump always has ground under it.",
+      "min": 0.10000000149011612,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "maxAirSeconds",
+      "type": "Single",
+      "group": "Recovery",
+      "tooltip": "Longest the ship may stay airborne at all, ground below or not.",
+      "min": 1,
+      "max": 60,
+      "unit": "s"
+    },
+    {
+      "name": "useKillHeight",
+      "type": "Boolean",
+      "group": "Recovery",
+      "tooltip": "Treat anything below the kill height as lost."
+    },
+    {
+      "name": "killHeight",
+      "type": "Single",
+      "group": "Recovery",
+      "unit": "m (world Y)"
+    },
+    {
+      "name": "fallGravity",
+      "type": "Single",
+      "group": "Recovery",
+      "tooltip": "Gravity of the tumbling fall.",
+      "min": 1,
+      "max": 200,
+      "unit": "m/s²"
+    },
+    {
+      "name": "fallTumbleDegreesPerSecond",
+      "type": "Single",
+      "group": "Recovery",
+      "min": 0,
+      "max": 720,
+      "unit": "°/s"
+    },
+    {
+      "name": "fallDurationSeconds",
+      "type": "Single",
+      "group": "Recovery",
+      "tooltip": "How long the fall is watched before the ship is put back.",
+      "min": 0,
+      "max": 5,
+      "unit": "s"
+    },
+    {
+      "name": "respawnWaitSeconds",
+      "type": "Single",
+      "group": "Recovery",
+      "tooltip": "Blinking standstill before the relaunch — or, with a rolling start, the blinking untouchable window after it.",
+      "min": 0,
+      "max": 10,
+      "unit": "s"
+    },
+    {
+      "name": "respawnRollingStart",
+      "type": "Boolean",
+      "group": "Recovery",
+      "tooltip": "ON: relaunched at once at the penalised speed, under control, and the wait is spent blinking and untouchable while it flies. OFF: a blinking standstill for the wait, then the relaunch."
+    },
+    {
+      "name": "respawnSpeedPenalty",
+      "type": "Single",
+      "group": "Recovery",
+      "tooltip": "Share of the speed it fell with that the relaunch loses.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "respawnClearance",
+      "type": "Single",
+      "group": "Recovery",
+      "tooltip": "Guided respawn: plain road the guide must find ahead of the spot.",
+      "min": 0,
+      "max": 1000,
+      "unit": "m"
+    },
+    {
+      "name": "respawnBackMeters",
+      "type": "Single",
+      "group": "Recovery",
+      "tooltip": "Free respawn: how far back along its own trail the ship is put, so it is clear of what it fell off.",
+      "min": 5,
+      "max": 500,
+      "unit": "m"
+    },
+    {
+      "name": "respawnLookAheadMeters",
+      "type": "Single",
+      "group": "Recovery",
+      "tooltip": "Free respawn: how far along each candidate heading the ship looks for road. It faces the way with the most road ahead, so it never relaunches at the edge it fell off.",
+      "min": 50,
+      "max": 2000,
+      "unit": "m"
+    },
+    {
+      "name": "respawnCentreSearchMeters",
+      "type": "Single",
+      "group": "Recovery",
+      "tooltip": "Free respawn: how far to each side the road's edges are searched for, to put the ship in the middle of it. A side with no edge inside this range is open ground: the ship is not moved that way.",
+      "min": 10,
+      "max": 500,
+      "unit": "m"
+    },
+    {
+      "name": "crumbSpacingMeters",
+      "type": "Single",
+      "group": "Recovery",
+      "tooltip": "Free respawn: distance between the breadcrumbs the ship drops while safely grounded.",
+      "min": 2,
+      "max": 100,
+      "unit": "m"
+    },
+    {
+      "name": "maxCrumbTilt",
+      "type": "Single",
+      "group": "Recovery",
+      "tooltip": "Free respawn: a breadcrumb is only dropped while the ship is within this tilt of upright — never halfway up a loop.",
+      "min": 5,
+      "max": 90,
+      "unit": "°"
+    },
+    {
+      "name": "reverseSpeed",
+      "type": "Single",
+      "group": "Reverse",
+      "tooltip": "At a standstill, holding the brake backs the ship up to this speed — the way out of a wall it has nosed into. 0 = no reverse (the runner's rule: the brake only stops).",
+      "min": 0,
+      "max": 100,
+      "unit": "m/s"
+    },
+    {
+      "name": "reverseAcceleration",
+      "type": "Single",
+      "group": "Reverse",
+      "min": 1,
+      "max": 200,
+      "unit": "m/s per s"
+    },
+    {
+      "name": "ghostMaterial",
+      "type": "Material",
+      "group": "Feel",
+      "tooltip": "Material of the dash ghosts and of the respawn blink. Empty = a runtime translucent fallback."
+    },
+    {
+      "name": "dashGhostLifetime",
+      "type": "Single",
+      "group": "Feel",
+      "tooltip": "How long a dash ghost lives.",
+      "min": 0.05000000074505806,
+      "max": 2,
+      "unit": "s"
+    },
+    {
+      "name": "dashGhostStartAlpha",
+      "type": "Single",
+      "group": "Feel",
+      "tooltip": "A dash ghost's alpha when dropped; it fades to zero from there.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "dashGhostDriftMeters",
+      "type": "Single",
+      "group": "Feel",
+      "tooltip": "How far a ghost slides back behind the ship over its life. 0 = a pure staircase.",
+      "min": 0,
+      "max": 30,
+      "unit": "m"
+    },
+    {
+      "name": "respawnBlinkRate",
+      "type": "Single",
+      "group": "Feel",
+      "tooltip": "Blinks per second while the ship waits to relaunch after a fall.",
+      "min": 1,
+      "max": 20,
+      "unit": "Hz"
+    },
+    {
+      "name": "barrelRollTrailSeconds",
+      "type": "Single",
+      "group": "Feel",
+      "tooltip": "How long a wingtip ribbon of the barrel roll lives.",
+      "min": 0.05000000074505806,
+      "max": 3,
+      "unit": "s"
+    },
+    {
+      "name": "barrelRollTrailWidth",
+      "type": "Single",
+      "group": "Feel",
+      "min": 0.05000000074505806,
+      "max": 5,
+      "unit": "m"
+    },
+    {
+      "name": "barrelRollTrailSpan",
+      "type": "Single",
+      "group": "Feel",
+      "tooltip": "Where the ribbons leave the wing, as a share of the model's half width.",
+      "min": 0.20000000298023224,
+      "max": 2
+    },
+    {
+      "name": "barrelRollTrailColor",
+      "type": "Color",
+      "group": "Feel"
+    },
+    {
+      "name": "barrelRollTrailMaterial",
+      "type": "Material",
+      "group": "Feel",
+      "tooltip": "Must be URP Particles/Unlit, additive — the plain Unlit ignores the trail's gradient. Empty = a runtime fallback."
+    },
+    {
+      "name": "maxYawRate",
+      "type": "Single",
+      "group": "Free steering",
+      "tooltip": "Fastest the ship can turn with no guide spline, at low speed.",
+      "min": 5,
+      "max": 360,
+      "unit": "°/s"
+    },
+    {
+      "name": "turnAuthority",
+      "type": "Single",
+      "group": "Free steering",
+      "tooltip": "Share of the ship's grip a full-lock turn may ask for. At speed the turn rate is grip ÷ speed: 1 = exactly what holds, above 1 = full lock slides (brake first).",
+      "min": 0.10000000149011612,
+      "max": 3
+    },
+    {
+      "name": "freeStrafeShare",
+      "type": "Single",
+      "group": "Free steering",
+      "tooltip": "Share of the definition's lateral (strafe) speed that steering also gets with no guide. 0 = pure turning, 1 = the runner's full strafe on top of the turn.",
+      "min": 0,
+      "max": 1
+    }
+  ],
+  "types": {}
+}

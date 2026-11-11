@@ -1,0 +1,21 @@
+{
+  "unityType": "TubeDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.Features.TubeDefinition",
+  "name": "FullTube_Definition",
+  "guid": "796af27969ac451e838bde8366476334",
+  "path": "Assets/04.Data/FiniteRunner/TrackSettings/Features/FullTube_Definition.asset",
+  "fields": {
+    "displayName": "Full Tube",
+    "radius": 60,
+    "bandDegrees": 180,
+    "centreDegrees": 0,
+    "steeringFactor": 3,
+    "lengthRange": {
+      "x": 1095.59082,
+      "y": 3564.51318
+    },
+    "curlLength": 150,
+    "returnLength": 500,
+    "exitClearance": 150
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "unityType": "RunnerLevelDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.RunnerLevelDefinition",
+  "name": "FiniteRunner_LevelDefinition_Race",
+  "guid": "c34081d72d1ce054991c0bb25f9c7689",
+  "path": "Assets/04.Data/FiniteRunner/Levels/FiniteRunner_LevelDefinition_Race.asset",
+  "fields": {
+    "levelName": "Race",
+    "nextSceneName": "CarTest",
+    "trackLengthMeters": 30000,
+    "track": {
+      "$ref": {
+        "guid": "0107574ce81b4ee198155b04208de20a",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/Tracks/Track_Race.asset",
+        "name": "Track_Race",
+        "type": "TrackLayoutAsset",
+        "main": true
+      }
+    },
+    "traffic": null,
+    "race": {
+      "$ref": {
+        "guid": "554e2404b4adac04aba1bfb90a514d6d",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/Race/Race_Default.asset",
+        "name": "Race_Default",
+        "type": "RaceDefinition",
+        "main": true
+      }
+    },
+    "timeTrial": null,
+    "trackReveal": true,
+    "completeVideo": null,
+    "rankTable": {
+      "sThreshold": 10000,
+      "aThreshold": 5000,
+      "bThreshold": 2500,
+      "cThreshold": 1000
+    },
+    "optionalChallenges": [],
+    "objectives": [
+      {
+        "type": {
+          "$enum": "RacePosition",
+          "value": 2
+        },
+        "targetSpeedKmh": 6500,
+        "jumpCount": 3,
+        "raceMode": {
+          "$enum": "TopX",
+          "value": 1
+        },
+        "racePosition": 3,
+        "minSecondsLeft": 0,
+        "reward": 500,
+        "accent": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        }
+      }
+    ]
+  }
+}

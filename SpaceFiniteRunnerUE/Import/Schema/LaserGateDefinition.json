@@ -1,0 +1,309 @@
+{
+  "unityType": "LaserGateDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.Features.LaserGateDefinition",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Track/Features/LaserGateDefinition.cs",
+  "fields": [
+    {
+      "name": "coverageBand",
+      "type": "Vector2",
+      "group": "Beam",
+      "tooltip": "Beam length as a fraction of the lane width (min, max), rolled per gate. Small on purpose: a gate is steered round, never jumped.",
+      "band": true,
+      "min": 0.05,
+      "max": 0.6
+    },
+    {
+      "name": "beamRadius",
+      "type": "Single",
+      "group": "Beam",
+      "tooltip": "Half thickness of the beam that burns, metres. The ship's own half width and half height are added on.",
+      "min": 0.10000000149011612,
+      "max": 4,
+      "unit": "m"
+    },
+    {
+      "name": "beamHeight",
+      "type": "Single",
+      "group": "Beam",
+      "tooltip": "Height of a horizontal beam's axis above the flight line, metres. 0 = dead on the ship.",
+      "min": -1,
+      "max": 5,
+      "unit": "m"
+    },
+    {
+      "name": "horizontalWeight",
+      "type": "Single",
+      "group": "Variants",
+      "tooltip": "Relative weight of the single horizontal beam. 0 = never.",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "verticalWeight",
+      "type": "Single",
+      "group": "Variants",
+      "tooltip": "Relative weight of the single vertical beam. 0 = never.",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "tripleWeight",
+      "type": "Single",
+      "group": "Variants",
+      "tooltip": "Relative weight of three horizontal beams one above another. 0 = never.",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "rotorWeight",
+      "type": "Single",
+      "group": "Variants",
+      "tooltip": "Relative weight of the flat rotor. 0 = never.",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "tripleSpacing",
+      "type": "Single",
+      "group": "Variants",
+      "tooltip": "Triple: metres between one beam and the one above it. The upper two catch a ship in the air.",
+      "min": 2,
+      "max": 20,
+      "unit": "m"
+    },
+    {
+      "name": "verticalHeight",
+      "type": "Single",
+      "group": "Variants",
+      "tooltip": "Vertical (procedural look only): how far above the flight line the beam reaches, metres. It starts at the road. A gate drawing the prefab is as tall as its sheet instead.",
+      "min": 5,
+      "max": 60,
+      "unit": "m"
+    },
+    {
+      "name": "rotorSpeedBand",
+      "type": "Vector2",
+      "group": "Variants",
+      "tooltip": "Rotor: turn rate (min, max), degrees per second, rolled per gate; the direction is a coin toss.",
+      "band": true,
+      "min": 10,
+      "max": 360,
+      "unit": "°/s"
+    },
+    {
+      "name": "emitterScale",
+      "type": "Single",
+      "group": "Emitters",
+      "tooltip": "Scale of the emitter models. They are authored about 1.2 m across, which is a speck on a 100 m road.",
+      "min": 0.5,
+      "max": 20
+    },
+    {
+      "name": "emitterSpinDegPerSec",
+      "type": "Single",
+      "group": "Emitters",
+      "tooltip": "How fast the emitters roll about their barrel (their local Z) while firing, degrees per second. B rolls the other way.",
+      "min": 0,
+      "max": 1440,
+      "unit": "°/s"
+    },
+    {
+      "name": "emitterRoadClearance",
+      "type": "Single",
+      "group": "Emitters",
+      "tooltip": "Gap kept between the visible road and the lowest point an emitter can reach as it spins. A horizontal, triple or rotor gate is DRAWN lifted by whatever this takes (the burn stays on the flight line, where the ship's hit box is — the ship's model rides that much above it anyway); a vertical beam rises out of the road with its bottom emitter hidden.",
+      "min": 0,
+      "max": 50,
+      "unit": "m"
+    },
+    {
+      "name": "look",
+      "type": "LaserBeamLook",
+      "group": "Look",
+      "tooltip": "What draws the beam. Prefab = the laser model authored in PF_LaserSystem (its emitter bar and the beam sheet it projects down), at its authored size; Procedural = the old LaserA / LaserB emitters and code-built lines; Both = the two together. Prefab and Both make EVERY gate vertical (the variant weights are ignored) as tall as the sheet and burning as wide as it is; under Prefab alone no gate waves (the sheet cannot zigzag). A prefab with no authored model falls back to Procedural."
+    },
+    {
+      "name": "prefabModelScale",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Multiplier on the prefab's authored laser model, bar and sheet alike — never stretched. 1 = exactly as authored in PF_LaserSystem. The gate's height and burn width follow the sheet at this scale.",
+      "min": 0.25,
+      "max": 20
+    },
+    {
+      "name": "beamMaterial",
+      "type": "Material",
+      "group": "Look",
+      "tooltip": "Additive material of the beam (URP Particles/Unlit, vertex colour). Empty = one is built in code."
+    },
+    {
+      "name": "beamColor",
+      "type": "Color",
+      "group": "Look",
+      "tooltip": "Colour of the wide outer glow."
+    },
+    {
+      "name": "coreColor",
+      "type": "Color",
+      "group": "Look",
+      "tooltip": "Colour of the thin hot core."
+    },
+    {
+      "name": "glowWidthFactor",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Drawn width of the glow as a multiple of the burning thickness (the core is a third of it).",
+      "min": 0.5,
+      "max": 6
+    },
+    {
+      "name": "flickerAmount",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "How much the beam's width flickers, as a fraction of itself.",
+      "min": 0,
+      "max": 0.800000011920929
+    },
+    {
+      "name": "flickerFrequency",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Flickers per second.",
+      "min": 1,
+      "max": 60,
+      "unit": "Hz"
+    },
+    {
+      "name": "wavy",
+      "type": "Boolean",
+      "group": "wavy",
+      "toggleGroup": true,
+      "tooltip": "Beams may zigzag: a TRIANGLE wave (a sine's rhythm with sharp corners) running along the beam. The wave swings along the track's up — across the track on the vertical gate — and what burns grows by the amplitude on that axis, so the picture never lies."
+    },
+    {
+      "name": "waveChance",
+      "type": "Single",
+      "group": "wavy",
+      "toggleGroup": true,
+      "tooltip": "Share of the gates that get the wave. 1 = every gate.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "waveAmplitude",
+      "type": "Single",
+      "group": "wavy",
+      "toggleGroup": true,
+      "tooltip": "How far the zigzag swings either side of the beam's axis, metres.",
+      "min": 0.10000000149011612,
+      "max": 6,
+      "unit": "m"
+    },
+    {
+      "name": "waveLength",
+      "type": "Single",
+      "group": "wavy",
+      "toggleGroup": true,
+      "tooltip": "Length of one full zig + zag along the beam, metres.",
+      "min": 1,
+      "max": 30,
+      "unit": "m"
+    },
+    {
+      "name": "waveSpeed",
+      "type": "Single",
+      "group": "wavy",
+      "toggleGroup": true,
+      "tooltip": "How fast the wave runs from A to B, wavelengths per second. Negative runs it back; 0 = a frozen zigzag.",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "waveTaper",
+      "type": "Single",
+      "group": "wavy",
+      "toggleGroup": true,
+      "tooltip": "Stretch at each muzzle over which the swing grows from nothing, metres, so the beam still leaves and enters the shoot points.",
+      "min": 0,
+      "max": 10,
+      "unit": "m"
+    },
+    {
+      "name": "activation",
+      "type": "Boolean",
+      "group": "activation",
+      "toggleGroup": true,
+      "tooltip": "Gates start OFF: the sheet is pulled up into the bar and lets itself down onto the road as the ship closes in, sparks where it meets the road, and pulls back up once the ship is past. Only what is drawn burns. The authored (Prefab) look only. Off = every gate stands on from the moment it is built."
+    },
+    {
+      "name": "growBand",
+      "type": "Vector2",
+      "group": "activation",
+      "toggleGroup": true,
+      "tooltip": "Distance from the ship to the gate (full, start), metres: the sheet starts down at the far end and is on the road at the near one. Distances, not seconds, so it looks the same at any speed — keep the start inside the track reveal's seated edge (TrackReveal_Settings startAhead − band − stagger, ~866 m as shipped), or the sheet lets itself down while the gate is still collapsed and it rises in already on; keep the full end far enough out to steer round.",
+      "band": true,
+      "min": 0,
+      "max": 1500,
+      "unit": "m"
+    },
+    {
+      "name": "passMargin",
+      "type": "Single",
+      "group": "activation",
+      "toggleGroup": true,
+      "tooltip": "How far the ship must be past the gate before it pulls the sheet back up, metres.",
+      "min": 0,
+      "max": 100,
+      "unit": "m"
+    },
+    {
+      "name": "retractSeconds",
+      "type": "Single",
+      "group": "activation",
+      "toggleGroup": true,
+      "tooltip": "Seconds the sheet takes to pull back into the bar once the ship is past (scaled time).",
+      "min": 0.05000000074505806,
+      "max": 3,
+      "unit": "s"
+    },
+    {
+      "name": "floorContactThreshold",
+      "type": "Single",
+      "group": "activation",
+      "toggleGroup": true,
+      "tooltip": "Share of its length the sheet must hang out before it counts as touching the road (the impact burst and the floor sparks). The sparks' look is the PF_LaserFloorSparks prefab nested in the laser prefab — tune it there.",
+      "min": 0.5,
+      "max": 1
+    },
+    {
+      "name": "underTrackOverflow",
+      "type": "Single",
+      "group": "activation",
+      "toggleGroup": true,
+      "tooltip": "How much further the sheet keeps growing past the road, down under the track, metres. 0 = it stops on the road. The grow band covers the whole length (sheet + overflow), so with overflow the sheet meets the road a little before the band's near end and keeps pushing down under it. Only the part above the road burns; the floor sparks still fire at road level.",
+      "min": 0,
+      "max": 50,
+      "unit": "m"
+    }
+  ],
+  "types": {
+    "LaserBeamLook": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.Features.LaserBeamLook",
+      "enum": [
+        {
+          "name": "Procedural",
+          "value": 0
+        },
+        {
+          "name": "Prefab",
+          "value": 1
+        },
+        {
+          "name": "Both",
+          "value": 2
+        }
+      ]
+    }
+  }
+}

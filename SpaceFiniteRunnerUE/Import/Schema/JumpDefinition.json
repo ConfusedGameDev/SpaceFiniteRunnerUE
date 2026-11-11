@@ -1,0 +1,94 @@
+{
+  "unityType": "JumpDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.Features.JumpDefinition",
+  "baseType": "TrackFeatureDefinition",
+  "script": "Assets/01.Scripts/Runner/Track/Features/JumpDefinition.cs",
+  "fields": [
+    {
+      "name": "displayName",
+      "type": "String",
+      "declaredIn": "TrackFeatureDefinition",
+      "tooltip": "Name used in spawned object names and HUD text."
+    },
+    {
+      "name": "widthFraction",
+      "type": "Single",
+      "group": "Ramp",
+      "tooltip": "Ramp width as a fraction of the track width, so it keeps reading the same when the width knob moves.",
+      "min": 0.05000000074505806,
+      "max": 1
+    },
+    {
+      "name": "length",
+      "type": "Single",
+      "group": "Ramp",
+      "tooltip": "Run-up length in metres — the slope the ship rides before the lip.",
+      "min": 10,
+      "max": 200,
+      "unit": "m"
+    },
+    {
+      "name": "rampAngle",
+      "type": "Single",
+      "group": "Ramp",
+      "tooltip": "Slope of the ramp. The lip height is length × tan(angle), and the ship leaves the lip at this angle.",
+      "min": 5,
+      "max": 45,
+      "unit": "°"
+    },
+    {
+      "name": "entryMargin",
+      "type": "Single",
+      "group": "Ramp",
+      "tooltip": "How far inside the ramp's edge the ship's centre must be to enter it (half the ship's width). Closer to the edge is a side hit.",
+      "min": 0,
+      "max": 10,
+      "unit": "m"
+    },
+    {
+      "name": "airDistancePerSpeed",
+      "type": "Single",
+      "group": "Arc",
+      "tooltip": "Metres of flight per m/s of takeoff speed. 0.6 throws a 250 m/s launch 150 m and a 1000 m/s ship 600 m (before the cap).",
+      "min": 0.05000000074505806,
+      "max": 3,
+      "unit": "m per m/s"
+    },
+    {
+      "name": "airDistanceRange",
+      "type": "Vector2",
+      "group": "Arc",
+      "tooltip": "Shortest and longest arc, in metres of track. The upper end is the exclusion the generator keeps clear ahead of every ramp.",
+      "band": true,
+      "min": 20,
+      "max": 2000,
+      "unit": "m"
+    },
+    {
+      "name": "landingClearance",
+      "type": "Single",
+      "group": "Arc",
+      "tooltip": "Straight, level, flat road kept BEYOND the longest possible landing, metres. A ramp is only placed where the road can stay straight from its lip to here — the longest jump is the arc cap × the ship's jump strength (the Store raises it) — so a jump always lands on the road it left, never on a wall or round a corner.",
+      "min": 0,
+      "max": 600,
+      "unit": "m"
+    },
+    {
+      "name": "airControlFactor",
+      "type": "Single",
+      "group": "Air",
+      "tooltip": "Steering and dash authority while airborne, as a fraction of grounded.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "sideHitSpeedLoss",
+      "type": "Single",
+      "group": "Side hit",
+      "tooltip": "Fraction of the current speed lost when the ship hits the ramp from the side (a fraction, because speed grows all run).",
+      "min": 0,
+      "max": 1
+    }
+  ],
+  "types": {}
+}

@@ -1,0 +1,211 @@
+{
+  "unityType": "ChaseMinimapSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.HUD.ChaseMinimapSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/HUD/ChaseMinimapSettings.cs",
+  "fields": [
+    {
+      "name": "shipColor",
+      "type": "Color",
+      "group": "Colors",
+      "tooltip": "Tints the ship icon — and its sprite, when one is assigned (white keeps the sprite's own colours)."
+    },
+    {
+      "name": "policeBlink",
+      "type": "Boolean",
+      "tooltip": "Off: the police icon holds one steady colour."
+    },
+    {
+      "name": "policeRed",
+      "type": "Color",
+      "tooltip": "The police icon's colour (the first of the blink pair when blinking) and the patrol gap readout's warning colour."
+    },
+    {
+      "name": "policeBlue",
+      "type": "Color"
+    },
+    {
+      "name": "shipSprite",
+      "type": "Sprite",
+      "group": "Sprites"
+    },
+    {
+      "name": "shipSpriteScale",
+      "type": "Single",
+      "tooltip": "Multiplies Ship Icon Size while a ship sprite is assigned.",
+      "min": 0.25,
+      "max": 4
+    },
+    {
+      "name": "shipSpriteRotation",
+      "type": "Single",
+      "tooltip": "Z rotation of the ship icon while a ship sprite is assigned. Kept in sync with the Ship object's own rotation — edit either one.",
+      "min": -180,
+      "max": 180
+    },
+    {
+      "name": "policeSprite",
+      "type": "Sprite"
+    },
+    {
+      "name": "policeSpriteScale",
+      "type": "Single",
+      "tooltip": "Multiplies Police Icon Size while a police sprite is assigned.",
+      "min": 0.25,
+      "max": 4
+    },
+    {
+      "name": "policeSpriteRotation",
+      "type": "Single",
+      "tooltip": "Z rotation of the police icon while a police sprite is assigned. Kept in sync with the Police object's own rotation — edit either one.",
+      "min": -180,
+      "max": 180
+    },
+    {
+      "name": "shipIconSize",
+      "type": "Single",
+      "group": "Layout",
+      "min": 8,
+      "max": 64
+    },
+    {
+      "name": "policeIconSize",
+      "type": "Single",
+      "min": 8,
+      "max": 64
+    },
+    {
+      "name": "chaseSpan",
+      "type": "Single",
+      "tooltip": "Pixels under the ship that stand for the full minimap range (GameSettings.minimapRangeMeters) — the patrol's zoomed gap scale. At track scale the gap would be a pixel or two.",
+      "min": 20,
+      "max": 300
+    },
+    {
+      "name": "showTrackMap",
+      "type": "Boolean",
+      "group": "Track map",
+      "tooltip": "Draw the top-down track map in the prefab's TrackMap rect: the whole track, the ship and the patrol on it, ramps, laser gates and the finish."
+    },
+    {
+      "name": "showStrip",
+      "type": "Boolean",
+      "group": "Track map",
+      "tooltip": "Also show the old vertical strip's bar and icons. Its distance labels stay either way."
+    },
+    {
+      "name": "mapStartAtBottom",
+      "type": "Boolean",
+      "group": "Track map",
+      "tooltip": "Turn the map so the start is at the bottom and the finish at the top. Off = world north up."
+    },
+    {
+      "name": "mapPadding",
+      "type": "Single",
+      "group": "Track map",
+      "tooltip": "Share of the map rect kept empty round the track, each side.",
+      "min": 0,
+      "max": 0.30000001192092896
+    },
+    {
+      "name": "mapSamples",
+      "type": "Int32",
+      "group": "Track map",
+      "tooltip": "Points the track line is drawn with (the whole track, evenly spaced).",
+      "min": 50,
+      "max": 1000
+    },
+    {
+      "name": "mapLineWidth",
+      "type": "Single",
+      "group": "Track map",
+      "min": 1,
+      "max": 12,
+      "unit": "px"
+    },
+    {
+      "name": "mapLineColor",
+      "type": "Color",
+      "group": "Track map",
+      "tooltip": "The track still ahead."
+    },
+    {
+      "name": "mapDrivenColor",
+      "type": "Color",
+      "group": "Track map",
+      "tooltip": "The stretch already flown."
+    },
+    {
+      "name": "mapBackground",
+      "type": "Color",
+      "group": "Track map",
+      "tooltip": "The map rect's backdrop (alpha 0 = none)."
+    },
+    {
+      "name": "markerSize",
+      "type": "Single",
+      "group": "Track map",
+      "min": 2,
+      "max": 32,
+      "unit": "px"
+    },
+    {
+      "name": "rampMarkerColor",
+      "type": "Color",
+      "group": "Track map"
+    },
+    {
+      "name": "gateMarkerColor",
+      "type": "Color",
+      "group": "Track map"
+    },
+    {
+      "name": "finishMarkerColor",
+      "type": "Color",
+      "group": "Track map"
+    },
+    {
+      "name": "rampMarkerSprite",
+      "type": "Sprite",
+      "group": "Track map",
+      "tooltip": "Optional marker sprites (empty = a plain square)."
+    },
+    {
+      "name": "gateMarkerSprite",
+      "type": "Sprite",
+      "group": "Track map"
+    },
+    {
+      "name": "finishMarkerSprite",
+      "type": "Sprite",
+      "group": "Track map"
+    },
+    {
+      "name": "checkpointMarkerColor",
+      "type": "Color",
+      "group": "Track map",
+      "tooltip": "A time trial's checkpoints (TimeTrialPRD R5.4): the colour of one still ahead, and the alpha a passed one keeps."
+    },
+    {
+      "name": "checkpointMarkerSprite",
+      "type": "Sprite",
+      "group": "Track map"
+    },
+    {
+      "name": "checkpointPassedAlpha",
+      "type": "Single",
+      "group": "Track map",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "blinkInterval",
+      "type": "Single",
+      "group": "Behaviour",
+      "tooltip": "Seconds between red/blue flips — same cadence as the patrol light bar.",
+      "min": 0.05000000074505806,
+      "max": 1
+    }
+  ],
+  "types": {}
+}

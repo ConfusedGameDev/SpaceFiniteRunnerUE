@@ -1,0 +1,164 @@
+{
+  "unityType": "SpeedLinesSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.FX.SpeedLinesSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/FX/SpeedLines/SpeedLinesSettings.cs",
+  "fields": [
+    {
+      "name": "material",
+      "type": "Material",
+      "group": "Renderer",
+      "tooltip": "The material the renderer's SpeedLinesFeature holds (Hidden/FiniteRunner/SpeedLines). Written by Tools → FiniteRunner → Install Speed Lines Feature; a driver spawned at play time reads it from here."
+    },
+    {
+      "name": "intensity",
+      "type": "Single",
+      "group": "Trigger",
+      "tooltip": "Master dial. 0 = off (the render pass is skipped entirely), 1 = the full effect. Gameplay scales it further with SpeedLines.SetIntensity.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "speedBand",
+      "type": "Vector2",
+      "group": "Trigger",
+      "tooltip": "Speed band as a fraction of the reference speed the owner hands the driver (the runner: Light Speed). Lines start at X and reach full strength at Y.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "responseSharpness",
+      "type": "Single",
+      "group": "Trigger",
+      "tooltip": "How fast the intensity follows the speed (exponential response, 1/s). Low = a slow build that survives a brake pad; high = snaps.",
+      "min": 1,
+      "max": 20,
+      "unit": "1/s"
+    },
+    {
+      "name": "focusResponse",
+      "type": "Single",
+      "group": "Trigger",
+      "tooltip": "How fast the convergence point follows the target's screen position (1/s).",
+      "min": 1,
+      "max": 30,
+      "unit": "1/s"
+    },
+    {
+      "name": "color",
+      "type": "Color",
+      "group": "Look",
+      "tooltip": "Line colour; alpha scales the whole overlay."
+    },
+    {
+      "name": "lineCount",
+      "type": "Int32",
+      "group": "Look",
+      "tooltip": "Angular cells of the coarse (wide) layer. Fixed on purpose — density × intensity decides how many hold a line, so cells never drift between flicker frames.",
+      "min": 8,
+      "max": 200
+    },
+    {
+      "name": "fineLineCount",
+      "type": "Int32",
+      "group": "Look",
+      "tooltip": "Angular cells of the fine (thin) layer drawn under the coarse one.",
+      "min": 16,
+      "max": 400
+    },
+    {
+      "name": "density",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Share of cells that hold a line at full intensity.",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "lineWidth",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Width of a line at the screen edge, as a fraction of its cell (the fine layer draws at half).",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "taperLength",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Distance over which a wedge widens from its tip to full width, in screen heights.",
+      "min": 0.05000000074505806,
+      "max": 1,
+      "unit": "screens"
+    },
+    {
+      "name": "innerRadius",
+      "type": "Vector2",
+      "group": "Look",
+      "tooltip": "Radius of the clear middle, in screen heights: Y at the start of the band, shrinking to X at full speed — the lines close in on the ship as it nears the reference speed.",
+      "band": true,
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "innerJitter",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Per-line random spread of the inner tip around the clear radius (0 = every tip on the same circle).",
+      "min": 0,
+      "max": 1
+    },
+    {
+      "name": "flickerRate",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Pattern re-rolls per second — the lines jump between hand-drawn frames rather than sliding.",
+      "min": 1,
+      "max": 60,
+      "unit": "steps/s"
+    },
+    {
+      "name": "edgeSoftness",
+      "type": "Single",
+      "group": "Look",
+      "tooltip": "Anti-aliasing width of a line's edge, in pixels. 0 = razor.",
+      "min": 0,
+      "max": 3,
+      "unit": "px"
+    },
+    {
+      "name": "farMultiplier",
+      "type": "Single",
+      "group": "Camera modes",
+      "tooltip": "Intensity multiplier in the Far chase framing (mode 0).",
+      "min": 0,
+      "max": 2
+    },
+    {
+      "name": "closeMultiplier",
+      "type": "Single",
+      "group": "Camera modes",
+      "tooltip": "Intensity multiplier in the Close chase framing (mode 1).",
+      "min": 0,
+      "max": 2
+    },
+    {
+      "name": "firstPersonMultiplier",
+      "type": "Single",
+      "group": "Camera modes",
+      "tooltip": "Intensity multiplier in first person (mode 2) — the cockpit view is where the effect sells hardest.",
+      "min": 0,
+      "max": 2
+    },
+    {
+      "name": "cinematicMultiplier",
+      "type": "Single",
+      "group": "Camera modes",
+      "tooltip": "Intensity multiplier during the cinematic shot (mode 3: the loop, the slow-mo jump). 0 = off — the lines are a first-person-ish speed cue over the chase view and only clutter a showcase shot taken from the side.",
+      "min": 0,
+      "max": 2
+    }
+  ],
+  "types": {}
+}

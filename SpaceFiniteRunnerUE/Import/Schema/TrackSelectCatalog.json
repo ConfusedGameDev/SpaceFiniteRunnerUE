@@ -1,0 +1,47 @@
+{
+  "unityType": "TrackSelectCatalog",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackSelectCatalog",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Track/Layout/TrackSelectCatalog.cs",
+  "fields": [
+    {
+      "name": "entries",
+      "type": "Entry[]",
+      "tooltip": "Courses in the order the strip shows them. Synced from the Tracks folder; reorder and edit freely."
+    }
+  ],
+  "types": {
+    "Entry": {
+      "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackSelectCatalog+Entry",
+      "fields": [
+        {
+          "name": "track",
+          "type": "TrackLayoutAsset",
+          "tooltip": "The saved track this course plays."
+        },
+        {
+          "name": "displayName",
+          "type": "String",
+          "tooltip": "The course's name on the SELECT COURSE screen. Empty = the asset's name."
+        },
+        {
+          "name": "subtitle",
+          "type": "String",
+          "tooltip": "A second line under the name (the F-Zero 'Twist Road' line). Empty = none."
+        },
+        {
+          "name": "difficulty",
+          "type": "Int32",
+          "tooltip": "Difficulty pips shown under the map.",
+          "min": 1,
+          "max": 5
+        },
+        {
+          "name": "thumbnail",
+          "type": "Sprite",
+          "tooltip": "Optional picture for the bottom strip. Empty = a small map of the track is drawn instead."
+        }
+      ]
+    }
+  }
+}

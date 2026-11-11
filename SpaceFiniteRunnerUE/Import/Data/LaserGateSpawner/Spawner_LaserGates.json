@@ -1,0 +1,46 @@
+{
+  "unityType": "LaserGateSpawner",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.LaserGateSpawner",
+  "name": "Spawner_LaserGates",
+  "guid": "f4ba8d760ba048adabc58fb66291ea7b",
+  "path": "Assets/04.Data/FiniteRunner/Spawnables/Spawner_LaserGates.asset",
+  "fields": {
+    "active": true,
+    "displayName": "Laser Gates",
+    "color": {
+      "r": 1,
+      "g": 0.2,
+      "b": 0.2,
+      "a": 1
+    },
+    "spacing": {
+      "x": 150,
+      "y": 450
+    },
+    "startDistance": 1500,
+    "chance": 1,
+    "laserPrefab": {
+      "$ref": {
+        "guid": "cb7583b083a34f040b27fa9594991be0",
+        "fileId": 4725840355564023753,
+        "path": "Assets/03.Prefabs/Runner/PF_LaserSystem.prefab",
+        "name": "PF_LaserSystem",
+        "type": "GameObject",
+        "main": true
+      }
+    },
+    "definition": {
+      "$ref": {
+        "guid": "b8351fe618838d2428c9653029ff0110",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/TrackSettings/Features/LaserGate_Definition.asset",
+        "name": "LaserGate_Definition",
+        "type": "LaserGateDefinition",
+        "main": true
+      }
+    },
+    "clearance": 402,
+    "onFlatSweeps": true,
+    "onOpenEdges": true
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "unityType": "TubeDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.Features.TubeDefinition",
+  "baseType": "TrackFeatureDefinition",
+  "script": "Assets/01.Scripts/Runner/Track/Features/TubeDefinition.cs",
+  "fields": [
+    {
+      "name": "displayName",
+      "type": "String",
+      "declaredIn": "TrackFeatureDefinition",
+      "tooltip": "Name used in spawned object names and HUD text."
+    },
+    {
+      "name": "radius",
+      "type": "Single",
+      "group": "Tube",
+      "tooltip": "Radius of the pipe, metres. 60 m is a 377 m circumference — three track widths of lateral travel for a full wrap.",
+      "min": 20,
+      "max": 150,
+      "unit": "m"
+    },
+    {
+      "name": "bandDegrees",
+      "type": "Single",
+      "group": "Tube",
+      "tooltip": "Half the steering band, degrees round the pipe. 90 = hang off either side, never invert; 180 = a FULL tube: no clamp once curled, the ship can go round and round, and the return before the exit unwinds it to the nearest top.",
+      "min": 15,
+      "max": 180,
+      "unit": "°"
+    },
+    {
+      "name": "centreDegrees",
+      "type": "Single",
+      "group": "Tube",
+      "tooltip": "Where the band is centred, degrees from the top. 0 keeps it on top; 180 runs the whole stretch underneath.",
+      "min": -180,
+      "max": 180,
+      "unit": "°"
+    },
+    {
+      "name": "steeringFactor",
+      "type": "Single",
+      "group": "Tube",
+      "tooltip": "Steering authority on the pipe as a multiple of the road's — a full wrap is three track widths of arc, so the ship needs to move faster to use it.",
+      "min": 0.5,
+      "max": 6,
+      "unit": "x"
+    },
+    {
+      "name": "lengthRange",
+      "type": "Vector2",
+      "group": "Length",
+      "tooltip": "Section length rolled per instance, metres of track.",
+      "band": true,
+      "min": 200,
+      "max": 12000,
+      "unit": "m"
+    },
+    {
+      "name": "curlLength",
+      "type": "Single",
+      "group": "Length",
+      "tooltip": "Metres at each end over which the flat road curls into the pipe and back out — position, up vector and steering band ease together.",
+      "min": 20,
+      "max": 500,
+      "unit": "m"
+    },
+    {
+      "name": "returnLength",
+      "type": "Single",
+      "group": "Length",
+      "tooltip": "Metres before the curl-out over which the ship is steered back to the band's centre for the player — steering and dash are locked, the lateral eases home — so the road never unrolls under a ship hanging off its side.",
+      "min": 100,
+      "max": 1500,
+      "unit": "m"
+    },
+    {
+      "name": "exitClearance",
+      "type": "Single",
+      "group": "Length",
+      "tooltip": "Metres of plain track kept clear after the exit before the next feature may start.",
+      "min": 0,
+      "max": 1000,
+      "unit": "m"
+    }
+  ],
+  "types": {}
+}

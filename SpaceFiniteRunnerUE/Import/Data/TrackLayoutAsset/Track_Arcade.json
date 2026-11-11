@@ -1,0 +1,7512 @@
+{
+  "unityType": "TrackLayoutAsset",
+  "fullType": "ConfusedGameDev.FiniteRunner.Track.TrackLayoutAsset",
+  "name": "Track_Arcade",
+  "guid": "9ee7495a33c474fa7b07fd063287f016",
+  "path": "Assets/04.Data/FiniteRunner/Tracks/Track_Arcade.asset",
+  "fields": {
+    "timeLimitSeconds": 0,
+    "shape": {
+      "$ref": {
+        "guid": "ba50ea5278a64458aa28bc1c4e498c44",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/TrackSettings/FiniteRunner_TrackShape.asset",
+        "name": "FiniteRunner_TrackShape",
+        "type": "TrackShapeSettings",
+        "main": true
+      }
+    },
+    "spawnSet": {
+      "$ref": {
+        "guid": "187ca9ce3d27497ea0408637f5a324a4",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/TrackSettings/FiniteRunner_TrackSpawnSet.asset",
+        "name": "FiniteRunner_TrackSpawnSet",
+        "type": "TrackSpawnSet",
+        "main": true
+      }
+    },
+    "customPrefabs": [],
+    "layout": {
+      "formatVersion": 1,
+      "seed": 506988743,
+      "width": 120,
+      "length": 30000,
+      "endZoneStart": 28800.002,
+      "endDistance": 30000,
+      "endRunUp": 1200,
+      "knots": [
+        {
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -1.70244193,
+            "z": 315.994965
+          },
+          "rotation": {
+            "x": 0.00269375113,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999964
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -4.415805,
+            "z": 671.1195
+          },
+          "rotation": {
+            "x": 0.00382021442,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999927
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 1.65642548,
+            "z": 1018.99738
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 8.683657,
+            "z": 1421.58716
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 15.1278591,
+            "z": 1790.77527
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 9.49797,
+            "z": 2200.15845
+          },
+          "rotation": {
+            "x": 0.006875575,
+            "y": 0,
+            "z": 0,
+            "w": 0.999976456
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 2.4311595,
+            "z": 2605.01563
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 9.623014,
+            "z": 3017.03662
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 4.387293,
+            "z": 3316.991
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 1.473818E-07,
+            "z": -100
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": -1.473818E-07,
+            "z": 100
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -2.48239756,
+            "z": 3710.55518
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -8.768442,
+            "z": 4070.68237
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -14.31242,
+            "z": 4388.297
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -20.1460247,
+            "z": 4722.504
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -26.0773373,
+            "z": 5120.51172
+          },
+          "rotation": {
+            "x": 0.00745063554,
+            "y": 0,
+            "z": 0,
+            "w": 0.999972343
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -20.457634,
+            "z": 5442.46436
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -13.9996376,
+            "z": 5812.443
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -6.807837,
+            "z": 6224.461
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 0.262529373,
+            "z": 6629.522
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 5.498251,
+            "z": 6929.476
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": -1.473818E-07,
+            "z": -100
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 1.473818E-07,
+            "z": 100
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 12.0921631,
+            "z": 7307.241
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 17.9285431,
+            "z": 7641.60742
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 23.8677368,
+            "z": 7981.864
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 30.3738346,
+            "z": 8354.598
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 24.4793472,
+            "z": 8692.293
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 23.0207062,
+            "z": 9028.489
+          },
+          "rotation": {
+            "x": 0.002169315,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999977
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 16.4771271,
+            "z": 9403.371
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 9.459129,
+            "z": 9805.432
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 3.82598955E-07,
+            "z": -134.0407
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": -3.82598955E-07,
+            "z": 134.0407
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 2.906992,
+            "z": 10180.8037
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -4.18760633,
+            "z": 10587.2529
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -9.865029,
+            "z": 10912.5127
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -15.3253527,
+            "z": 11225.334
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -20.9342155,
+            "z": 11579.583
+          },
+          "rotation": {
+            "x": 0.0079158,
+            "y": 0,
+            "z": 0,
+            "w": 0.999968767
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -27.6217346,
+            "z": 11962.7109
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -22.3275814,
+            "z": 12266.0127
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -19.4320145,
+            "z": 12652.9141
+          },
+          "rotation": {
+            "x": -0.00374192116,
+            "y": 0,
+            "z": 0,
+            "w": 0.999993
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -14.1962929,
+            "z": 12952.8682
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": -1.473818E-07,
+            "z": -100
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 1.473818E-07,
+            "z": 100
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -7.184452,
+            "z": 13354.5762
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -1.76848745,
+            "z": 13664.8564
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 4.464368,
+            "z": 14021.9365
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 11.6875734,
+            "z": 14435.7539
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 6.02553129,
+            "z": 14796.915
+          },
+          "rotation": {
+            "x": 0.00783794,
+            "y": 0,
+            "z": 0,
+            "w": 0.999969363
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 0.0118565559,
+            "z": 15141.4385
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -5.67990828,
+            "z": 15467.52
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -11.138,
+            "z": 15780.2129
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -16.3737221,
+            "z": 16080.167
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 1.473818E-07,
+            "z": -100
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": -1.473818E-07,
+            "z": 100
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -21.86232,
+            "z": 16394.61
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -27.3305511,
+            "z": 16707.8848
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -34.3188744,
+            "z": 17108.2461
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -41.2296143,
+            "z": 17504.1621
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -37.45664,
+            "z": 17902.5957
+          },
+          "rotation": {
+            "x": -0.004734601,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999888
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -38.1748466,
+            "z": 18307.21
+          },
+          "rotation": {
+            "x": 0.0008875219,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999997
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -45.4554,
+            "z": 18724.3145
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -38.5898972,
+            "z": 19117.6387
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -33.1564178,
+            "z": 19428.9219
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -36.49166,
+            "z": 19728.9023
+          },
+          "rotation": {
+            "x": 0.005558822,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999846
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 1.95897883E-07,
+            "z": -100
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": -1.95897883E-07,
+            "z": 100
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -40.3434029,
+            "z": 20075.34
+          },
+          "rotation": {
+            "x": 0.005558822,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999846
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -44.5904236,
+            "z": 20457.33
+          },
+          "rotation": {
+            "x": 0.005558822,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999846
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -48.72327,
+            "z": 20829.05
+          },
+          "rotation": {
+            "x": 0.005558822,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999846
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -52.22305,
+            "z": 21143.832
+          },
+          "rotation": {
+            "x": 0.005558822,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999846
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -47.81436,
+            "z": 21524.71
+          },
+          "rotation": {
+            "x": -0.00578721939,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999833
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -40.6214066,
+            "z": 21936.7949
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -34.581955,
+            "z": 22282.7949
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -29.0751171,
+            "z": 22598.2813
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -22.3750782,
+            "z": 22982.127
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -16.4600544,
+            "z": 23320.998
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -10.61197,
+            "z": 23656.0352
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": -5.37624836,
+            "z": 23955.99
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": -1.473818E-07,
+            "z": -100
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 1.473818E-07,
+            "z": 100
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 0.4748373,
+            "z": 24291.2
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 7.705884,
+            "z": 24705.4648
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 14.94729,
+            "z": 25120.3242
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 21.1312637,
+            "z": 25474.6035
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 27.40267,
+            "z": 25833.8926
+          },
+          "rotation": {
+            "x": -0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 32.61922,
+            "z": 26184.0547
+          },
+          "rotation": {
+            "x": -0.007448143,
+            "y": 0,
+            "z": 0,
+            "w": 0.999972343
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 26.81406,
+            "z": 26516.6328
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 21.2844257,
+            "z": 26833.4258
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 15.86904,
+            "z": 27143.6738
+          },
+          "rotation": {
+            "x": 0.008726535,
+            "y": 0,
+            "z": 0,
+            "w": 0.999962
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 21.1079674,
+            "z": 27511.8574
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": -5.052134E-07,
+            "z": -122.740242
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 5.052134E-07,
+            "z": 122.740242
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 26.2979965,
+            "z": 27876.6035
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 31.9899349,
+            "z": 28276.623
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 35.6856041,
+            "z": 28536.35
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 39.38127,
+            "z": 28796.0762
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": -4.7958747E-07,
+            "z": -86.58398
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 4.7958747E-07,
+            "z": 86.58398
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 43.9827881,
+            "z": 29119.4629
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 49.40741,
+            "z": 29500.6973
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 52.9309425,
+            "z": 29748.3262
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "mode": {
+            "$enum": "AutoSmooth",
+            "value": 0
+          }
+        },
+        {
+          "position": {
+            "x": 0,
+            "y": 56.454464,
+            "z": 29995.9531
+          },
+          "rotation": {
+            "x": -0.00711402344,
+            "y": 0,
+            "z": 0,
+            "w": 0.9999748
+          },
+          "tangentIn": {
+            "x": 0,
+            "y": -3.27374437E-07,
+            "z": -82.55078
+          },
+          "tangentOut": {
+            "x": 0,
+            "y": 3.27374437E-07,
+            "z": 82.55078
+          },
+          "mode": {
+            "$enum": "Continuous",
+            "value": 3
+          }
+        }
+      ],
+      "knotDistances": [
+        0,
+        315.999573,
+        671.138062,
+        1019.07257,
+        1421.72363,
+        1790.97424,
+        2200.403,
+        2605.32983,
+        3017.42529,
+        3317.43213,
+        3711.0564,
+        4071.23853,
+        4388.90137,
+        4723.159,
+        5121.218,
+        5443.22559,
+        5813.26025,
+        6225.341,
+        6630.46338,
+        6930.46338,
+        7308.286,
+        7642.703,
+        7983.011,
+        8355.81,
+        8693.563,
+        9029.765,
+        9404.705,
+        9806.827,
+        10182.2568,
+        10588.7676,
+        10914.0771,
+        11226.9463,
+        11581.24,
+        11964.4336,
+        12267.7881,
+        12654.7012,
+        12954.7012,
+        13356.4707,
+        13666.7979,
+        14023.9326,
+        14437.82,
+        14799.0332,
+        15143.6094,
+        15469.74,
+        15782.4814,
+        16082.4814,
+        16396.9727,
+        16710.2949,
+        17110.7168,
+        17506.6973,
+        17905.1543,
+        18309.7734,
+        18726.95,
+        19120.3418,
+        19431.6758,
+        19731.68,
+        20078.1387,
+        20460.1523,
+        20831.8965,
+        21146.7,
+        21527.6074,
+        21939.7539,
+        22285.8066,
+        22601.3418,
+        22985.2461,
+        23324.168,
+        23659.2559,
+        23959.2559,
+        24294.5156,
+        24708.8438,
+        25123.7656,
+        25478.1,
+        25837.4434,
+        26187.65,
+        26520.2852,
+        26837.127,
+        27147.4277,
+        27515.6543,
+        27880.4375,
+        28280.498,
+        28540.25,
+        28800.002,
+        29123.4219,
+        29504.6953,
+        29752.35,
+        30000.002
+      ],
+      "sections": [],
+      "flatSweeps": [],
+      "openStretches": [
+        {
+          "start": 0,
+          "end": 2605.32178,
+          "outerSide": 0
+        },
+        {
+          "start": 4723.159,
+          "end": 6225.34131,
+          "outerSide": 0
+        },
+        {
+          "start": 8355.803,
+          "end": 9029.764,
+          "outerSide": 0
+        },
+        {
+          "start": 11226.9463,
+          "end": 12267.7871,
+          "outerSide": 0
+        },
+        {
+          "start": 14437.8125,
+          "end": 15143.6084,
+          "outerSide": 0
+        },
+        {
+          "start": 17506.6914,
+          "end": 18726.94,
+          "outerSide": 0
+        },
+        {
+          "start": 21146.6953,
+          "end": 23324.166,
+          "outerSide": 0
+        },
+        {
+          "start": 25123.7637,
+          "end": 26837.125,
+          "outerSide": 0
+        }
+      ],
+      "keepOuts": [
+        {
+          "x": 3317.432,
+          "y": 4427.43164
+        },
+        {
+          "x": 6930.46338,
+          "y": 8040.46338
+        },
+        {
+          "x": 9806.827,
+          "y": 10916.8271
+        },
+        {
+          "x": 12954.7,
+          "y": 14064.7
+        },
+        {
+          "x": 16082.48,
+          "y": 17192.48
+        },
+        {
+          "x": 19731.6777,
+          "y": 20841.6777
+        },
+        {
+          "x": 23959.2539,
+          "y": 25069.2539
+        },
+        {
+          "x": 27515.6523,
+          "y": 28625.6523
+        },
+        {
+          "x": 28800.002,
+          "y": 0
+        }
+      ],
+      "placements": [
+        {
+          "kind": {
+            "$enum": "EndRamp",
+            "value": 7
+          },
+          "distance": 29880,
+          "lateral": -43.5833321,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "EndRamp",
+            "value": 7
+          },
+          "distance": 29880,
+          "lateral": 0,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "EndRamp",
+            "value": 7
+          },
+          "distance": 29880,
+          "lateral": 43.5833321,
+          "height": 0,
+          "variant": 2,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 3317.432,
+          "lateral": 38.33849,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 6930.46338,
+          "lateral": 8.125499,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 9806.827,
+          "lateral": 7.0743,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 12954.7,
+          "lateral": -30.22156,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 16082.48,
+          "lateral": 24.318716,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 19731.6777,
+          "lateral": -21.07609,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 23959.2539,
+          "lateral": -32.23003,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Ramp",
+            "value": 3
+          },
+          "distance": 27515.6523,
+          "lateral": -31.1904869,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 2000.139,
+          "lateral": 18.6054268,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 35.92664,
+            "y": 86.5594,
+            "z": 266.577423,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 2585.50928,
+          "lateral": -37.7618027,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 33.0769234,
+            "y": -53.55815,
+            "z": 284.3042,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 4577.70166,
+          "lateral": -21.3640442,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 24.97607,
+            "y": -55.67726,
+            "z": 158.626266,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 5236.61865,
+          "lateral": 47.44786,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 26.1164112,
+            "y": 76.4957657,
+            "z": 241.810028,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 5838.28467,
+          "lateral": 1.9350729,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 30.2009411,
+            "y": 52.725605,
+            "z": 39.9360733,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 6468.713,
+          "lateral": -24.238903,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 29.80663,
+            "y": -81.79776,
+            "z": 102.650024,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 8190.7334,
+          "lateral": -10.8527565,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 24.2953949,
+            "y": -54.9298325,
+            "z": 227.688522,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 8932.217,
+          "lateral": -15.9704247,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 24.5898018,
+            "y": 47.28858,
+            "z": 311.745941,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 9593.438,
+          "lateral": 24.15886,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 29.3511429,
+            "y": 62.0151978,
+            "z": 263.8749,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 11067.0967,
+          "lateral": -28.4136543,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 25.0438137,
+            "y": 75.91751,
+            "z": 240.704437,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 11810.8945,
+          "lateral": -2.271965,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 32.0672646,
+            "y": -51.34613,
+            "z": 322.7094,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 12422.3066,
+          "lateral": -1.56578863,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 26.0330143,
+            "y": 44.1159744,
+            "z": 359.362671,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 14214.97,
+          "lateral": 15.7228842,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 30.2187176,
+            "y": -78.85597,
+            "z": 10.43242,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 14875.3965,
+          "lateral": -45.9246635,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 34.3673859,
+            "y": -89.26203,
+            "z": 294.922455,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 15517.15,
+          "lateral": -12.8570709,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 26.1346664,
+            "y": -64.56164,
+            "z": 304.8935,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 17342.75,
+          "lateral": -39.8242722,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 33.81374,
+            "y": -68.65174,
+            "z": 255.717865,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 17887.0645,
+          "lateral": -28.4367161,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 27.7433128,
+            "y": 45.6535263,
+            "z": 228.037384,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 18497.6738,
+          "lateral": -41.831543,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 29.2032852,
+            "y": 80.98782,
+            "z": 359.142944,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 19281.7656,
+          "lateral": 24.72897,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 32.8464546,
+            "y": 88.5734,
+            "z": 121.702469,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 20991.9473,
+          "lateral": 27.8158,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 29.9923325,
+            "y": 58.9618,
+            "z": 243.1868,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 21765.73,
+          "lateral": 9.359126,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 24.16832,
+            "y": 82.7709961,
+            "z": 92.0913544,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 22588.2578,
+          "lateral": 5.03999662,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 26.7193718,
+            "y": 78.73352,
+            "z": 100.09227,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 23319.5879,
+          "lateral": -34.6449738,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 33.79719,
+            "y": 75.50458,
+            "z": 56.598,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 25219.5234,
+          "lateral": -35.84468,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 26.6235771,
+            "y": -81.10439,
+            "z": 292.804657,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 25883.6953,
+          "lateral": 49.5730438,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 35.0242577,
+            "y": 54.7121239,
+            "z": 22.7814388,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 26555.6523,
+          "lateral": 10.6524391,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 30.70153,
+            "y": 79.92573,
+            "z": 245.874146,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "LaserGate",
+            "value": 2
+          },
+          "distance": 27234.61,
+          "lateral": 21.5212135,
+          "height": 0,
+          "variant": 1,
+          "data": {
+            "x": 34.3745079,
+            "y": -49.235054,
+            "z": 218.177322,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 155.638718,
+          "lateral": -0.128359079,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 557.8411,
+          "lateral": -16.5403042,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 944.9452,
+          "lateral": 24.2444744,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 1374.44849,
+          "lateral": -12.5280867,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 1764.52832,
+          "lateral": -6.261217,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 2191.99121,
+          "lateral": 45.7072678,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 2652.11987,
+          "lateral": -6.546921,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 3138.1438,
+          "lateral": 3.53150439,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 3552.035,
+          "lateral": 30.99679,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 3958.212,
+          "lateral": -0.5653413,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 4436.117,
+          "lateral": -32.8363075,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 4898.41,
+          "lateral": -41.037487,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 5286.397,
+          "lateral": 1.77969527,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 5749.0083,
+          "lateral": -25.993515,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 6209.466,
+          "lateral": -42.20784,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 6635.952,
+          "lateral": -33.7589569,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 7099.98145,
+          "lateral": 33.6375046,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 7500.356,
+          "lateral": 11.67977,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 7888.25049,
+          "lateral": 3.545189,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 8312.099,
+          "lateral": 10.36325,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 8752.477,
+          "lateral": 32.8608551,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 9157.33,
+          "lateral": 21.79132,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 9634.971,
+          "lateral": -28.9458,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 10033.1143,
+          "lateral": 0.8623754,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 10451.3281,
+          "lateral": -48.61578,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 10884.2041,
+          "lateral": -25.54973,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 11286.5127,
+          "lateral": 18.6218586,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 11765.5859,
+          "lateral": -28.4729118,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 12232.0723,
+          "lateral": -36.36842,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 12648.2461,
+          "lateral": 37.74162,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 13126.9531,
+          "lateral": 37.362,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 13556.6621,
+          "lateral": -44.09591,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 13974.625,
+          "lateral": 50.3292923,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 14419.4941,
+          "lateral": -19.2791481,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 14835.6289,
+          "lateral": 32.5739,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 15299.6836,
+          "lateral": -46.5666542,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 15763.8887,
+          "lateral": 34.9837227,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 16213.1865,
+          "lateral": -10.6006832,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 16687.9668,
+          "lateral": -6.37935829,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 17094.9863,
+          "lateral": 30.96139,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 17507.46,
+          "lateral": -24.0718536,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 17946.3789,
+          "lateral": 1.04403639,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 18372.666,
+          "lateral": 40.13287,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 18852.6328,
+          "lateral": -7.41756153,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 19337.4219,
+          "lateral": -36.40008,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 19811.6777,
+          "lateral": 47.80618,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 20283.0918,
+          "lateral": 51.1251068,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 20768.252,
+          "lateral": -18.0871315,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 21226.96,
+          "lateral": 28.567009,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 21642.58,
+          "lateral": 23.595747,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 22116.957,
+          "lateral": 51.5813751,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 22519.4551,
+          "lateral": -50.3326035,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 22940.002,
+          "lateral": -43.9695168,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 23356.1934,
+          "lateral": -10.494894,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 23797.5566,
+          "lateral": -6.53462029,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 24195.668,
+          "lateral": -49.59172,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 24595.8789,
+          "lateral": -10.4741344,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 24992.3535,
+          "lateral": -52.4053764,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 25384.1035,
+          "lateral": 2.47859526,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 25809.8516,
+          "lateral": -47.3372726,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 26232.9238,
+          "lateral": 41.9596939,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 26641.1328,
+          "lateral": 36.4038849,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 27080.0859,
+          "lateral": 32.09752,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 27483.082,
+          "lateral": 52.0667458,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 27929.29,
+          "lateral": 36.44314,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "SpeedOrb",
+            "value": 0
+          },
+          "distance": 28388.1152,
+          "lateral": 29.15487,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 3810.049,
+          "lateral": 4.40409,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 14314.8838,
+          "lateral": -23.4341545,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 16425.6641,
+          "lateral": 43.0979767,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 22854.02,
+          "lateral": 45.3167343,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 26931.582,
+          "lateral": 13.3243637,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "RepairOrb",
+            "value": 1
+          },
+          "distance": 28721.1035,
+          "lateral": 37.2171631,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 366.1927,
+          "lateral": 37.1287,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 674.0863,
+          "lateral": -6.941642,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 689.0863,
+          "lateral": -6.941642,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 704.0863,
+          "lateral": -6.941642,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 719.0863,
+          "lateral": -6.941642,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 1106.47485,
+          "lateral": 41.12808,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 1558.42236,
+          "lateral": 54.5599937,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 1978.88477,
+          "lateral": 28.6412964,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 2343.48267,
+          "lateral": -16.47168,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 2358.48267,
+          "lateral": -16.47168,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 2373.48267,
+          "lateral": -16.47168,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 2388.48267,
+          "lateral": -16.47168,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 2403.48267,
+          "lateral": -16.47168,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 2679.45337,
+          "lateral": 13.0161886,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 2694.45337,
+          "lateral": 13.0161886,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 2709.45337,
+          "lateral": 13.0161886,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 2724.45337,
+          "lateral": 13.0161886,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 3062.09351,
+          "lateral": 15.79677,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 3077.09351,
+          "lateral": 15.79677,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 3092.09351,
+          "lateral": 15.79677,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 3586.01782,
+          "lateral": -39.3449669,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 4046.45923,
+          "lateral": 21.8313942,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 4061.45923,
+          "lateral": 21.8313942,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 4076.45923,
+          "lateral": 21.8313942,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 4091.45923,
+          "lateral": 21.8313942,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 4106.459,
+          "lateral": 21.8313942,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 4409.98438,
+          "lateral": -1.65126336,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 4823.78125,
+          "lateral": 51.0594864,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 4838.78125,
+          "lateral": 51.0594864,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 4853.78125,
+          "lateral": 51.0594864,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 4868.78125,
+          "lateral": 51.0594864,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 5256.88867,
+          "lateral": -2.22937965,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 5774.598,
+          "lateral": -28.01831,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 5789.598,
+          "lateral": -28.01831,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 5804.598,
+          "lateral": -28.01831,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 6296.092,
+          "lateral": -26.6578522,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 6311.092,
+          "lateral": -26.6578522,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 6326.092,
+          "lateral": -26.6578522,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 6705.716,
+          "lateral": 1.07551575,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 6720.716,
+          "lateral": 1.07551575,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 6735.716,
+          "lateral": 1.07551575,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 6750.716,
+          "lateral": 1.07551575,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 6765.716,
+          "lateral": 1.07551575,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 7210.523,
+          "lateral": -49.0810432,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 7225.523,
+          "lateral": -49.0810432,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 7240.523,
+          "lateral": -49.0810432,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 7255.523,
+          "lateral": -49.0810432,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 7270.523,
+          "lateral": -49.0810432,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 7545.124,
+          "lateral": -23.3797245,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 7560.124,
+          "lateral": -23.3797245,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 7575.124,
+          "lateral": -23.3797245,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 7590.124,
+          "lateral": -23.3797245,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 7605.124,
+          "lateral": -23.3797245,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 8044.99854,
+          "lateral": -36.8083076,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 8059.99854,
+          "lateral": -36.8083076,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 8074.99854,
+          "lateral": -36.8083076,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 8089.99854,
+          "lateral": -36.8083076,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 8104.99854,
+          "lateral": -36.8083076,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 8567.277,
+          "lateral": -46.89581,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 8582.277,
+          "lateral": -46.89581,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 8978.795,
+          "lateral": -14.3787642,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 9393.988,
+          "lateral": 46.407856,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 9408.988,
+          "lateral": 46.407856,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 9423.988,
+          "lateral": 46.407856,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 9704.079,
+          "lateral": -37.73053,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 10108.376,
+          "lateral": -42.1551247,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 10123.376,
+          "lateral": -42.1551247,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 10138.376,
+          "lateral": -42.1551247,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 10506.3838,
+          "lateral": 7.26203346,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 10521.3838,
+          "lateral": 7.26203346,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 10536.3838,
+          "lateral": 7.26203346,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 10551.3838,
+          "lateral": 7.26203346,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 10852.4,
+          "lateral": -9.809595,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 10912.4,
+          "lateral": -9.809595,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 11307.9844,
+          "lateral": 15.0934772,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 11322.9844,
+          "lateral": 15.0934772,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 11337.9844,
+          "lateral": 15.0934772,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 11352.9844,
+          "lateral": 15.0934772,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 11684.4668,
+          "lateral": 33.26698,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 11699.4668,
+          "lateral": 33.26698,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 12150.1865,
+          "lateral": 19.6949062,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 12165.1865,
+          "lateral": 19.6949062,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 12180.1865,
+          "lateral": 19.6949062,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 12195.1865,
+          "lateral": 19.6949062,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 12210.1865,
+          "lateral": 19.6949062,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 12557.0674,
+          "lateral": 52.5187263,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 12572.0674,
+          "lateral": 52.5187263,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 12587.0674,
+          "lateral": 52.5187263,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 12913.2451,
+          "lateral": 47.61752,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 12928.2451,
+          "lateral": 47.61752,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 13337.4219,
+          "lateral": 46.92717,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 13728.0488,
+          "lateral": 24.06583,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 14170.5947,
+          "lateral": -1.28036392,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 14185.5947,
+          "lateral": -1.28036392,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 14499.4873,
+          "lateral": -37.394165,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 14514.4873,
+          "lateral": -37.394165,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 14529.4873,
+          "lateral": -37.394165,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 14544.4873,
+          "lateral": -37.394165,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 15029.9287,
+          "lateral": -26.59578,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 15044.9287,
+          "lateral": -26.59578,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 15391.6084,
+          "lateral": 38.1419334,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 15406.6084,
+          "lateral": 38.1419334,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 15421.6084,
+          "lateral": 38.1419334,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 15875.3877,
+          "lateral": -24.5770035,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 15890.3877,
+          "lateral": -24.5770035,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 15905.3877,
+          "lateral": -24.5770035,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 16345.0615,
+          "lateral": -29.6074619,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 16360.0615,
+          "lateral": -29.6074619,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 16375.0615,
+          "lateral": -29.6074619,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 16390.0625,
+          "lateral": -29.6074619,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 16405.0625,
+          "lateral": -29.6074619,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 16784.6445,
+          "lateral": 29.0990257,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 16799.6445,
+          "lateral": 29.0990257,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 17234.3047,
+          "lateral": -10.3568277,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 17688.6953,
+          "lateral": 48.9838028,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 17703.6953,
+          "lateral": 48.9838028,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 17718.6953,
+          "lateral": 48.9838028,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 17733.6953,
+          "lateral": 48.9838028,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 18184.3652,
+          "lateral": 28.91195,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 18199.3652,
+          "lateral": 28.91195,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 18214.3652,
+          "lateral": 28.91195,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 18711.3223,
+          "lateral": 20.53535,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 18726.3223,
+          "lateral": 20.53535,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 18741.3223,
+          "lateral": 20.53535,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 18756.3223,
+          "lateral": 20.53535,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 18771.3223,
+          "lateral": 20.53535,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 19250.4512,
+          "lateral": 48.9853,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 19310.4512,
+          "lateral": 48.9853,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 19637.5957,
+          "lateral": -6.605133,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 19652.5957,
+          "lateral": -6.605133,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 19667.5957,
+          "lateral": -6.605133,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 19682.5957,
+          "lateral": -6.605133,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 19697.5957,
+          "lateral": -6.605133,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 19974.707,
+          "lateral": -18.0517,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 19989.707,
+          "lateral": -18.0517,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 20499.832,
+          "lateral": 21.7350254,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 20514.832,
+          "lateral": 21.7350254,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 21014.1641,
+          "lateral": 53.0429459,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 21029.1641,
+          "lateral": 53.0429459,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 21389.7754,
+          "lateral": -17.27841,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 21870.877,
+          "lateral": -5.73176575,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 21885.877,
+          "lateral": -5.73176575,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 21900.877,
+          "lateral": -5.73176575,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 21915.877,
+          "lateral": -5.73176575,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 22360.28,
+          "lateral": 29.2519512,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 22375.28,
+          "lateral": 29.2519512,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 22390.28,
+          "lateral": 29.2519512,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 22405.28,
+          "lateral": 29.2519512,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 22420.28,
+          "lateral": 29.2519512,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 22749.1172,
+          "lateral": 23.7313576,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 22764.1172,
+          "lateral": 23.7313576,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 22779.1172,
+          "lateral": 23.7313576,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 22794.1172,
+          "lateral": 23.7313576,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 22809.1172,
+          "lateral": 23.7313576,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 23280.7266,
+          "lateral": -54.5429535,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 23577.459,
+          "lateral": 34.5325241,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 23592.459,
+          "lateral": 34.5325241,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 23607.459,
+          "lateral": 34.5325241,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 23622.459,
+          "lateral": 34.5325241,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 23637.459,
+          "lateral": 34.5325241,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 24039.2539,
+          "lateral": -17.47655,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 24054.2539,
+          "lateral": -17.47655,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 24069.2539,
+          "lateral": -17.47655,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 24084.2539,
+          "lateral": -17.47655,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 24099.2539,
+          "lateral": -17.47655,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 24621.57,
+          "lateral": -51.8522568,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 24636.57,
+          "lateral": -51.8522568,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 24651.57,
+          "lateral": -51.8522568,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 25014.7773,
+          "lateral": 15.6574745,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 25427.06,
+          "lateral": -16.4804668,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 25442.06,
+          "lateral": -16.4804668,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 25457.06,
+          "lateral": -16.4804668,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 25903.9648,
+          "lateral": -52.811264,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 25918.9648,
+          "lateral": -52.811264,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 26265.3711,
+          "lateral": 32.0987053,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 26280.3711,
+          "lateral": 32.0987053,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 26295.3711,
+          "lateral": 32.0987053,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 26310.3711,
+          "lateral": 32.0987053,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 26798.127,
+          "lateral": -23.3663731,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 27272.9453,
+          "lateral": 8.265023,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 27287.9453,
+          "lateral": 8.265023,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 27704.8613,
+          "lateral": 22.5874977,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 27719.8613,
+          "lateral": 22.5874977,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 27734.8613,
+          "lateral": 22.5874977,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 27749.8613,
+          "lateral": 22.5874977,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 27764.8613,
+          "lateral": 22.5874977,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 28224.5586,
+          "lateral": 43.0463257,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 28239.5586,
+          "lateral": 43.0463257,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 28254.5586,
+          "lateral": 43.0463257,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 28561.4336,
+          "lateral": -8.758559,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 28576.4336,
+          "lateral": -8.758559,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 28591.4336,
+          "lateral": -8.758559,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Collectible",
+            "value": 4
+          },
+          "distance": 28606.4336,
+          "lateral": -8.758559,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Checkpoint",
+            "value": 10
+          },
+          "distance": 2736.50928,
+          "lateral": 0,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Checkpoint",
+            "value": 10
+          },
+          "distance": 5989.28467,
+          "lateral": 0,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Checkpoint",
+            "value": 10
+          },
+          "distance": 9083.217,
+          "lateral": 0,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Checkpoint",
+            "value": 10
+          },
+          "distance": 12573.3066,
+          "lateral": 0,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Checkpoint",
+            "value": 10
+          },
+          "distance": 15668.15,
+          "lateral": 0,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Checkpoint",
+            "value": 10
+          },
+          "distance": 18937.502,
+          "lateral": 0,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Checkpoint",
+            "value": 10
+          },
+          "distance": 22225.002,
+          "lateral": 0,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        },
+        {
+          "kind": {
+            "$enum": "Checkpoint",
+            "value": 10
+          },
+          "distance": 25512.502,
+          "lateral": 0,
+          "height": 0,
+          "variant": 0,
+          "data": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 0
+          }
+        }
+      ]
+    }
+  }
+}

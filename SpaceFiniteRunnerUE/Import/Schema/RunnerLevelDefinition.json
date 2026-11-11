@@ -1,0 +1,289 @@
+{
+  "unityType": "RunnerLevelDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.RunnerLevelDefinition",
+  "baseType": "RunnerLevelAsset",
+  "script": "Assets/01.Scripts/Runner/GameFlow/RunnerLevelDefinition.cs",
+  "fields": [
+    {
+      "name": "levelName",
+      "type": "String",
+      "group": "Level",
+      "tooltip": "Shown on the Mission Complete panel when no city level preceded this run."
+    },
+    {
+      "name": "nextSceneName",
+      "type": "String",
+      "group": "Level",
+      "tooltip": "Scene the panel's NEXT MISSION loads (through the loading curtain)."
+    },
+    {
+      "name": "trackLengthMeters",
+      "type": "Single",
+      "group": "Level",
+      "tooltip": "Length of this run's track, metres: the three end ramps stand at about this distance (the generator lands the last knot as close as its segments allow). 0 = GameSettings.trackLengthMeters.",
+      "min": 0,
+      "max": 100000,
+      "unit": "m"
+    },
+    {
+      "name": "track",
+      "type": "TrackLayoutAsset",
+      "group": "Level",
+      "tooltip": "A saved track (made in the TrackGenerator's inspector: Generate Track, Save Track As…, Set as Current Track). Set = this level plays exactly that track — its length, its countdown when it sets one, every ramp, orb and gate. Empty = a track is generated for every run (the length above)."
+    },
+    {
+      "name": "traffic",
+      "type": "TrafficDefinition",
+      "group": "Level",
+      "tooltip": "Oncoming traffic for this level: hover cars driving the track toward the ship (OncomingTrafficPRD.md). Empty = none."
+    },
+    {
+      "name": "race",
+      "type": "RaceDefinition",
+      "group": "Level",
+      "tooltip": "A race: rival hover ships on a grid with the ship, racing it to the end ramps (RaceModePRD.md). Empty = no race. A race level should author no Reach Speed objective and no traffic."
+    },
+    {
+      "name": "timeTrial",
+      "type": "TimeTrialDefinition",
+      "group": "Level",
+      "tooltip": "A time trial: Beat the Clock (a set time to the end ramps) or Arcade (a short clock fed by checkpoints, clean flying and patrol kills) — TimeTrialPRD.md. Empty = none. A time trial level should author a Finish With Time objective and no Reach Speed. Ignored on a race level."
+    },
+    {
+      "name": "trackReveal",
+      "type": "Boolean",
+      "group": "Level",
+      "tooltip": "The track reveal: the road ahead, its placements and the oncoming cars assemble themselves as the ship (or a race's leader) nears them (TrackReveal_Settings tunes it). Off = the whole track stands built, as before."
+    },
+    {
+      "name": "completeVideo",
+      "type": "VideoClip",
+      "group": "Mission complete",
+      "tooltip": "Clip looping in the panel's video holder. Empty = the holder shows a dead NO SIGNAL screen."
+    },
+    {
+      "name": "rankTable",
+      "type": "RankTable",
+      "group": "Mission complete",
+      "tooltip": "Rank thresholds for a run played on its own. A run that follows a city level ranks against THAT level's table, carried over by the save."
+    },
+    {
+      "name": "optionalChallenges",
+      "type": "RunnerOptionalChallenge[]",
+      "group": "Optional challenges",
+      "tooltip": "Live from launch, no accept step. Only COMPLETED ones multiply the mission payout."
+    },
+    {
+      "name": "objectives",
+      "type": "RunnerObjective[]",
+      "group": "Objectives",
+      "tooltip": "ALL of these must be met to win the run. Each pays its reward on the Mission Complete panel."
+    }
+  ],
+  "types": {
+    "RankTable": {
+      "fullType": "ConfusedGameDev.FiniteRunner.SaveData.RankTable",
+      "fields": [
+        {
+          "name": "sThreshold",
+          "type": "Int64",
+          "tooltip": "Mission total at or above this earns an S.",
+          "min": 0,
+          "max": 1000000,
+          "unit": "$"
+        },
+        {
+          "name": "aThreshold",
+          "type": "Int64",
+          "tooltip": "Mission total at or above this earns an A.",
+          "min": 0,
+          "max": 1000000,
+          "unit": "$"
+        },
+        {
+          "name": "bThreshold",
+          "type": "Int64",
+          "tooltip": "Mission total at or above this earns a B.",
+          "min": 0,
+          "max": 1000000,
+          "unit": "$"
+        },
+        {
+          "name": "cThreshold",
+          "type": "Int64",
+          "tooltip": "Mission total at or above this earns a C; anything below is a D.",
+          "min": 0,
+          "max": 1000000,
+          "unit": "$"
+        }
+      ]
+    },
+    "RunnerOptionalChallenge": {
+      "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.RunnerOptionalChallenge",
+      "fields": [
+        {
+          "name": "type",
+          "type": "RunnerObjectiveType",
+          "declaredIn": "RunnerObjective"
+        },
+        {
+          "name": "targetSpeedKmh",
+          "type": "Single",
+          "declaredIn": "RunnerObjective",
+          "tooltip": "Speed the ship must reach. The first MANDATORY Reach Speed objective is the run's Light Speed — the HUD goal and the speed-lines reference.",
+          "min": 100,
+          "max": 10000,
+          "unit": "km/h"
+        },
+        {
+          "name": "jumpCount",
+          "type": "Int32",
+          "declaredIn": "RunnerObjective",
+          "tooltip": "How many ramps the ship must take off from during the run.",
+          "min": 1,
+          "max": 50
+        },
+        {
+          "name": "raceMode",
+          "type": "RaceGoalMode",
+          "declaredIn": "RunnerObjective",
+          "tooltip": "Win = finish 1st. Top X = finish X-th or better. Exactly = finish X-th, no better and no worse. Judged as the ship leaves by an end ramp; the run fails early the moment it can no longer be met."
+        },
+        {
+          "name": "racePosition",
+          "type": "Int32",
+          "declaredIn": "RunnerObjective",
+          "tooltip": "The place X the mode asks for.",
+          "min": 1,
+          "max": 30
+        },
+        {
+          "name": "minSecondsLeft",
+          "type": "Single",
+          "declaredIn": "RunnerObjective",
+          "tooltip": "Leave the track by an end ramp with at least this many seconds still on the clock. 0 = just finish before it runs out — a time trial's goal (TimeTrialPRD D3).",
+          "min": 0,
+          "max": 300,
+          "unit": "s"
+        },
+        {
+          "name": "reward",
+          "type": "Int32",
+          "declaredIn": "RunnerObjective",
+          "tooltip": "Money this objective pays on the Mission Complete panel, added to the city level's rewards before the challenge multipliers apply.",
+          "min": 0,
+          "max": 50000,
+          "unit": "$"
+        },
+        {
+          "name": "accent",
+          "type": "Color",
+          "declaredIn": "RunnerObjective",
+          "tooltip": "HUD tint and panel accent for this goal. Fully transparent = the type's default color."
+        },
+        {
+          "name": "multiplier",
+          "type": "Int32",
+          "tooltip": "Reward multiplier for COMPLETING this challenge — the panel shows it as ×N. An unfinished challenge earns nothing.",
+          "min": 1,
+          "max": 20
+        }
+      ]
+    },
+    "RunnerObjective": {
+      "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.RunnerObjective",
+      "fields": [
+        {
+          "name": "type",
+          "type": "RunnerObjectiveType"
+        },
+        {
+          "name": "targetSpeedKmh",
+          "type": "Single",
+          "tooltip": "Speed the ship must reach. The first MANDATORY Reach Speed objective is the run's Light Speed — the HUD goal and the speed-lines reference.",
+          "min": 100,
+          "max": 10000,
+          "unit": "km/h"
+        },
+        {
+          "name": "jumpCount",
+          "type": "Int32",
+          "tooltip": "How many ramps the ship must take off from during the run.",
+          "min": 1,
+          "max": 50
+        },
+        {
+          "name": "raceMode",
+          "type": "RaceGoalMode",
+          "tooltip": "Win = finish 1st. Top X = finish X-th or better. Exactly = finish X-th, no better and no worse. Judged as the ship leaves by an end ramp; the run fails early the moment it can no longer be met."
+        },
+        {
+          "name": "racePosition",
+          "type": "Int32",
+          "tooltip": "The place X the mode asks for.",
+          "min": 1,
+          "max": 30
+        },
+        {
+          "name": "minSecondsLeft",
+          "type": "Single",
+          "tooltip": "Leave the track by an end ramp with at least this many seconds still on the clock. 0 = just finish before it runs out — a time trial's goal (TimeTrialPRD D3).",
+          "min": 0,
+          "max": 300,
+          "unit": "s"
+        },
+        {
+          "name": "reward",
+          "type": "Int32",
+          "tooltip": "Money this objective pays on the Mission Complete panel, added to the city level's rewards before the challenge multipliers apply.",
+          "min": 0,
+          "max": 50000,
+          "unit": "$"
+        },
+        {
+          "name": "accent",
+          "type": "Color",
+          "tooltip": "HUD tint and panel accent for this goal. Fully transparent = the type's default color."
+        }
+      ]
+    },
+    "RunnerObjectiveType": {
+      "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.RunnerObjectiveType",
+      "enum": [
+        {
+          "name": "ReachSpeed",
+          "value": 0
+        },
+        {
+          "name": "JumpCount",
+          "value": 1
+        },
+        {
+          "name": "RacePosition",
+          "value": 2
+        },
+        {
+          "name": "FinishWithTime",
+          "value": 3
+        }
+      ]
+    },
+    "RaceGoalMode": {
+      "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.RaceGoalMode",
+      "enum": [
+        {
+          "name": "Win",
+          "value": 0
+        },
+        {
+          "name": "TopX",
+          "value": 1
+        },
+        {
+          "name": "Exactly",
+          "value": 2
+        }
+      ]
+    }
+  }
+}

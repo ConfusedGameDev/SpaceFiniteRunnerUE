@@ -1,0 +1,89 @@
+{
+  "unityType": "RunnerLevelDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.RunnerLevelDefinition",
+  "name": "FiniteRunner_LevelDefinition",
+  "guid": "c4a9f1e2b3d54f6a8e7c0b1d2a3f4e55",
+  "path": "Assets/04.Data/FiniteRunner/Levels/FiniteRunner_LevelDefinition.asset",
+  "fields": {
+    "levelName": "Escape Run",
+    "nextSceneName": "Store",
+    "trackLengthMeters": 91837,
+    "track": {
+      "$ref": {
+        "guid": "a674b9fff642a194dba9fe2055e5b956",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/Tracks/Track_StandardCurved.asset",
+        "name": "Track_StandardCurved",
+        "type": "TrackLayoutAsset",
+        "main": true
+      }
+    },
+    "traffic": {
+      "$ref": {
+        "guid": "a53a4393d9c25c642bd84bfa1a1c45cc",
+        "fileId": 11400000,
+        "path": "Assets/04.Data/FiniteRunner/Traffic/Traffic_Default.asset",
+        "name": "Traffic_Default",
+        "type": "TrafficDefinition",
+        "main": true
+      }
+    },
+    "race": null,
+    "timeTrial": null,
+    "trackReveal": true,
+    "completeVideo": null,
+    "rankTable": {
+      "sThreshold": 10000,
+      "aThreshold": 5000,
+      "bThreshold": 2500,
+      "cThreshold": 1000
+    },
+    "optionalChallenges": [
+      {
+        "type": {
+          "$enum": "JumpCount",
+          "value": 1
+        },
+        "targetSpeedKmh": 6500,
+        "jumpCount": 3,
+        "raceMode": {
+          "$enum": "Win",
+          "value": 0
+        },
+        "racePosition": 3,
+        "minSecondsLeft": 0,
+        "reward": 0,
+        "accent": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        },
+        "multiplier": 2
+      }
+    ],
+    "objectives": [
+      {
+        "type": {
+          "$enum": "ReachSpeed",
+          "value": 0
+        },
+        "targetSpeedKmh": 5000,
+        "jumpCount": 3,
+        "raceMode": {
+          "$enum": "Win",
+          "value": 0
+        },
+        "racePosition": 3,
+        "minSecondsLeft": 0,
+        "reward": 500,
+        "accent": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        }
+      }
+    ]
+  }
+}

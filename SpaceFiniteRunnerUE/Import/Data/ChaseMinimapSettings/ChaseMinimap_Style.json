@@ -1,0 +1,110 @@
+{
+  "unityType": "ChaseMinimapSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.HUD.ChaseMinimapSettings",
+  "name": "ChaseMinimap_Style",
+  "guid": "6c935af8d6ce14527a6be2eb316a54fd",
+  "path": "Assets/04.Data/FiniteRunner/UI/ChaseMinimap_Style.asset",
+  "fields": {
+    "shipColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "policeBlink": true,
+    "policeRed": {
+      "r": 1,
+      "g": 0.432804048,
+      "b": 0,
+      "a": 1
+    },
+    "policeBlue": {
+      "r": 0.6981132,
+      "g": 0.278710246,
+      "b": 0.009878943,
+      "a": 1
+    },
+    "shipSprite": {
+      "$ref": {
+        "guid": "75cad664faf7443d0a36cd168f22dd71",
+        "fileId": 2280661853197477181,
+        "path": "Assets/06.UI/01.Sprites/Keyboard & Mouse/Double/keyboard_apostrophe.png",
+        "name": "keyboard_apostrophe_0",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "shipSpriteScale": 1.45,
+    "shipSpriteRotation": 0,
+    "policeSprite": {
+      "$ref": {
+        "guid": "5a77a95c8e3d85c4d8a35ec7b273f96b",
+        "fileId": -1698358164764072582,
+        "path": "Assets/06.UI/01.Sprites/Xbox Series/Double/keyboard_exclamation_outline.png",
+        "name": "keyboard_exclamation_outline_0",
+        "type": "Sprite",
+        "main": false
+      }
+    },
+    "policeSpriteScale": 0.96,
+    "policeSpriteRotation": -179.207047,
+    "shipIconSize": 20.5,
+    "policeIconSize": 20,
+    "chaseSpan": 120,
+    "showTrackMap": true,
+    "showStrip": false,
+    "mapStartAtBottom": true,
+    "mapPadding": 0,
+    "mapSamples": 300,
+    "mapLineWidth": 4.67,
+    "mapLineColor": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.55
+    },
+    "mapDrivenColor": {
+      "r": 0.48,
+      "g": 1,
+      "b": 0.4,
+      "a": 0.95
+    },
+    "mapBackground": {
+      "r": 0,
+      "g": 0,
+      "b": 0,
+      "a": 0
+    },
+    "markerSize": 2,
+    "rampMarkerColor": {
+      "r": 1,
+      "g": 0.8,
+      "b": 0.2,
+      "a": 1
+    },
+    "gateMarkerColor": {
+      "r": 1,
+      "g": 0.2,
+      "b": 0.2,
+      "a": 1
+    },
+    "finishMarkerColor": {
+      "r": 1,
+      "g": 0.25,
+      "b": 0.9,
+      "a": 1
+    },
+    "rampMarkerSprite": null,
+    "gateMarkerSprite": null,
+    "finishMarkerSprite": null,
+    "checkpointMarkerColor": {
+      "r": 0.3,
+      "g": 1,
+      "b": 0.45,
+      "a": 1
+    },
+    "checkpointMarkerSprite": null,
+    "checkpointPassedAlpha": 0.3,
+    "blinkInterval": 0.098
+  }
+}

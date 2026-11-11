@@ -1,0 +1,48 @@
+{
+  "unityType": "RunnerLevelDefinition",
+  "fullType": "ConfusedGameDev.FiniteRunner.GameFlow.RunnerLevelDefinition",
+  "name": "FiniteRunner_Level_02",
+  "guid": "700241e67752cab42abf03258c6f6897",
+  "path": "Assets/04.Data/Campaign/FiniteRunner_Level_02.asset",
+  "fields": {
+    "levelName": "Escape Run 2",
+    "nextSceneName": "Store",
+    "trackLengthMeters": 0,
+    "track": null,
+    "traffic": null,
+    "race": null,
+    "timeTrial": null,
+    "trackReveal": true,
+    "completeVideo": null,
+    "rankTable": {
+      "sThreshold": 10000,
+      "aThreshold": 5000,
+      "bThreshold": 2500,
+      "cThreshold": 1000
+    },
+    "optionalChallenges": [],
+    "objectives": [
+      {
+        "type": {
+          "$enum": "ReachSpeed",
+          "value": 0
+        },
+        "targetSpeedKmh": 7500,
+        "jumpCount": 3,
+        "raceMode": {
+          "$enum": "Win",
+          "value": 0
+        },
+        "racePosition": 3,
+        "minSecondsLeft": 0,
+        "reward": 750,
+        "accent": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 0
+        }
+      }
+    ]
+  }
+}

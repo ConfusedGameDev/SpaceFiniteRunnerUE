@@ -1,0 +1,57 @@
+{
+  "unityType": "BoostMeterSettings",
+  "fullType": "ConfusedGameDev.FiniteRunner.Ship.BoostMeterSettings",
+  "baseType": "ScriptableObject",
+  "script": "Assets/01.Scripts/Runner/Ship/BoostMeterSettings.cs",
+  "fields": [
+    {
+      "name": "meterEnabled",
+      "type": "Boolean",
+      "group": "Boost",
+      "tooltip": "Master switch. Off, Boost does nothing and the HUD hides the bar."
+    },
+    {
+      "name": "potenceKmhPerSecond",
+      "type": "Single",
+      "group": "Boost",
+      "tooltip": "Extra thrust while Boost is held. It can push past cruise; above cruise the ship's passive bleed still pulls against it, and takes the speed back once Boost is let go.",
+      "min": 0,
+      "max": 1500,
+      "unit": "km/h per s"
+    },
+    {
+      "name": "drainPerSecond",
+      "type": "Single",
+      "group": "Meter",
+      "tooltip": "Share of the meter a second of boosting uses. 0.25 = four seconds from full to empty.",
+      "min": 0.05000000074505806,
+      "max": 2,
+      "unit": "/ s"
+    },
+    {
+      "name": "cooldownSeconds",
+      "type": "Single",
+      "group": "Meter",
+      "tooltip": "Seconds Boost must go unpressed before the meter starts refilling. Every press — an empty one too — starts it again.",
+      "min": 0,
+      "max": 15,
+      "unit": "s"
+    },
+    {
+      "name": "refillPerSecond",
+      "type": "Single",
+      "group": "Meter",
+      "tooltip": "Share of the meter refilled per second once the cooldown is over.",
+      "min": 0.05000000074505806,
+      "max": 2,
+      "unit": "/ s"
+    },
+    {
+      "name": "emptyPressRumble",
+      "type": "Vector3",
+      "group": "Feedback",
+      "tooltip": "Rumble for a press on an empty meter: low motor, high motor, seconds."
+    }
+  ],
+  "types": {}
+}
