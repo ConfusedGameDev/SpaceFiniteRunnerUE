@@ -7,6 +7,9 @@ public class RunnerCore : ModuleRules
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "RunnerContracts", "RunnerSave", "RunnerUI", "RunnerFX", "RunnerCameras", "RunnerShip", "EnhancedInput" });
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
+		// Dynamic Mesh: the streamed collision chunks (complex-as-simple).
+		PrivateDependencyModuleNames.AddRange(new string[] { "GeometryCore", "GeometryFramework" });
+		// The build tests flush the Chaos query structure by hand.
+		PrivateDependencyModuleNames.Add("PhysicsCore");
 	}
 }
