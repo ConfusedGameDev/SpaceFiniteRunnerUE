@@ -1,5 +1,7 @@
 #include "Track/Spawning/TrackSpawnContext.h"
 
+#include "Engine/World.h"
+#include "GameFramework/Actor.h"
 #include "TrackContracts.h"
 #include "Track/Spawning/PadDefinition.h"
 #include "Track/TrackModel.h"
@@ -101,4 +103,23 @@ float FTrackSpawnContext::PadMargin(const UPadDefinition* Definition, float Sway
 {
 	const float Width = PadSize.X * (Definition != nullptr ? Definition->SizeMultiplier : 1.f);
 	return Width * 0.5f + 2.f + Sway;
+}
+
+AActor* FTrackSpawnContext::SpawnOnTrack(UClass* Class, float Distance, float Lateral, float Up) const
+{
+	UWorld* W = World.Get();
+	if (!W || !Track || !Class) return nullptr;
+	FVector Position;
+	FQuat Rotation;
+	Track->GetPoseAtDistance(Distance, Lateral, Position, Rotation);
+	Position += Rotation.RotateVector(FVector(0.0, 0.0, Up));
+	const FTransform Pose(Track->ToWorldRotation(Rotation), Track->ToWorldPosition(Position));
+
+	FActorSpawnParameters Params;
+	Params.Owner = Parent.Get();
+	Params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+	Params.ObjectFlags |= RF_Transient;
+	AActor* Actor = W->SpawnActor(Class, &Pose, Params);
+	if (Actor && Parent.IsValid()) Actor->AttachToActor(Parent.Get(), FAttachmentTransformRules::KeepWorldTransform);
+	return Actor;
 }

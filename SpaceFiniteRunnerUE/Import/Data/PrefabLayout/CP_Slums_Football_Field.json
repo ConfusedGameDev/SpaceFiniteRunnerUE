@@ -1,0 +1,12 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "CP_Slums_Football_Field",
+  "guid": "5dd4ab9e755b0ad4ea8f0f0b5445df16",
+  "path": "Assets/Cyberpunk_Megapolis/Prefabs/Background/CP_Slums_Football_Field.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+    ]
+  }
+}

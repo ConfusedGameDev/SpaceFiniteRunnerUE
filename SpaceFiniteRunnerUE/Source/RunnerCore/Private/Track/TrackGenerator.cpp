@@ -230,10 +230,8 @@ void ATrackGenerator::Build(const FTrackPlacement& Placement)
 	{
 		if (Spawner && Spawner->GetKind() == Placement.Kind)
 		{
-			// A spawner registers what it builds in the context itself, or returns it for us to.
-			const int32 Before = Decider->GetContext().Spawned.Num();
 			AActor* Actor = Spawner->Build(Decider->GetContext(), Placement);
-			if (Actor && Decider->GetContext().Spawned.Num() == Before) Remember(Actor, Placement.Distance, Placement);
+			Remember(Actor, Spawner->GetCullDistance(Placement), Placement);
 			return;
 		}
 	}

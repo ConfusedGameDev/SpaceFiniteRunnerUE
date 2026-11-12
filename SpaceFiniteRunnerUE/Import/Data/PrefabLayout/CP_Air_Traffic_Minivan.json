@@ -1,0 +1,12 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "CP_Air_Traffic_Minivan",
+  "guid": "d328a71420fedfd4792b69388c44cc95",
+  "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Minivan.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+    ]
+  }
+}

@@ -175,14 +175,14 @@ namespace
 		return FRunnerSplineKnot(Knot.Position, UnitForward * -Knot.TangentIn.Length(), UnitForward * Knot.TangentOut.Length(), Rotation);
 	}
 
-	struct FFrame
+	struct FSplineFrame
 	{
 		FVector3f Origin, Tangent, Normal, Binormal;
 	};
 
-	FFrame NextRotationMinimizingFrame(const FRunnerBezierCurve& Curve, const FFrame& Previous, float NextT)
+	FSplineFrame NextRotationMinimizingFrame(const FRunnerBezierCurve& Curve, const FSplineFrame& Previous, float NextT)
 	{
-		FFrame Next;
+		FSplineFrame Next;
 		Next.Origin = Curve.EvaluatePosition(NextT);
 		Next.Tangent = Curve.EvaluateTangent(NextT);
 
@@ -214,7 +214,7 @@ namespace
 		constexpr int32 N = FRunnerSpline::NormalsPerCurve;
 		FVector3f NormalBuffer[N];
 
-		FFrame Frame;
+		FSplineFrame Frame;
 		Frame.Origin = Curve.P0;
 		Frame.Tangent = Curve.P1 - Curve.P0;
 		Frame.Normal = StartUp;
@@ -231,7 +231,7 @@ namespace
 		FVector3f UpVector = FVector3f::ZeroVector;
 		for (int32 i = 1; i < N; ++i)
 		{
-			const FFrame PrevFrame = Frame;
+			const FSplineFrame PrevFrame = Frame;
 			Frame = NextRotationMinimizingFrame(Curve, PrevFrame, CurrentT);
 			NormalBuffer[i] = Frame.Normal;
 			if (PrevT <= T && CurrentT >= T)

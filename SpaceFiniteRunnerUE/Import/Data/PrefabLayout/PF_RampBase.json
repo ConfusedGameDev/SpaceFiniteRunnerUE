@@ -1,0 +1,13 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "PF_RampBase",
+  "guid": "07565272d009a8841b832365d7c537e1",
+  "path": "Assets/03.Prefabs/FiniteRunner/PF_RampBase.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": ["RampBoost"],
+    "nodes": [
+      {"name": "Wedge", "path": "Wedge", "active": true, "rendered": true, "model": null, "mesh": "Assets/02.Art/01.Models/FiniteRunner/RampBase_Wedge.asset:RampBase_Wedge", "materials": [{"$ref": {"guid": "8c105df17ef01754a8c959cb19486bbf", "fileId": 2100000, "path": "Assets/02.Art/02.Materials/FiniteRunner/NeonBarrier_Mat.mat", "name": "NeonBarrier_Mat", "type": "Material", "main": true}}], "position": {"x": 0, "y": 0, "z": 0}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 3.08090043}, "components": [], "colliders": []}
+    ]
+  }
+}

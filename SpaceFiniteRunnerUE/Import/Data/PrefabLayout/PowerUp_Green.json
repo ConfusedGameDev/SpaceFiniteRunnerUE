@@ -1,0 +1,14 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "PowerUp_Green",
+  "guid": "2b4d6f8a0c2e4b6d8f0a2c4e6b8d0f2a",
+  "path": "Assets/03.Prefabs/Runner/PowerUp_Green.prefab",
+  "fields": {
+    "rootScale": {"x": 1.27598345, "y": 1.27598345, "z": 1.27598345},
+    "rootComponents": ["SpeedPad"],
+    "nodes": [
+      {"name": "indicator-special-arrow", "path": "indicator-special-arrow", "active": true, "rendered": true, "model": {"$ref": {"guid": "b0ef635b3814a194782f04a949ace8ce", "fileId": 919132149155446097, "path": "Assets/02.Art/01.Models/Prototype/indicator-special-arrow.fbx", "name": "indicator-special-arrow", "type": "GameObject", "main": true}}, "mesh": "", "materials": [{"$ref": {"guid": "7c1a4f0b2e3d5a6c8b9d0e1f2a3b4c5d", "fileId": 2100000, "path": "Assets/02.Art/01.Models/Pickups/Mat_PowerUp_Green.mat", "name": "Mat_PowerUp_Green", "type": "Material", "main": true}}], "position": {"x": 0, "y": 1.1, "z": 5.10999966}, "rotation": {"x": -0.103629567, "y": -0.699471951, "z": 0.103629559, "w": 0.699471831}, "scale": {"x": 5.99092054, "y": 9.480654, "z": 5.99092}, "components": [], "colliders": []},
+      {"name": "QtePrompt", "path": "QtePrompt", "active": true, "rendered": true, "model": null, "mesh": "Sprite:xbox_button_a_0", "materials": [{"$ref": {"guid": "9dfc825aed78fcd4ba02077103263b40", "fileId": 2100000, "path": "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat", "name": "Sprite-Unlit-Default", "type": "Material", "main": true}}], "position": {"x": 3.14759973E-06, "y": 11.6999989, "z": 7.9}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 7.948241, "y": 7.948241, "z": 7.948241}, "components": ["BoostQteAnchor"], "colliders": []}
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "CP_Skyscraper_09",
+  "guid": "1146bc2d3bc1c5643905241c5eaf17fd",
+  "path": "Assets/Cyberpunk_Megapolis/Prefabs/Background/CP_Skyscraper_09.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+    ]
+  }
+}

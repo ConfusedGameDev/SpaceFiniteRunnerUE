@@ -1,0 +1,13 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "PowerUp_Brake",
+  "guid": "6e8a0c2e4b6d8f0a2c4e6a8c0e2b4d6f",
+  "path": "Assets/03.Prefabs/Runner/PowerUp_Brake.prefab",
+  "fields": {
+    "rootScale": {"x": 17.1429, "y": 17.1429, "z": 17.1429},
+    "rootComponents": ["SpeedPad"],
+    "nodes": [
+      {"name": "indicator-special-arrow", "path": "indicator-special-arrow", "active": true, "rendered": true, "model": {"$ref": {"guid": "b0ef635b3814a194782f04a949ace8ce", "fileId": 919132149155446097, "path": "Assets/02.Art/01.Models/Prototype/indicator-special-arrow.fbx", "name": "indicator-special-arrow", "type": "GameObject", "main": true}}, "mesh": "", "materials": [{"$ref": {"guid": "5a7c9e1b3d5f7a9c1e3b5d7f9a1c3e5b", "fileId": 2100000, "path": "Assets/02.Art/01.Models/Pickups/Mat_PowerUp_Brake.mat", "name": "Mat_PowerUp_Brake", "type": "Material", "main": true}}], "position": {"x": 0, "y": 0.0257929228, "z": 0}, "rotation": {"x": 0, "y": -0.7071068, "z": 0, "w": 0.7071067}, "scale": {"x": 0.83203, "y": 1.31669044, "z": 0.83203}, "components": [], "colliders": []}
+    ]
+  }
+}

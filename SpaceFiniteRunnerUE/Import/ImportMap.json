@@ -44,6 +44,10 @@
     },
     "TrackPlacementCatalog": {
       "folder": "/Game/Runner/Data/Track"
+    },
+    "PrefabLayout": {
+      "folder": "/Game/Runner/Data/Prefabs",
+      "prefix": "PL_"
     }
   },
   "assets": {

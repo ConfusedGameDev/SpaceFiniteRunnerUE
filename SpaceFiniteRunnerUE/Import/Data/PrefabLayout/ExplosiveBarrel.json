@@ -1,0 +1,13 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "ExplosiveBarrel",
+  "guid": "e9579340166124ccea05b40619ea5634",
+  "path": "Assets/03.Prefabs/PoliceEscape/ExplosiveBarrel.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+      {"name": "Barrel", "path": "Barrel", "active": true, "rendered": true, "model": null, "mesh": "Cylinder", "materials": [{"$ref": {"guid": "d73a9e4414427421aa1de0c4ca3d6f5b", "fileId": 2100000, "path": "Assets/02.Art/02.Materials/InfiniteCity/ExplosiveBarrel.mat", "name": "ExplosiveBarrel", "type": "Material", "main": true}}], "position": {"x": 0, "y": 0.075, "z": 0}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.093, "y": 0.075, "z": 0.093}, "components": [], "colliders": [{"type": "Capsule", "trigger": false, "center": {"x": 0, "y": 0, "z": 0}, "radius": 0.5, "height": 2, "direction": 1}]}
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "PowerUp_Blue",
+  "guid": "8d0f2a4c6e8b0d2f4a6c8e0b2d4f6a8c",
+  "path": "Assets/03.Prefabs/Runner/PowerUp_Blue.prefab",
+  "fields": {
+    "rootScale": {"x": 24, "y": 24, "z": 24},
+    "rootComponents": ["SpeedPad"],
+    "nodes": [
+      {"name": "indicator-special-arrow", "path": "indicator-special-arrow", "active": true, "rendered": false, "model": {"$ref": {"guid": "b0ef635b3814a194782f04a949ace8ce", "fileId": 919132149155446097, "path": "Assets/02.Art/01.Models/Prototype/indicator-special-arrow.fbx", "name": "indicator-special-arrow", "type": "GameObject", "main": true}}, "mesh": "", "materials": [{"$ref": {"guid": "3e5b7d9f1a2c4e6b8d0f2a4c6e8b0d2f", "fileId": 2100000, "path": "Assets/02.Art/01.Models/Pickups/Mat_PowerUp_Blue.mat", "name": "Mat_PowerUp_Blue", "type": "Material", "main": true}}], "position": {"x": 0, "y": 0.0257929228, "z": 0}, "rotation": {"x": 0, "y": -0.7071068, "z": 0, "w": 0.7071067}, "scale": {"x": 0.83203, "y": 1.31669033, "z": 0.83203}, "components": [], "colliders": []},
+      {"name": "Indicator", "path": "Indicator", "active": true, "rendered": false, "model": {"$ref": {"guid": "2f8f3b190f664e64fb0d45e004b78669", "fileId": 919132149155446097, "path": "Assets/02.Art/01.Models/Prototype/indicator-round-d.fbx", "name": "indicator-round-d", "type": "GameObject", "main": true}}, "mesh": "", "materials": [{"$ref": {"guid": "e967edf2e1b6a98448853000ff1fa99c", "fileId": 2100000, "path": "Assets/02.Art/01.Models/Pickups/Mat_GreenPowerUp.mat", "name": "Mat_GreenPowerUp", "type": "Material", "main": true}}], "position": {"x": 0, "y": 0.7, "z": 0.0600000061}, "rotation": {"x": 0.7071068, "y": 0, "z": 0, "w": 0.7071067}, "scale": {"x": 0.6, "y": 0.6000001, "z": 0.6000001}, "components": ["BurstSpin"], "colliders": []},
+      {"name": "Ultraboost", "path": "Ultraboost", "active": true, "rendered": true, "model": {"$ref": {"guid": "7a095432ffac14b44bb523610bb9abaf", "fileId": 919132149155446097, "path": "Assets/02.Art/01.Models/FiniteRunner/OriginalModels/Ultraboost.fbx", "name": "Ultraboost", "type": "GameObject", "main": true}}, "mesh": "", "materials": [{"$ref": {"guid": "f0e03a16d71c5c747b605c2905ed6d1a", "fileId": 2100000, "path": "Assets/02.Art/01.Models/FiniteRunner/Textures/OriginalTextures/Materials/roadTexture_v2.mat", "name": "roadTexture_v2", "type": "Material", "main": true}}, {"$ref": {"guid": "ed2f95cfded5007469dd3e9faf512a01", "fileId": 2100000, "path": "Assets/02.Art/02.Materials/FiniteRunner/hologram.mat", "name": "hologram", "type": "Material", "main": true}}], "position": {"x": -0.0210960321, "y": 0.6001121, "z": 0.0525288135}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 0.0707625, "y": 0.0707625, "z": 0.0707625}, "components": [], "colliders": []}
+    ]
+  }
+}

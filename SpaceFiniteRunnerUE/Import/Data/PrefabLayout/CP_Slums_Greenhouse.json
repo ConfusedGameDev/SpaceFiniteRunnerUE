@@ -1,0 +1,12 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "CP_Slums_Greenhouse",
+  "guid": "a3c09329df1a01643b832167d42a8d0a",
+  "path": "Assets/Cyberpunk_Megapolis/Prefabs/Background/CP_Slums_Greenhouse.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+    ]
+  }
+}

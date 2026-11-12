@@ -1,0 +1,12 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "PF_ROB",
+  "guid": "b9690e884d0fd6e49959ab4f8cb9e780",
+  "path": "Assets/03.Prefabs/Characters/PF_ROB.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+    ]
+  }
+}

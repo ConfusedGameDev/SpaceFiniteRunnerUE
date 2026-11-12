@@ -84,6 +84,7 @@ bool FRunnerUnityImporter::Run()
 		WriteReport();
 		return false;
 	}
+	ReadManifest();
 
 	for (const FSource& Source : Sources)
 	{
@@ -97,6 +98,33 @@ bool FRunnerUnityImporter::Run()
 	UE_LOG(LogRunnerEditor, Display, TEXT("Unity import: %d created, %d updated, %d skipped (already in the project). Report: %s"),
 		Created, Updated, Skipped, *ReportPath);
 	return !bFailed;
+}
+
+void FRunnerUnityImporter::ReadManifest()
+{
+	TArray<FString> Lines;
+	const FString File = FPaths::Combine(Options.ImportDir, TEXT("AssetManifest.csv"));
+	if (!FFileHelper::LoadFileToStringArray(Lines, *File)) return;
+
+	// Guid,UnityPath,AssetType,Ext,SizeBytes,Action,UEPath,Notes. Only the last column may be quoted.
+	for (int32 i = 1; i < Lines.Num(); ++i)
+	{
+		TArray<FString> Columns;
+		int32 Start = 0;
+		const FString& Line = Lines[i];
+		for (int32 c = 0; c < 7 && Start <= Line.Len(); ++c)
+		{
+			int32 Comma = Line.Find(TEXT(","), ESearchCase::CaseSensitive, ESearchDir::FromStart, Start);
+			if (Comma == INDEX_NONE) Comma = Line.Len();
+			Columns.Add(Line.Mid(Start, Comma - Start));
+			Start = Comma + 1;
+		}
+		if (Columns.Num() < 7 || Columns[6].IsEmpty() || !Columns[6].StartsWith(TEXT("/Game/"))) continue;
+		// Data exported as JSON keeps its own address; the manifest only adds what the data refers to.
+		if (ObjectPathByGuid.Contains(Columns[0])) continue;
+		const FString& Package = Columns[6];
+		ObjectPathByGuid.Add(Columns[0], Package + TEXT(".") + FPackageName::GetShortName(Package));
+	}
 }
 
 void FRunnerUnityImporter::LoadMap()

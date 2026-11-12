@@ -71,6 +71,8 @@ private:
 	void LoadMap();
 	void FindClasses();
 	bool ReadSources();
+	/** Ported assets (meshes, textures, materials) by Unity guid, from AssetManifest.csv's UEPath column. */
+	void ReadManifest();
 	FString DestinationFor(const FSource& Source) const;
 	bool ImportSource(const FSource& Source);
 

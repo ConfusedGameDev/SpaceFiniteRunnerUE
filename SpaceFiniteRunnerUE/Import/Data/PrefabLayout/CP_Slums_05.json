@@ -1,0 +1,12 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "CP_Slums_05",
+  "guid": "89c4bf9e1b442a44b9e89b78d295c76e",
+  "path": "Assets/Cyberpunk_Megapolis/Prefabs/Background/CP_Slums_05.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "CP_Air_Traffic_Truck",
+  "guid": "7e7edacc32657df41b4ab2d00c7c0493",
+  "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Truck.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+    ]
+  }
+}

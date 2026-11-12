@@ -9,7 +9,11 @@
 
 class AActor;
 class FTrackSpawnContext;
+class UMaterialInstanceDynamic;
+class UMaterialInterface;
 class UPadDefinition;
+class URunnerPrefabLayout;
+class UStaticMesh;
 
 /** When a spawner runs in a decide pass: ground claimers first, then pickups in set order. */
 enum class ETrackSpawnPhase : uint8
@@ -37,9 +41,9 @@ struct RUNNERCORE_API FPadSpawnEntry
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pad")
 	FString Name = TEXT("Pad");
 
-	/** Optional actor spawned instead of the built-in orb (the Unity prefab, rebuilt). Empty = the default orb actor. */
+	/** The look (the Unity prefab, as the exporter's layout); it keeps its own materials. Empty = a code-built orb or slab. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pad")
-	TSoftClassPtr<AActor> ActorClass;
+	TObjectPtr<URunnerPrefabLayout> Prefab;
 
 	/** What the pad does on pickup (boost/brake, orb or flat pad, size). */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pad")
@@ -127,8 +131,11 @@ public:
 	void Park() { Cursor = TNumericLimits<float>::Max(); }
 	float GetCursor() const { return Cursor; }
 
-	/** Builds one decided record inside the stream window. Returns the actor (or null). */
+	/** Builds one decided record inside the stream window. Returns the actor (or null); the generator registers it. */
 	virtual AActor* Build(FTrackSpawnContext& Ctx, const FTrackPlacement& Placement) { return nullptr; }
+
+	/** The track distance a built record ends at: it is culled once that is behind the focus. */
+	virtual float GetCullDistance(const FTrackPlacement& Placement) const { return Placement.Distance; }
 
 	/** Spawns per 10 km at the current spacing and chance. */
 	float GetAmountPerTenKm() const;
@@ -167,6 +174,13 @@ public:
 
 protected:
 	virtual float Step(FTrackSpawnContext& Ctx, float Distance, float Limit) override;
+
+private:
+	/** One tinted material per tier for the code-built orbs (made on first use). */
+	UMaterialInterface* TierMaterial(int32 TierIndex);
+
+	UPROPERTY(Transient)
+	TMap<int32, TObjectPtr<UMaterialInstanceDynamic>> TierMaterials;
 };
 
 /** Repair orbs: a translucent shell with a cross, healing the hull. Never a speed pad. */
@@ -176,9 +190,9 @@ class RUNNERCORE_API URepairOrbSpawner : public UTrackSpawner
 	GENERATED_BODY()
 
 public:
-	/** The repair orb's look, modelled at 1 m across. Empty = the default repair orb actor. */
+	/** The repair orb's look, modelled at 1 m across (the MedPack model). Empty = a code-built shell round a cross. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Repair Orb")
-	TSoftClassPtr<AActor> ActorClass;
+	TObjectPtr<UStaticMesh> Prefab;
 
 	/** Diameter of the repair orb as a share of the pad width (a boost orb's is its definition's size multiplier). */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Repair Orb", meta = (ClampMin = 0.1, ClampMax = 2))
@@ -209,6 +223,13 @@ public:
 
 protected:
 	virtual float Step(FTrackSpawnContext& Ctx, float Distance, float Limit) override;
+
+private:
+	UPROPERTY(Transient)
+	TObjectPtr<UMaterialInstanceDynamic> ShellMaterial;
+
+	UPROPERTY(Transient)
+	TObjectPtr<UMaterialInstanceDynamic> CrossMaterial;
 };
 
 /** Laser gates: claim their ground before every pickup in a pass. */
@@ -218,9 +239,9 @@ class RUNNERCORE_API ULaserGateSpawner : public UTrackSpawner
 	GENERATED_BODY()
 
 public:
-	/** The gate actor (the Unity PF_LaserSystem, rebuilt). Empty = the default gate actor. */
+	/** The laser system (PF_LaserSystem, as the exporter's layout): its authored model draws the Prefab look. Empty = stand-in rods. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Laser Gates")
-	TSoftClassPtr<AActor> ActorClass;
+	TObjectPtr<URunnerPrefabLayout> LaserPrefab;
 
 	/** Beam size, variant weights, rotor speed and the look. Played as a runtime copy. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Laser Gates")
@@ -243,6 +264,8 @@ public:
 	virtual bool IsActive(const FTrackSpawnContext& Ctx) const override;
 	virtual ETrackPlacementKind GetKind() const override { return ETrackPlacementKind::LaserGate; }
 	virtual AActor* Build(FTrackSpawnContext& Ctx, const FTrackPlacement& Placement) override;
+	/** Keyed on its END, like everything that spans track. */
+	virtual float GetCullDistance(const FTrackPlacement& Placement) const override;
 
 	/** The definition this pass plays (a copy at runtime, the asset in the editor). */
 	const ULaserGateDefinition* GetRuntimeDefinition() const { return Runtime; }

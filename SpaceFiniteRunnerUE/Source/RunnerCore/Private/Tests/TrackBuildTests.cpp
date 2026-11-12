@@ -10,7 +10,14 @@
 #include "Components/SplineMeshComponent.h"
 #include "Engine/Engine.h"
 #include "Engine/World.h"
+#include "Components/StaticMeshComponent.h"
+#include "Simulation/PickupRegistry.h"
 #include "Track/Features/JumpRamp.h"
+#include "Track/Features/LaserGate.h"
+#include "Track/Pickups/RepairOrb.h"
+#include "Track/Pickups/SpeedOrb.h"
+#include "Track/Spawning/TrackSpawnContext.h"
+#include "Track/TrackObstacles.h"
 #include "Track/Features/TrackFeatureDefinitions.h"
 #include "Track/Spawning/TrackSpawner.h"
 #include "Track/TrackColliderBuilder.h"
@@ -77,6 +84,143 @@ namespace
 			static_cast<int32>(First->GetCollisionObjectType()), First->GetWorld()->GetPhysicsScene() != nullptr, First->BodyInstance.GetPhysicsScene() != nullptr));
 	}
 
+	/** Everything the generator reports building, in order. Bind before BuildTrack: it builds the first window at once. */
+	struct FPlacementWatch
+	{
+		struct FBuilt
+		{
+			TWeakObjectPtr<AActor> Actor;
+			float Distance = 0.f;
+			float Lateral = 0.f;
+		};
+		TArray<FBuilt> Built;
+		bool bOrbSeen = false, bRepairSeen = false, bGateSeen = false;
+
+		void Bind(ATrackGenerator& Generator)
+		{
+			Generator.OnPlacementBuilt.AddLambda([this](AActor* Actor, float D, float L) { Built.Add({ Actor, D, L }); });
+		}
+
+		static uint64 Key(float D, float L)
+		{
+			return (static_cast<uint64>(static_cast<uint32>(FMath::RoundToInt(D * 10.f))) << 32) | static_cast<uint32>(FMath::RoundToInt(L * 10.f) + (1 << 30));
+		}
+	};
+
+	bool IsBuiltKind(ETrackPlacementKind Kind)
+	{
+		return Kind != ETrackPlacementKind::Collectible && Kind != ETrackPlacementKind::Checkpoint && Kind != ETrackPlacementKind::BrakePad;
+	}
+
+	int32 MeshCount(const AActor& Actor)
+	{
+		TArray<UStaticMeshComponent*> Meshes;
+		Actor.GetComponents(Meshes);
+		int32 N = 0;
+		for (const UStaticMeshComponent* M : Meshes) N += M->GetStaticMesh() != nullptr;
+		return N;
+	}
+
+	/**
+	 * The M2.5 check, after every stream step: every decided record before the window's edge was built
+	 * exactly once; everything the generator holds ends at or past the cull line and is alive; whatever
+	 * it let go is destroyed; and the registry holds exactly the live orbs and gates.
+	 */
+	void CheckPlacements(FAutomationTestBase& Test, UWorld& World, ATrackGenerator& Generator, const FPlacementWatch& Watch, const FString& Label, int32& Errors)
+	{
+		constexpr int32 MaxReports = 8;
+		TMap<uint64, int32> Count;
+		for (const FPlacementWatch::FBuilt& B : Watch.Built) Count.FindOrAdd(FPlacementWatch::Key(B.Distance, B.Lateral))++;
+
+		for (const FTrackPlacement& P : Generator.GetDecider()->GetContext().Placements)
+		{
+			if (!IsBuiltKind(P.Kind) || P.Distance >= Generator.GetBuiltTo()) continue;
+			const int32 N = Count.FindRef(FPlacementWatch::Key(P.Distance, P.Lateral));
+			if (N != 1 && ++Errors <= MaxReports)
+				Test.AddError(FString::Printf(TEXT("%s: record kind %d at %.1f m (lateral %.1f) built %d times by %.0f m"), *Label,
+					static_cast<int32>(P.Kind), P.Distance, P.Lateral, N, Generator.GetBuiltTo()));
+		}
+
+		TSet<const AActor*> Held;
+		for (const TPair<float, TWeakObjectPtr<AActor>>& S : Generator.GetDecider()->GetContext().Spawned)
+		{
+			AActor* A = S.Value.Get();
+			Held.Add(A);
+			if ((!IsValid(A) || S.Key < Generator.GetCulledTo()) && ++Errors <= MaxReports)
+				Test.AddError(FString::Printf(TEXT("%s: held actor ending at %.1f m is %s (culled to %.1f)"), *Label, S.Key, IsValid(A) ? TEXT("behind the cull line") : TEXT("gone"), Generator.GetCulledTo()));
+		}
+		int32 LivePickups = 0;
+		for (const FPlacementWatch::FBuilt& B : Watch.Built)
+		{
+			AActor* A = B.Actor.Get();
+			const bool bHeld = A && Held.Contains(A);
+			if (!bHeld && IsValid(A) && ++Errors <= MaxReports)
+				Test.AddError(FString::Printf(TEXT("%s: %s at %.1f m let go but not destroyed"), *Label, *A->GetClass()->GetName(), B.Distance));
+			if (bHeld && (Cast<ASpeedOrb>(A) || Cast<ALaserGate>(A))) ++LivePickups;
+		}
+		const UPickupRegistry* Registry = UPickupRegistry::Get(&World);
+		if (!Registry)
+		{
+			if (++Errors <= MaxReports) Test.AddError(FString::Printf(TEXT("%s: no pickup registry in the world"), *Label));
+		}
+		else if (Registry->Num() != LivePickups && ++Errors <= MaxReports)
+		{
+			Test.AddError(FString::Printf(TEXT("%s: the registry holds %d, %d orbs and gates are live"), *Label, Registry->Num(), LivePickups));
+		}
+	}
+
+	/** The first live orb, repair orb and gate: their pictures and volumes, once each. */
+	void DescribeLooks(FAutomationTestBase& Test, ATrackGenerator& Generator, FPlacementWatch& Watch, const FString& Label)
+	{
+		for (const FPlacementWatch::FBuilt& B : Watch.Built)
+		{
+			AActor* A = B.Actor.Get();
+			if (!IsValid(A)) continue;
+			if (const ASpeedOrb* Orb = Cast<ASpeedOrb>(A); Orb && !Watch.bOrbSeen)
+			{
+				Watch.bOrbSeen = true;
+				const FVector3f H = Orb->GetPickupHalfExtents();
+				Test.AddInfo(FString::Printf(TEXT("%s: speed orb %s at %.0f m: %d meshes, boost %.1f m/s, volume %.2f x %.2f x %.2f m"), *Label,
+					*Orb->GetTierName(), B.Distance, MeshCount(*Orb), Orb->GetSpeedDelta(), H.X * 2, H.Y * 2, H.Z * 2));
+				Test.TestTrue(FString::Printf(TEXT("%s: the speed orb has a picture"), *Label), MeshCount(*Orb) > 0);
+			}
+			else if (const ARepairOrb* Repair = Cast<ARepairOrb>(A); Repair && !Watch.bRepairSeen)
+			{
+				Watch.bRepairSeen = true;
+				Test.AddInfo(FString::Printf(TEXT("%s: repair orb at %.0f m: %d meshes"), *Label, B.Distance, MeshCount(*Repair)));
+				Test.TestTrue(FString::Printf(TEXT("%s: the repair orb has a picture"), *Label), MeshCount(*Repair) > 0);
+			}
+			else if (const ALaserGate* Gate = Cast<ALaserGate>(A); Gate && !Watch.bGateSeen)
+			{
+				Watch.bGateSeen = true;
+				FVector Pa, Pb;
+				Gate->GetSegment(0, 0.f, Pa, Pb);
+				TArray<FTrackObstacle> Obstacles;
+				FTrackObstacles::Collect(Generator.GetRamps(), UPickupRegistry::Get(Gate), B.Distance - 1.f, B.Distance + 1.f, 0.f, Obstacles);
+				Test.AddInfo(FString::Printf(TEXT("%s: laser gate variant %d at %.0f m: %d meshes, prefab %d, sheet %.2f m, burns %.2f m either side, beam %s -> %s, half depth %.2f m, %d obstacles there"), *Label,
+					static_cast<int32>(Gate->GetVariant()), B.Distance, MeshCount(*Gate), Gate->DrawsPrefabModel(), Gate->GetPrefabSheetLength(),
+					Gate->GetBurnRadius(), *Pa.ToString(), *Pb.ToString(), Gate->GetHalfDepth(), Obstacles.Num()));
+				Test.TestTrue(FString::Printf(TEXT("%s: the gate has a picture"), *Label), MeshCount(*Gate) > 0);
+				Test.TestTrue(FString::Printf(TEXT("%s: the gate is an obstacle"), *Label), Obstacles.Num() > 0);
+			}
+		}
+	}
+
+	/** Per-class totals of everything built. */
+	void DescribePlacements(FAutomationTestBase& Test, const FPlacementWatch& Watch, const FString& Label)
+	{
+		TMap<FString, int32> ByClass;
+		int32 Gone = 0;
+		for (const FPlacementWatch::FBuilt& B : Watch.Built)
+		{
+			if (!IsValid(B.Actor.Get())) { ++Gone; continue; }
+			ByClass.FindOrAdd(B.Actor->GetClass()->GetName())++;
+		}
+		FString Totals;
+		for (const TPair<FString, int32>& P : ByClass) Totals += FString::Printf(TEXT(" %s %d,"), *P.Key, P.Value);
+		Test.AddInfo(FString::Printf(TEXT("%s: %d placements built, %d culled behind the focus, live at the end:%s"), *Label, Watch.Built.Num(), Gone, *Totals));
+	}
+
 	bool Trace(UWorld& World, const FVector& From, const FVector& To, FHitResult& Hit)
 	{
 		FCollisionQueryParams Params(SCENE_QUERY_STAT(RunnerTrackBuildTest), true);
@@ -91,8 +235,9 @@ namespace
 	 * - a wall at the lip where the edge is closed and none where it is open (plain road, every 20 m);
 	 * - nothing at all past the end.
 	 */
-	void FlyThrough(FAutomationTestBase& Test, UWorld& World, ATrackGenerator& Generator, const FString& Label)
+	void FlyThrough(FAutomationTestBase& Test, UWorld& World, ATrackGenerator& Generator, const FString& Label, FPlacementWatch& Watch)
 	{
+		int32 PlacementErrors = 0;
 		UTrackModel& Track = *Generator.GetTrack();
 		const FTransform& ToWorld = Track.GetTrackToWorld();
 		const float End = Track.HasEnd() ? Track.GetEndDistance() : Track.GetLength();
@@ -120,6 +265,8 @@ namespace
 			if (FPhysScene* Scene = World.GetPhysicsScene()) Scene->Flush();
 			else if (Focus == 0.f) Test.AddError(TEXT("the test world has no physics scene"));
 			if (Focus == 0.f) DescribeFirstChunk(Test, Generator);
+			CheckPlacements(Test, World, Generator, Watch, Label, PlacementErrors);
+			DescribeLooks(Test, Generator, Watch, Label);
 			const float To = FMath::Min(Focus + Step, End);
 
 			// Floor.
@@ -248,6 +395,9 @@ namespace
 
 		// The void past the end.
 		Generator.StreamTo(End);
+		CheckPlacements(Test, World, Generator, Watch, Label, PlacementErrors);
+		DescribePlacements(Test, Watch, Label);
+		Test.TestEqual(FString::Printf(TEXT("%s: placement errors"), *Label), PlacementErrors, 0);
 		if (FPhysScene* Scene = World.GetPhysicsScene()) Scene->Flush();
 		for (const float Past : { 30.f, 120.f })
 		{
@@ -332,8 +482,10 @@ bool FRunnerTrackStreamGeneratedTest::RunTest(const FString& Parameters)
 	Generator->EndRamp = LoadEndRamp();
 	Generator->Seed = 4242;
 	Generator->FinishSpawning(FTransform(FVector(1000.0, -500.0, 200.0)));
+	FPlacementWatch Watch;
+	Watch.Bind(*Generator);
 	if (!TestTrue(TEXT("track built"), Generator->BuildTrack())) return false;
-	FlyThrough(*this, *TestWorld.World, *Generator, TEXT("seed 4242"));
+	FlyThrough(*this, *TestWorld.World, *Generator, TEXT("seed 4242"), Watch);
 	return true;
 }
 
@@ -352,8 +504,10 @@ bool FRunnerTrackStreamStandardTest::RunTest(const FString& Parameters)
 	Generator->EndRamp = LoadEndRamp();
 	Generator->FinishSpawning(FTransform::Identity);
 	if (!TestNotNull(TEXT("TL_Standard"), Generator->Layout.Get())) return false;
+	FPlacementWatch Watch;
+	Watch.Bind(*Generator);
 	if (!TestTrue(TEXT("track loaded"), Generator->BuildTrack())) return false;
-	FlyThrough(*this, *TestWorld.World, *Generator, TEXT("TL_Standard"));
+	FlyThrough(*this, *TestWorld.World, *Generator, TEXT("TL_Standard"), Watch);
 	return true;
 }
 
@@ -379,6 +533,8 @@ bool FRunnerTrackStreamMixedTest::RunTest(const FString& Parameters)
 		Generator->EndRamp = LoadEndRamp();
 		Generator->Seed = Seed;
 		Generator->FinishSpawning(FTransform::Identity);
+		FPlacementWatch Watch;
+		Watch.Bind(*Generator);
 		if (!TestTrue(TEXT("track built"), Generator->BuildTrack())) continue;
 		int32 Loops = 0, Tubes = 0;
 		for (const TSharedPtr<FTrackSection>& S : Generator->GetTrack()->GetSections())
@@ -387,7 +543,7 @@ bool FRunnerTrackStreamMixedTest::RunTest(const FString& Parameters)
 			Tubes += S->AsTube() != nullptr;
 		}
 		AddInfo(FString::Printf(TEXT("seed %d: %d loops, %d tubes"), Seed, Loops, Tubes));
-		FlyThrough(*this, *TestWorld.World, *Generator, FString::Printf(TEXT("mixed seed %d"), Seed));
+		FlyThrough(*this, *TestWorld.World, *Generator, FString::Printf(TEXT("mixed seed %d"), Seed), Watch);
 	}
 	return true;
 }

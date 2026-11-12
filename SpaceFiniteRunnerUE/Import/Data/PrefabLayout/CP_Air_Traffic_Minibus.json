@@ -1,0 +1,12 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "CP_Air_Traffic_Minibus",
+  "guid": "a7c8ea8b16efd0e4196cd1eafb002892",
+  "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Minibus.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+    ]
+  }
+}

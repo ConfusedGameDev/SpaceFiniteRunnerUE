@@ -1,0 +1,12 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "CP_Air_Traffic_Garbage_Truck",
+  "guid": "c91e4281bd266b14d9e9f0e26d572107",
+  "path": "Assets/Cyberpunk_Megapolis/Prefabs/Car/CP_Air_Traffic_Garbage_Truck.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+    ]
+  }
+}

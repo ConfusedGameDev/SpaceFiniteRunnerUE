@@ -1,0 +1,14 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "PowerUp_Purple",
+  "guid": "4c6e8a0b2d4f6a8c0e2b4d6f8a0c2e4b",
+  "path": "Assets/03.Prefabs/Runner/PowerUp_Purple.prefab",
+  "fields": {
+    "rootScale": {"x": 24, "y": 24, "z": 24},
+    "rootComponents": ["SpeedPad"],
+    "nodes": [
+      {"name": "indicator-special-arrow", "path": "indicator-special-arrow", "active": true, "rendered": true, "model": {"$ref": {"guid": "b0ef635b3814a194782f04a949ace8ce", "fileId": 919132149155446097, "path": "Assets/02.Art/01.Models/Prototype/indicator-special-arrow.fbx", "name": "indicator-special-arrow", "type": "GameObject", "main": true}}, "mesh": "", "materials": [{"$ref": {"guid": "9f2d4b6a8c0e1f3d5b7a9c1e3f5d7b9a", "fileId": 2100000, "path": "Assets/02.Art/01.Models/Pickups/Mat_PowerUp_Purple.mat", "name": "Mat_PowerUp_Purple", "type": "Material", "main": true}}], "position": {"x": 0, "y": 0.0257929228, "z": 0}, "rotation": {"x": 0, "y": -0.7071068, "z": 0, "w": 0.7071067}, "scale": {"x": 0.83203, "y": 1.31669033, "z": 0.83203}, "components": [], "colliders": []},
+      {"name": "Indicator", "path": "Indicator", "active": true, "rendered": true, "model": {"$ref": {"guid": "2f8f3b190f664e64fb0d45e004b78669", "fileId": 919132149155446097, "path": "Assets/02.Art/01.Models/Prototype/indicator-round-d.fbx", "name": "indicator-round-d", "type": "GameObject", "main": true}}, "mesh": "", "materials": [{"$ref": {"guid": "e967edf2e1b6a98448853000ff1fa99c", "fileId": 2100000, "path": "Assets/02.Art/01.Models/Pickups/Mat_GreenPowerUp.mat", "name": "Mat_GreenPowerUp", "type": "Material", "main": true}}], "position": {"x": 0, "y": 0.7, "z": 0.0600000061}, "rotation": {"x": 0.7071068, "y": 0, "z": 0, "w": 0.7071067}, "scale": {"x": 0.6, "y": 0.6000001, "z": 0.6000001}, "components": ["BurstSpin"], "colliders": []}
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "CP_Hospital",
+  "guid": "25d16806aea94d348b105bf2da189049",
+  "path": "Assets/Cyberpunk_Megapolis/Prefabs/Background/CP_Hospital.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+    ]
+  }
+}

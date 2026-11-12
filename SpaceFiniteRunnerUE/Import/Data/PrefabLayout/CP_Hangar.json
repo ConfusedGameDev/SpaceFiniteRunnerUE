@@ -1,0 +1,12 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "CP_Hangar",
+  "guid": "571f8083c19d34149bbd8f437ae3556c",
+  "path": "Assets/Cyberpunk_Megapolis/Prefabs/Background/CP_Hangar.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+    ]
+  }
+}

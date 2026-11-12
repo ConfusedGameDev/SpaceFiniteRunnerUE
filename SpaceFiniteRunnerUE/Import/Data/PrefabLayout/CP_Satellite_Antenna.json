@@ -1,0 +1,12 @@
+{
+  "unityType": "PrefabLayout",
+  "name": "CP_Satellite_Antenna",
+  "guid": "6a1ccc8a85ad0e348b4e6c34083971fb",
+  "path": "Assets/Cyberpunk_Megapolis/Prefabs/Background/CP_Satellite_Antenna.prefab",
+  "fields": {
+    "rootScale": {"x": 1, "y": 1, "z": 1},
+    "rootComponents": [],
+    "nodes": [
+    ]
+  }
+}

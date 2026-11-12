@@ -1,10 +1,33 @@
 #include "Track/Spawning/TrackSpawner.h"
 
 #include "TrackContracts.h"
+#include "Materials/MaterialInstanceDynamic.h"
+#include "Track/Features/LaserGate.h"
+#include "Track/Pickups/RepairOrb.h"
+#include "Track/Pickups/SpeedOrb.h"
+#include "Track/RunnerColor.h"
 #include "Track/Spawning/PadDefinition.h"
 #include "Track/Spawning/TrackSpawnContext.h"
 #include "Track/Spawning/WeightedTable.h"
 #include "Track/TrackModel.h"
+
+namespace
+{
+	const TCHAR* const LitMaterialPath = TEXT("/Game/Runner/Materials/Lit/M_Lit.M_Lit");
+	const TCHAR* const LitTranslucentMaterialPath = TEXT("/Game/Runner/Materials/Lit/M_LitTranslucent.M_LitTranslucent");
+
+	/** A tinted copy of a lit master: base colour and emission (times Glow) from an authored sRGB colour. */
+	UMaterialInstanceDynamic* Tinted(UObject* Outer, const TCHAR* Path, const FLinearColor& Authored, float Glow = 1.f)
+	{
+		UMaterialInterface* Base = LoadObject<UMaterialInterface>(nullptr, Path);
+		if (!Base) return nullptr;
+		UMaterialInstanceDynamic* Mid = UMaterialInstanceDynamic::Create(Base, Outer);
+		const FLinearColor Linear = RunnerColor::FromAuthored(Authored);
+		Mid->SetVectorParameterValue(RunnerColor::BaseColorParam, Linear);
+		Mid->SetVectorParameterValue(RunnerColor::EmissionColorParam, FLinearColor(Linear.R * Glow, Linear.G * Glow, Linear.B * Glow, 1.f));
+		return Mid;
+	}
+}
 
 // ------------------------------------------------------------------ base
 
@@ -98,8 +121,37 @@ float USpeedOrbSpawner::Step(FTrackSpawnContext& Ctx, float Distance, float Limi
 
 AActor* USpeedOrbSpawner::Build(FTrackSpawnContext& Ctx, const FTrackPlacement& Placement)
 {
-	// The orb actors come in M2.5.
-	return nullptr;
+	if (!Tiers.IsValidIndex(Placement.Variant) || Tiers[Placement.Variant].Definition == nullptr) return nullptr;
+	const FPadSpawnEntry& Tier = Tiers[Placement.Variant];
+	const UPadDefinition& Def = *Tier.Definition;
+
+	// Orbs sit on the flight line, flat pads sink to the road; the air lane rides the track's up.
+	const float AirHeight = Tier.Lane == EPadLane::Air ? Ctx.GetAirLaneHeight() : 0.f;
+	const float Up = (Def.bFloatingOrb ? 0.f : -0.9f) + AirHeight;
+	ASpeedOrb* Orb = Ctx.SpawnOnTrack<ASpeedOrb>(Placement.Distance, Placement.Lateral, Up);
+	if (!Orb) return nullptr;
+
+	// The pickup volume in track space (along, across, up): an orb is a ball of its own size, a flat
+	// pad the whole slab and as tall as the ship, so a grounded ship always reads as on it.
+	const float S = Def.SizeMultiplier;
+	FVector3f Half = Def.bFloatingOrb
+		? FVector3f(Ctx.PadSize.X * S * 0.5f)
+		: FVector3f(Ctx.PadSize.Z * S * 0.5f, Ctx.PadSize.X * S * 0.5f, 1.f);
+	Half *= Tier.PickupScale;
+
+	// Boosts scale off the shared power-up base; brakes keep their own delta so dodging stays predictable.
+	const float Delta = Def.SpeedDelta >= 0.f ? Ctx.GetBaseBoost() * Tier.Multiplier : Def.SpeedDelta;
+	Orb->Configure(Tier, Placement.Variant, Delta, Placement.Distance, Placement.Lateral, AirHeight, Half, Ctx.PadSize,
+		Tier.Prefab ? nullptr : TierMaterial(Placement.Variant));
+	return Orb;
+}
+
+UMaterialInterface* USpeedOrbSpawner::TierMaterial(int32 TierIndex)
+{
+	if (TObjectPtr<UMaterialInstanceDynamic>* Found = TierMaterials.Find(TierIndex)) return *Found;
+	UMaterialInstanceDynamic* Mid = Tinted(this, LitMaterialPath, Tiers[TierIndex].Color);
+	TierMaterials.Add(TierIndex, Mid);
+	return Mid;
 }
 
 // ----------------------------------------------------------- repair orbs
@@ -134,7 +186,21 @@ float URepairOrbSpawner::Step(FTrackSpawnContext& Ctx, float Distance, float Lim
 
 AActor* URepairOrbSpawner::Build(FTrackSpawnContext& Ctx, const FTrackPlacement& Placement)
 {
-	return nullptr;
+	const float Diameter = GetDiameter(Ctx.PadSize);
+	// Lifted along the track's up (so it holds on a bank or in a tube) until its lowest point, the
+	// radius and the bob below the centre, clears the visible road.
+	const float Bob = GetDefault<ARepairOrb>()->GetBobAmplitude();
+	const float Lift = Ctx.RoadSurfaceOffset + RoadClearance + Bob + Diameter * 0.5f;
+	ARepairOrb* Orb = Ctx.SpawnOnTrack<ARepairOrb>(Placement.Distance, Placement.Lateral, Lift);
+	if (!Orb) return nullptr;
+
+	if (!Prefab && !ShellMaterial)
+	{
+		ShellMaterial = Tinted(this, LitTranslucentMaterialPath, ShellColor, 0.6f);
+		CrossMaterial = Tinted(this, LitMaterialPath, CrossColor, 2.f);
+	}
+	Orb->Configure(Placement.Distance, Diameter, SpinDegreesPerSecond, Prefab, ShellMaterial, CrossMaterial);
+	return Orb;
 }
 
 // ----------------------------------------------------------- laser gates
@@ -201,5 +267,23 @@ float ULaserGateSpawner::Step(FTrackSpawnContext& Ctx, float Distance, float Lim
 
 AActor* ULaserGateSpawner::Build(FTrackSpawnContext& Ctx, const FTrackPlacement& Placement)
 {
-	return nullptr;
+	if (!Runtime) return nullptr;
+	const ELaserGateVariant Variant = ResolveVariant(static_cast<ELaserGateVariant>(Placement.Variant));
+	const float Length = static_cast<float>(Placement.Data.X);
+	const bool bWavy = Placement.Data.W > 0.5 && Runtime->DrawsProcedural();
+
+	// The root on the track pose at the flight line's middle; the gate places its beams across it.
+	ALaserGate* Gate = Ctx.SpawnOnTrack<ALaserGate>(Placement.Distance, 0.f);
+	if (!Gate) return nullptr;
+	UMaterialInterface* RodMaterial = Runtime->BeamMaterial ? Runtime->BeamMaterial.Get() : LoadObject<UMaterialInterface>(nullptr, LitMaterialPath);
+	Gate->Configure(*Runtime, Variant, Placement.Distance, Placement.Lateral, Length, static_cast<float>(Placement.Data.Y),
+		static_cast<float>(Placement.Data.Z), Ctx.RoadSurfaceOffset, bWavy, LaserPrefab, RodMaterial);
+	return Gate;
+}
+
+float ULaserGateSpawner::GetCullDistance(const FTrackPlacement& Placement) const
+{
+	if (!Runtime) return Placement.Distance;
+	const ELaserGateVariant Variant = ResolveVariant(static_cast<ELaserGateVariant>(Placement.Variant));
+	return Placement.Distance + HalfDepth(Variant, static_cast<float>(Placement.Data.X));
 }

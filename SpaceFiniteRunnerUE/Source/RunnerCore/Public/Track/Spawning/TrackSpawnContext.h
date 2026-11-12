@@ -75,6 +75,16 @@ public:
 	 */
 	float KeepOutUntil(float Distance, float Reach, bool bAllowFlatSweeps, bool bAllowOpenEdges) const;
 
+	/**
+	 * Spawns an actor of Class on the track pose at Distance and Lateral, lifted Up metres along the
+	 * track's up, attached to Parent (transient, never saved). Null when there is no world or track.
+	 */
+	AActor* SpawnOnTrack(UClass* Class, float Distance, float Lateral, float Up = 0.f) const;
+	template <class T> T* SpawnOnTrack(float Distance, float Lateral, float Up = 0.f) const
+	{
+		return Cast<T>(SpawnOnTrack(T::StaticClass(), Distance, Lateral, Up));
+	}
+
 	/** A lateral inside the band at Distance, Margin off both edges (the band's middle when it does not fit). */
 	float RandomLateral(FRunnerRandom& Rng, float Distance, float Margin) const;
 	/** Lateral pulled inside the band at Distance, Margin off both edges. */
