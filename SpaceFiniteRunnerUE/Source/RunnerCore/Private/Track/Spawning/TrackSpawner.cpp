@@ -3,6 +3,7 @@
 #include "TrackContracts.h"
 #include "Track/Spawning/PadDefinition.h"
 #include "Track/Spawning/TrackSpawnContext.h"
+#include "Track/Spawning/WeightedTable.h"
 #include "Track/TrackModel.h"
 
 // ------------------------------------------------------------------ base
@@ -69,37 +70,6 @@ uint32 UTrackSpawner::Hash2(uint32 A, uint32 B)
 
 // ------------------------------------------------------------ speed orbs
 
-namespace
-{
-	/** WeightedTable.Pick: one draw by probability over the entries; null on an empty table. */
-	int32 PickWeighted(const TArray<FPadSpawnEntry>& Table, float Roll01)
-	{
-		if (Table.Num() == 0)
-		{
-			return INDEX_NONE;
-		}
-		float Total = 0.f;
-		for (const FPadSpawnEntry& E : Table)
-		{
-			Total += E.Probability;
-		}
-		if (Total <= 0.f)
-		{
-			return 0;
-		}
-		float Roll = Roll01 * Total;
-		for (int32 i = 0; i < Table.Num(); ++i)
-		{
-			Roll -= Table[i].Probability;
-			if (Roll <= 0.f)
-			{
-				return i;
-			}
-		}
-		return Table.Num() - 1;
-	}
-}
-
 float USpeedOrbSpawner::Step(FTrackSpawnContext& Ctx, float Distance, float Limit)
 {
 	const float ClaimEnd = Ctx.ClaimEnd(Distance);
@@ -108,7 +78,7 @@ float USpeedOrbSpawner::Step(FTrackSpawnContext& Ctx, float Distance, float Limi
 		return ClaimEnd;
 	}
 
-	const int32 TierIndex = PickWeighted(Tiers, Rng.NextFloat());
+	const int32 TierIndex = FWeightedTable::Pick(Tiers, [](const FPadSpawnEntry& E) { return E.Probability; }, Rng.NextFloat());
 	if (TierIndex == INDEX_NONE || Tiers[TierIndex].Definition == nullptr)
 	{
 		return -1.f;

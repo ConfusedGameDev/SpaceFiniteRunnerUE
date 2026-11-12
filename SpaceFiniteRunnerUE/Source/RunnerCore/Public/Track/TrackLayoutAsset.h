@@ -6,6 +6,7 @@
 #include "TrackLayoutAsset.generated.h"
 
 class UTrackShape;
+class UTrackSpawnSet;
 
 /**
  * A saved track: a FTrackLayout the editor generated, the shape it was generated with and the
@@ -25,6 +26,10 @@ public:
 	/** The shape asset the track was generated with: its feature table builds the ramps (records point into it by index), and Generate starts from it. */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Generated With")
 	TObjectPtr<UTrackShape> Shape;
+
+	/** The spawn set the track was generated with: its orb records point into those tiers. Empty = the generator's own. */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Generated With")
+	TObjectPtr<UTrackSpawnSet> SpawnSet;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Track")
 	FTrackLayout Layout;

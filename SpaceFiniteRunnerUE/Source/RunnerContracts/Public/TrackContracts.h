@@ -37,6 +37,24 @@ public:
 	virtual float GetTrackDistance() const = 0;
 };
 
+/** The vehicle numbers the track is shaped by (a loop is only placed where the ship arrives fast enough). */
+UINTERFACE(MinimalAPI, meta = (CannotImplementInterfaceInBlueprint))
+class UShipPerformance : public UInterface
+{
+	GENERATED_BODY()
+};
+
+class RUNNERCONTRACTS_API IShipPerformance
+{
+	GENERATED_BODY()
+
+public:
+	/** The speed the throttle holds, m/s. */
+	virtual float GetCruiseSpeed() const = 0;
+	/** The bleed that pulls a boosted vehicle back down to cruise, m/s². */
+	virtual float GetPassiveDeceleration() const = 0;
+};
+
 /**
  * The run's rules as the track needs them (the game mode's settings, a level's overrides). The track
  * reads them through this, never the game mode's class, so it boots alone in its sandbox with none.
